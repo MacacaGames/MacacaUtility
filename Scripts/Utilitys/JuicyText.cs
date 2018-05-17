@@ -104,7 +104,7 @@ namespace CloudMacaca
             // if (_sfxToPlay != null)
             //     AudioManager.PlaySFX(_sfxToPlay);
 
-            currentTextCoroutine = StartCoroutine(ChangeTextAnimation(text));
+            currentTextCoroutine = CoroutineManager.Instance.StartCoroutine(ChangeTextAnimation(text));
             return currentTextCoroutine;
         }
 
@@ -112,9 +112,9 @@ namespace CloudMacaca
         public Coroutine SetNumberAnimation(int number, float numberDuration, string extraTextInFront = "", string extraTextInEnd = "", float delay = 0)
         {
             if (currentNumberCoroutune != null)
-                StopCoroutine(currentNumberCoroutune);
+                CoroutineManager.Instance.StopCoroutine(currentNumberCoroutune);
 
-            currentNumberCoroutune = StartCoroutine(ChangeNumberAnimation(number, numberDuration, extraTextInFront, extraTextInEnd, delay));
+            currentNumberCoroutune = CoroutineManager.Instance.StartCoroutine(ChangeNumberAnimation(number, numberDuration, extraTextInFront, extraTextInEnd, delay));
             return currentNumberCoroutune;
         }
         IEnumerator ChangeTextAnimation(string text)
