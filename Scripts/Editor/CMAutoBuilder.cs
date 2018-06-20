@@ -46,8 +46,8 @@ public class CMAutoBuilder
         };
 
         var result = BuildPipeline.BuildPlayer(buildPlayerOptions);
-
-        if (!string.IsNullOrEmpty(result.ToString()))
+       
+        if ( result.files.Length <= 0)
         {
             throw new System.Exception(result.ToString());
         }
