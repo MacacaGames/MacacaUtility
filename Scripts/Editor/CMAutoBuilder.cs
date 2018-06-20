@@ -5,138 +5,140 @@ using UnityEditor;
 using UnityEditorInternal;
 using System.Text.RegularExpressions;
 using System;
-
-public class CMAutoBuilder
+namespace CloudMacaca
 {
-    // 一個簡單的 Build pipeline 範例
-    [MenuItem("CloudMacaca/Build/Android")]
-    public static void BuildAndroid()
+    public class CMAutoBuilder
     {
-        var buildTarget = BuildTarget.Android;
-        //些換到 Android 
-        EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, buildTarget);
-
-        //取得建置環境資料
-        var AndroidSdkRoot = EditorSetup.AndroidSdkRoot;
-        var AndroidNdkRoot = EditorSetup.AndroidNdkRoot;
-        var JdkRoot = EditorSetup.JdkRoot;
-
-        //設定 key
-        PlayerSettings.Android.keyaliasName = GetKeyStoreAlias();
-        PlayerSettings.Android.keyaliasPass = GetKeyStorePassword();
-        PlayerSettings.Android.keystorePass = GetKeyStorePassword();
-        PlayerSettings.Android.keystoreName = GetKeyStorePath();
-
-        var outputPath = GetOutputPath(buildTarget);
-        var outputDir = Path.GetDirectoryName(outputPath);
-
-        if (!Directory.Exists(outputDir))
+        // 一個簡單的 Build pipeline 範例
+        [MenuItem("CloudMacaca/Build/Android")]
+        public static void BuildAndroid()
         {
-            Directory.CreateDirectory(outputDir);
-        }
+            var buildTarget = BuildTarget.Android;
+            //些換到 Android 
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, buildTarget);
 
-        var buildScenes = GetBuildScenes();
+            //取得建置環境資料
+            var AndroidSdkRoot = EditorSetup.AndroidSdkRoot;
+            var AndroidNdkRoot = EditorSetup.AndroidNdkRoot;
+            var JdkRoot = EditorSetup.JdkRoot;
 
-        var buildPlayerOptions = new BuildPlayerOptions()
-        {
-            target = buildTarget,
-            scenes = buildScenes,
-            options = BuildOptions.None,
-            locationPathName = outputPath,
-        };
+            //設定 key
+            PlayerSettings.Android.keyaliasName = GetKeyStoreAlias();
+            PlayerSettings.Android.keyaliasPass = GetKeyStorePassword();
+            PlayerSettings.Android.keystorePass = GetKeyStorePassword();
+            PlayerSettings.Android.keystoreName = GetKeyStorePath();
 
-        var result = BuildPipeline.BuildPlayer(buildPlayerOptions);
-       
-        if ( result.files.Length <= 0)
-        {
-            throw new System.Exception(result.ToString());
-        }
-    }
+            var outputPath = GetOutputPath(buildTarget);
+            var outputDir = Path.GetDirectoryName(outputPath);
 
-    static string[] GetBuildScenes()
-    {
-        return EditorBuildSettings.scenes.Where(v => v.enabled).Select(v => v.path).ToArray();
-    }
-    static string GetOutputPath(BuildTarget target)
-    {
-        string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        string date = DateTime.Now.Date.ToString("yyyy_MM_dd");
-        string result = "";
-        if (target == BuildTarget.Android)
-        {
-            result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "Build" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
-        }
-        else if (target == BuildTarget.iOS)
-        {
-            result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "Build" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "iOS" + Path.DirectorySeparatorChar + date + ".apk");
-        }
-        return result;
-    }
-
-
-    static string GetKeyStorePassword(string defaultValue = "ASDFrewq1234$#@!")
-    {
-        string[] args = System.Environment.GetCommandLineArgs();
-        for (int i = 0; i < args.Length; i++)
-        {
-            if (args[i] == "-keystorepw")
+            if (!Directory.Exists(outputDir))
             {
-                defaultValue = args[i + 1];
-                break;
+                Directory.CreateDirectory(outputDir);
+            }
+
+            var buildScenes = GetBuildScenes();
+
+            var buildPlayerOptions = new BuildPlayerOptions()
+            {
+                target = buildTarget,
+                scenes = buildScenes,
+                options = BuildOptions.None,
+                locationPathName = outputPath,
+            };
+
+            var result = BuildPipeline.BuildPlayer(buildPlayerOptions);
+
+            if (result.files.Length <= 0)
+            {
+                throw new System.Exception(result.ToString());
             }
         }
-        return defaultValue;
-    }
-    static string GetKeyStoreAlias(string defaultValue = "")
-    {
-        defaultValue = PlayerSettings.Android.keyaliasName;
-        string[] args = System.Environment.GetCommandLineArgs();
-        for (int i = 0; i < args.Length; i++)
+
+        static string[] GetBuildScenes()
         {
-            if (args[i] == "-keystorealias")
-            {
-                defaultValue = args[i + 1];
-                break;
-            }
+            return EditorBuildSettings.scenes.Where(v => v.enabled).Select(v => v.path).ToArray();
         }
-        return defaultValue;
-    }
-
-    static string GetKeyStorePath(string defaultValue = "")
-    {
-        defaultValue = PlayerSettings.Android.keystoreName;
-        string[] args = System.Environment.GetCommandLineArgs();
-        for (int i = 0; i < args.Length; i++)
+        static string GetOutputPath(BuildTarget target)
         {
-            if (args[i] == "-keystorepath")
+            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string date = DateTime.Now.Date.ToString("yyyy_MM_dd");
+            string result = "";
+            if (target == BuildTarget.Android)
             {
-                defaultValue = args[i + 1];
-                break;
+                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "Build" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
             }
+            else if (target == BuildTarget.iOS)
+            {
+                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "Build" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "iOS" + Path.DirectorySeparatorChar + date + ".apk");
+            }
+            return result;
         }
-        return defaultValue;
+
+
+        static string GetKeyStorePassword(string defaultValue = "ASDFrewq1234$#@!")
+        {
+            string[] args = System.Environment.GetCommandLineArgs();
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i] == "-keystorepw")
+                {
+                    defaultValue = args[i + 1];
+                    break;
+                }
+            }
+            return defaultValue;
+        }
+        static string GetKeyStoreAlias(string defaultValue = "")
+        {
+            defaultValue = PlayerSettings.Android.keyaliasName;
+            string[] args = System.Environment.GetCommandLineArgs();
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i] == "-keystorealias")
+                {
+                    defaultValue = args[i + 1];
+                    break;
+                }
+            }
+            return defaultValue;
+        }
+
+        static string GetKeyStorePath(string defaultValue = "")
+        {
+            defaultValue = PlayerSettings.Android.keystoreName;
+            string[] args = System.Environment.GetCommandLineArgs();
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i] == "-keystorepath")
+                {
+                    defaultValue = args[i + 1];
+                    break;
+                }
+            }
+            return defaultValue;
+        }
     }
-}
 
 
-public class EditorSetup
-{
-    public static string AndroidSdkRoot
+    public class EditorSetup
     {
-        get { return EditorPrefs.GetString("AndroidSdkRoot"); }
-        set { EditorPrefs.SetString("AndroidSdkRoot", value); }
-    }
+        public static string AndroidSdkRoot
+        {
+            get { return EditorPrefs.GetString("AndroidSdkRoot"); }
+            set { EditorPrefs.SetString("AndroidSdkRoot", value); }
+        }
 
-    public static string JdkRoot
-    {
-        get { return EditorPrefs.GetString("JdkPath"); }
-        set { EditorPrefs.SetString("JdkPath", value); }
-    }
+        public static string JdkRoot
+        {
+            get { return EditorPrefs.GetString("JdkPath"); }
+            set { EditorPrefs.SetString("JdkPath", value); }
+        }
 
-    // This requires Unity 5.3 or later
-    public static string AndroidNdkRoot
-    {
-        get { return EditorPrefs.GetString("AndroidNdkRoot"); }
-        set { EditorPrefs.SetString("AndroidNdkRoot", value); }
+        // This requires Unity 5.3 or later
+        public static string AndroidNdkRoot
+        {
+            get { return EditorPrefs.GetString("AndroidNdkRoot"); }
+            set { EditorPrefs.SetString("AndroidNdkRoot", value); }
+        }
     }
 }
