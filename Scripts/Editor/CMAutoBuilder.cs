@@ -57,7 +57,7 @@ namespace CloudMacaca
         [MenuItem("CloudMacaca/Build/iOS")]
         public static void BuildiOS()
         {
-            var buildTarget = BuildTarget.Android;
+            var buildTarget = BuildTarget.iOS;
             var buildScenes = GetBuildScenes();
             var outputPath = GetOutputPath(buildTarget);
             var outputDir = Path.GetDirectoryName(outputPath);
@@ -66,7 +66,7 @@ namespace CloudMacaca
             {
                 Directory.CreateDirectory(outputDir);
             }
-            
+
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, buildTarget);
 
             var buildPlayerOptions = new BuildPlayerOptions()
