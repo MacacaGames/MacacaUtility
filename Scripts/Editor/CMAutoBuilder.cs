@@ -67,17 +67,10 @@ namespace CloudMacaca
                 Directory.CreateDirectory(outputDir);
             }
 
-            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, buildTarget);
+            //EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, buildTarget);
 
-            var buildPlayerOptions = new BuildPlayerOptions()
-            {
-                target = buildTarget,
-                scenes = buildScenes,
-                options = BuildOptions.None,
-                locationPathName = outputPath,
-            };
+            BuildPipeline.BuildPlayer(buildScenes, outputPath, BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);  
 
-            var result = BuildPipeline.BuildPlayer(buildPlayerOptions);
             if (result.files.Length <= 0)
             {
                 throw new System.Exception(result.ToString());
