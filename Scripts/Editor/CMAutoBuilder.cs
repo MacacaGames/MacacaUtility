@@ -54,6 +54,33 @@ namespace CloudMacaca
             }
         }
 
+        [MenuItem("CloudMacaca/Build/iOS")]
+        public static void BuildiOS()
+        {
+            var buildTarget = BuildTarget.Android;
+            var buildScenes = GetBuildScenes();
+            var outputPath = GetOutputPath(buildTarget);
+            var outputDir = Path.GetDirectoryName(outputPath);
+
+            if (!Directory.Exists(outputDir))
+            {
+                Directory.CreateDirectory(outputDir);
+            }
+
+            var buildPlayerOptions = new BuildPlayerOptions()
+            {
+                target = buildTarget,
+                scenes = buildScenes,
+                options = BuildOptions.None,
+                locationPathName = outputPath,
+            };
+
+            var result = BuildPipeline.BuildPlayer(buildPlayerOptions);
+            if (result.files.Length <= 0)
+            {
+                throw new System.Exception(result.ToString());
+            }
+        }
         static string[] GetBuildScenes()
         {
             return EditorBuildSettings.scenes.Where(v => v.enabled).Select(v => v.path).ToArray();
@@ -69,7 +96,7 @@ namespace CloudMacaca
             }
             else if (target == BuildTarget.iOS)
             {
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "Build" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "iOS" + Path.DirectorySeparatorChar + date + ".apk");
+                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildIosTemp" + Path.DirectorySeparatorChar + Application.productName );
             }
             return result;
         }
