@@ -66,6 +66,8 @@ namespace CloudMacaca
             {
                 Directory.CreateDirectory(outputDir);
             }
+            
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, buildTarget);
 
             var buildPlayerOptions = new BuildPlayerOptions()
             {
