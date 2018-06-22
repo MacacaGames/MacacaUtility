@@ -104,7 +104,7 @@ namespace CloudMacaca
         [MenuItem("CloudMacaca/Build/iOS")]
         public static void BuildiOS()
         {
-            EditorPrefs.SetInt("Google.IOSResolver.CocoapodsIntegrationMethod", (int)CocoapodsIntegrationMethod.Project);
+            EditorPrefs.SetInt("Google.IOSResolver.CocoapodsIntegrationMethod", (int)CocoapodsIntegrationMethod.Workspace);
             //PlayerSetting
             PlayerSettings.statusBarHidden = true;
             PlayerSettings.iOS.targetDevice = iOSTargetDevice.iPhoneAndiPad;
