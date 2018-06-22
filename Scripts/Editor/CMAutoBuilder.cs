@@ -53,10 +53,26 @@ namespace CloudMacaca
                 throw new System.Exception(result.ToString());
             }
         }
-
+        enum ArchitectureValue
+        {
+            None,
+            ARM64,
+            Universal
+        }
         [MenuItem("CloudMacaca/Build/iOS")]
         public static void BuildiOS()
         {
+            //PlayerSetting
+            PlayerSettings.statusBarHidden = true;
+            PlayerSettings.iOS.targetDevice = iOSTargetDevice.iPhoneAndiPad;
+            PlayerSettings.iOS.appInBackgroundBehavior = iOSAppInBackgroundBehavior.Suspend;
+            PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
+            PlayerSettings.iOS.requiresFullScreen = true;
+
+            PlayerSettings.SetScriptingBackend(BuildTargetGroup.iOS,ScriptingImplementation.IL2CPP);
+            PlayerSettings.SetArchitecture(BuildTargetGroup.iOS,(int)ArchitectureValue.Universal);
+            
+        
             var buildTarget = BuildTarget.iOS;
             var buildScenes = GetBuildScenes();
             var outputPath = GetOutputPath(buildTarget);
@@ -69,7 +85,7 @@ namespace CloudMacaca
 
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, buildTarget);
 
-            var result = BuildPipeline.BuildPlayer(buildScenes, outputPath, BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);  
+            var result = BuildPipeline.BuildPlayer(buildScenes, outputPath, BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);
 
             if (result.files.Length <= 0)
             {
@@ -91,7 +107,7 @@ namespace CloudMacaca
             }
             else if (target == BuildTarget.iOS)
             {
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildIosTemp" + Path.DirectorySeparatorChar + Application.productName );
+                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildIosTemp" + Path.DirectorySeparatorChar + Application.productName);
             }
             return result;
         }
