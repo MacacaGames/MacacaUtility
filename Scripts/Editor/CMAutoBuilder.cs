@@ -94,9 +94,17 @@ namespace CloudMacaca
             ARM64,
             Universal
         }
+        public enum CocoapodsIntegrationMethod
+        {
+            None,
+            Project,
+            Workspace
+        }
+
         [MenuItem("CloudMacaca/Build/iOS")]
         public static void BuildiOS()
         {
+            EditorPrefs.SetInt("Google.IOSResolver.CocoapodsIntegrationMethod", (int)CocoapodsIntegrationMethod.Project);
             //PlayerSetting
             PlayerSettings.statusBarHidden = true;
             PlayerSettings.iOS.targetDevice = iOSTargetDevice.iPhoneAndiPad;
@@ -122,7 +130,7 @@ namespace CloudMacaca
                 Directory.CreateDirectory(outputDir);
             }
 
-            //EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, buildTarget);
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, buildTarget);
 
             var result = BuildPipeline.BuildPlayer(buildScenes, outputPath, BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);
 
