@@ -5,15 +5,50 @@ using UnityEditor;
 using UnityEditorInternal;
 using System.Text.RegularExpressions;
 using System;
+using AssetBundleBrowser.AssetBundleDataSource;
+
 namespace CloudMacaca
 {
     public class CMAutoBuilder
     {
+
+        static void buildAssetBundle(BuildTarget target)
+        {
+            BuildAssetBundleOptions opt = BuildAssetBundleOptions.None;
+            opt |= BuildAssetBundleOptions.ChunkBasedCompression;
+
+
+
+            ABBuildInfo buildInfo = new ABBuildInfo();
+            string outputPath = GetAssetBundlePath(target);
+            buildInfo.outputDirectory = outputPath;
+            buildInfo.options = opt;
+            buildInfo.buildTarget = target;
+
+            try
+            {
+                if (Directory.Exists(outputPath))
+                    Directory.Delete(outputPath, true);
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogException(e);
+            }
+            if (!Directory.Exists(outputPath))
+                Directory.CreateDirectory(outputPath);
+
+            AssetBundleBrowser.AssetBundleModel.Model.DataSource.BuildAssetBundles(buildInfo);
+
+            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+        }
+
         // 一個簡單的 Build pipeline 範例
         [MenuItem("CloudMacaca/Build/Android")]
         public static void BuildAndroid()
         {
             var buildTarget = BuildTarget.Android;
+            buildAssetBundle(buildTarget);
+
             //些換到 Android 
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, buildTarget);
 
@@ -69,14 +104,18 @@ namespace CloudMacaca
             PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
             PlayerSettings.iOS.requiresFullScreen = true;
 
-            PlayerSettings.SetScriptingBackend(BuildTargetGroup.iOS,ScriptingImplementation.IL2CPP);
-            PlayerSettings.SetArchitecture(BuildTargetGroup.iOS,(int)ArchitectureValue.Universal);
-            
-        
+            PlayerSettings.SetScriptingBackend(BuildTargetGroup.iOS, ScriptingImplementation.IL2CPP);
+            PlayerSettings.SetArchitecture(BuildTargetGroup.iOS, (int)ArchitectureValue.Universal);
+
+
             var buildTarget = BuildTarget.iOS;
             var buildScenes = GetBuildScenes();
             var outputPath = GetOutputPath(buildTarget);
             var outputDir = Path.GetDirectoryName(outputPath);
+
+
+            buildAssetBundle(buildTarget);
+
 
             if (!Directory.Exists(outputDir))
             {
@@ -154,6 +193,20 @@ namespace CloudMacaca
                 }
             }
             return defaultValue;
+        }
+
+        static string GetAssetBundlePath(BuildTarget target)
+        {
+            string result = "";
+            if (target == BuildTarget.Android)
+            {
+                result = "Assets/StreamingAssets/Android";
+            }
+            else if (target == BuildTarget.iOS)
+            {
+                result = "Assets/StreamingAssets/iOS";
+            }
+            return result;
         }
     }
 
