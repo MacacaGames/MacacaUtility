@@ -5,8 +5,9 @@ using UnityEditor;
 using UnityEditorInternal;
 using System.Text.RegularExpressions;
 using System;
+#if AssetBundleBrowser
 using AssetBundleBrowser.AssetBundleDataSource;
-
+#endif
 namespace CloudMacaca
 {
     public class CMAutoBuilder
@@ -14,10 +15,9 @@ namespace CloudMacaca
 
         static void buildAssetBundle(BuildTarget target)
         {
+#if AssetBundleBrowser
             BuildAssetBundleOptions opt = BuildAssetBundleOptions.None;
             opt |= BuildAssetBundleOptions.ChunkBasedCompression;
-
-
 
             ABBuildInfo buildInfo = new ABBuildInfo();
             string outputPath = GetAssetBundlePath(target);
@@ -39,7 +39,9 @@ namespace CloudMacaca
 
             AssetBundleBrowser.AssetBundleModel.Model.DataSource.BuildAssetBundles(buildInfo);
 
+
             AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+#endif
         }
 
         // 一個簡單的 Build pipeline 範例
@@ -82,11 +84,17 @@ namespace CloudMacaca
             };
 
             var result = BuildPipeline.BuildPlayer(buildPlayerOptions);
-
+#if UNITY_2018_0_OR_NEWER
             if (result.files.Length <= 0)
             {
                 throw new System.Exception(result.ToString());
             }
+#else
+            if (!string.IsNullOrEmpty(result))
+            {
+                throw new System.Exception(result.ToString());
+            }
+#endif
         }
         enum ArchitectureValue
         {
@@ -134,10 +142,17 @@ namespace CloudMacaca
 
             var result = BuildPipeline.BuildPlayer(buildScenes, outputPath, BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);
 
+#if UNITY_2018_0_OR_NEWER
             if (result.files.Length <= 0)
             {
                 throw new System.Exception(result.ToString());
             }
+#else
+            if (!string.IsNullOrEmpty(result))
+            {
+                throw new System.Exception(result.ToString());
+            }
+#endif
         }
         static string[] GetBuildScenes()
         {
