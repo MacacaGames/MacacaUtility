@@ -84,7 +84,7 @@ namespace CloudMacaca
             };
 
             var result = BuildPipeline.BuildPlayer(buildPlayerOptions);
-#if UNITY_2018_0_OR_NEWER
+#if UNITY_2018_1_OR_NEWER
             if (result.files.Length <= 0)
             {
                 throw new System.Exception(result.ToString());
@@ -142,7 +142,7 @@ namespace CloudMacaca
 
             var result = BuildPipeline.BuildPlayer(buildScenes, outputPath, BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);
 
-#if UNITY_2018_0_OR_NEWER
+#if UNITY_2018_1_OR_NEWER
             if (result.files.Length <= 0)
             {
                 throw new System.Exception(result.ToString());
