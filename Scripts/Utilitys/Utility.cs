@@ -139,7 +139,12 @@ namespace CloudMacaca {
 
         //Convert to Utf8 String
         public static string BytesToString (byte[] bytes) {
-            return  System.Text.UTF8Encoding.Default.GetString ( bytes );
+            try{
+                return System.Text.UTF8Encoding.Default.GetString ( bytes );
+            }
+            catch{
+                return "";
+            }
         }
         //Convert to Utf8 Bytes
         public static byte[] StringToBytes (string source) {
