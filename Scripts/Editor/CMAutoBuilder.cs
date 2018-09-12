@@ -15,33 +15,34 @@ namespace CloudMacaca
 
         static void buildAssetBundle(BuildTarget target)
         {
-#if AssetBundleBrowser
-            BuildAssetBundleOptions opt = BuildAssetBundleOptions.None;
-            opt |= BuildAssetBundleOptions.ChunkBasedCompression;
 
-            ABBuildInfo buildInfo = new ABBuildInfo();
-            string outputPath = GetAssetBundlePath(target);
-            buildInfo.outputDirectory = outputPath;
-            buildInfo.options = opt;
-            buildInfo.buildTarget = target;
+// #if AssetBundleBrowser
+//             BuildAssetBundleOptions opt = BuildAssetBundleOptions.None;
+//             opt |= BuildAssetBundleOptions.ChunkBasedCompression;
 
-            try
-            {
-                if (Directory.Exists(outputPath))
-                    Directory.Delete(outputPath, true);
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogException(e);
-            }
-            if (!Directory.Exists(outputPath))
-                Directory.CreateDirectory(outputPath);
+//             ABBuildInfo buildInfo = new ABBuildInfo();
+//             string outputPath = GetAssetBundlePath(target);
+//             buildInfo.outputDirectory = outputPath;
+//             buildInfo.options = opt;
+//             buildInfo.buildTarget = target;
 
-            AssetBundleBrowser.AssetBundleModel.Model.DataSource.BuildAssetBundles(buildInfo);
+//             try
+//             {
+//                 if (Directory.Exists(outputPath))
+//                     Directory.Delete(outputPath, true);
+//             }
+//             catch (System.Exception e)
+//             {
+//                 Debug.LogException(e);
+//             }
+//             if (!Directory.Exists(outputPath))
+//                 Directory.CreateDirectory(outputPath);
+
+//             AssetBundleBrowser.AssetBundleModel.Model.DataSource.BuildAssetBundles(buildInfo);
 
 
-            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
-#endif
+//             AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+// #endif
         }
 
         // 一個簡單的 Build pipeline 範例
