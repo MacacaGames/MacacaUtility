@@ -5,44 +5,20 @@ using UnityEditor;
 using UnityEditorInternal;
 using System.Text.RegularExpressions;
 using System;
-#if AssetBundleBrowser
+#if AssetBundle
 using AssetBundleBrowser.AssetBundleDataSource;
 #endif
 namespace CloudMacaca
 {
     public class CMAutoBuilder
     {
-
+        const string AssetsBundleGraphFileName = "AssetBundleGraph";
         static void buildAssetBundle(BuildTarget target)
         {
-
-// #if AssetBundleBrowser
-//             BuildAssetBundleOptions opt = BuildAssetBundleOptions.None;
-//             opt |= BuildAssetBundleOptions.ChunkBasedCompression;
-
-//             ABBuildInfo buildInfo = new ABBuildInfo();
-//             string outputPath = GetAssetBundlePath(target);
-//             buildInfo.outputDirectory = outputPath;
-//             buildInfo.options = opt;
-//             buildInfo.buildTarget = target;
-
-//             try
-//             {
-//                 if (Directory.Exists(outputPath))
-//                     Directory.Delete(outputPath, true);
-//             }
-//             catch (System.Exception e)
-//             {
-//                 Debug.LogException(e);
-//             }
-//             if (!Directory.Exists(outputPath))
-//                 Directory.CreateDirectory(outputPath);
-
-//             AssetBundleBrowser.AssetBundleModel.Model.DataSource.BuildAssetBundles(buildInfo);
-
-
-//             AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
-// #endif
+#if AssetBundle
+            var setting = Resources.Load<UnityEngine.AssetGraph.DataModel.Version2.ConfigGraph>(AssetsBundleGraphFileName);
+            if(setting != null)UnityEngine.AssetGraph.AssetGraphUtility.ExecuteGraph( target, setting);
+#endif
         }
 
         // 一個簡單的 Build pipeline 範例
