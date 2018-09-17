@@ -17,7 +17,7 @@ namespace CloudMacaca
         {
 #if AssetBundle
             var setting = Resources.Load<UnityEngine.AssetGraph.DataModel.Version2.ConfigGraph>(AssetsBundleGraphFileName);
-            if(setting != null)UnityEngine.AssetGraph.AssetGraphUtility.ExecuteGraph( target, setting);
+            UnityEngine.AssetGraph.AssetGraphUtility.ExecuteGraph( target, setting);
 #endif
         }
 
