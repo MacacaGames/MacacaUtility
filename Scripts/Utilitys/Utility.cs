@@ -24,6 +24,7 @@ namespace CloudMacaca {
         }
 
         static IEnumerator ScreenShotCoroutine (IObserver<Texture2D> observer, CancellationToken cancellationToken, string screenShotName, int yOffect, float ratio, float delay, Camera camera = null) {
+            photoFilePath = "";
             yield return Yielders.GetWaitForSeconds (delay);
             string screenShotPath = Application.temporaryCachePath + "/" + screenShotName + ".png";
             int resWidth = 0;
