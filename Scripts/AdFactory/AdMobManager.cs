@@ -195,14 +195,14 @@ public class AdMobManager : IAdManager
 #else
 
         //沒有讀到的情況
-        if (loadState_rewardedAds != AdsLoadState.Loaded) {
+        if (loadState_rewardedAds != AdFactory.AdsLoadState.Loaded) {
             while (try_preload_times < 3) {
                 RequestRewardedAds (id);
 
                 float wait = 0;
                 while (wait < 3) {
                     wait += Time.deltaTime;
-                    if (loadState_rewardedAds == AdsLoadState.Loaded) {
+                    if (loadState_rewardedAds == AdFactory.AdsLoadState.Loaded) {
                         goto SHOW;
                     }
                     yield return null;
@@ -210,7 +210,7 @@ public class AdMobManager : IAdManager
                 try_preload_times++;
                 Debug.Log ("Try load times : " + try_preload_times);
             }
-            result = RewardResult.Faild;
+            result = AdFactory.RewardResult.Faild;
             goto FINISH;
         }
 #endif
