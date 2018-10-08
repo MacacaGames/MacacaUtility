@@ -49,7 +49,7 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>true 代表請求成功, false 代表請求失敗或是或是廣告提供者不支援橫幅廣告</returns>
     public bool ShowBannerAd(string id)
     {
-        if (CheckInit())
+        if (!CheckInit())
         {
             Debug.LogError("AdFactory is not Init");
             return false;
@@ -64,7 +64,7 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>true 代表有, false 代表無</returns>
     public bool HasBannerView()
     {
-        if (CheckInit())
+        if (!CheckInit())
         {
             Debug.LogError("AdFactory is not Init");
             return false;
@@ -79,7 +79,7 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>true 代表移除成功, false 代表移除失敗或該廣告提供者的橫幅無法移除</returns>
     public bool RemoveBannerView()
     {
-        if (CheckInit())
+        if (!CheckInit())
         {
             Debug.LogError("AdFactory is not Init");
             return false;
@@ -93,7 +93,7 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     public Coroutine ShowInterstitialAds(string id, Action<AdFactory.RewardResult> callback)
     {
-        if (CheckInit())
+        if (!CheckInit())
         {
             Debug.LogError("AdFactory is not Init");
             return null;
@@ -118,7 +118,7 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     public Coroutine ShowRewardedAds(string id, Action<AdFactory.RewardResult> callback, string extraData = "")
     {
-        if (CheckInit())
+        if (!CheckInit())
         {
             Debug.LogError("AdFactory is not Init");
             return null;
