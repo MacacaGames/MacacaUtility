@@ -7,13 +7,21 @@ using UnityEngine;
 
 public class AdMobManager : IAdManager
 {
-    public AdMobManager(string AppId){
-        admobAppId = AppId;
+    static string _admobAppId;
+    static string _rewaredPlacement;
+    static string _iterstitialPlacement;
+    static string _bannerPlacement;
+
+    public AdMobManager(string AppId, string RewaredPlacement, string IterstitialPlacement, string BannerPlacement)
+    {
+        _admobAppId = AppId;
+        _rewaredPlacement = RewaredPlacement;
+        _iterstitialPlacement = IterstitialPlacement;
+        _bannerPlacement = BannerPlacement;
     }
-    string admobAppId;
     public void Init()
     {
-        GoogleMobileAds.Api.MobileAds.Initialize(admobAppId);
+        GoogleMobileAds.Api.MobileAds.Initialize(_admobAppId);
         RegistRewardedAdEvent();
     }
 
@@ -23,9 +31,9 @@ public class AdMobManager : IAdManager
     }
     #region BannerAd
     BannerView bannerView;
-    public bool ShowBannerAd(string id)
+    public bool ShowBannerAd()
     {
-        string adUnitId = id;
+        string adUnitId = _bannerPlacement;
         // Create a 320x50 banner at the top of the screen.
         bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
         // Create an empty ad request.
@@ -51,8 +59,9 @@ public class AdMobManager : IAdManager
     InterstitialAd interstitial;
     bool isShowedInterstitialAds;
 
-    public IEnumerator ShowInterstitialAds(string id, Action<AdFactory.RewardResult> callback)
+    public IEnumerator ShowInterstitialAds(Action<AdFactory.RewardResult> callback)
     {
+        string id = _iterstitialPlacement;
         AdFactory.RewardResult result = AdFactory.RewardResult.Error;
 
         isInterstitialAdClose = false;
@@ -177,8 +186,9 @@ public class AdMobManager : IAdManager
     public static AdFactory.AdsLoadState loadState_rewardedAds;
     bool isRewardAdClose = false;
 
-    public IEnumerator ShowRewardedAds(string id, Action<AdFactory.RewardResult> callback, string extraData)
+    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback, string extraData)
     {
+        string id = _rewaredPlacement;
         //初始化
         isRewardAdClose = false;
         int try_preload_times = 0;

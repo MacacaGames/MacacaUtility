@@ -6,10 +6,14 @@ using UnityEngine.Advertisements;
 
 public class UnityAdManager : IAdManager
 {
-    string _gameId = "";
-    public UnityAdManager(string gameId)
+    static string _gameId = "";
+    static string _rewaredPlacement;
+    static string _iterstitialPlacement;
+    public UnityAdManager(string GameId, string RewarePlacement, string IterstitialPlacement)
     {
-        _gameId = gameId;
+        _gameId = GameId;
+        _rewaredPlacement = RewarePlacement;
+        _iterstitialPlacement = IterstitialPlacement;
     }
     public void Init()
     {
@@ -24,7 +28,7 @@ public class UnityAdManager : IAdManager
     /// Add two number
     /// </summary>
     /// <returns>true 代表請求成功, false 代表請求失敗或是 VIP 用戶或是還沒玩超過三次</returns>
-    public bool ShowBannerAd(string id)
+    public bool ShowBannerAd()
     {
         return false;
     }
@@ -39,8 +43,9 @@ public class UnityAdManager : IAdManager
 
     AdFactory.RewardResult resultInterstitialAd = AdFactory.RewardResult.Faild;
     bool waitInterstitialAdFinish = false;
-    public IEnumerator ShowInterstitialAds(string id, Action<AdFactory.RewardResult> action)
+    public IEnumerator ShowInterstitialAds(Action<AdFactory.RewardResult> action)
     {
+        string id = _iterstitialPlacement;
         waitInterstitialAdFinish = false;
         if (Advertisement.IsReady(id))
         {
@@ -87,8 +92,9 @@ public class UnityAdManager : IAdManager
     /// 顯示一則獎勵廣告
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
-    public IEnumerator ShowRewardedAds(string id, Action<AdFactory.RewardResult> callback, string extraData = "")
+    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback, string extraData = "")
     {
+        string id = _rewaredPlacement;
         waitRewardedAdFinish = false;
         if (Advertisement.IsReady(id))
         {
