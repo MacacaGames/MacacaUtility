@@ -10,6 +10,9 @@ public class AdFactory : UnitySingleton<AdFactory>
 {
     IAdManager adManager;
 
+    [SerializeField]
+    AdFactory.RewardResult EditorTestResult = AdFactory.RewardResult.Success;
+
     /// <summary>
     /// Add two number
     /// </summary>
@@ -35,6 +38,7 @@ public class AdFactory : UnitySingleton<AdFactory>
         string IterstitialPlacement = "",
         string BannerPlacement = "")
     {
+        Debug.LogWarning("Init AdFactory with " + provider);
         switch (provider)
         {
             case AdProvider.AdMob:
@@ -111,7 +115,13 @@ public class AdFactory : UnitySingleton<AdFactory>
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
 
+       
+#if UNITY_EDITOR
+        yield return Yielders.GetWaitForSeconds(1f);
+        OnFinish(EditorTestResult);
+#else
         yield return adManager.ShowInterstitialAds(OnFinish);
+#endif
 
         //關閉讀取，如果有的話
         if (OnLoadViewLeave != null) OnLoadViewLeave();
@@ -135,15 +145,22 @@ public class AdFactory : UnitySingleton<AdFactory>
     {
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
-
+#if UNITY_EDITOR
+        yield return Yielders.GetWaitForSeconds(1f);
+        OnFinish(EditorTestResult);
+#else
         yield return adManager.ShowRewardedAds(OnFinish, extraData);
-
+#endif
         //關閉讀取，如果有的話
         if (OnLoadViewLeave != null) OnLoadViewLeave();
     }
 
     public bool CheckInit()
     {
+
+#if UNITY_EDITOR
+        return true;
+#endif
         return adManager != null;
     }
     public enum AdProvider
