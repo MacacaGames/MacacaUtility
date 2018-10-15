@@ -42,6 +42,27 @@ public class AdMobManager : IAdManager
         bannerView.LoadAd(request);
         return true;
     }
+    public int GetBannerHeight()
+    {
+        #if UNITY_IOS
+        if(UnityEngine.iOS.Device.generation == UnityEngine.iOS.DeviceGeneration.iPhoneX ){
+            return 50 * Mathf.RoundToInt(Screen.dpi / 160);
+        }
+        #endif
+        Debug.Log(Screen.height);
+        if (Screen.height <= 400 * Mathf.RoundToInt(Screen.dpi / 160))
+        {
+            return 32 * Mathf.RoundToInt(Screen.dpi / 160);
+        }
+        else if (Screen.height <= 720 * Mathf.RoundToInt(Screen.dpi / 160))
+        {
+            return 50 * Mathf.RoundToInt(Screen.dpi / 160);
+        }
+        else
+        {
+            return 90 * Mathf.RoundToInt(Screen.dpi / 160);
+        }
+    }
     public bool HasBannerView()
     {
         return bannerView == null ? false : true;
