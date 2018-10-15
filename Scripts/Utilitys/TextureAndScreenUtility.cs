@@ -70,11 +70,38 @@ namespace CloudMacaca
                 observer.OnCompleted(); // IObserver needs OnCompleted after OnNext!
             }
         }
-        public static Texture2D AddWatermark(Texture2D background, Texture2D watermark)
+        public enum WaterMarkPosition
+        {
+            RightTop,
+            LeftTop,
+            RightBottom,
+            LeftBottom
+        }
+        public static Texture2D AddWatermark(Texture2D background, Texture2D watermark, WaterMarkPosition position = WaterMarkPosition.RightTop)
         {
 
             int startX = 0;
-            int startY = background.height - watermark.height;
+            int startY = 0;
+            switch (position)
+            {
+                case WaterMarkPosition.RightTop:
+                    startX = 0;
+                    startY = background.height - watermark.height;
+                    break;
+                case WaterMarkPosition.LeftTop:
+                    startX = background.width - watermark.width;
+                    startY = background.height - watermark.height;
+                    break;
+                case WaterMarkPosition.RightBottom:
+                    startX = 0;
+                    startY = 0;
+                    break;
+                case WaterMarkPosition.LeftBottom:
+                    startX = background.width - watermark.width;
+                    startY = 0;
+                    break;
+            }
+
 
             for (int x = startX; x < background.width; x++)
             {
