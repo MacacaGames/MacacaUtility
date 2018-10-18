@@ -72,6 +72,16 @@ public class AdFactory : UnitySingleton<AdFactory>
         return adManager.ShowBannerAd();
     }
 
+    public int GetBannerHeight(){
+        if (!CheckInit())
+        {
+            Debug.LogError("AdFactory is not Init");
+            return 0;
+        }
+
+        return adManager.GetBannerHeight();
+    }
+
     /// <summary>
     /// 查詢目前畫面上是否有橫幅顯示
     /// </summary>
@@ -219,6 +229,7 @@ public interface IAdManager
     bool ShowBannerAd();
     bool HasBannerView();
     bool RemoveBannerView();
+    int GetBannerHeight();
 
     /// <summary>
     /// 顯示一則插業廣告

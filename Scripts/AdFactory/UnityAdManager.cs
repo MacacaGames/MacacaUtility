@@ -40,6 +40,10 @@ public class UnityAdManager : IAdManager
     {
         return false;
     }
+    public int GetBannerHeight()
+    {
+        return 0;
+    }
 
     AdFactory.RewardResult resultInterstitialAd = AdFactory.RewardResult.Faild;
     bool waitInterstitialAdFinish = false;
