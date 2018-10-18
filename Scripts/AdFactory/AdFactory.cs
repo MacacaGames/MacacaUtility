@@ -38,6 +38,11 @@ public class AdFactory : UnitySingleton<AdFactory>
         string IterstitialPlacement = "",
         string BannerPlacement = "")
     {
+        if (CheckInit())
+        {
+            Debug.LogWarning("AdFactory is Inited Return");
+            return;
+        }
         Debug.LogWarning("Init AdFactory with " + provider);
         switch (provider)
         {
@@ -102,11 +107,6 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     public Coroutine ShowInterstitialAds(Action<AdFactory.RewardResult> OnFinish)
     {
-        if (!CheckInit())
-        {
-            Debug.LogError("AdFactory is not Init");
-            return null;
-        }
         return StartCoroutine(ShowInterstitialAdsRunner(OnFinish));
     }
 
@@ -115,12 +115,19 @@ public class AdFactory : UnitySingleton<AdFactory>
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
 
-       
+
 #if UNITY_EDITOR
         yield return Yielders.GetWaitForSeconds(1f);
         OnFinish(EditorTestResult);
 #else
-        yield return adManager.ShowInterstitialAds(OnFinish);
+        if (CheckInit())
+        {
+            yield return adManager.ShowInterstitialAds(OnFinish);
+        }
+        else
+        {
+            yield return Yielders.GetWaitForSeconds(1.5f);
+        }
 #endif
 
         //關閉讀取，如果有的話
@@ -133,11 +140,6 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     public Coroutine ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string extraData = "")
     {
-        if (!CheckInit())
-        {
-            Debug.LogError("AdFactory is not Init");
-            return null;
-        }
         return StartCoroutine(ShowRewardedAdsRunner(OnFinish, extraData));
     }
 
@@ -149,7 +151,15 @@ public class AdFactory : UnitySingleton<AdFactory>
         yield return Yielders.GetWaitForSeconds(1f);
         OnFinish(EditorTestResult);
 #else
-        yield return adManager.ShowRewardedAds(OnFinish, extraData);
+        if (CheckInit())
+        {
+            yield return adManager.ShowRewardedAds(OnFinish, extraData);
+        }
+        else
+        {
+            yield return Yielders.GetWaitForSeconds(1.5f);
+            CloudMacaca.CM_APIController.ShowToastMessage("Rewarded video is not ready please check your network or try again later.");
+        }
 #endif
         //關閉讀取，如果有的話
         if (OnLoadViewLeave != null) OnLoadViewLeave();
