@@ -289,6 +289,10 @@ public class AdMobManager : IAdManager
         }
     }
 
+    public void PreLoadRewardedAd(){
+        RequestRewardedAds(_rewaredPlacement);
+    }
+
     void RequestRewardedAds(string id)
     {
         AdRequest request = new AdRequest.Builder().Build();

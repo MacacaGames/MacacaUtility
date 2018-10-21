@@ -115,6 +115,9 @@ public class UnityAdManager : IAdManager
         yield return new WaitUntil(() => waitRewardedAdFinish == true);
         callback(resultRewardAd);
     }
+    public void PreLoadRewardedAd(){
+        //nothinh in Unity Ads
+    }
     void HandleShowRewardResult(ShowResult result)
     {
         Debug.Log("HandleShowResult" + result);
