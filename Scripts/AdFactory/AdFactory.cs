@@ -55,6 +55,7 @@ public class AdFactory : UnitySingleton<AdFactory>
         }
 
         adManager.Init();
+        adManager.PreLoadRewardedAd();
     }
 
     /// <summary>
@@ -108,7 +109,7 @@ public class AdFactory : UnitySingleton<AdFactory>
             Debug.LogError("AdFactory is not Init");
             return false;
         }
-        return false;
+        return adManager.RemoveBannerView();
     }
 
     /// <summary>
@@ -245,4 +246,6 @@ public interface IAdManager
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string extraData = "");
+
+    void PreLoadRewardedAd();
 }
