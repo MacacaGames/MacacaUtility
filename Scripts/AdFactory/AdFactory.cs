@@ -10,6 +10,9 @@ public class AdFactory : UnitySingleton<AdFactory>
 {
     IAdManager adManager;
 
+    [SerializeField]
+    AdFactory.RewardResult EditorTestResult = AdFactory.RewardResult.Success;
+
     /// <summary>
     /// Add two number
     /// </summary>
@@ -35,6 +38,12 @@ public class AdFactory : UnitySingleton<AdFactory>
         string IterstitialPlacement = "",
         string BannerPlacement = "")
     {
+        if (CheckInit())
+        {
+            Debug.LogWarning("AdFactory is Inited Return");
+            return;
+        }
+        Debug.LogWarning("Init AdFactory with " + provider);
         switch (provider)
         {
             case AdProvider.AdMob:
@@ -46,6 +55,7 @@ public class AdFactory : UnitySingleton<AdFactory>
         }
 
         adManager.Init();
+        adManager.PreLoadRewardedAd();
     }
 
     /// <summary>
@@ -61,6 +71,16 @@ public class AdFactory : UnitySingleton<AdFactory>
         }
 
         return adManager.ShowBannerAd();
+    }
+
+    public int GetBannerHeight(){
+        if (!CheckInit())
+        {
+            Debug.LogError("AdFactory is not Init");
+            return 0;
+        }
+
+        return adManager.GetBannerHeight();
     }
 
     /// <summary>
@@ -89,7 +109,7 @@ public class AdFactory : UnitySingleton<AdFactory>
             Debug.LogError("AdFactory is not Init");
             return false;
         }
-        return false;
+        return adManager.RemoveBannerView();
     }
 
     /// <summary>
@@ -98,11 +118,6 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     public Coroutine ShowInterstitialAds(Action<AdFactory.RewardResult> OnFinish)
     {
-        if (!CheckInit())
-        {
-            Debug.LogError("AdFactory is not Init");
-            return null;
-        }
         return StartCoroutine(ShowInterstitialAdsRunner(OnFinish));
     }
 
@@ -111,7 +126,21 @@ public class AdFactory : UnitySingleton<AdFactory>
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
 
-        yield return adManager.ShowInterstitialAds(OnFinish);
+
+#if UNITY_EDITOR
+        yield return Yielders.GetWaitForSeconds(1f);
+        OnFinish(EditorTestResult);
+#else
+        if (CheckInit())
+        {
+            yield return adManager.ShowInterstitialAds(OnFinish);
+        }
+        else
+        {
+            yield return Yielders.GetWaitForSeconds(1.5f);
+            OnFinish(AdFactory.RewardResult.Faild);
+        }
+#endif
 
         //關閉讀取，如果有的話
         if (OnLoadViewLeave != null) OnLoadViewLeave();
@@ -123,11 +152,6 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     public Coroutine ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string extraData = "")
     {
-        if (!CheckInit())
-        {
-            Debug.LogError("AdFactory is not Init");
-            return null;
-        }
         return StartCoroutine(ShowRewardedAdsRunner(OnFinish, extraData));
     }
 
@@ -135,15 +159,32 @@ public class AdFactory : UnitySingleton<AdFactory>
     {
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
+#if UNITY_EDITOR
+        yield return Yielders.GetWaitForSeconds(1f);
+        OnFinish(EditorTestResult);
 
-        yield return adManager.ShowRewardedAds(OnFinish, extraData);
-
+#else
+        if (CheckInit())
+        {
+            yield return adManager.ShowRewardedAds(OnFinish, extraData);
+        }
+        else
+        {
+            yield return Yielders.GetWaitForSeconds(1.5f);
+            CloudMacaca.CM_APIController.ShowToastMessage("Rewarded video is not ready please check your network or try again later.");
+            OnFinish(AdFactory.RewardResult.Faild);
+        }
+#endif
         //關閉讀取，如果有的話
         if (OnLoadViewLeave != null) OnLoadViewLeave();
     }
 
     public bool CheckInit()
     {
+
+#if UNITY_EDITOR
+        return true;
+#endif
         return adManager != null;
     }
     public enum AdProvider
@@ -192,6 +233,7 @@ public interface IAdManager
     bool ShowBannerAd();
     bool HasBannerView();
     bool RemoveBannerView();
+    int GetBannerHeight();
 
     /// <summary>
     /// 顯示一則插業廣告
@@ -204,4 +246,6 @@ public interface IAdManager
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
     IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string extraData = "");
+
+    void PreLoadRewardedAd();
 }
