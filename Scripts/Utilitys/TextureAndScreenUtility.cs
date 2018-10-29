@@ -135,7 +135,7 @@ namespace CloudMacaca
             _gpu_scale(src, width, height, mode);
 
             //Get rendered data back to a new texture
-            Texture2D result = new Texture2D(width, height, TextureFormat.ARGB32, false);
+            Texture2D result = new Texture2D(width, height, TextureFormat.RGB24, false);
             result.Resize(width, height);
             result.ReadPixels(texR, 0, 0, false);
             result.wrapMode = UnityEngine.TextureWrapMode.Clamp;
@@ -149,7 +149,7 @@ namespace CloudMacaca
             src.Apply(true);
 
             //Using RTT for best quality and performance. Thanks, Unity 5
-            RenderTexture rtt = new RenderTexture(width, height, 32);
+            RenderTexture rtt = new RenderTexture(width, height, 32,RenderTextureFormat.ARGB32);
 
             //Set the RTT in order to render to it
             Graphics.SetRenderTarget(rtt);
