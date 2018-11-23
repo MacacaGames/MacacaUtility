@@ -13,9 +13,6 @@ public class AdFactory : UnitySingleton<AdFactory>
     [SerializeField]
     AdFactory.RewardResult EditorTestResult = AdFactory.RewardResult.Success;
 
-    /// <summary>
-    /// Add two number
-    /// </summary>
     public delegate void AdViewEvent();
 
     /// <summary>
