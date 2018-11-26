@@ -96,7 +96,7 @@ public class UnityAdManager : IAdManager
     /// 顯示一則獎勵廣告
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
-    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback, string extraData = "")
+    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback)
     {
         string id = _rewaredPlacement;
         waitRewardedAdFinish = false;

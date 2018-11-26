@@ -207,7 +207,7 @@ public class AdMobManager : IAdManager
     public static AdFactory.AdsLoadState loadState_rewardedAds;
     bool isRewardAdClose = false;
 
-    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback, string extraData)
+    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback)
     {
         string id = _rewaredPlacement;
         //初始化
