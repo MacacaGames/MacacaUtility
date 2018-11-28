@@ -7,13 +7,13 @@ using UnityEngine.Advertisements;
 public class UnityAdManager : IAdManager
 {
     static string _gameId = "";
-    static string _defaultRewaredPlacement;
-    static string _defaultIterstitialPlacement;
-    public UnityAdManager(string GameId, string DefaultRewarePlacement, string DefaultIterstitialPlacement)
+    static string _rewaredPlacement;
+    static string _iterstitialPlacement;
+    public UnityAdManager(string GameId, string RewarePlacement, string IterstitialPlacement)
     {
         _gameId = GameId;
-        _defaultRewaredPlacement = DefaultRewarePlacement;
-        _defaultIterstitialPlacement = DefaultIterstitialPlacement;
+        _rewaredPlacement = RewarePlacement;
+        _iterstitialPlacement = IterstitialPlacement;
     }
     public void Init()
     {
@@ -49,7 +49,7 @@ public class UnityAdManager : IAdManager
     bool waitInterstitialAdFinish = false;
     public IEnumerator ShowInterstitialAds(Action<AdFactory.RewardResult> action)
     {
-        string id = _defaultIterstitialPlacement;
+        string id = _iterstitialPlacement;
         waitInterstitialAdFinish = false;
         if (Advertisement.IsReady(id))
         {
@@ -96,14 +96,9 @@ public class UnityAdManager : IAdManager
     /// 顯示一則獎勵廣告
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
-    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback, string overwritePlacement)
+    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback)
     {
-        string id = _defaultRewaredPlacement;
-        if (!string.IsNullOrEmpty(overwritePlacement))
-        {
-            id = overwritePlacement;
-        }
-
+        string id = _rewaredPlacement;
         waitRewardedAdFinish = false;
         if (Advertisement.IsReady(id))
         {
@@ -120,9 +115,8 @@ public class UnityAdManager : IAdManager
         yield return new WaitUntil(() => waitRewardedAdFinish == true);
         callback(resultRewardAd);
     }
-    public void PreLoadRewardedAd()
-    {
-        //nothing in Unity Ads
+    public void PreLoadRewardedAd(){
+        //nothinh in Unity Ads
     }
     void HandleShowRewardResult(ShowResult result)
     {
