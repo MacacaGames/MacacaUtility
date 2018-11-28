@@ -36,9 +36,9 @@ public class AdFactory : UnitySingleton<AdFactory>
     public void InitFactory(
         AdProvider provider,
         string AppId = "",
-        string DefaultRewaredPlacement = "",
-        string DefaultIterstitialPlacement = "",
-        string DefaultBannerPlacement = "")
+        string RewaredPlacement = "",
+        string IterstitialPlacement = "",
+        string BannerPlacement = "")
     {
         if (CheckInit())
         {
@@ -49,15 +49,15 @@ public class AdFactory : UnitySingleton<AdFactory>
         switch (provider)
         {
             case AdProvider.AdMob:
-                adManager = new AdMobManager(AppId, DefaultRewaredPlacement, DefaultIterstitialPlacement, DefaultBannerPlacement);
+                adManager = new AdMobManager(AppId, RewaredPlacement, IterstitialPlacement, BannerPlacement);
                 break;
             case AdProvider.UnityAd:
-                adManager = new UnityAdManager(AppId, DefaultRewaredPlacement, DefaultIterstitialPlacement);
+                adManager = new UnityAdManager(AppId, RewaredPlacement, IterstitialPlacement);
                 break;
         }
 
         adManager.Init();
-        //adManager.PreLoadRewardedAd();
+        adManager.PreLoadRewardedAd();
     }
 
     /// <summary>
@@ -153,16 +153,16 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// 顯示一則獎勵廣告
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
-    public Coroutine ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string overwritePlacement = null, string analysicData = "")
+    public Coroutine ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string analysicData = "")
     {
         if (OnAdAnalysic != null)
         {
             OnAdAnalysic(analysicData);
         }
-        return StartCoroutine(ShowRewardedAdsRunner(OnFinish, overwritePlacement));
+        return StartCoroutine(ShowRewardedAdsRunner(OnFinish));
     }
 
-    IEnumerator ShowRewardedAdsRunner(Action<AdFactory.RewardResult> OnFinish, string overwritePlacement)
+    IEnumerator ShowRewardedAdsRunner(Action<AdFactory.RewardResult> OnFinish)
     {
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
@@ -173,7 +173,7 @@ public class AdFactory : UnitySingleton<AdFactory>
 #else
         if (CheckInit())
         {
-            yield return adManager.ShowRewardedAds(OnFinish, overwritePlacement);
+            yield return adManager.ShowRewardedAds(OnFinish);
         }
         else
         {
@@ -252,7 +252,7 @@ public interface IAdManager
     /// 顯示一則獎勵廣告
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
-    IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string overwritePlacement);
+    IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish);
 
     void PreLoadRewardedAd();
 }
