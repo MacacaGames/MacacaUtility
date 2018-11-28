@@ -8,16 +8,16 @@ using UnityEngine;
 public class AdMobManager : IAdManager
 {
     static string _admobAppId;
-    static string _rewaredPlacement;
-    static string _iterstitialPlacement;
-    static string _bannerPlacement;
+    static string _defaultRewaredPlacement;
+    static string _defaultIiterstitialPlacement;
+    static string _defaultBannerPlacement;
 
-    public AdMobManager(string AppId, string RewaredPlacement, string IterstitialPlacement, string BannerPlacement)
+    public AdMobManager(string AppId, string DefaultRewaredPlacement, string DefaultIterstitialPlacement, string DefaultBannerPlacement)
     {
         _admobAppId = AppId;
-        _rewaredPlacement = RewaredPlacement;
-        _iterstitialPlacement = IterstitialPlacement;
-        _bannerPlacement = BannerPlacement;
+        _defaultRewaredPlacement = DefaultRewaredPlacement;
+        _defaultIiterstitialPlacement = DefaultIterstitialPlacement;
+        _defaultBannerPlacement = DefaultBannerPlacement;
     }
     public void Init()
     {
@@ -33,7 +33,7 @@ public class AdMobManager : IAdManager
     BannerView bannerView;
     public bool ShowBannerAd()
     {
-        string adUnitId = _bannerPlacement;
+        string adUnitId = _defaultBannerPlacement;
         // Create a 320x50 banner at the top of the screen.
         bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
         // Create an empty ad request.
@@ -44,11 +44,11 @@ public class AdMobManager : IAdManager
     }
     public int GetBannerHeight()
     {
-        #if UNITY_IOS
+#if UNITY_IOS
         if(UnityEngine.iOS.Device.generation == UnityEngine.iOS.DeviceGeneration.iPhoneX ){
             return 50 * Mathf.RoundToInt(Screen.dpi / 160);
         }
-        #endif
+#endif
         Debug.Log(Screen.height);
         if (Screen.height <= 400 * Mathf.RoundToInt(Screen.dpi / 160))
         {
@@ -82,7 +82,8 @@ public class AdMobManager : IAdManager
 
     public IEnumerator ShowInterstitialAds(Action<AdFactory.RewardResult> callback)
     {
-        string id = _iterstitialPlacement;
+        string id = _defaultIiterstitialPlacement;
+
         AdFactory.RewardResult result = AdFactory.RewardResult.Error;
 
         isInterstitialAdClose = false;
@@ -203,13 +204,20 @@ public class AdMobManager : IAdManager
 
     #endregion
     #region RewardedAd
+
     public static RewardBasedVideoAd rewardBasedVideo { get { return RewardBasedVideoAd.Instance; } }
     public static AdFactory.AdsLoadState loadState_rewardedAds;
     bool isRewardAdClose = false;
 
-    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback)
+    public IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> callback, string overwritePlacement)
     {
-        string id = _rewaredPlacement;
+        string id = _defaultRewaredPlacement;
+
+        if (!string.IsNullOrEmpty(overwritePlacement))
+        {
+            id = overwritePlacement;
+        }
+
         //初始化
         isRewardAdClose = false;
         int try_preload_times = 0;
@@ -272,7 +280,6 @@ public class AdMobManager : IAdManager
     FINISH:
         RequestRewardedAds(id);
 
-
         callback(result);
     }
 
@@ -289,8 +296,9 @@ public class AdMobManager : IAdManager
         }
     }
 
-    public void PreLoadRewardedAd(){
-        RequestRewardedAds(_rewaredPlacement);
+    public void PreLoadRewardedAd()
+    {
+        RequestRewardedAds(_defaultRewaredPlacement);
     }
 
     void RequestRewardedAds(string id)
