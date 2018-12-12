@@ -13,9 +13,11 @@ public class AdFactory : UnitySingleton<AdFactory>
     [SerializeField]
     AdFactory.RewardResult EditorTestResult = AdFactory.RewardResult.Success;
 
+    public delegate void AdViewEventAnalysic(string Data);
     /// <summary>
-    /// Add two number
+    /// 註冊一個事件，該事件將會於 廣告顯示「前」執行
     /// </summary>
+    public event AdViewEventAnalysic OnAdAnalysic;
     public delegate void AdViewEvent();
 
     /// <summary>
@@ -73,7 +75,8 @@ public class AdFactory : UnitySingleton<AdFactory>
         return adManager.ShowBannerAd();
     }
 
-    public int GetBannerHeight(){
+    public int GetBannerHeight()
+    {
         if (!CheckInit())
         {
             Debug.LogError("AdFactory is not Init");
@@ -150,12 +153,16 @@ public class AdFactory : UnitySingleton<AdFactory>
     /// 顯示一則獎勵廣告
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
-    public Coroutine ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string extraData = "")
+    public Coroutine ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string analysicData = "")
     {
-        return StartCoroutine(ShowRewardedAdsRunner(OnFinish, extraData));
+        if (OnAdAnalysic != null)
+        {
+            OnAdAnalysic(analysicData);
+        }
+        return StartCoroutine(ShowRewardedAdsRunner(OnFinish));
     }
 
-    IEnumerator ShowRewardedAdsRunner(Action<AdFactory.RewardResult> OnFinish, string extraData = "")
+    IEnumerator ShowRewardedAdsRunner(Action<AdFactory.RewardResult> OnFinish)
     {
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
@@ -166,7 +173,7 @@ public class AdFactory : UnitySingleton<AdFactory>
 #else
         if (CheckInit())
         {
-            yield return adManager.ShowRewardedAds(OnFinish, extraData);
+            yield return adManager.ShowRewardedAds(OnFinish);
         }
         else
         {
@@ -245,7 +252,7 @@ public interface IAdManager
     /// 顯示一則獎勵廣告
     /// </summary>
     /// <returns>一個代表廣告顯示進程的 Coroutine</returns>
-    IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish, string extraData = "");
+    IEnumerator ShowRewardedAds(Action<AdFactory.RewardResult> OnFinish);
 
     void PreLoadRewardedAd();
 }
