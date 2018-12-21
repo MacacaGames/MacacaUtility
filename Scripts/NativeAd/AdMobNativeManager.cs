@@ -28,13 +28,13 @@ public class AdMobNativeManager
 
         adLoader.OnUnifiedNativeAdLoaded += delegate (object sender, UnifiedNativeAdEventArgs e)
         {
-            Debug.LogError("NativeAd Loaded : " + AD_UNIT);
+            //Debug.LogError("NativeAd Loaded : " + AD_UNIT);
             OnLoadSuccess(e.nativeAd);
         };
 
         adLoader.OnAdFailedToLoad += delegate (object sender, AdFailedToLoadEventArgs e)
         {
-            Debug.LogError("NativeAd OnAdFailedToLoad : " + AD_UNIT + " ,msg: " + e.Message);
+            //Debug.LogError("NativeAd OnAdFailedToLoad : " + AD_UNIT + " ,msg: " + e.Message);
             OnLoadFaild();
         };
         adLoader.LoadAd(new AdRequest.Builder().Build());
