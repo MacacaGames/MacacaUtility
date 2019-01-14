@@ -137,7 +137,7 @@ namespace CloudMacaca
             {
                 result = AnchorPresets.VertStretchCenter;
             }
-            
+
             if (source.anchorMin == new Vector2(1, 0) &&
                 source.anchorMax == new Vector2(1, 1))
             {
@@ -156,7 +156,7 @@ namespace CloudMacaca
 
         public static void SetAnchor(this RectTransform source, AnchorPresets allign, int offsetX = 0, int offsetY = 0)
         {
-            source.anchoredPosition = new Vector3(offsetX, offsetY, 0);
+            source.anchoredPosition = new Vector3(source.anchoredPosition.x + offsetX, source.anchoredPosition.y + offsetY, 0);
 
             switch (allign)
             {

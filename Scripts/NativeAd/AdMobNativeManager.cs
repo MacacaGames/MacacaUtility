@@ -18,9 +18,9 @@ public class AdMobNativeManager
             return _Instance;
         }
     }
-   
 
-    public void SetUpNativeAd(string AD_UNIT, Action<UnifiedNativeAd> OnLoadSuccess, Action OnLoadFaild)
+
+    public void SetUpNativeAd(string AD_UNIT, Action<UnifiedNativeAd> OnLoadSuccess, Action OnLoadFaild, Dictionary<string, string> extras = null)
     {
         var adLoader = new AdLoader.Builder(AD_UNIT)
         .ForUnifiedNativeAd()
@@ -37,8 +37,18 @@ public class AdMobNativeManager
             //Debug.LogError("NativeAd OnAdFailedToLoad : " + AD_UNIT + " ,msg: " + e.Message);
             OnLoadFaild();
         };
-        adLoader.LoadAd(new AdRequest.Builder().Build());
+
+        var adRequest = new AdRequest.Builder();
+        if (extras != null)
+        {
+            foreach (var item in extras)
+            {
+                adRequest.AddExtra(item.Key, item.Value);
+            }
+        }
+
+        adLoader.LoadAd(adRequest.Build());
 
     }
- 
+
 }
