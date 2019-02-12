@@ -49,7 +49,9 @@ public class AdFactory : UnitySingleton<AdFactory>
         switch (provider)
         {
             case AdProvider.AdMob:
+#if AdFactory_Admob
                 adManager = new AdMobManager(AppId, RewaredPlacement, IterstitialPlacement, BannerPlacement);
+#endif
                 break;
             case AdProvider.UnityAd:
                 adManager = new UnityAdManager(AppId, RewaredPlacement, IterstitialPlacement);
@@ -256,3 +258,4 @@ public interface IAdManager
 
     void PreLoadRewardedAd();
 }
+

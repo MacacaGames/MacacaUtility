@@ -1,3 +1,4 @@
+#if AdFactory_Admob
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -341,3 +342,5 @@ public class AdMobManager : IAdManager
 
 
 }
+
+#endif
