@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#if UniRx
+using System.Collections;
 using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
@@ -34,3 +35,4 @@ public class Benchmarker : UnitySingleton<Benchmarker>
     }
 
 }
+#endif

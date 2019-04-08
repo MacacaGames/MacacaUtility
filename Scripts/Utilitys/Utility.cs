@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using UniRx;
 using UnityEngine;
 
 namespace CloudMacaca
