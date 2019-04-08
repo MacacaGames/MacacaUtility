@@ -1,4 +1,4 @@
-﻿#if AdFactory_Admob
+﻿#if AdFactory_Admob_Native
 using System;
 using System.Collections;
 using System.Collections.Generic;
