@@ -134,7 +134,7 @@ public class AdFactory : UnitySingleton<AdFactory>
 
 
 #if UNITY_EDITOR
-        yield return new WaitForSecondsRealtime(1f);
+        yield return WaitforSecondsAbolute(1f);
         OnFinish(EditorTestResult);
 #else
         if (CheckInit())
@@ -143,7 +143,7 @@ public class AdFactory : UnitySingleton<AdFactory>
         }
         else
         {
-            yield return new WaitForSecondsRealtime(1.5f);
+            yield return WaitforSecondsAbolute(1.5f);
             OnFinish(AdFactory.RewardResult.Faild);
         }
 #endif
@@ -170,7 +170,7 @@ public class AdFactory : UnitySingleton<AdFactory>
         //顯示讀取，如果有的話
         if (OnLoadViewShow != null) OnLoadViewShow();
 #if UNITY_EDITOR
-        yield return new WaitForSecondsRealtime(1f);
+        yield return WaitforSecondsAbolute(1f);
         OnFinish(EditorTestResult);
 
 #else
@@ -180,13 +180,27 @@ public class AdFactory : UnitySingleton<AdFactory>
         }
         else
         {
-            yield return new WaitForSecondsRealtime(1.5f);
+            yield return WaitforSecondsAbolute(1.5f);
             CloudMacaca.CM_APIController.ShowToastMessage("Rewarded video is not ready please check your network or try again later.");
             OnFinish(AdFactory.RewardResult.Faild);
         }
 #endif
         //關閉讀取，如果有的話
         if (OnLoadViewLeave != null) OnLoadViewLeave();
+    }
+
+    Coroutine WaitforSecondsAbolute(float time)
+    {
+        return StartCoroutine(WaitForSecondsAbsoluteTask(time));
+    }
+
+    IEnumerator WaitForSecondsAbsoluteTask(float time)
+    {
+        while (time > 0)
+        {
+            time -= Time.deltaTime / Time.timeScale;
+            yield return null;
+        }
     }
 
     public bool CheckInit()

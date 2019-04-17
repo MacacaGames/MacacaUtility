@@ -90,7 +90,7 @@ public class AdMobManager : IAdManager
         int try_preload_times = 0;
 
         //等一秒，騙使用者很忙
-        yield return Yielders.GetWaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
 
         //編輯器的情況
 #if UNITY_EDITOR
@@ -218,7 +218,7 @@ public class AdMobManager : IAdManager
         AdFactory.RewardResult result = AdFactory.RewardResult.Error;
 
         //等一秒，騙使用者很忙
-        yield return Yielders.GetWaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
 
         //編輯器的情況
 #if UNITY_EDITOR
