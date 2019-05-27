@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public static class Vector2Extension
+public static partial class Vector2Extension
 {
     public static float ToAngle(this Vector2 vector)
     {
