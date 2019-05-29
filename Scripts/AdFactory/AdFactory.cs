@@ -54,7 +54,9 @@ public class AdFactory : UnitySingleton<AdFactory>
 #endif
                 break;
             case AdProvider.UnityAd:
+#if AdFactory_Unity
                 adManager = new UnityAdManager(AppId, RewaredPlacement, IterstitialPlacement);
+#endif
                 break;
         }
 
