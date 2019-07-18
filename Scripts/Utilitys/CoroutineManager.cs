@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CoroutineManager : MonoBehaviour
 {
@@ -63,5 +64,18 @@ public class CoroutineManager : MonoBehaviour
     protected virtual void OnDestroy()
     {
         applicationIsQuitting = true;
+    }
+
+    public static YieldInstruction ProgressionTask(float duration, System.Action<float> progressAction, Ease easeType = Ease.Linear)
+    {
+        return
+            DOTween.To(() => 0f,
+            x =>
+            {
+                progressAction(x);
+            },
+            1f, duration)
+            .SetEase(easeType)
+            .WaitForCompletion();
     }
 }
