@@ -66,6 +66,13 @@ public class CoroutineManager : MonoBehaviour
         applicationIsQuitting = true;
     }
 
+    /// <summary>
+    /// 回傳一個可被 yield return 的協程，做一個由 0 至 1 的 tween 並每個 update 去執行 action，float 則是 progress
+    /// </summary>
+    /// <param name="duration"></param>
+    /// <param name="progressAction"></param>
+    /// <param name="easeType"></param>
+    /// <returns></returns>
     public static YieldInstruction ProgressionTask(float duration, System.Action<float> progressAction, Ease easeType = Ease.Linear)
     {
         return
