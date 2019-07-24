@@ -6,8 +6,6 @@ namespace CloudMacaca
     public class CMEditorUtility
     {
 
-
-
         public static Texture2D CreatePixelTexture(string name, Color color)
         {
             Texture2D texture2D = new Texture2D(1, 1, TextureFormat.ARGB32, false);
