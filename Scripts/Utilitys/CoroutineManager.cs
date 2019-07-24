@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CoroutineManager : MonoBehaviour
 {
@@ -63,5 +64,25 @@ public class CoroutineManager : MonoBehaviour
     protected virtual void OnDestroy()
     {
         applicationIsQuitting = true;
+    }
+
+    /// <summary>
+    /// 回傳一個可被 yield return 的協程，做一個由 0 至 1 的 tween 並每個 update 去執行 action，float 則是 progress
+    /// </summary>
+    /// <param name="duration"></param>
+    /// <param name="progressAction"></param>
+    /// <param name="easeType"></param>
+    /// <returns></returns>
+    public static YieldInstruction ProgressionTask(float duration, System.Action<float> progressAction, Ease easeType = Ease.Linear)
+    {
+        return
+            DOTween.To(() => 0f,
+            x =>
+            {
+                progressAction(x);
+            },
+            1f, duration)
+            .SetEase(easeType)
+            .WaitForCompletion();
     }
 }
