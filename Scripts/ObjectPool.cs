@@ -71,31 +71,12 @@ namespace CloudMacaca
 
         public T ReUse<T>(Vector3 position, Quaternion rotation)
         {
-            T reuse;
-            try
-            {
-                if (m_pool.Count > 0)
-                {
-                    var go = m_pool.Dequeue();
-                    reuse = go.GetComponent<T>();
-                    go.transform.position = position;
-                    go.transform.rotation = rotation;
-                    go.SetActive(true);
-                }
-                else
-                {
-                    var go = Instantiate(prefab) as GameObject;
-                    reuse = go.GetComponent<T>();
-                    go.transform.position = position;
-                    go.transform.rotation = rotation;
-                    go.transform.SetParent(poolRoot.transform);
-                }
-                return reuse;
-            }
-            catch
-            {
+            T reuse = ReUse(position, rotation).GetComponent<T>();
+
+            if (reuse == null)
                 throw new NullReferenceException("Object doesn't contain given Components");
-            }
+
+            return reuse;
         }
 
         public void Recovery(GameObject recovery)
