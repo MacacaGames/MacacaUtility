@@ -172,15 +172,29 @@ namespace CloudMacaca
                         {
                             if (!string.IsNullOrEmpty(searchString))
                             {
-                                if (!item.Key.ToLower().Contains(searchString.ToLower()))
+                                if (searchString.ToLower().Contains("g:"))
                                 {
-                                    continue;
+                                    var s = searchString.ToLower().Split(':');
+                                    if (!item.Key.ToLower().Contains(s.Last().ToLower()))
+                                    {
+                                        continue;
+                                    }
                                 }
                             }
                             string label = string.IsNullOrEmpty(item.Key) ? " Ungrouped" : " " + item.Key;
                             GUILayout.Label(label, new GUIStyle("LODSliderRangeSelected"));
                             foreach (var child in item)
                             {
+                                if (!string.IsNullOrEmpty(searchString))
+                                {
+                                    if (!searchString.ToLower().Contains("g:"))
+                                    {
+                                        if (!child.name.ToLower().Contains(searchString.ToLower()))
+                                        {
+                                            continue;
+                                        }
+                                    }
+                                }
                                 var contetn = new GUIContent(child.name);
                                 if (current != null)
                                 {
@@ -227,7 +241,7 @@ namespace CloudMacaca
                     GUI.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
                     rect.x += 15;
                     rect.width -= 15;
-                    GUI.Label(rect, "Search group name", new GUIStyle("AnimationSelectionTextField"));
+                    GUI.Label(rect, "g: for find by group", new GUIStyle("AnimationSelectionTextField"));
                     GUI.color = Color.white;
                 }
                 if (GUILayout.Button("", GUI.skin.FindStyle("ToolbarSeachCancelButton")))
