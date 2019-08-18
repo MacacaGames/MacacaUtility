@@ -221,6 +221,15 @@ namespace CloudMacaca
             {
                 GUILayout.BeginHorizontal(GUI.skin.FindStyle("Toolbar"));
                 searchString = GUILayout.TextField(searchString, GUI.skin.FindStyle("ToolbarSeachTextField"));
+                var rect = GUILayoutUtility.GetLastRect();
+                if (string.IsNullOrEmpty(searchString))
+                {
+                    GUI.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                    rect.x += 15;
+                    rect.width -= 15;
+                    GUI.Label(rect, "Search group name", new GUIStyle("AnimationSelectionTextField"));
+                    GUI.color = Color.white;
+                }
                 if (GUILayout.Button("", GUI.skin.FindStyle("ToolbarSeachCancelButton")))
                 {
                     // Remove focus if cleared
