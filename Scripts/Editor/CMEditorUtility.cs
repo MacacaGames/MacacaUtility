@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEditor;
 namespace CloudMacaca
 {
     public class CMEditorUtility
@@ -101,7 +103,138 @@ namespace CloudMacaca
             isLocked.GetSetMethod().Invoke(inspectorInstance, new object[] { true });
             // Finally revert back to the previous selection so that other inspectors continue to inspect whatever they were inspecting...
             UnityEditor.Selection.activeGameObject = prevSelection;
+
         }
     }
+    public class CMEditorLayout
+    {
+        static Rect buttonRect;
 
+        public static void GroupedPopupField(GUIContent content, IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData selected, System.Action<GroupedPopupData> OnSelect)
+        {
+            GUILayout.Label(content, GUILayout.Width(EditorGUIUtility.labelWidth));
+            string popupTitle = "";
+
+            if (groupedPopupData.Contains(selected))
+            {
+                popupTitle = selected.name;
+            }
+            else if (selected == null)
+            {
+                popupTitle = "Nothing Selected";
+            }
+            else
+            {
+                popupTitle = "Missing";
+            }
+            if (GUILayout.Button(popupTitle, EditorStyles.popup))
+            {
+                PopupWindow.Show(buttonRect, new GroupedPopupWindow(groupedPopupData, selected, OnSelect));
+            }
+            if (Event.current.type == EventType.Repaint) buttonRect = GUILayoutUtility.GetLastRect();
+
+        }
+
+        public class GroupedPopupWindow : UnityEditor.PopupWindowContent
+        {
+            GroupedPopupData[] groupedPopupData;
+            System.Action<GroupedPopupData> OnSelect;
+            GroupedPopupData current;
+            public GroupedPopupWindow(IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData current, System.Action<GroupedPopupData> OnSelect)
+            {
+                this.OnSelect = OnSelect;
+                this.groupedPopupData = groupedPopupData.ToArray();
+                this.current = current;
+            }
+            public override Vector2 GetWindowSize()
+            {
+                return new Vector2(150, 200);
+            }
+
+            public override void OnGUI(Rect rect)
+            {
+                //DrawGroupToggle();
+                DrawSerachBar();
+                DrawItem();
+
+            }
+            Vector2 scrollPos;
+            void DrawItem()
+            {
+                using (var scroll = new GUILayout.ScrollViewScope(scrollPos))
+                {
+                    scrollPos = scroll.scrollPosition;
+                    using (var vertical = new GUILayout.VerticalScope())
+                    {
+                        var grouped = groupedPopupData.GroupBy(m => m.group);
+
+                        foreach (var item in grouped)
+                        {
+                            if (!string.IsNullOrEmpty(searchString))
+                            {
+                                if (!item.Key.ToLower().Contains(searchString.ToLower()))
+                                {
+                                    continue;
+                                }
+                            }
+                            string label = string.IsNullOrEmpty(item.Key) ? " Ungrouped" : " " + item.Key;
+                            GUILayout.Label(label, new GUIStyle("LODSliderRangeSelected"));
+                            foreach (var child in item)
+                            {
+                                var contetn = new GUIContent(child.name);
+                                if (current != null)
+                                {
+                                    if (current.name == child.name)
+                                    {
+                                        contetn.image = EditorGUIUtility.FindTexture("d_P4_CheckOutRemote");
+                                    }
+                                }
+
+                                if (GUILayout.Button(contetn, new GUIStyle("label")))
+                                {
+                                    OnSelect?.Invoke(child);
+                                    editorWindow.Close();
+                                }
+
+                                Rect btnRect = GUILayoutUtility.GetLastRect();
+
+                                if (btnRect.Contains(Event.current.mousePosition))
+                                {
+                                    GUI.Box(btnRect, "", new GUIStyle("U2D.createRect"));
+                                    editorWindow.Repaint();
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+            }
+            void DrawGroupToggle()
+            {
+                GUILayout.BeginHorizontal("box");
+
+                GUILayout.EndHorizontal();
+            }
+            string searchString;
+            void DrawSerachBar()
+            {
+                GUILayout.BeginHorizontal(GUI.skin.FindStyle("Toolbar"));
+                searchString = GUILayout.TextField(searchString, GUI.skin.FindStyle("ToolbarSeachTextField"));
+                if (GUILayout.Button("", GUI.skin.FindStyle("ToolbarSeachCancelButton")))
+                {
+                    // Remove focus if cleared
+                    searchString = "";
+                    GUI.FocusControl(null);
+                }
+                GUILayout.EndHorizontal();
+            }
+        }
+
+        public class GroupedPopupData
+        {
+            public string name;
+            public string group;
+        }
+    }
 }
