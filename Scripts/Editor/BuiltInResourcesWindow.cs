@@ -2,6 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class BuiltInResourcesWindow : EditorWindow
 {
@@ -30,7 +31,7 @@ public class BuiltInResourcesWindow : EditorWindow
     private bool _showingCmResources = false;
     public enum CurrentTab
     {
-        Styles, Icons, CloudMacacaResource
+        Styles, Icons, Icons_old, CloudMacacaResource
     }
     CurrentTab currentTab = CurrentTab.Styles;
     private string _search = "";
@@ -53,6 +54,11 @@ public class BuiltInResourcesWindow : EditorWindow
             if (GUILayout.Toggle(currentTab == CurrentTab.Icons, CurrentTab.Icons.ToString(), EditorStyles.toolbarButton))
             {
                 currentTab = CurrentTab.Icons;
+                Drawings = null;
+            }
+            if (GUILayout.Toggle(currentTab == CurrentTab.Icons_old, CurrentTab.Icons_old.ToString(), EditorStyles.toolbarButton))
+            {
+                currentTab = CurrentTab.Icons_old;
                 Drawings = null;
             }
             if (GUILayout.Toggle(currentTab == CurrentTab.CloudMacacaResource, CurrentTab.CloudMacacaResource.ToString(), EditorStyles.toolbarButton))
@@ -129,6 +135,63 @@ public class BuiltInResourcesWindow : EditorWindow
                 }
             }
             else if (currentTab == CurrentTab.Icons)
+            {
+                var editorAssetBundle = GetEditorAssetBundle();
+                var iconsPath = GetIconsPath();
+
+                var assetNames = EnumerateIcons(editorAssetBundle, iconsPath).ToArray();
+                float rowHeight = 0.0f;
+
+                for (var i = 0; i < assetNames.Length; i++)
+                {
+                    var assetName = assetNames[i];
+                    var icon = editorAssetBundle.LoadAsset<Texture2D>(assetName);
+                    if (icon == null)
+                        continue;
+
+                    if (icon.name == "")
+                        continue;
+
+                    if (icon.name.Contains("(Generated)"))
+                        continue;
+
+                    Drawing draw = new Drawing();
+
+                    float width = Mathf.Max(
+                        GUI.skin.button.CalcSize(new GUIContent(icon.name)).x,
+                        icon.width
+                    ) + 8.0f;
+
+                    float height = icon.height + GUI.skin.button.CalcSize(new GUIContent(icon.name)).y + 8.0f;
+
+                    if (x + width > position.width - 32.0f)
+                    {
+                        x = 5.0f;
+                        y += rowHeight + 8.0f;
+                        rowHeight = 0.0f;
+                    }
+
+                    draw.Rect = new Rect(x, y, width, height);
+
+                    rowHeight = Mathf.Max(rowHeight, height);
+
+                    width -= 8.0f;
+
+                    draw.Draw = () =>
+                    {
+                        if (GUILayout.Button(icon.name, GUILayout.Width(width)))
+                            CopyText("EditorGUIUtility.FindTexture( \"" + icon.name + "\" )");
+
+                        Rect textureRect = GUILayoutUtility.GetRect(icon.width, icon.width, icon.height, icon.height, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(false));
+                        EditorGUI.DrawTextureTransparent(textureRect, icon);
+                    };
+
+                    x += width + 8.0f;
+
+                    Drawings.Add(draw);
+                }
+            }
+            else if (currentTab == CurrentTab.Icons_old)
             {
                 if (_objects == null)
                 {
@@ -276,5 +339,43 @@ public class BuiltInResourcesWindow : EditorWindow
 
         editor.SelectAll();
         editor.Copy();
+    }
+
+    private static IEnumerable<string> EnumerateIcons(AssetBundle editorAssetBundle, string iconsPath)
+    {
+        foreach (var assetName in editorAssetBundle.GetAllAssetNames())
+        {
+            if (assetName.StartsWith(iconsPath, StringComparison.OrdinalIgnoreCase) == false)
+                continue;
+            if (assetName.EndsWith(".png", StringComparison.OrdinalIgnoreCase) == false &&
+                assetName.EndsWith(".asset", StringComparison.OrdinalIgnoreCase) == false)
+                continue;
+
+            yield return assetName;
+        }
+    }
+    private static AssetBundle GetEditorAssetBundle()
+    {
+        var editorGUIUtility = typeof(EditorGUIUtility);
+        var getEditorAssetBundle = editorGUIUtility.GetMethod(
+            "GetEditorAssetBundle",
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
+
+        return (AssetBundle)getEditorAssetBundle.Invoke(null, new object[] { });
+    }
+    private static string GetIconsPath()
+    {
+#if UNITY_2018_3_OR_NEWER
+        return UnityEditor.Experimental.EditorResources.iconsPath;
+#else
+            var assembly = typeof(EditorGUIUtility).Assembly;
+            var editorResourcesUtility = assembly.GetType("UnityEditorInternal.EditorResourcesUtility");
+
+            var iconsPathProperty = editorResourcesUtility.GetProperty(
+                "iconsPath",
+                BindingFlags.Static | BindingFlags.Public);
+
+            return (string)iconsPathProperty.GetValue(null, new object[] { });
+#endif
     }
 }
