@@ -5,7 +5,7 @@ public static partial class Vector2Extension
 {
     public static float ToAngle(this Vector2 vector)
     {
-        if (vector.magnitude == 0)
+        if (Mathf.Abs(vector.magnitude) <= float.Epsilon)
             return 0;
 
         vector.Normalize();
@@ -19,6 +19,7 @@ public static partial class Vector2Extension
 
         return angle;
     }
+
     public static Vector2 FromAngle(float angle)
     {
         angle *= Mathf.Deg2Rad;
