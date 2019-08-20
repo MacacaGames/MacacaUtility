@@ -93,7 +93,7 @@ public class BuiltInResourcesWindow : EditorWindow
             {
                 foreach (GUIStyle ss in GUI.skin.customStyles)
                 {
-                    if (lowerSearch != "" && !ss.name.ToLower().Contains(lowerSearch))
+                    if (!string.IsNullOrEmpty(lowerSearch) && !ss.name.ToLower().Contains(lowerSearch))
                         continue;
 
                     GUIStyle thisStyle = ss;
@@ -136,6 +136,7 @@ public class BuiltInResourcesWindow : EditorWindow
             }
             else if (currentTab == CurrentTab.Icons)
             {
+
                 var editorAssetBundle = GetEditorAssetBundle();
                 var iconsPath = GetIconsPath();
 
@@ -144,6 +145,7 @@ public class BuiltInResourcesWindow : EditorWindow
 
                 for (var i = 0; i < assetNames.Length; i++)
                 {
+
                     var assetName = assetNames[i];
                     var icon = editorAssetBundle.LoadAsset<Texture2D>(assetName);
                     if (icon == null)
@@ -153,6 +155,9 @@ public class BuiltInResourcesWindow : EditorWindow
                         continue;
 
                     if (icon.name.Contains("(Generated)"))
+                        continue;
+                        
+                    if (!string.IsNullOrEmpty(lowerSearch) && !icon.name.ToLower().Contains(lowerSearch))
                         continue;
 
                     Drawing draw = new Drawing();
@@ -212,7 +217,7 @@ public class BuiltInResourcesWindow : EditorWindow
                     if (texture.name.Contains("(Generated)"))
                         continue;
 
-                    if (lowerSearch != "" && !texture.name.ToLower().Contains(lowerSearch))
+                    if (!string.IsNullOrEmpty(lowerSearch) && !texture.name.ToLower().Contains(lowerSearch))
                         continue;
 
                     Drawing draw = new Drawing();
