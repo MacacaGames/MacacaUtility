@@ -106,6 +106,82 @@ namespace CloudMacaca
 
         }
     }
+    class CustomEventElement
+    {
+        static Dictionary<int, bool> control = new Dictionary<int, bool>();
+        static void SetFocus(int id, bool target)
+        {
+            if (control.ContainsKey(id))
+            {
+                control[id] = target;
+            }
+            else
+            {
+                control.Add(id, target);
+            }
+        }
+        static bool GetFocus(int id)
+        {
+            if (control.TryGetValue(id, out bool focus))
+            {
+                return focus;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool CustomButton(int id, Rect rect, GUIContent content, GUIStyle style, bool processEvent)
+        {
+            bool result = false;
+
+
+            var e = Event.current;
+            switch (e.type)
+            {
+                case EventType.Repaint:
+                    var isMouseOver = rect.Contains(Event.current.mousePosition);
+                    style.Draw(rect, content, isMouseOver, GetFocus(id), GetFocus(id), GetFocus(id));
+                    break;
+                case EventType.MouseDown:
+                    if (processEvent == false)
+                    {
+                        SetFocus(id, false);
+                        GUI.changed = true;
+                        return result;
+                    }
+                    if (e.button == 0)
+                    {
+                        if (rect.Contains(e.mousePosition))
+                        {
+                            SetFocus(id, true);
+                            e.Use();
+                            GUI.changed = true;
+                        }
+                    }
+                    break;
+                case EventType.MouseUp:
+                    if (processEvent == false)
+                    {
+                        SetFocus(id, false);
+                        GUI.changed = true;
+                        return result;
+                    }
+                    if (e.button == 0)
+                    {
+                        if (rect.Contains(e.mousePosition))
+                        {
+                            SetFocus(id, false);
+                            result = true;
+                            GUI.changed = true;
+                        }
+                    }
+                    break;
+
+            }
+            return result;
+        }
+    }
     public class CMEditorLayout
     {
         static Rect buttonRect;
