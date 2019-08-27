@@ -106,7 +106,7 @@ namespace CloudMacaca
 
         }
     }
-    class CustomEventElement
+    class CustomElement
     {
         static Dictionary<int, bool> control = new Dictionary<int, bool>();
         static void SetFocus(int id, bool target)
@@ -131,7 +131,7 @@ namespace CloudMacaca
                 return false;
             }
         }
-        public static bool CustomButton(int id, Rect rect, GUIContent content, GUIStyle style, bool processEvent)
+        public static bool Button(int id, Rect rect, GUIContent content, GUIStyle style, bool processEvent)
         {
             bool result = false;
 
