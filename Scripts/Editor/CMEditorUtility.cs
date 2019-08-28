@@ -188,7 +188,7 @@ namespace CloudMacaca
 
         public static void GroupedPopupField(GUIContent content, IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData selected, System.Action<GroupedPopupData> OnSelect)
         {
-            GUILayout.Label(content, GUILayout.Width(EditorGUIUtility.labelWidth));
+            if (content != GUIContent.none) GUILayout.Label(content, GUILayout.Width(EditorGUIUtility.labelWidth));
             string popupTitle = "";
 
             if (groupedPopupData.Contains(selected))
@@ -208,7 +208,6 @@ namespace CloudMacaca
                 PopupWindow.Show(buttonRect, new GroupedPopupWindow(groupedPopupData, selected, OnSelect));
             }
             if (Event.current.type == EventType.Repaint) buttonRect = GUILayoutUtility.GetLastRect();
-
         }
 
         public class GroupedPopupWindow : UnityEditor.PopupWindowContent
@@ -222,17 +221,12 @@ namespace CloudMacaca
                 this.groupedPopupData = groupedPopupData.ToArray();
                 this.current = current;
             }
-            public override Vector2 GetWindowSize()
-            {
-                return new Vector2(150, 200);
-            }
 
             public override void OnGUI(Rect rect)
             {
                 //DrawGroupToggle();
                 DrawSerachBar();
                 DrawItem();
-
             }
             Vector2 scrollPos;
             void DrawItem()
