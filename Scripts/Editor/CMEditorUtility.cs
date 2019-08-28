@@ -184,11 +184,15 @@ namespace CloudMacaca
     }
     public class CMEditorLayout
     {
-        static Rect buttonRect;
-
-        public static void GroupedPopupField(GUIContent content, IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData selected, System.Action<GroupedPopupData> OnSelect)
+        static Dictionary<int, Rect> rectDict = new Dictionary<int, Rect>();
+        public static void GroupedPopupField(int id, GUIContent content, IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData selected, System.Action<GroupedPopupData> OnSelect)
         {
-            if (content != GUIContent.none) GUILayout.Label(content, GUILayout.Width(EditorGUIUtility.labelWidth));
+            if (!rectDict.ContainsKey(id))
+            {
+                rectDict.Add(id, new Rect());
+            }
+
+            if (content != GUIContent.none) EditorGUILayout.LabelField(content, GUILayout.Width(EditorGUIUtility.labelWidth));
             string popupTitle = "";
 
             if (groupedPopupData.Contains(selected))
@@ -205,9 +209,10 @@ namespace CloudMacaca
             }
             if (GUILayout.Button(popupTitle, EditorStyles.popup))
             {
-                PopupWindow.Show(buttonRect, new GroupedPopupWindow(groupedPopupData, selected, OnSelect));
+                PopupWindow.Show(rectDict[id], new GroupedPopupWindow(groupedPopupData, selected, OnSelect, rectDict[id].width));
             }
-            if (Event.current.type == EventType.Repaint) buttonRect = GUILayoutUtility.GetLastRect();
+            if (Event.current.type == EventType.Repaint) rectDict[id] = GUILayoutUtility.GetLastRect();
+
         }
 
         public class GroupedPopupWindow : UnityEditor.PopupWindowContent
@@ -215,16 +220,52 @@ namespace CloudMacaca
             GroupedPopupData[] groupedPopupData;
             System.Action<GroupedPopupData> OnSelect;
             GroupedPopupData current;
-            public GroupedPopupWindow(IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData current, System.Action<GroupedPopupData> OnSelect)
+            float wantedWidth;
+            static GUIStyle _ItemStyle;
+            static GUIStyle ItemStyle
+            {
+                get
+                {
+                    if (_ItemStyle == null)
+                    {
+                        _ItemStyle = new GUIStyle(EditorStyles.label);
+                        // _ItemStyle.contentOffset = Vector2.zero;
+                        _ItemStyle.hover.textColor = Color.white;
+                        ColorUtility.TryParseHtmlString("#49beb7", out Color c);
+                        _ItemStyle.hover.background = CloudMacaca.CMEditorUtility.CreatePixelTexture("_ItemStyle hover Pixel (List GUI)", c);
+                    }
+                    return _ItemStyle;
+                }
+            }
+            static GUIStyle _GroupHeader;
+            static GUIStyle GroupHeader
+            {
+                get
+                {
+                    if (_GroupHeader == null)
+                    {
+                        _GroupHeader = new GUIStyle(EditorStyles.label);
+                        _GroupHeader.alignment = TextAnchor.MiddleCenter;
+                        _GroupHeader.normal.textColor = Color.white;
+                        ColorUtility.TryParseHtmlString("#ff502f", out Color c);
+                        _GroupHeader.normal.background = CloudMacaca.CMEditorUtility.CreatePixelTexture("_group header Pixel (List GUI)", c);
+                    }
+                    return _GroupHeader;
+                }
+            }
+            public GroupedPopupWindow(IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData current, System.Action<GroupedPopupData> OnSelect, float wantedWidth = 200)
             {
                 this.OnSelect = OnSelect;
                 this.groupedPopupData = groupedPopupData.ToArray();
                 this.current = current;
+                this.wantedWidth = wantedWidth;
             }
-
+            public override Vector2 GetWindowSize()
+            {
+                return new Vector2(300, wantedWidth);
+            }
             public override void OnGUI(Rect rect)
             {
-                //DrawGroupToggle();
                 DrawSerachBar();
                 DrawItem();
             }
@@ -252,7 +293,7 @@ namespace CloudMacaca
                                 }
                             }
                             string label = string.IsNullOrEmpty(item.Key) ? " Ungrouped" : " " + item.Key;
-                            GUILayout.Label(label, new GUIStyle("LODSliderRangeSelected"));
+                            GUILayout.Label(label, GroupHeader);
                             foreach (var child in item)
                             {
                                 if (!string.IsNullOrEmpty(searchString))
@@ -273,32 +314,22 @@ namespace CloudMacaca
                                         contetn.image = EditorGUIUtility.FindTexture("d_P4_CheckOutRemote");
                                     }
                                 }
-
-                                if (GUILayout.Button(contetn, new GUIStyle("label")))
+                                if (GUILayout.Button(contetn, ItemStyle))
                                 {
                                     OnSelect?.Invoke(child);
                                     editorWindow.Close();
                                 }
-
                                 Rect btnRect = GUILayoutUtility.GetLastRect();
-
                                 if (btnRect.Contains(Event.current.mousePosition))
                                 {
-                                    GUI.Box(btnRect, "", new GUIStyle("U2D.createRect"));
+                                    //GUI.Box(btnRect, "", new GUIStyle("U2D.createRect"));
                                     editorWindow.Repaint();
                                 }
-
                             }
                         }
                     }
 
                 }
-            }
-            void DrawGroupToggle()
-            {
-                GUILayout.BeginHorizontal("box");
-
-                GUILayout.EndHorizontal();
             }
             string searchString;
             void DrawSerachBar()
