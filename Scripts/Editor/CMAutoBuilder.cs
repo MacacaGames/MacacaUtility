@@ -42,6 +42,9 @@ namespace CloudMacaca
             PlayerSettings.Android.keystorePass = GetKeyStorePassword();
             PlayerSettings.Android.keystoreName = GetKeyStorePath();
 
+            //設定平台
+            PlayerSettings.Android.targetArchitectures = AndroidArchitecture.All;
+
             var outputPath = GetOutputPath(buildTarget);
             var outputDir = Path.GetDirectoryName(outputPath);
 
@@ -100,15 +103,12 @@ namespace CloudMacaca
             PlayerSettings.SetScriptingBackend(BuildTargetGroup.iOS, ScriptingImplementation.IL2CPP);
             PlayerSettings.SetArchitecture(BuildTargetGroup.iOS, (int)ArchitectureValue.Universal);
 
-
             var buildTarget = BuildTarget.iOS;
             var buildScenes = GetBuildScenes();
             var outputPath = GetOutputPath(buildTarget);
             var outputDir = Path.GetDirectoryName(outputPath);
 
-
             buildAssetBundle(buildTarget);
-
 
             if (!Directory.Exists(outputDir))
             {
