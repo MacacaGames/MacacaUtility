@@ -93,6 +93,9 @@ namespace CloudMacaca
         [MenuItem("CloudMacaca/Build/iOS")]
         public static void BuildiOS()
         {
+
+
+
             EditorPrefs.SetInt("Google.IOSResolver.CocoapodsIntegrationMethod", (int)CocoapodsIntegrationMethod.Workspace);
             //PlayerSetting
             PlayerSettings.statusBarHidden = true;
@@ -148,11 +151,28 @@ namespace CloudMacaca
             else if (target == BuildTarget.iOS)
             {
                 //The build result of iOS is a xCode Project, therefore the file extension is not needed and can always build into same folder.
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "XCode" );
+                string currentPath = Directory.GetCurrentDirectory();
+                string parentPath = Directory.GetParent(currentPath).FullName;
+                //result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "XCode");
+                result = IsWorkspaceIsParent() ? parentPath : currentPath + Path.DirectorySeparatorChar + "XCode";
             }
             return result;
         }
 
+        static bool IsWorkspaceIsParent()
+        {
+            bool result = false;
+            string[] args = System.Environment.GetCommandLineArgs();
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i] == "-isworkspaceisparent")
+                {
+                    result = true;
+                    break;
+                }
+            }
+            return result;
+        }
 
         static string GetKeyStorePassword(string defaultValue = "ASDFrewq1234$#@!")
         {
