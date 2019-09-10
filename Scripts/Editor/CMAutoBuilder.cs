@@ -43,7 +43,8 @@ namespace CloudMacaca
             PlayerSettings.Android.keystoreName = GetKeyStorePath();
 
             //設定平台
-            PlayerSettings.Android.targetArchitectures = AndroidArchitecture.All;
+            PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
+            PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARMv7 | AndroidArchitecture.ARM64;
 
             var outputPath = GetOutputPath(buildTarget);
             var outputDir = Path.GetDirectoryName(outputPath);
@@ -138,15 +139,16 @@ namespace CloudMacaca
         static string GetOutputPath(BuildTarget target)
         {
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string date = DateTime.Now.Date.ToString("yyyy_MM_dd");
+            string date = DateTime.Now.Date.ToString("yyyy_MM_dd_HH_mm");
             string result = "";
             if (target == BuildTarget.Android)
             {
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "Build" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
+                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
             }
             else if (target == BuildTarget.iOS)
             {
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildIosTemp" + Path.DirectorySeparatorChar + Application.productName);
+                //The build result of iOS is a xCode Project, therefore the file extension is not needed and can always build into same folder.
+                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "XCode" );
             }
             return result;
         }
