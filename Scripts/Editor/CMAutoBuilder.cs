@@ -113,7 +113,7 @@ namespace CloudMacaca
             var outputDir = Path.GetDirectoryName(outputPath);
 
             buildAssetBundle(buildTarget);
-
+            Debug.Log(outputPath);
             if (!Directory.Exists(outputDir))
             {
                 Directory.CreateDirectory(outputDir);
@@ -153,8 +153,10 @@ namespace CloudMacaca
                 //The build result of iOS is a xCode Project, therefore the file extension is not needed and can always build into same folder.
                 string currentPath = Directory.GetCurrentDirectory();
                 string parentPath = Directory.GetParent(currentPath).FullName;
+                Debug.Log(currentPath);
+                Debug.Log(parentPath);
                 //result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "XCode");
-                result = IsWorkspaceIsParent() ? parentPath : currentPath + Path.DirectorySeparatorChar + "XCode";
+                result = (IsWorkspaceIsParent() ? parentPath : currentPath )+ Path.DirectorySeparatorChar + "XCode";
             }
             return result;
         }
