@@ -139,7 +139,7 @@ namespace CloudMacaca
         static string GetOutputPath(BuildTarget target)
         {
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string date = DateTime.Now.Date.ToString("yyyy_MM_dd_HH_mm");
+            string date = DateTime.Now.Date.ToString("yyyy_MM_dd_HH_mm_ss");
             string result = "";
             if (target == BuildTarget.Android)
             {
