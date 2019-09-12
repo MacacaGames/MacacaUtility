@@ -79,32 +79,31 @@ namespace CloudMacaca
         {
             return (int)imageData[offset] << 8 | (int)imageData[offset + 1];
         }
-        public static void InspectTarget(GameObject target)
+        
+        public static void InspectTarget(Object target)
         {
-            // Get a reference to the `InspectorWindow` type object
-            var inspectorType = typeof(UnityEditor.Editor).Assembly.GetType("UnityEditor.InspectorWindow");
-            // Create an InspectorWindow instance
-            var inspectorInstance = ScriptableObject.CreateInstance(inspectorType) as UnityEditor.EditorWindow;
-            // We display it - currently, it will inspect whatever gameObject is currently selected
-            // So we need to find a way to let it inspect/aim at our target GO that we passed
-            // For that we do a simple trick:
-            // 1- Cache the current selected gameObject
-            // 2- Set the current selection to our target GO (so now all inspectors are targeting it)
-            // 3- Lock our created inspector to that target
-            // 4- Fallback to our previous selection
-            inspectorInstance.Show();
-            // Cache previous selected gameObject
-            var prevSelection = UnityEditor.Selection.activeGameObject;
-            // Set the selection to GO we want to inspect
-            UnityEditor.Selection.activeGameObject = target;
-            // Get a ref to the "locked" property, which will lock the state of the inspector to the current inspected target
-            var isLocked = inspectorType.GetProperty("isLocked", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public);
-            // Invoke `isLocked` setter method passing 'true' to lock the inspector
-            isLocked.GetSetMethod().Invoke(inspectorInstance, new object[] { true });
-            // Finally revert back to the previous selection so that other inspectors continue to inspect whatever they were inspecting...
-            UnityEditor.Selection.activeGameObject = prevSelection;
-
+            ViewInInspectorInstance(target);
         }
+        public static UnityEditor.EditorWindow ViewInInspectorInstance(Object viewTarget, UnityEditor.EditorWindow inspectorInstance = null)
+        {
+            var inspectorType = typeof(UnityEditor.Editor).Assembly.GetType("UnityEditor.InspectorWindow");
+            inspectorInstance = inspectorInstance ?? ScriptableObject.CreateInstance(inspectorType) as UnityEditor.EditorWindow;
+            if (inspectorInstance.GetType() != inspectorType)
+                throw new System.NotImplementedException();
+
+            inspectorInstance.Show();
+
+            System.Reflection.BindingFlags bindingFlags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public;
+            System.Reflection.MethodInfo isLockedMethodInfo = inspectorType.GetProperty("isLocked", bindingFlags).GetSetMethod();
+            isLockedMethodInfo.Invoke(inspectorInstance, new object[] { false });       //解除InspectorLock
+            var prevSelection = UnityEditor.Selection.objects;                          //記錄前一個選擇的物件
+            UnityEditor.Selection.objects = new UnityEngine.Object[] { viewTarget };    //選擇viewTarget讓Inspector刷新
+            isLockedMethodInfo.Invoke(inspectorInstance, new object[] { true });        //Inspector Lock
+            UnityEditor.Selection.objects = prevSelection;                              //重新選擇前一個物件，當作什麼都沒發生
+
+            return inspectorInstance;
+        }
+
     }
     class CustomElement
     {
