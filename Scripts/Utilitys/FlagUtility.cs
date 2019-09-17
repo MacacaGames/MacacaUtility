@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public static class FlagsHelperExtensions
+{
+    public static bool IsSet<T>(this T flag, T flags) where T : System.Enum
+    {
+        int flagsValue = (int)(object)flags;
+        int flagValue = (int)(object)flag;
+        return (flagsValue & flagValue) != 0;
+    }
+}
+
 public static class FlagsHelper
 {
     public static bool IsSet<T>(T flags, T flag) where T : struct
