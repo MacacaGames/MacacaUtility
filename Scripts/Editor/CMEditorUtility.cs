@@ -79,7 +79,7 @@ namespace CloudMacaca
         {
             return (int)imageData[offset] << 8 | (int)imageData[offset + 1];
         }
-        
+
         public static void InspectTarget(Object target)
         {
             ViewInInspectorInstance(target);
@@ -183,12 +183,94 @@ namespace CloudMacaca
     }
     public class CMEditorLayout
     {
-        static Dictionary<int, Rect> rectDict = new Dictionary<int, Rect>();
+        #region  BitMask
+        static GUIStyle _toggleStyle;
+        static GUIStyle toggleStyle
+        {
+            get
+            {
+                if (_toggleStyle == null)
+                {
+                    _toggleStyle = new GUIStyle
+                    {
+                        normal = {
+                                background = CMEditorUtility.CreatePixelTexture("_toggleStyle_on",new Color32(64,64,64,255)),
+                                textColor = Color.gray
+                            },
+                        onNormal = {
+                                    background = CMEditorUtility.CreatePixelTexture("_toggleStyle",new Color32(128,128,128,255)),
+
+                                 textColor = Color.white
+                            },
+
+                        alignment = TextAnchor.MiddleCenter,
+                        clipping = TextClipping.Clip,
+                        imagePosition = ImagePosition.TextOnly,
+                        stretchHeight = true,
+                        stretchWidth = true,
+                        padding = new RectOffset(0, 0, 0, 0),
+                        margin = new RectOffset(0, 0, 0, 0)
+                    };
+                }
+                return _toggleStyle;
+            }
+        }
+        public static void BitMaskField<T>(ref T enumValue) where T : System.Enum
+        {
+            Dictionary<int, bool> toggleBools = new Dictionary<int, bool>();
+            int possiableInt = System.Enum.GetValues(typeof(T)).Cast<int>().Max();
+            foreach (T item in System.Enum.GetValues(typeof(T)))
+            {
+                int intValue = System.Convert.ToInt32(item);
+                if (intValue == 0 || intValue == possiableInt)
+                {
+                    toggleBools.Add(intValue, object.Equals(enumValue, item));
+                    continue;
+                }
+                toggleBools.Add(intValue, FlagsHelper.IsSet(enumValue, item));
+            }
+            using (var horizon = new EditorGUILayout.HorizontalScope())
+            {
+                foreach (T item in System.Enum.GetValues(typeof(T)))
+                {
+                    int intValue = System.Convert.ToInt32(item);
+
+                    using (var check = new EditorGUI.ChangeCheckScope())
+                    {
+                        toggleBools[intValue] = GUILayout.Toggle(toggleBools[intValue], item.ToString(), toggleStyle);
+                        if (check.changed)
+                        {
+                            if (intValue == 0 || intValue == possiableInt)
+                            {
+                                if (toggleBools[intValue])
+                                {
+                                    enumValue = item;
+                                }
+                                continue;
+                            }
+                            if (toggleBools[intValue])
+                            {
+                                FlagsHelper.Set(ref enumValue, item);
+                            }
+                            else
+                            {
+                                FlagsHelper.Unset(ref enumValue, item);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #endregion
+
+        #region  GroupedPopup
+        static Dictionary<int, Rect> rectGroupedPopupFieldDict = new Dictionary<int, Rect>();
         public static void GroupedPopupField(int id, GUIContent content, IEnumerable<GroupedPopupData> groupedPopupData, GroupedPopupData selected, System.Action<GroupedPopupData> OnSelect)
         {
-            if (!rectDict.ContainsKey(id))
+            if (!rectGroupedPopupFieldDict.ContainsKey(id))
             {
-                rectDict.Add(id, new Rect());
+                rectGroupedPopupFieldDict.Add(id, new Rect());
             }
 
             if (content != GUIContent.none) EditorGUILayout.LabelField(content, GUILayout.Width(EditorGUIUtility.labelWidth));
@@ -208,9 +290,9 @@ namespace CloudMacaca
             }
             if (GUILayout.Button(popupTitle, EditorStyles.popup))
             {
-                PopupWindow.Show(rectDict[id], new GroupedPopupWindow(groupedPopupData, selected, OnSelect, rectDict[id].width));
+                PopupWindow.Show(rectGroupedPopupFieldDict[id], new GroupedPopupWindow(groupedPopupData, selected, OnSelect, rectGroupedPopupFieldDict[id].width));
             }
-            if (Event.current.type == EventType.Repaint) rectDict[id] = GUILayoutUtility.GetLastRect();
+            if (Event.current.type == EventType.Repaint) rectGroupedPopupFieldDict[id] = GUILayoutUtility.GetLastRect();
 
         }
 
@@ -359,5 +441,6 @@ namespace CloudMacaca
             public string name;
             public string group;
         }
+        #endregion
     }
 }
