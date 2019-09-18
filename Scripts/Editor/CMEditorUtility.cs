@@ -87,7 +87,9 @@ namespace CloudMacaca
         public static UnityEditor.EditorWindow ViewInInspectorInstance(Object viewTarget, UnityEditor.EditorWindow inspectorInstance = null)
         {
             var inspectorType = typeof(UnityEditor.Editor).Assembly.GetType("UnityEditor.InspectorWindow");
-            inspectorInstance = inspectorInstance ?? ScriptableObject.CreateInstance(inspectorType) as UnityEditor.EditorWindow;
+            if(inspectorInstance == null)
+                inspectorInstance = ScriptableObject.CreateInstance(inspectorType) as UnityEditor.EditorWindow;
+
             if (inspectorInstance.GetType() != inspectorType)
                 throw new System.NotImplementedException();
 

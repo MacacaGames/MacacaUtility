@@ -17,8 +17,20 @@ namespace CloudMacaca
                 throw new NotImplementedException();
         }
 
+        public struct GetValueResult
+        {
+            public bool hasValue;
+            public object value;
+        }
         /// <summary>嘗試取得MemberInfo的值，並回傳取得成功與否。</summary>
         public static bool TryGetValue<T>(this MemberInfo memberInfo, object forObject, out T value) where T : class
+        {
+            var result = memberInfo.TryGetValue<T>(forObject);
+            value = result.value as T;
+            return result.hasValue;
+        }
+        /// <summary>嘗試取得MemberInfo的值，並回傳取得資訊。</summary>
+        public static GetValueResult TryGetValue<T>(this MemberInfo memberInfo, object forObject) where T : class
         {
             object tempValue = null;
 
@@ -34,12 +46,19 @@ namespace CloudMacaca
 
             if (tempValue == null)
             {
-                value = null;
-                return true;
+                return new GetValueResult
+                {
+                    hasValue = true,
+                    value = null
+                };
             }
 
-            value = tempValue as T;
-            return value != null;
+            T resultValue = tempValue as T;
+            return new GetValueResult
+            {
+                hasValue = tempValue is T,
+                value = resultValue
+            };
         }
 
         /// <summary>從MemberInfo集合中，篩選出有特定Attribute的項目。</summary>
