@@ -141,22 +141,20 @@ namespace CloudMacaca
         }
         static string GetOutputPath(BuildTarget target)
         {
-            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            // string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string date = DateTime.Now.ToString("yyyy_MM_dd_HH_mm");
             string result = "";
+            string currentPath = Directory.GetCurrentDirectory();
+            string parentPath = Directory.GetParent(currentPath).FullName;
             if (target == BuildTarget.Android)
             {
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
+                //result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
+                result = (IsWorkspaceIsParent() ? parentPath : currentPath) + Path.DirectorySeparatorChar + "Apk" + Path.DirectorySeparatorChar + date + ".apk";
             }
             else if (target == BuildTarget.iOS)
             {
                 //The build result of iOS is a xCode Project, therefore the file extension is not needed and can always build into same folder.
-                string currentPath = Directory.GetCurrentDirectory();
-                string parentPath = Directory.GetParent(currentPath).FullName;
-                Debug.Log(currentPath);
-                Debug.Log(parentPath);
-                //result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "XCode");
-                result = (IsWorkspaceIsParent() ? parentPath : currentPath )+ Path.DirectorySeparatorChar + "XCode";
+                result = (IsWorkspaceIsParent() ? parentPath : currentPath) + Path.DirectorySeparatorChar + "XCode";
             }
             return result;
         }
