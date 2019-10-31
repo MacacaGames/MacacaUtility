@@ -54,5 +54,13 @@ public static class FlagsHelper
 
         flags = (T)(object)(flagsValue & (~flagValue));
     }
+
+    public static void SetValue<T>(ref T flags, T flag, bool valueState) where T : System.Enum
+    {
+        if (valueState)
+            Set(ref flags, flag);
+        else
+            Unset(ref flags, flag);
+    }
 }
 
