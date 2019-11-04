@@ -69,7 +69,7 @@ namespace CloudMacaca
             return reuse;
         }
 
-        public T ReUse<T>(Vector3 position, Quaternion rotation)
+        public T ReUse<T>(Vector3 position, Quaternion rotation) where T : Component
         {
             T reuse = ReUse(position, rotation).GetComponent<T>();
 
