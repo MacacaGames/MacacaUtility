@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using UniRx;
 using UnityEngine;
 
 namespace CloudMacaca
@@ -34,18 +33,30 @@ namespace CloudMacaca
             if (type != null)
                 return type;
 
+
             // If the TypeName is a full name, then we can try loading the defining assembly directly
             if (TypeName.Contains("."))
             {
-
                 // Get the name of the assembly (Assumption is that we are using 
                 // fully-qualified type names)
                 var assemblyName = TypeName.Substring(0, TypeName.IndexOf('.'));
 
+                type = Type.GetType(TypeName + "," + assemblyName);
+                if (type != null)
+                    return type;
+
                 // Attempt to load the indicated Assembly
-                var assembly = Assembly.Load(assemblyName);
+                Assembly assembly;
+                try
+                {
+                    assembly = Assembly.Load(assemblyName);
+                }
+                catch
+                {
+                    goto LAST_WAY;
+                }
                 if (assembly == null)
-                    return null;
+                    goto LAST_WAY;
 
                 // Ask that assembly to return the proper Type
                 type = assembly.GetType(TypeName);
@@ -54,6 +65,7 @@ namespace CloudMacaca
 
             }
 
+        LAST_WAY:
             //For WebPlayer use this
             var currentAssembly = System.AppDomain.CurrentDomain.GetAssemblies();
             foreach (var assembly in currentAssembly)
