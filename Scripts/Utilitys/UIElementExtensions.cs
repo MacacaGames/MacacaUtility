@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#if UNITY_2019
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -37,3 +38,4 @@ public static class UIElementExtensions
     }
 
 }
+#endif
