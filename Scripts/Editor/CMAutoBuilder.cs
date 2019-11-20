@@ -42,6 +42,10 @@ namespace CloudMacaca
             PlayerSettings.Android.keystorePass = GetKeyStorePassword();
             PlayerSettings.Android.keystoreName = GetKeyStorePath();
 
+            //設定平台
+            PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
+            PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARMv7 | AndroidArchitecture.ARM64;
+
             var outputPath = GetOutputPath(buildTarget);
             var outputDir = Path.GetDirectoryName(outputPath);
 
@@ -89,6 +93,9 @@ namespace CloudMacaca
         [MenuItem("CloudMacaca/Build/iOS")]
         public static void BuildiOS()
         {
+
+
+
             EditorPrefs.SetInt("Google.IOSResolver.CocoapodsIntegrationMethod", (int)CocoapodsIntegrationMethod.Workspace);
             //PlayerSetting
             PlayerSettings.statusBarHidden = true;
@@ -100,16 +107,13 @@ namespace CloudMacaca
             PlayerSettings.SetScriptingBackend(BuildTargetGroup.iOS, ScriptingImplementation.IL2CPP);
             PlayerSettings.SetArchitecture(BuildTargetGroup.iOS, (int)ArchitectureValue.Universal);
 
-
             var buildTarget = BuildTarget.iOS;
             var buildScenes = GetBuildScenes();
             var outputPath = GetOutputPath(buildTarget);
             var outputDir = Path.GetDirectoryName(outputPath);
 
-
             buildAssetBundle(buildTarget);
-
-
+            Debug.Log(outputPath);
             if (!Directory.Exists(outputDir))
             {
                 Directory.CreateDirectory(outputDir);
@@ -137,20 +141,38 @@ namespace CloudMacaca
         }
         static string GetOutputPath(BuildTarget target)
         {
-            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string date = DateTime.Now.Date.ToString("yyyy_MM_dd");
+            // string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string date = DateTime.Now.ToString("yyyy_MM_dd_HH_mm");
             string result = "";
+            string currentPath = Directory.GetCurrentDirectory();
+            string parentPath = Directory.GetParent(currentPath).FullName;
             if (target == BuildTarget.Android)
             {
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "Build" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
+                //result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildJenkins" + Path.DirectorySeparatorChar + Application.productName + Path.DirectorySeparatorChar + "Android" + Path.DirectorySeparatorChar + date + ".apk");
+                result = (IsWorkspaceIsParent() ? parentPath : currentPath) + Path.DirectorySeparatorChar + "Apk" + Path.DirectorySeparatorChar + date + ".apk";
             }
             else if (target == BuildTarget.iOS)
             {
-                result = Path.GetFullPath(desktopPath + Path.DirectorySeparatorChar + "BuildIosTemp" + Path.DirectorySeparatorChar + Application.productName);
+                //The build result of iOS is a xCode Project, therefore the file extension is not needed and can always build into same folder.
+                result = (IsWorkspaceIsParent() ? parentPath : currentPath) + Path.DirectorySeparatorChar + "XCode";
             }
             return result;
         }
 
+        static bool IsWorkspaceIsParent()
+        {
+            bool result = false;
+            string[] args = System.Environment.GetCommandLineArgs();
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i] == "-isworkspaceisparent")
+                {
+                    result = true;
+                    break;
+                }
+            }
+            return result;
+        }
 
         static string GetKeyStorePassword(string defaultValue = "ASDFrewq1234$#@!")
         {

@@ -1,6 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
+using System;
+using System.Collections;
+using System.Threading;
+#if UniRx
 using UniRx;
+#endif
 using UnityEngine;
 
 public class Benchmarker : UnitySingleton<Benchmarker>
@@ -11,11 +15,13 @@ public class Benchmarker : UnitySingleton<Benchmarker>
     {
         High, Mid, Low, Faild
     }
+#if UniRx
     public IObservable<float> StarBenchmark(int sampleTime = 10)
     {
         return Observable.FromCoroutine<float>((observer, cancellationToken) => BenchMark(sampleTime, observer, cancellationToken));
     }
-    IEnumerator BenchMark(int sampleTime, IObserver<float> observer, CancellationToken cancellationToken)
+#endif
+    public IEnumerator BenchMark(int sampleTime, IObserver<float> observer, CancellationToken cancellationToken)
     {
         int frameCount = 0;
 
@@ -31,6 +37,7 @@ public class Benchmarker : UnitySingleton<Benchmarker>
         Debug.LogError("BenchMark Done");
         Debug.LogError("平均FPS :" + avgFPS);
         observer.OnNext(avgFPS);
+        observer.OnCompleted();
     }
 
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+
 #if TextMeshPro
 using TMPro;
 #endif
@@ -137,18 +138,29 @@ namespace CloudMacaca
             SetTextLerpView(1);
         }
 
+        [SerializeField]
+        bool isChangeOpacity = true;
         void SetTextLerpView(float param)
         {
-            Color c = initShadowColor;
-            if (isHasShadow)
-                shadow.effectColor = new Color(c.r, c.g, c.b, Mathf.Lerp(0, c.a, param));
-
             float ease = DOVirtual.EasedValue(0, 1, param, animationEaseType);
-            if(scaleTarget == ScaleTarget.Self)
+            if (scaleTarget == ScaleTarget.Self)
                 textComponent.transform.localScale = Vector3.LerpUnclamped(startScale, Vector3.one, ease);
             else
                 textComponent.transform.parent.localScale = Vector3.LerpUnclamped(startScale, Vector3.one, ease);
-            textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, ease);
+
+            Color c = initShadowColor;
+            if (isChangeOpacity)
+            {
+                textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, ease);
+                if (isHasShadow)
+                    shadow.effectColor = new Color(c.r, c.g, c.b, Mathf.Lerp(0, c.a, param));
+            }
+            else
+            {
+                textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, 1);
+                if (isHasShadow)
+                    shadow.effectColor = new Color(c.r, c.g, c.b, Mathf.Lerp(0, c.a, 1));
+            }
         }
 
         [SerializeField]
