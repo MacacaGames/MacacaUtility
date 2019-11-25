@@ -67,8 +67,15 @@ public class BuiltInResourcesWindow : EditorWindow
                 Drawings = null;
             }
         }
-
-        string newSearch = GUILayout.TextField(_search);
+        string newSearch = "";
+        using (var horizon = new GUILayout.HorizontalScope())
+        {
+            newSearch = GUILayout.TextField(_search, new GUIStyle("ToolbarSeachTextField"));
+            if (GUILayout.Button(GUIContent.none, new GUIStyle("ToolbarSeachCancelButtonEmpty")))
+            {
+                newSearch = "";
+            }
+        }
         if (newSearch != _search)
         {
             _search = newSearch;
@@ -156,7 +163,7 @@ public class BuiltInResourcesWindow : EditorWindow
 
                     if (icon.name.Contains("(Generated)"))
                         continue;
-                        
+
                     if (!string.IsNullOrEmpty(lowerSearch) && !icon.name.ToLower().Contains(lowerSearch))
                         continue;
 
@@ -333,6 +340,10 @@ public class BuiltInResourcesWindow : EditorWindow
         }
 
         GUILayout.EndArea();
+        using (var disable = new EditorGUI.DisabledGroupScope(false))
+        {
+            GUI.TextField(new Rect(0, position.height - 16, position.width, EditorGUIUtility.singleLineHeight), "some texture needs using EditorGUIUtility.IconContent() API to get, usually the icon name contains space char will need use this API.",new GUIStyle("AppToolbar"));
+        }
     }
 
     void CopyText(string pText)
