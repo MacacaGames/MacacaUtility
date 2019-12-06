@@ -34,4 +34,26 @@ public static partial class Vector2Extension
                 Mathf.Sin(angle));
         }
     }
+
+    public static Vector2 FromVector3(Vector3 v, CovertMethod method = CovertMethod.xy)
+    {
+        Vector2 result = Vector2.zero;
+
+        switch (method)
+        {
+            case CovertMethod.xy:
+                result = new Vector2(v.x, v.y);
+                break;
+            case CovertMethod.xz:
+                result = new Vector2(v.x, v.z);
+                break;
+            case CovertMethod.yz:
+                result = new Vector2(v.y, v.z);
+                break;
+        }
+
+        return result;
+    }
+
+    public enum CovertMethod { xy, xz, yz }
 }
