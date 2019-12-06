@@ -49,7 +49,7 @@ public static class Yielders
         get { _internalCounter++; return Enabled ? _fixedUpdate : new WaitForFixedUpdate(); }
     }
 
-    public static WaitForSeconds GetWaitForSeconds(float seconds)
+    public static WaitForSeconds GetWaitForSeconds(float seconds, bool realtime = false)
     {
         _internalCounter++;
 
@@ -62,10 +62,28 @@ public static class Yielders
         return wfs;
     }
 
+    public static WaitForSecondsRealtime GetWaitForSecondsRealtime(float seconds)
+    {
+        // _internalCounter++;
+
+        // if (!Enabled)
+            return new WaitForSecondsRealtime(seconds);
+
+        // WaitForSecondsRealtime wfs;
+        // if (!_waitForSecondsRealtimeYielders.TryGetValue(seconds, out wfs))
+        //     _waitForSecondsRealtimeYielders.Add(seconds, wfs = new WaitForSecondsRealtime(seconds));
+        // return wfs;
+    }
+
     public static void ClearWaitForSeconds()
     {
         _waitForSecondsYielders.Clear();
     }
+    public static void ClearWaitForSecondsRealtime()
+    {
+        _waitForSecondsRealtimeYielders.Clear();
+    }
+    static Dictionary<float, WaitForSecondsRealtime> _waitForSecondsRealtimeYielders = new Dictionary<float, WaitForSecondsRealtime>(100, new FloatComparer());
 
     static Dictionary<float, WaitForSeconds> _waitForSecondsYielders = new Dictionary<float, WaitForSeconds>(100, new FloatComparer());
 }
