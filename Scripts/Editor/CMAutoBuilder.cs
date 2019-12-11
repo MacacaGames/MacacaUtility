@@ -19,6 +19,11 @@ namespace CloudMacaca
             var setting = Resources.Load<UnityEngine.AssetGraph.DataModel.Version2.ConfigGraph>(AssetsBundleGraphFileName);
             UnityEngine.AssetGraph.AssetGraphUtility.ExecuteGraph( target, setting);
 #endif
+#if Addressable
+            UnityEditor.AddressableAssets.Settings.AddressableAssetSettings.CleanPlayerContent(
+                UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings.ActivePlayerDataBuilder);
+            UnityEditor.AddressableAssets.Settings.AddressableAssetSettings.BuildPlayerContent();
+#endif
         }
 
         // 一個簡單的 Build pipeline 範例
