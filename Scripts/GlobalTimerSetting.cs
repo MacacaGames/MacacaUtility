@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GlobalTimerSetting : ScriptableObject
+namespace CloudMacaca
 {
-    public static int RegulateRateIfDelta = 60;
-    public static RefreshTimeMethod refreshTimeMethod = RefreshTimeMethod.UnityDeltaTime;
-    public enum RefreshTimeMethod
+    public class GlobalTimerSetting : ScriptableObject
     {
-        SystemDateTime,
-        UnityDeltaTime
+        public int RegulateRateIfDelta = 60;
+        public RefreshTimeMethod refreshTimeMethod = RefreshTimeMethod.UnityDeltaTime;
+        public enum RefreshTimeMethod
+        {
+            SystemDateTime,
+            UnityDeltaTime
+        }
     }
 }
