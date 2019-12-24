@@ -7,17 +7,54 @@ namespace CloudMacaca
     public class GlobalTimer : UnitySingleton<GlobalTimer>
     {
         public static float deltaTime = 0;
-        public static int currentTimeStamp;
+        public static double _currentTimeStamp;
+
+        public static int CurrentTimeStamp
+        {
+            get
+            {
+                return (int)_currentTimeStamp;
+            }
+            // private set
+            // {
+            //     _currentTimeStamp = value;
+            // }
+        }
+
+        GlobalTimerSetting.RefreshTimeMethod refreshTimeMethod;
+        GlobalTimerSetting setting;
+        float tempRegulateRate = 0;
+        void Awake()
+        {
+            setting = Resources.Load<GlobalTimerSetting>("GlobalTimerSetting");
+            if (setting == null)
+            {
+                setting = ScriptableObject.CreateInstance<GlobalTimerSetting>();
+            }
+            _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+        }
 
         void Update()
         {
             deltaTime = Time.deltaTime;
-            currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+            tempRegulateRate += deltaTime;
+
+            if (refreshTimeMethod == GlobalTimerSetting.RefreshTimeMethod.SystemDateTime)
+                _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+            else
+                _currentTimeStamp += deltaTime;
+
             for (int i = allCounter.Count - 1; i >= 0; --i)
             {
                 allCounter[i].Update();
             }
             allCounter.RemoveAll(r => r.Finished);
+
+            if (tempRegulateRate > GlobalTimerSetting.RegulateRateIfDelta)
+            {
+                _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+                tempRegulateRate = 0;
+            }
         }
 
         List<Counter> allCounter = new List<Counter>();
@@ -67,7 +104,7 @@ namespace CloudMacaca
             {
                 get
                 {
-                    return completeTimeStamp - GlobalTimer.currentTimeStamp;
+                    return completeTimeStamp - GlobalTimer.CurrentTimeStamp;
                 }
             }
             public void Update()
