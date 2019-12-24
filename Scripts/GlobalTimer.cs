@@ -13,6 +13,10 @@ namespace CloudMacaca
         {
             get
             {
+                if (_currentTimeStamp == 0)
+                {
+                    _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+                }
                 return (int)_currentTimeStamp;
             }
             // private set
@@ -20,8 +24,7 @@ namespace CloudMacaca
             //     _currentTimeStamp = value;
             // }
         }
-
-        GlobalTimerSetting.RefreshTimeMethod refreshTimeMethod;
+        [SerializeField]
         GlobalTimerSetting setting;
         float tempRegulateRate = 0;
         void Awake()
@@ -39,7 +42,7 @@ namespace CloudMacaca
             deltaTime = Time.deltaTime;
             tempRegulateRate += deltaTime;
 
-            if (refreshTimeMethod == GlobalTimerSetting.RefreshTimeMethod.SystemDateTime)
+            if (setting.refreshTimeMethod == GlobalTimerSetting.RefreshTimeMethod.SystemDateTime)
                 _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
             else
                 _currentTimeStamp += deltaTime;
@@ -50,7 +53,7 @@ namespace CloudMacaca
             }
             allCounter.RemoveAll(r => r.Finished);
 
-            if (tempRegulateRate > GlobalTimerSetting.RegulateRateIfDelta)
+            if (tempRegulateRate > setting.RegulateRateIfDelta)
             {
                 _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
                 tempRegulateRate = 0;
