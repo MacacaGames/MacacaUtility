@@ -36,16 +36,19 @@ namespace CloudMacaca
             {
                 setting = ScriptableObject.CreateInstance<GlobalTimerSetting>();
             }
-            _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+            UpdateTimeStampToSystemTime();
         }
-
+        void OnApplicationFocus(bool hasFocus)
+        {
+            UpdateTimeStampToSystemTime();
+        }
         void Update()
         {
             deltaTime = Time.deltaTime;
             tempRegulateRate += deltaTime;
 
             if (setting.refreshTimeMethod == GlobalTimerSetting.RefreshTimeMethod.SystemDateTime)
-                _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+                UpdateTimeStampToSystemTime();
             else
                 _currentTimeStamp += deltaTime;
 
@@ -56,9 +59,14 @@ namespace CloudMacaca
 
             if (tempRegulateRate > setting.RegulateRateIfDelta)
             {
-                _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+                UpdateTimeStampToSystemTime();
                 tempRegulateRate = 0;
             }
+        }
+
+        void UpdateTimeStampToSystemTime()
+        {
+            _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
         }
 
         void LateUpdate()
@@ -173,5 +181,6 @@ namespace CloudMacaca
                 disposed = true;
             }
         }
+
     }
 }
