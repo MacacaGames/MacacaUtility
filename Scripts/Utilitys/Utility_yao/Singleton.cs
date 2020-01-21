@@ -1,6 +1,6 @@
 ﻿namespace CloudMacaca
 {
-    public class Singletion<T> where T : class, new()
+    public class Singleton<T> where T : class, new()
     {
         static T instance;
 
