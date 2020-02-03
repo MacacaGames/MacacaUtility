@@ -118,7 +118,7 @@ namespace CloudMacaca
         }
 
     }
-    class CustomElement
+    public class CustomElement
     {
         static Dictionary<int, bool> control = new Dictionary<int, bool>();
         static void SetFocus(int id, bool target)
