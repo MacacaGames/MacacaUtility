@@ -95,6 +95,9 @@ namespace CloudMacaca
                 completeTimeStamp = completeTimeStamp,
             };
             Instance.allCounter.Add(c);
+
+            //Do one update make sure relative user get the correct lefttime.
+            c.Update();
             return c;
         }
 
