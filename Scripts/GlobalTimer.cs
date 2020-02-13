@@ -98,6 +98,7 @@ namespace CloudMacaca
 
             //Do one update make sure relative user get the correct lefttime.
             c.Update();
+
             return c;
         }
 
@@ -124,10 +125,7 @@ namespace CloudMacaca
         [Serializable]
         public class Counter : IDisposable
         {
-            // ~Counter()
-            // {
-            //     Debug.LogError($"Counter {id} dispose");
-            // }
+
 
             public string id;
             public System.Action OnComplete;
@@ -137,7 +135,6 @@ namespace CloudMacaca
             /// </summary>
             public System.Action<int> OnUpdate;
             public bool Finished = false;
-            bool disposed = false;
 
             public int completeTimeStamp = 0;
             public int LeftTime
@@ -167,6 +164,7 @@ namespace CloudMacaca
                 GC.SuppressFinalize(this);
             }
             // Protected implementation of Dispose pattern.
+            bool disposed = false;
             protected virtual void Dispose(bool disposing)
             {
                 if (disposed)
@@ -182,6 +180,11 @@ namespace CloudMacaca
                 }
 
                 disposed = true;
+            }
+            ~Counter()
+            {
+                Debug.LogError($"Counter {id} dispose");
+                Dispose(false);
             }
         }
 
