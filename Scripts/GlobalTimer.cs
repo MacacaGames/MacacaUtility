@@ -8,7 +8,12 @@ namespace CloudMacaca
 {
     public class GlobalTimer : UnitySingleton<GlobalTimer>
     {
-        public static float deltaTime = 0;
+        public float _deltaTime;
+        public static float deltaTime{
+            get{
+                return Instance._deltaTime;
+            }
+        }
         public static double _currentTimeStamp;
 
         public static int CurrentTimeStamp
@@ -44,13 +49,13 @@ namespace CloudMacaca
         }
         void Update()
         {
-            deltaTime = Time.deltaTime;
-            tempRegulateRate += deltaTime;
+            _deltaTime = Time.deltaTime;
+            tempRegulateRate += _deltaTime;
 
             if (setting.refreshTimeMethod == GlobalTimerSetting.RefreshTimeMethod.SystemDateTime)
                 UpdateTimeStampToSystemTime();
             else
-                _currentTimeStamp += deltaTime;
+                _currentTimeStamp += _deltaTime;
 
             for (int i = allCounter.Count - 1; i >= 0; --i)
             {
