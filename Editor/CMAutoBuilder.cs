@@ -47,6 +47,11 @@ namespace CloudMacaca
             PlayerSettings.Android.keystorePass = GetKeyStorePassword();
             PlayerSettings.Android.keystoreName = GetKeyStorePath();
 
+            Debug.Log($"keystore keyaliasName:{ PlayerSettings.Android.keyaliasName}");
+            Debug.Log($"keystore keyaliasPass:{ PlayerSettings.Android.keyaliasPass}");
+            Debug.Log($"keystore keystorePass:{ PlayerSettings.Android.keystorePass}");
+            Debug.Log($"keystore keystoreName:{ PlayerSettings.Android.keystoreName}");
+
             //設定平台
             PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARMv7 | AndroidArchitecture.ARM64;
@@ -65,7 +70,7 @@ namespace CloudMacaca
             {
                 target = buildTarget,
                 scenes = buildScenes,
-                options = BuildOptions.None,
+                options = BuildOptions.None | BuildOptions.,
                 locationPathName = outputPath,
             };
 
