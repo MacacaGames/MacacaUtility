@@ -12,13 +12,13 @@
         {
             get
             {
-                if (applicationIsQuitting)
-                {
-                    Debug.LogWarningFormat("[Singleton] Instance {0} have destroyed (Maybe application quit)",
-                        typeof(T));
+                // if (applicationIsQuitting)
+                // {
+                //     Debug.LogWarningFormat("[Singleton] Instance {0} have destroyed (Maybe application quit)",
+                //         typeof(T));
 
-                    return null;
-                }
+                //     return null;
+                // }
 
                 if (instance == null)
                 {

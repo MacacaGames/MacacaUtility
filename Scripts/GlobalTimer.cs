@@ -188,7 +188,7 @@ namespace CloudMacaca
             }
             ~Counter()
             {
-                Debug.LogError($"Counter {id} dispose");
+                //Debug.LogError($"Counter {id} dispose");
                 Dispose(false);
             }
         }

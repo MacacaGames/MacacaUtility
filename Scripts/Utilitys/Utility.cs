@@ -21,6 +21,12 @@ namespace CloudMacaca
             return Convert.ToInt32(((TimeSpan)utc.Subtract(gtm)).TotalSeconds);
         }
 
+        public static DateTime GetDateTimeFromTimeStamp(int timestamp)
+        {
+            DateTime dt = (new DateTime(1970, 1, 1, 0, 0, 0)).AddSeconds(timestamp);
+            return dt;
+        }
+
         /// <summary>
         /// 以 TypeName 尋找對應 Type UnityEngine 專用
         /// </summary>
