@@ -50,7 +50,7 @@ public class SortingLayerManagerEditor : EditorWindow
         Z
     }
 
-    SortingBy sortingBy;
+    SortingBy sortingBy = SortingBy.Z;
 
     void OnGUI()
     {
