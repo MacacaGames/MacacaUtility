@@ -9,8 +9,10 @@ namespace CloudMacaca
     public class GlobalTimer : UnitySingleton<GlobalTimer>
     {
         public float _deltaTime;
-        public static float deltaTime{
-            get{
+        public static float deltaTime
+        {
+            get
+            {
                 return Instance._deltaTime;
             }
         }
@@ -47,6 +49,11 @@ namespace CloudMacaca
         {
             UpdateTimeStampToSystemTime();
         }
+        void OnApplicationPause(bool isPause)
+        {
+            UpdateTimeStampToSystemTime();
+        }
+
         void Update()
         {
             _deltaTime = Time.deltaTime;
@@ -69,7 +76,7 @@ namespace CloudMacaca
             }
         }
 
-        void UpdateTimeStampToSystemTime()
+        public void UpdateTimeStampToSystemTime()
         {
             _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
         }
@@ -115,15 +122,6 @@ namespace CloudMacaca
                 Instance.allCounter.Remove(c);
                 c.Dispose();
             }
-
-            // c.completeTimeStamp = completeTimeStamp;
-            // c.OnComplete = OnComplete;
-            // c.OnUpdate = OnUpdate;
-
-            // if (c.Finished == true && completeTimeStamp > GlobalTimer.CurrentTimeStamp)
-            // {
-            //     c.Finished = false;
-            // }
 
             return RegiesterTimer(id, completeTimeStamp, OnUpdate, OnComplete);
         }
