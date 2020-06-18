@@ -8,6 +8,7 @@ namespace CloudMacaca
 {
     public class GlobalTimer : UnitySingleton<GlobalTimer>
     {
+        public Action OnResume;
         public float _deltaTime;
         public static float deltaTime
         {
@@ -45,13 +46,14 @@ namespace CloudMacaca
             }
             UpdateTimeStampToSystemTime();
         }
+        
         void OnApplicationFocus(bool hasFocus)
         {
-            UpdateTimeStampToSystemTime();
-        }
-        void OnApplicationPause(bool isPause)
-        {
-            UpdateTimeStampToSystemTime();
+            if (hasFocus)
+            {
+                UpdateTimeStampToSystemTime();
+                OnResume?.Invoke();
+            }
         }
 
         void Update()
@@ -76,7 +78,7 @@ namespace CloudMacaca
             }
         }
 
-        public void UpdateTimeStampToSystemTime()
+        void UpdateTimeStampToSystemTime()
         {
             _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
         }
