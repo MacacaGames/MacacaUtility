@@ -3,9 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
-#if UniRx
-using UniRx;
-#endif
+
 using UnityEngine;
 
 namespace CloudMacaca
@@ -14,20 +12,20 @@ namespace CloudMacaca
     public class TextureAndScreenUtility
     {
         public static string photoFilePath = "";
-#if UniRx
-        /// <summary>
-        /// 以攝影機正中心依長寬進行截圖
-        /// 比 3:2 更寬的螢幕 例如 大部分的手機，以手機的寬度當作截圖寬
-        /// 其他情況 例如 iPad 以其高度計算 16:9 狀態時應該的寬度，並設定為截圖寬
-        /// </summary>
-        /// <param name="screenShotName">檔案名稱</param>
-        /// <param name="yOffect">調整高度正中間的偏移量，可以往上或往下調整，但若偏移量太大超出螢幕範圍時在部分平台可能會報錯</param>
-        /// <param name="ratio">截圖的比例</param>
-        public static IObservable<Texture2D> ScreenShot(string screenShotNam, int yOffect, float ratio = 1.45f, float delay = 0, bool writeToDisk = false)
-        {
-            return Observable.FromCoroutine<Texture2D>((observer, cancellationToken) => ScreenShotCoroutine(observer, cancellationToken, screenShotNam, yOffect, ratio, delay, writeToDisk: writeToDisk));
-        }
-#endif
+// #if UniRx
+//         /// <summary>
+//         /// 以攝影機正中心依長寬進行截圖
+//         /// 比 3:2 更寬的螢幕 例如 大部分的手機，以手機的寬度當作截圖寬
+//         /// 其他情況 例如 iPad 以其高度計算 16:9 狀態時應該的寬度，並設定為截圖寬
+//         /// </summary>
+//         /// <param name="screenShotName">檔案名稱</param>
+//         /// <param name="yOffect">調整高度正中間的偏移量，可以往上或往下調整，但若偏移量太大超出螢幕範圍時在部分平台可能會報錯</param>
+//         /// <param name="ratio">截圖的比例</param>
+//         public static IObservable<Texture2D> ScreenShot(string screenShotNam, int yOffect, float ratio = 1.45f, float delay = 0, bool writeToDisk = false)
+//         {
+//             return Observable.FromCoroutine<Texture2D>((observer, cancellationToken) => ScreenShotCoroutine(observer, cancellationToken, screenShotNam, yOffect, ratio, delay, writeToDisk: writeToDisk));
+//         }
+// #endif
         public static IEnumerator ScreenShotCoroutine(IObserver<Texture2D> observer, CancellationToken cancellationToken, string screenShotName, int yOffect, float ratio, float delay, Camera camera = null, bool writeToDisk = false)
         {
             photoFilePath = "";
