@@ -90,12 +90,15 @@ namespace CloudMacaca
         [SerializeField]
         AudioClip _sfxToPlay;
 
-        public Coroutine PlayAnimation()
+        public Coroutine PlayAnimation(Vector3 startScale, float animationDuration, Ease animationEaseType, bool isPlayParticle = true)
         {
-            return SetTextAnimation(textComponent.text);
+            return SetTextAnimation(textComponent.text, startScale, animationDuration, animationEaseType, isPlayParticle);
         }
-
-        public Coroutine SetTextAnimation(string text)
+        public Coroutine SetTextAnimation(string text, bool isPlayParticle = true)
+        {
+            return SetTextAnimation(text, startScale, animationDuration, animationEaseType, isPlayParticle);
+        }
+        public Coroutine SetTextAnimation(string text, Vector3 startScale, float animationDuration, Ease animationEaseType,bool isPlayParticle)
         {
             if (currentTextCoroutine != null)
                 StopCoroutine(currentTextCoroutine);
@@ -105,10 +108,9 @@ namespace CloudMacaca
             // if (_sfxToPlay != null)
             //     AudioManager.PlaySFX(_sfxToPlay);
 
-            currentTextCoroutine = CoroutineManager.Instance.StartCoroutine(ChangeTextAnimation(text));
+            currentTextCoroutine = CoroutineManager.Instance.StartCoroutine(ChangeTextAnimation(text, startScale, animationDuration, animationEaseType));
             return currentTextCoroutine;
         }
-
 
         public Coroutine SetNumberAnimation(int number, float numberDuration, string extraTextInFront = "", string extraTextInEnd = "", float delay = 0)
         {
@@ -118,7 +120,7 @@ namespace CloudMacaca
             currentNumberCoroutune = CoroutineManager.Instance.StartCoroutine(ChangeNumberAnimation(number, numberDuration, extraTextInFront, extraTextInEnd, delay));
             return currentNumberCoroutune;
         }
-        IEnumerator ChangeTextAnimation(string text)
+        IEnumerator ChangeTextAnimation(string text,Vector3 startScale, float animationDuration,Ease animationEaseType)
         {
             SetTextInstant(text);
             textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, 0);
