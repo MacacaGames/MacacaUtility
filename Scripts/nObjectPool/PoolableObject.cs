@@ -24,4 +24,8 @@ public class PoolableObject : MonoBehaviour
     {
 
     }
+    public virtual void OnReUse()
+    {
+
+    }
 }

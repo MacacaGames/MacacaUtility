@@ -50,6 +50,12 @@ public class nObjectPool : MonoBehaviour
             newOne.transform.SetParent(poolRoot.transform);
         }
     }
+    public T ReUse<T>(Vector3 position, Quaternion rotation)
+    {
+        PoolableObject poolableObject = ReUse(position, rotation);
+        GameObject poolableObj = poolableObject.gameObject;
+        return poolableObj.GetComponent<T>();
+    }
 
     public PoolableObject ReUse(Vector3 position, Quaternion rotation, Transform parent = null)
     {
@@ -65,7 +71,7 @@ public class nObjectPool : MonoBehaviour
         poolableTransform.SetParent(parent);
         poolableObj.SetActive(true);
         m_pool_using.Add(poolableObject);
-
+        poolableObject.OnReUse();
         return poolableObject;
     }
 
@@ -75,13 +81,6 @@ public class nObjectPool : MonoBehaviour
         newOne.gameObject.transform.SetParent(poolRoot.transform);
         newOne.SetPoolKey(poolKey);
         return newOne;
-    }
-
-    public T ReUse<T>(Vector3 position, Quaternion rotation)
-    {
-        PoolableObject poolableObject = ReUse(position, rotation);
-        GameObject poolableObj = poolableObject.gameObject;
-        return poolableObj.GetComponent<T>();
     }
 
     public void Recovery(PoolableObject poolableObject)
