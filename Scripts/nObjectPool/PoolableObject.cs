@@ -20,5 +20,8 @@ public class PoolableObject : MonoBehaviour
         ObjectPoolManager.GetObjectPool(this).Recovery(this, delay);
     }
 
+    public virtual void OnRecovery()
+    {
 
+    }
 }
