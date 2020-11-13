@@ -18,8 +18,8 @@ public class PriceHelper
         int firstNumberIndex = originalPrice.IndexOfAny(numbers);
         int lastNumberIndex = originalPrice.LastIndexOfAny(numbers);
 
-        string pre = originalPrice.Substring(0, firstNumberIndex - 1);
-        string last = originalPrice.Substring(lastNumberIndex + 1);
+        string pre = firstNumberIndex > 0 ? originalPrice.Substring(0, firstNumberIndex) : string.Empty;
+        string last = lastNumberIndex + 1 < originalPrice.Length ? originalPrice.Substring(lastNumberIndex + 1) : string.Empty;
 
         string midNumberString = originalPrice.Substring(firstNumberIndex, lastNumberIndex - firstNumberIndex + 1);
 
@@ -48,6 +48,9 @@ public class PriceHelper
         }
 
         //解析完畢 動工
+
+        if (number % 10 == 9)
+            number += 1;
 
         number = Mathf.RoundToInt(number * times);
 
