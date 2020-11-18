@@ -19,9 +19,11 @@ public class PriceHelper
         int lastNumberIndex = originalPrice.LastIndexOfAny(numbers);
 
         string pre = firstNumberIndex > 0 ? originalPrice.Substring(0, firstNumberIndex) : string.Empty;
-        string last = lastNumberIndex + 1 < originalPrice.Length ? originalPrice.Substring(lastNumberIndex + 1) : string.Empty;
+        string last = lastNumberIndex + 1 < originalPrice.Length && lastNumberIndex > 0 ? originalPrice.Substring(lastNumberIndex + 1) : string.Empty;
 
-        string midNumberString = originalPrice.Substring(firstNumberIndex, lastNumberIndex - firstNumberIndex + 1);
+        string midNumberString = originalPrice.Substring(
+            firstNumberIndex >= 0 ? firstNumberIndex : 0,
+            lastNumberIndex - firstNumberIndex + 1);
 
         var midCharArray = midNumberString.ToCharArray();
 
