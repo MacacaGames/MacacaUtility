@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class CoroutineManager : MonoBehaviour
 {
@@ -15,7 +14,7 @@ public class CoroutineManager : MonoBehaviour
         {
             if (applicationIsQuitting)
             {
-                Debug.LogWarningFormat("[Singleton] Instance {0} have destroyed (Maybe application quit)", 
+                Debug.LogWarningFormat("[Singleton] Instance {0} have destroyed (Maybe application quit)",
                     typeof(CoroutineManager));
 
                 return null;
@@ -47,8 +46,8 @@ public class CoroutineManager : MonoBehaviour
 
                             DontDestroyOnLoad(singleton);
 
-                            Debug.LogWarningFormat("[Singleton] Use Lazy Initialization\n{1} was created with DontDestroyOnLoad", 
-                                typeof(CoroutineManager), 
+                            Debug.LogWarningFormat("[Singleton] Use Lazy Initialization\n{1} was created with DontDestroyOnLoad",
+                                typeof(CoroutineManager),
                                 instance);
                         }
                     }
@@ -73,16 +72,17 @@ public class CoroutineManager : MonoBehaviour
     /// <param name="progressAction"></param>
     /// <param name="easeType"></param>
     /// <returns></returns>
-    public static YieldInstruction ProgressionTask(float duration, System.Action<float> progressAction, Ease easeType = Ease.Linear)
+    public static YieldInstruction ProgressionTask(float duration, System.Action<float> progressAction, EaseStyle easeType = EaseStyle.Linear)
     {
-        return
-            DOTween.To(() => 0f,
-            x =>
-            {
-                progressAction(x);
-            },
-            1f, duration)
-            .SetEase(easeType)
-            .WaitForCompletion();
+        // return
+        //     DOTween.To(() => 0f,
+        //     x =>
+        //     {
+        //         progressAction(x);
+        //     },
+        //     1f, duration)
+        //     .SetEase(easeType)
+        //     .WaitForCompletion();
+        return CoroutineManager.instance.StartCoroutine(EaseUtility.To(0, 1, duration, easeType, progressAction, null));
     }
 }

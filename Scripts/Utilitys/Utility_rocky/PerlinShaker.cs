@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-using DG.Tweening;
 
-public class PerlinShaker : MonoBehaviour {
+public class PerlinShaker : MonoBehaviour
+{
     public static PerlinShaker _instance;
     public static PerlinShaker Instance
     {
@@ -19,13 +19,13 @@ public class PerlinShaker : MonoBehaviour {
         }
         set { Instance = value; }
     }
-    
-    public static Coroutine ShakePosition(Transform transform,Vector3 magnetude, float duration, float motion, bool isSexy = false, bool isIgnoreTimeScale = false, Ease ease = Ease.Unset)
+
+    public static Coroutine ShakePosition(Transform transform, Vector3 magnetude, float duration, float motion, bool isSexy = false, bool isIgnoreTimeScale = false, EaseStyle easeStyle = EaseStyle.QuadEaseOut)
     {
         return Instance.StartCoroutine(Instance.Shaking(transform, magnetude, duration, motion, isSexy, isIgnoreTimeScale));
     }
 
-    IEnumerator Shaking(Transform _transform,Vector3 magnetude, float duration, float motion, bool isSexy = false, bool isIgnoreTimeScale = false,Ease ease = Ease.Unset)
+    IEnumerator Shaking(Transform _transform, Vector3 magnetude, float duration, float motion, bool isSexy = false, bool isIgnoreTimeScale = false, EaseStyle easeStyle = EaseStyle.QuadEaseOut)
     {
         float lifeTime = duration;
         float age = lifeTime;
@@ -44,7 +44,8 @@ public class PerlinShaker : MonoBehaviour {
             float deltaTime = (isIgnoreTimeScale) ? Time.unscaledDeltaTime : Time.deltaTime;
             age -= deltaTime;
             float power = (age / lifeTime);
-            power *= DOVirtual.EasedValue(0f, 1f, power, ease);
+
+            power *= EaseUtility.EasedLerp(0f, 1f, power, easeStyle);
 
             seedX += ((isSexy) ? motionVectX * power : motionVectX) * deltaTime;
             seedY += ((isSexy) ? motionVectY * power : motionVectY) * deltaTime;
@@ -72,5 +73,5 @@ public class PerlinShaker : MonoBehaviour {
         yield break;
     }
 
- 
+
 }

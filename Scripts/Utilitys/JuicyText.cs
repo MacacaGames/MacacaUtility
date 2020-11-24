@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 
 #if TextMeshPro
 using TMPro;
@@ -16,8 +15,9 @@ namespace CloudMacaca
 #endif
     public class JuicyText : MonoBehaviour
     {
-        public enum ScaleTarget{
-            Self,Parent
+        public enum ScaleTarget
+        {
+            Self, Parent
         }
         public ScaleTarget scaleTarget = ScaleTarget.Self;
         RectTransform __transform;
@@ -41,16 +41,16 @@ namespace CloudMacaca
             }
         }
 #else
-    Text _textComponent;
-	public Text textComponent
-    {
-        get
+        Text _textComponent;
+        public Text textComponent
         {
-            if (_textComponent == null)
-				_textComponent = GetComponent<Text>();
-            return _textComponent;
+            get
+            {
+                if (_textComponent == null)
+                    _textComponent = GetComponent<Text>();
+                return _textComponent;
+            }
         }
-    }
 #endif
 
 
@@ -62,8 +62,10 @@ namespace CloudMacaca
         Vector3 startScale = Vector3.one * 2f;
         [SerializeField]
         float animationDuration = .5f;
+        // [SerializeField]
+        // EaseStyle animationEaseType = Ease.OutCubic;
         [SerializeField]
-        Ease animationEaseType = Ease.OutCubic;
+        EaseStyle animationEaseType = EaseStyle.CubicEaseOut;
 
         Coroutine currentTextCoroutine;
         Coroutine currentNumberCoroutune;
@@ -90,7 +92,7 @@ namespace CloudMacaca
         [SerializeField]
         AudioClip _sfxToPlay;
 
-        public Coroutine PlayAnimation(Vector3 startScale, float animationDuration, Ease animationEaseType, bool isPlayParticle = true)
+        public Coroutine PlayAnimation(Vector3 startScale, float animationDuration, EaseStyle animationEaseType, bool isPlayParticle = true)
         {
             return SetTextAnimation(textComponent.text, startScale, animationDuration, animationEaseType, isPlayParticle);
         }
@@ -98,7 +100,7 @@ namespace CloudMacaca
         {
             return SetTextAnimation(text, startScale, animationDuration, animationEaseType, isPlayParticle);
         }
-        public Coroutine SetTextAnimation(string text, Vector3 startScale, float animationDuration, Ease animationEaseType,bool isPlayParticle)
+        public Coroutine SetTextAnimation(string text, Vector3 startScale, float animationDuration, EaseStyle animationEaseType, bool isPlayParticle)
         {
             if (currentTextCoroutine != null)
                 StopCoroutine(currentTextCoroutine);
@@ -120,15 +122,15 @@ namespace CloudMacaca
             currentNumberCoroutune = CoroutineManager.Instance.StartCoroutine(ChangeNumberAnimation(number, numberDuration, extraTextInFront, extraTextInEnd, delay));
             return currentNumberCoroutune;
         }
-        IEnumerator ChangeTextAnimation(string text,Vector3 startScale, float animationDuration,Ease animationEaseType)
+        IEnumerator ChangeTextAnimation(string text, Vector3 startScale, float animationDuration, EaseStyle animationEaseType)
         {
             SetTextInstant(text);
             textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, 0);
-            if(scaleTarget == ScaleTarget.Self)
+            if (scaleTarget == ScaleTarget.Self)
                 textComponent.transform.localScale = startScale;
             else
                 textComponent.transform.parent.localScale = startScale;
-            
+
             float progress = 0;
             while (progress < animationDuration)
             {
@@ -144,7 +146,7 @@ namespace CloudMacaca
         bool isChangeOpacity = true;
         void SetTextLerpView(float param)
         {
-            float ease = DOVirtual.EasedValue(0, 1, param, animationEaseType);
+            float ease = EaseUtility.EasedLerp(0, 1, param, animationEaseType);
             if (scaleTarget == ScaleTarget.Self)
                 textComponent.transform.localScale = Vector3.LerpUnclamped(startScale, Vector3.one, ease);
             else
@@ -165,8 +167,10 @@ namespace CloudMacaca
             }
         }
 
+        // [SerializeField]
+        // EaseStyle numberEaseType = Ease.InOutCubic;
         [SerializeField]
-        Ease numberEaseType = Ease.InOutCubic;
+        EaseStyle numberEaseType = EaseStyle.CubicEaseInOut;
 
 
         IEnumerator ChangeNumberAnimation(int targetNumber, float numberDuration, string extraTextInFront = "", string extraTextInEnd = "", float delay = 0)
@@ -182,7 +186,7 @@ namespace CloudMacaca
             while (progress <= 1)
             {
                 progress += v * Time.deltaTime;
-                float easedValue = DOVirtual.EasedValue(startNumber, targetNumber, progress, numberEaseType);
+                float easedValue = EaseUtility.EasedLerp(startNumber, targetNumber, progress, numberEaseType);
                 int tmp = Mathf.FloorToInt(easedValue);
                 if (lastNumber != tmp)
                 {
