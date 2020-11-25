@@ -15,12 +15,15 @@ public class PriceHelper
     static char[] numbers = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
     public static string GetTimesStringResultByPriceText(string originalPrice, float times)
     {
+        if (originalPrice.Equals(string.Empty))
+            return string.Empty;
+
         int firstNumberIndex = originalPrice.IndexOfAny(numbers);
         int lastNumberIndex = originalPrice.LastIndexOfAny(numbers);
 
         string pre = firstNumberIndex > 0 ? originalPrice.Substring(0, firstNumberIndex) : string.Empty;
         string last = lastNumberIndex + 1 < originalPrice.Length && lastNumberIndex > 0 ? originalPrice.Substring(lastNumberIndex + 1) : string.Empty;
-
+         
         string midNumberString = originalPrice.Substring(
             firstNumberIndex >= 0 ? firstNumberIndex : 0,
             lastNumberIndex - firstNumberIndex + 1);
