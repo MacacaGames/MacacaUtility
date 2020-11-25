@@ -37,6 +37,16 @@ public class EaseUtility
         return new Vector3(EasedLerp(from.x, to.x, t, curve), EasedLerp(from.y, to.y, t, curve), EasedLerp(from.z, to.z, t, curve));
     }
 
+    public static Vector2 EasedLerp(Vector2 from, Vector2 to, float t, EaseStyle easeStyle)
+    {
+        return new Vector2(EasedLerp(from.x, to.x, t, easeStyle), EasedLerp(from.y, to.y, t, easeStyle));
+    }
+
+    public static Vector2 EasedLerp(Vector2 from, Vector2 to, float t, AnimationCurve curve)
+    {
+        return new Vector2(EasedLerp(from.x, to.x, t, curve), EasedLerp(from.y, to.y, t, curve));
+    }
+    
     public static IEnumerator To(float start, float end, float dur, EaseStyle ease, Action<float> OnUpdate, Action OnComplete = null)
     {
         float t = 0f;
