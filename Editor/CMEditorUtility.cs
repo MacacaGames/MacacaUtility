@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public class CMEditorUtility
     {
@@ -445,7 +445,7 @@ namespace CloudMacaca
                         // _ItemStyle.contentOffset = Vector2.zero;
                         _ItemStyle.hover.textColor = Color.white;
                         ColorUtility.TryParseHtmlString("#49beb7", out Color c);
-                        _ItemStyle.hover.background = CloudMacaca.CMEditorUtility.CreatePixelTexture("_ItemStyle hover Pixel (List GUI)", c);
+                        _ItemStyle.hover.background = MacacaGames.CMEditorUtility.CreatePixelTexture("_ItemStyle hover Pixel (List GUI)", c);
                     }
                     return _ItemStyle;
                 }
@@ -461,7 +461,7 @@ namespace CloudMacaca
                         _GroupHeader.alignment = TextAnchor.MiddleCenter;
                         _GroupHeader.normal.textColor = Color.white;
                         ColorUtility.TryParseHtmlString("#ff502f", out Color c);
-                        _GroupHeader.normal.background = CloudMacaca.CMEditorUtility.CreatePixelTexture("_group header Pixel (List GUI)", c);
+                        _GroupHeader.normal.background = MacacaGames.CMEditorUtility.CreatePixelTexture("_group header Pixel (List GUI)", c);
                     }
                     return _GroupHeader;
                 }

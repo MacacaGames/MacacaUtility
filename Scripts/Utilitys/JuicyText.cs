@@ -6,7 +6,7 @@ using UnityEngine.UI;
 #if TextMeshPro
 using TMPro;
 #endif
-namespace CloudMacaca
+namespace MacacaGames
 {
 #if TextMeshPro
     [RequireComponent(typeof(TextMeshProUGUI))]

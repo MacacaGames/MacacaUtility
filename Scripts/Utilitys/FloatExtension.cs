@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public static class CMFloatExtension
     {

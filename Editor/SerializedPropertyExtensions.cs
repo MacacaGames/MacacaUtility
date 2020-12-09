@@ -5,7 +5,7 @@ using UnityEditor;
 using System.Reflection;
 using System.Linq;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public static class SerializedPropertyExtensions
     {

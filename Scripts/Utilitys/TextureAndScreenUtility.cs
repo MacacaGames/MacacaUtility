@@ -6,7 +6,7 @@ using System.Threading;
 
 using UnityEngine;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
 
     public class TextureAndScreenUtility

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public static class CMRandomExtensions
     {

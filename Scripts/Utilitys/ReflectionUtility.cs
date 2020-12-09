@@ -2,7 +2,7 @@
 using System.Reflection;
 using System;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public static class ReflectionUtility
     {

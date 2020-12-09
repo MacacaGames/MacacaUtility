@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using System;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public class GlobalTimer : UnitySingleton<GlobalTimer>
     {
@@ -25,7 +25,7 @@ namespace CloudMacaca
             {
                 if (_currentTimeStamp == 0)
                 {
-                    _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+                    _currentTimeStamp = MacacaGames.Utility.GetTimeStamp();
                 }
                 return (int)_currentTimeStamp;
             }
@@ -80,7 +80,7 @@ namespace CloudMacaca
 
         void UpdateTimeStampToSystemTime()
         {
-            _currentTimeStamp = CloudMacaca.Utility.GetTimeStamp();
+            _currentTimeStamp = MacacaGames.Utility.GetTimeStamp();
         }
 
         void LateUpdate()

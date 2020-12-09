@@ -6,7 +6,7 @@ using System.Linq;
 
 public class BuiltInResourcesWindow : EditorWindow
 {
-    [MenuItem("CloudMacaca/Built-in styles and icons")]
+    [MenuItem("MacacaGames/Built-in styles and icons")]
     public static void ShowWindow()
     {
         BuiltInResourcesWindow w = (BuiltInResourcesWindow)EditorWindow.GetWindow<BuiltInResourcesWindow>();
@@ -31,7 +31,7 @@ public class BuiltInResourcesWindow : EditorWindow
     private bool _showingCmResources = false;
     public enum CurrentTab
     {
-        Styles, Icons, Icons_old, CloudMacacaResource
+        Styles, Icons, Icons_old, MacacaResource
     }
     CurrentTab currentTab = CurrentTab.Styles;
     private string _search = "";
@@ -61,9 +61,9 @@ public class BuiltInResourcesWindow : EditorWindow
                 currentTab = CurrentTab.Icons_old;
                 Drawings = null;
             }
-            if (GUILayout.Toggle(currentTab == CurrentTab.CloudMacacaResource, CurrentTab.CloudMacacaResource.ToString(), EditorStyles.toolbarButton))
+            if (GUILayout.Toggle(currentTab == CurrentTab.MacacaResource, CurrentTab.MacacaResource.ToString(), EditorStyles.toolbarButton))
             {
-                currentTab = CurrentTab.CloudMacacaResource;
+                currentTab = CurrentTab.MacacaResource;
                 Drawings = null;
             }
         }
@@ -263,9 +263,9 @@ public class BuiltInResourcesWindow : EditorWindow
                     Drawings.Add(draw);
                 }
             }
-            else if (currentTab == CurrentTab.CloudMacacaResource)
+            else if (currentTab == CurrentTab.MacacaResource)
             {
-                var dict = CloudMacaca.CMEditorUtility.LoadResourceAssets();
+                var dict = MacacaGames.CMEditorUtility.LoadResourceAssets();
                 float rowHeight = 0.0f;
                 foreach (var ss in dict)
                 {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
 
     public enum AnchorPresets

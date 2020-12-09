@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
 
     public class Utility
@@ -13,7 +13,7 @@ namespace CloudMacaca
         /// 取得 1970/01/01 至現在時間的總秒數
         /// </summary>
 
-        [System.Obsolete("Please consider don't use CloudMacaca.Utility.GetTimeStamp() directly, use CloudMacaca.GlobalTimer.currentTimeStamp instead, since CloudMacaca.GlobalTimer.currentTimeStamp will cache timestamp value every frame.")]
+        [System.Obsolete("Please consider don't use MacacaGames.Utility.GetTimeStamp() directly, use MacacaGames.GlobalTimer.currentTimeStamp instead, since MacacaGames.GlobalTimer.currentTimeStamp will cache timestamp value every frame.")]
         public static int GetTimeStamp()
         {
             DateTime gtm = new DateTime(1970, 1, 1); //宣告一個GTM時間出來

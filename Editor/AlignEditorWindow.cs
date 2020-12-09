@@ -8,7 +8,7 @@ using UnityEditor;
 using UnityEngine.UIElements;
 public class OnionAlignUtiltiyEditorWindow : EditorWindow
 {
-    [MenuItem("CloudMacaca/Utility/Align Window")]
+    [MenuItem("MacacaGames/Utility/Align Window")]
     public static void Open()
     {
         var window = GetWindow<OnionAlignUtiltiyEditorWindow>();
@@ -80,7 +80,7 @@ public class OnionAlignUtiltiyEditorWindow : EditorWindow
         const float size = 24F;
         const float iconSize = 20F;
 
-        var imgs = CloudMacaca.CMEditorUtility.LoadResourceAssets();
+        var imgs = MacacaGames.CMEditorUtility.LoadResourceAssets();
 
         Button targetBtn = new Button()
         {

@@ -241,7 +241,7 @@ public class SortingLayerManagerEditor : EditorWindow
         EditorGUILayout.EndScrollView();
     }
 
-    [MenuItem("CloudMacaca/Tools/SortingLayerManager")]
+    [MenuItem("MacacaGames/Tools/SortingLayerManager")]
     public static void Init()
     {
         SortingLayerManagerEditor window = GetWindow<SortingLayerManagerEditor>("LayerManager");

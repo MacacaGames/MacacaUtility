@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public static class StringUtilitys
     {

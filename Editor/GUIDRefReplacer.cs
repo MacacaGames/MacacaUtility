@@ -15,7 +15,7 @@ public class GUIDRefReplacer : EditorWindow
     private bool isContainPrefab = true;
     private bool isContainMat = true;
     private bool isContainAsset = false; private List<string> withoutExtensions = new List<string>();
-    [MenuItem("CloudMacaca/Tools/GUID Ref Replacer")] // 選單開啟並點選的 處理
+    [MenuItem("MacacaGames/Tools/GUID Ref Replacer")] // 選單開啟並點選的 處理
     public static void GUIDRefReplaceWin()
     {// true 表示不能停靠的
         _window = (GUIDRefReplacer)EditorWindow.GetWindow(typeof(GUIDRefReplacer), true, "引用替換 (●'◡'●)");

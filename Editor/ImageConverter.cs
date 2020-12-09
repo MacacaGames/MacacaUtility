@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-namespace CloudMacaca.EditorTools
+namespace MacacaGames.EditorTools
 {
     public class ImageConverter : EditorWindow
     {
 
-        [MenuItem("CloudMacaca/EditorTools/ImageConverter")]
+        [MenuItem("MacacaGames/EditorTools/ImageConverter")]
         public static void Init()
         {
             EditorWindow window = GetWindow<ImageConverter>();

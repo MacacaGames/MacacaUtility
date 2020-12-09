@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-namespace CloudMacaca
+namespace MacacaGames
 {
     public class ObjectPool : MonoBehaviour
     {

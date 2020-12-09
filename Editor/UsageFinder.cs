@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class UsageFinder : MonoBehaviour {
 
-	[MenuItem ("CloudMacaca/Tools/Find references to this")]
+	[MenuItem("MacacaGames/Tools/Find references to this")]
 	private static void FindReferences (MenuCommand data) {
 		Object context = data.context;
 		if (context) {
