@@ -26,6 +26,15 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
         return poolDictCache;
     }
 
+    public static PoolableObject GetObject(PoolableObject poolableObject, Vector3 pos, Quaternion rot, Transform parent = null)
+    {
+        return GetObjectPool(poolableObject).ReUse(pos, rot, parent);
+    }
+    public static T GetObject<T>(PoolableObject poolableObject, Vector3 pos, Quaternion rot, Transform parent = null) where T : Component
+    {
+        return GetObjectPool(poolableObject).ReUse<T>(pos, rot, parent);
+    }
+
     const int DEFAULT_POOL_SIZE = 3;
     static nObjectPool CreateNewObjectPool(PoolableObject refIPoolable, int size = DEFAULT_POOL_SIZE)
     {

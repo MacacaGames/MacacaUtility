@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoolableObject : MonoBehaviour
+public class PoolableObject : TransformCacheBase
 {
     public int poolKey { get; private set; }
 
