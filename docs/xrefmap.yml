@@ -1,0 +1,1888 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MacacaGames
+  name: MacacaGames
+  href: api/MacacaGames.html
+  commentId: N:MacacaGames
+  fullName: MacacaGames
+  nameWithType: MacacaGames
+- uid: MacacaGames.AnchorPresets
+  name: AnchorPresets
+  href: api/MacacaGames.AnchorPresets.html
+  commentId: T:MacacaGames.AnchorPresets
+  fullName: MacacaGames.AnchorPresets
+  nameWithType: AnchorPresets
+- uid: MacacaGames.AnchorPresets.BottomLeft
+  name: BottomLeft
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_BottomLeft
+  commentId: F:MacacaGames.AnchorPresets.BottomLeft
+  fullName: MacacaGames.AnchorPresets.BottomLeft
+  nameWithType: AnchorPresets.BottomLeft
+- uid: MacacaGames.AnchorPresets.BottomRight
+  name: BottomRight
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_BottomRight
+  commentId: F:MacacaGames.AnchorPresets.BottomRight
+  fullName: MacacaGames.AnchorPresets.BottomRight
+  nameWithType: AnchorPresets.BottomRight
+- uid: MacacaGames.AnchorPresets.BottomStretch
+  name: BottomStretch
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_BottomStretch
+  commentId: F:MacacaGames.AnchorPresets.BottomStretch
+  fullName: MacacaGames.AnchorPresets.BottomStretch
+  nameWithType: AnchorPresets.BottomStretch
+- uid: MacacaGames.AnchorPresets.BottonCenter
+  name: BottonCenter
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_BottonCenter
+  commentId: F:MacacaGames.AnchorPresets.BottonCenter
+  fullName: MacacaGames.AnchorPresets.BottonCenter
+  nameWithType: AnchorPresets.BottonCenter
+- uid: MacacaGames.AnchorPresets.HorStretchBottom
+  name: HorStretchBottom
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_HorStretchBottom
+  commentId: F:MacacaGames.AnchorPresets.HorStretchBottom
+  fullName: MacacaGames.AnchorPresets.HorStretchBottom
+  nameWithType: AnchorPresets.HorStretchBottom
+- uid: MacacaGames.AnchorPresets.HorStretchMiddle
+  name: HorStretchMiddle
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_HorStretchMiddle
+  commentId: F:MacacaGames.AnchorPresets.HorStretchMiddle
+  fullName: MacacaGames.AnchorPresets.HorStretchMiddle
+  nameWithType: AnchorPresets.HorStretchMiddle
+- uid: MacacaGames.AnchorPresets.HorStretchTop
+  name: HorStretchTop
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_HorStretchTop
+  commentId: F:MacacaGames.AnchorPresets.HorStretchTop
+  fullName: MacacaGames.AnchorPresets.HorStretchTop
+  nameWithType: AnchorPresets.HorStretchTop
+- uid: MacacaGames.AnchorPresets.MiddleCenter
+  name: MiddleCenter
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_MiddleCenter
+  commentId: F:MacacaGames.AnchorPresets.MiddleCenter
+  fullName: MacacaGames.AnchorPresets.MiddleCenter
+  nameWithType: AnchorPresets.MiddleCenter
+- uid: MacacaGames.AnchorPresets.MiddleLeft
+  name: MiddleLeft
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_MiddleLeft
+  commentId: F:MacacaGames.AnchorPresets.MiddleLeft
+  fullName: MacacaGames.AnchorPresets.MiddleLeft
+  nameWithType: AnchorPresets.MiddleLeft
+- uid: MacacaGames.AnchorPresets.MiddleRight
+  name: MiddleRight
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_MiddleRight
+  commentId: F:MacacaGames.AnchorPresets.MiddleRight
+  fullName: MacacaGames.AnchorPresets.MiddleRight
+  nameWithType: AnchorPresets.MiddleRight
+- uid: MacacaGames.AnchorPresets.StretchAll
+  name: StretchAll
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_StretchAll
+  commentId: F:MacacaGames.AnchorPresets.StretchAll
+  fullName: MacacaGames.AnchorPresets.StretchAll
+  nameWithType: AnchorPresets.StretchAll
+- uid: MacacaGames.AnchorPresets.TopCenter
+  name: TopCenter
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_TopCenter
+  commentId: F:MacacaGames.AnchorPresets.TopCenter
+  fullName: MacacaGames.AnchorPresets.TopCenter
+  nameWithType: AnchorPresets.TopCenter
+- uid: MacacaGames.AnchorPresets.TopLeft
+  name: TopLeft
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_TopLeft
+  commentId: F:MacacaGames.AnchorPresets.TopLeft
+  fullName: MacacaGames.AnchorPresets.TopLeft
+  nameWithType: AnchorPresets.TopLeft
+- uid: MacacaGames.AnchorPresets.TopRight
+  name: TopRight
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_TopRight
+  commentId: F:MacacaGames.AnchorPresets.TopRight
+  fullName: MacacaGames.AnchorPresets.TopRight
+  nameWithType: AnchorPresets.TopRight
+- uid: MacacaGames.AnchorPresets.UnKnown
+  name: UnKnown
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_UnKnown
+  commentId: F:MacacaGames.AnchorPresets.UnKnown
+  fullName: MacacaGames.AnchorPresets.UnKnown
+  nameWithType: AnchorPresets.UnKnown
+- uid: MacacaGames.AnchorPresets.VertStretchCenter
+  name: VertStretchCenter
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_VertStretchCenter
+  commentId: F:MacacaGames.AnchorPresets.VertStretchCenter
+  fullName: MacacaGames.AnchorPresets.VertStretchCenter
+  nameWithType: AnchorPresets.VertStretchCenter
+- uid: MacacaGames.AnchorPresets.VertStretchLeft
+  name: VertStretchLeft
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_VertStretchLeft
+  commentId: F:MacacaGames.AnchorPresets.VertStretchLeft
+  fullName: MacacaGames.AnchorPresets.VertStretchLeft
+  nameWithType: AnchorPresets.VertStretchLeft
+- uid: MacacaGames.AnchorPresets.VertStretchRight
+  name: VertStretchRight
+  href: api/MacacaGames.AnchorPresets.html#MacacaGames_AnchorPresets_VertStretchRight
+  commentId: F:MacacaGames.AnchorPresets.VertStretchRight
+  fullName: MacacaGames.AnchorPresets.VertStretchRight
+  nameWithType: AnchorPresets.VertStretchRight
+- uid: MacacaGames.ArrayUtilitys
+  name: ArrayUtilitys
+  href: api/MacacaGames.ArrayUtilitys.html
+  commentId: T:MacacaGames.ArrayUtilitys
+  fullName: MacacaGames.ArrayUtilitys
+  nameWithType: ArrayUtilitys
+- uid: MacacaGames.ArrayUtilitys.Shuffle*
+  name: Shuffle
+  href: api/MacacaGames.ArrayUtilitys.html#MacacaGames_ArrayUtilitys_Shuffle_
+  commentId: Overload:MacacaGames.ArrayUtilitys.Shuffle
+  isSpec: "True"
+  fullName: MacacaGames.ArrayUtilitys.Shuffle
+  nameWithType: ArrayUtilitys.Shuffle
+- uid: MacacaGames.ArrayUtilitys.Shuffle``1(System.Collections.Generic.IList{``0})
+  name: Shuffle<T>(IList<T>)
+  href: api/MacacaGames.ArrayUtilitys.html#MacacaGames_ArrayUtilitys_Shuffle__1_System_Collections_Generic_IList___0__
+  commentId: M:MacacaGames.ArrayUtilitys.Shuffle``1(System.Collections.Generic.IList{``0})
+  name.vb: Shuffle(Of T)(IList(Of T))
+  fullName: MacacaGames.ArrayUtilitys.Shuffle<T>(System.Collections.Generic.IList<T>)
+  fullName.vb: MacacaGames.ArrayUtilitys.Shuffle(Of T)(System.Collections.Generic.IList(Of T))
+  nameWithType: ArrayUtilitys.Shuffle<T>(IList<T>)
+  nameWithType.vb: ArrayUtilitys.Shuffle(Of T)(IList(Of T))
+- uid: MacacaGames.ArrayUtilitys.ShuffleByString*
+  name: ShuffleByString
+  href: api/MacacaGames.ArrayUtilitys.html#MacacaGames_ArrayUtilitys_ShuffleByString_
+  commentId: Overload:MacacaGames.ArrayUtilitys.ShuffleByString
+  isSpec: "True"
+  fullName: MacacaGames.ArrayUtilitys.ShuffleByString
+  nameWithType: ArrayUtilitys.ShuffleByString
+- uid: MacacaGames.ArrayUtilitys.ShuffleByString``1(System.Collections.Generic.IList{``0},System.String)
+  name: ShuffleByString<T>(IList<T>, String)
+  href: api/MacacaGames.ArrayUtilitys.html#MacacaGames_ArrayUtilitys_ShuffleByString__1_System_Collections_Generic_IList___0__System_String_
+  commentId: M:MacacaGames.ArrayUtilitys.ShuffleByString``1(System.Collections.Generic.IList{``0},System.String)
+  name.vb: ShuffleByString(Of T)(IList(Of T), String)
+  fullName: MacacaGames.ArrayUtilitys.ShuffleByString<T>(System.Collections.Generic.IList<T>, System.String)
+  fullName.vb: MacacaGames.ArrayUtilitys.ShuffleByString(Of T)(System.Collections.Generic.IList(Of T), System.String)
+  nameWithType: ArrayUtilitys.ShuffleByString<T>(IList<T>, String)
+  nameWithType.vb: ArrayUtilitys.ShuffleByString(Of T)(IList(Of T), String)
+- uid: MacacaGames.CMAutoBuilder
+  name: CMAutoBuilder
+  href: api/MacacaGames.CMAutoBuilder.html
+  commentId: T:MacacaGames.CMAutoBuilder
+  fullName: MacacaGames.CMAutoBuilder
+  nameWithType: CMAutoBuilder
+- uid: MacacaGames.CMAutoBuilder.BuildAndroid
+  name: BuildAndroid()
+  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildAndroid
+  commentId: M:MacacaGames.CMAutoBuilder.BuildAndroid
+  fullName: MacacaGames.CMAutoBuilder.BuildAndroid()
+  nameWithType: CMAutoBuilder.BuildAndroid()
+- uid: MacacaGames.CMAutoBuilder.BuildAndroid*
+  name: BuildAndroid
+  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildAndroid_
+  commentId: Overload:MacacaGames.CMAutoBuilder.BuildAndroid
+  isSpec: "True"
+  fullName: MacacaGames.CMAutoBuilder.BuildAndroid
+  nameWithType: CMAutoBuilder.BuildAndroid
+- uid: MacacaGames.CMAutoBuilder.BuildiOS
+  name: BuildiOS()
+  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildiOS
+  commentId: M:MacacaGames.CMAutoBuilder.BuildiOS
+  fullName: MacacaGames.CMAutoBuilder.BuildiOS()
+  nameWithType: CMAutoBuilder.BuildiOS()
+- uid: MacacaGames.CMAutoBuilder.BuildiOS*
+  name: BuildiOS
+  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildiOS_
+  commentId: Overload:MacacaGames.CMAutoBuilder.BuildiOS
+  isSpec: "True"
+  fullName: MacacaGames.CMAutoBuilder.BuildiOS
+  nameWithType: CMAutoBuilder.BuildiOS
+- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod
+  name: CMAutoBuilder.CocoapodsIntegrationMethod
+  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html
+  commentId: T:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod
+  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod
+  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod
+- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.None
+  name: None
+  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html#MacacaGames_CMAutoBuilder_CocoapodsIntegrationMethod_None
+  commentId: F:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.None
+  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.None
+  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod.None
+- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Project
+  name: Project
+  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html#MacacaGames_CMAutoBuilder_CocoapodsIntegrationMethod_Project
+  commentId: F:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Project
+  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Project
+  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod.Project
+- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
+  name: Workspace
+  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html#MacacaGames_CMAutoBuilder_CocoapodsIntegrationMethod_Workspace
+  commentId: F:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
+  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
+  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
+- uid: MacacaGames.CMEditorLayout
+  name: CMEditorLayout
+  href: api/MacacaGames.CMEditorLayout.html
+  commentId: T:MacacaGames.CMEditorLayout
+  fullName: MacacaGames.CMEditorLayout
+  nameWithType: CMEditorLayout
+- uid: MacacaGames.CMEditorLayout.BitMaskField*
+  name: BitMaskField
+  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_BitMaskField_
+  commentId: Overload:MacacaGames.CMEditorLayout.BitMaskField
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.BitMaskField
+  nameWithType: CMEditorLayout.BitMaskField
+- uid: MacacaGames.CMEditorLayout.BitMaskField``1(``0@)
+  name: BitMaskField<T>(ref T)
+  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_BitMaskField__1___0__
+  commentId: M:MacacaGames.CMEditorLayout.BitMaskField``1(``0@)
+  name.vb: BitMaskField(Of T)(ByRef T)
+  fullName: MacacaGames.CMEditorLayout.BitMaskField<T>(ref T)
+  fullName.vb: MacacaGames.CMEditorLayout.BitMaskField(Of T)(ByRef T)
+  nameWithType: CMEditorLayout.BitMaskField<T>(ref T)
+  nameWithType.vb: CMEditorLayout.BitMaskField(Of T)(ByRef T)
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData
+  name: CMEditorLayout.GroupedPopupData
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupData.html
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  nameWithType: CMEditorLayout.GroupedPopupData
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData.group
+  name: group
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupData.html#MacacaGames_CMEditorLayout_GroupedPopupData_group
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupData.group
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData.group
+  nameWithType: CMEditorLayout.GroupedPopupData.group
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData.name
+  name: name
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupData.html#MacacaGames_CMEditorLayout_GroupedPopupData_name
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupData.name
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData.name
+  nameWithType: CMEditorLayout.GroupedPopupData.name
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+  name: CMEditorLayout.GroupedPopupData<T>
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupData-1.html
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData`1
+  name.vb: CMEditorLayout.GroupedPopupData(Of T)
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData<T>
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData(Of T)
+  nameWithType: CMEditorLayout.GroupedPopupData<T>
+  nameWithType.vb: CMEditorLayout.GroupedPopupData(Of T)
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData`1.group
+  name: group
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupData-1.html#MacacaGames_CMEditorLayout_GroupedPopupData_1_group
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupData`1.group
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData<T>.group
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData(Of T).group
+  nameWithType: CMEditorLayout.GroupedPopupData<T>.group
+  nameWithType.vb: CMEditorLayout.GroupedPopupData(Of T).group
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData`1.item
+  name: item
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupData-1.html#MacacaGames_CMEditorLayout_GroupedPopupData_1_item
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupData`1.item
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData<T>.item
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData(Of T).item
+  nameWithType: CMEditorLayout.GroupedPopupData<T>.item
+  nameWithType.vb: CMEditorLayout.GroupedPopupData(Of T).item
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},GUILayoutOption[])
+  name: GroupedPopupField(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData>, CMEditorLayout.GroupedPopupData, Action<CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
+  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_GroupedPopupField_System_Int32_GUIContent_System_Collections_Generic_IEnumerable_MacacaGames_CMEditorLayout_GroupedPopupData__MacacaGames_CMEditorLayout_GroupedPopupData_System_Action_MacacaGames_CMEditorLayout_GroupedPopupData__GUILayoutOption___
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},GUILayoutOption[])
+  name.vb: GroupedPopupField(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData), CMEditorLayout.GroupedPopupData, Action(Of CMEditorLayout.GroupedPopupData), GUILayoutOption())
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData>, MacacaGames.CMEditorLayout.GroupedPopupData, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData), MacacaGames.CMEditorLayout.GroupedPopupData, System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData), GUILayoutOption())
+  nameWithType: CMEditorLayout.GroupedPopupField(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData>, CMEditorLayout.GroupedPopupData, Action<CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
+  nameWithType.vb: CMEditorLayout.GroupedPopupField(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData), CMEditorLayout.GroupedPopupData, Action(Of CMEditorLayout.GroupedPopupData), GUILayoutOption())
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField*
+  name: GroupedPopupField
+  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_GroupedPopupField_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupField
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField
+  nameWithType: CMEditorLayout.GroupedPopupField
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},GUILayoutOption[])
+  name: GroupedPopupField<T>(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData<T>>, CMEditorLayout.GroupedPopupData<T>, Action<CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
+  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_GroupedPopupField__1_System_Int32_GUIContent_System_Collections_Generic_IEnumerable_MacacaGames_CMEditorLayout_GroupedPopupData___0___MacacaGames_CMEditorLayout_GroupedPopupData___0__System_Action_MacacaGames_CMEditorLayout_GroupedPopupData___0___GUILayoutOption___
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},GUILayoutOption[])
+  name.vb: GroupedPopupField(Of T)(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T)), CMEditorLayout.GroupedPopupData(Of T), Action(Of CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField<T>(System.Int32, GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, MacacaGames.CMEditorLayout.GroupedPopupData<T>, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(Of T)(System.Int32, GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), MacacaGames.CMEditorLayout.GroupedPopupData(Of T), System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
+  nameWithType: CMEditorLayout.GroupedPopupField<T>(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData<T>>, CMEditorLayout.GroupedPopupData<T>, Action<CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
+  nameWithType.vb: CMEditorLayout.GroupedPopupField(Of T)(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T)), CMEditorLayout.GroupedPopupData(Of T), Action(Of CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  name: CMEditorLayout.GroupedPopupWindow
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupWindow
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  nameWithType: CMEditorLayout.GroupedPopupWindow
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.Current
+  name: Current
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_Current
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.Current
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.Current
+  nameWithType: CMEditorLayout.GroupedPopupWindow.Current
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  name: DrawItem()
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_DrawItem
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem()
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawItem()
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem*
+  name: DrawItem
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_DrawItem_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawItem
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  name: DrawSerachBar()
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_DrawSerachBar
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar()
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawSerachBar()
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar*
+  name: DrawSerachBar
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_DrawSerachBar_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  name: GetWindowSize()
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_GetWindowSize
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize()
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GetWindowSize()
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize*
+  name: GetWindowSize
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_GetWindowSize_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GetWindowSize
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  name: groupedPopupData
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_groupedPopupData
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  nameWithType: CMEditorLayout.GroupedPopupWindow.groupedPopupData
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  name: GroupHeader
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_GroupHeader
+  commentId: P:MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GroupHeader
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader*
+  name: GroupHeader
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_GroupHeader_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GroupHeader
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  name: ItemStyle
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_ItemStyle
+  commentId: P:MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  nameWithType: CMEditorLayout.GroupedPopupWindow.ItemStyle
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle*
+  name: ItemStyle
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_ItemStyle_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  nameWithType: CMEditorLayout.GroupedPopupWindow.ItemStyle
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
+  name: OnGUI(Rect)
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_OnGUI_Rect_
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
+  nameWithType: CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI*
+  name: OnGUI
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_OnGUI_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI
+  nameWithType: CMEditorLayout.GroupedPopupWindow.OnGUI
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnSelect
+  name: OnSelect
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_OnSelect
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnSelect
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnSelect
+  nameWithType: CMEditorLayout.GroupedPopupWindow.OnSelect
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.scrollPos
+  name: scrollPos
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_scrollPos
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.scrollPos
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.scrollPos
+  nameWithType: CMEditorLayout.GroupedPopupWindow.scrollPos
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.searchString
+  name: searchString
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_searchString
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.searchString
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.searchString
+  nameWithType: CMEditorLayout.GroupedPopupWindow.searchString
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.WantedWidth
+  name: WantedWidth
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_WantedWidth
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.WantedWidth
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.WantedWidth
+  nameWithType: CMEditorLayout.GroupedPopupWindow.WantedWidth
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+  name: CMEditorLayout.GroupedPopupWindow<T>
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+  name.vb: CMEditorLayout.GroupedPopupWindow(Of T)
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow<T>
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupWindow(Of T)
+  nameWithType: CMEditorLayout.GroupedPopupWindow<T>
+  nameWithType.vb: CMEditorLayout.GroupedPopupWindow(Of T)
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1.CurrentGeneric
+  name: CurrentGeneric
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_1_CurrentGeneric
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow`1.CurrentGeneric
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow<T>.CurrentGeneric
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupWindow(Of T).CurrentGeneric
+  nameWithType: CMEditorLayout.GroupedPopupWindow<T>.CurrentGeneric
+  nameWithType.vb: CMEditorLayout.GroupedPopupWindow(Of T).CurrentGeneric
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1.DrawItem
+  name: DrawItem()
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_1_DrawItem
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow`1.DrawItem
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow<T>.DrawItem()
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupWindow(Of T).DrawItem()
+  nameWithType: CMEditorLayout.GroupedPopupWindow<T>.DrawItem()
+  nameWithType.vb: CMEditorLayout.GroupedPopupWindow(Of T).DrawItem()
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1.DrawItem*
+  name: DrawItem
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_1_DrawItem_
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow`1.DrawItem
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow<T>.DrawItem
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupWindow(Of T).DrawItem
+  nameWithType: CMEditorLayout.GroupedPopupWindow<T>.DrawItem
+  nameWithType.vb: CMEditorLayout.GroupedPopupWindow(Of T).DrawItem
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1.groupedPopupDataGeneric
+  name: groupedPopupDataGeneric
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_1_groupedPopupDataGeneric
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow`1.groupedPopupDataGeneric
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow<T>.groupedPopupDataGeneric
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupWindow(Of T).groupedPopupDataGeneric
+  nameWithType: CMEditorLayout.GroupedPopupWindow<T>.groupedPopupDataGeneric
+  nameWithType.vb: CMEditorLayout.GroupedPopupWindow(Of T).groupedPopupDataGeneric
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1.OnSelectGeneric
+  name: OnSelectGeneric
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_1_OnSelectGeneric
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow`1.OnSelectGeneric
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow<T>.OnSelectGeneric
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupWindow(Of T).OnSelectGeneric
+  nameWithType: CMEditorLayout.GroupedPopupWindow<T>.OnSelectGeneric
+  nameWithType.vb: CMEditorLayout.GroupedPopupWindow(Of T).OnSelectGeneric
+- uid: MacacaGames.CMEditorUtility
+  name: CMEditorUtility
+  href: api/MacacaGames.CMEditorUtility.html
+  commentId: T:MacacaGames.CMEditorUtility
+  fullName: MacacaGames.CMEditorUtility
+  nameWithType: CMEditorUtility
+- uid: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,Color)
+  name: CreatePixelTexture(String, Color)
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_CreatePixelTexture_System_String_Color_
+  commentId: M:MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,Color)
+  fullName: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String, Color)
+  nameWithType: CMEditorUtility.CreatePixelTexture(String, Color)
+- uid: MacacaGames.CMEditorUtility.CreatePixelTexture*
+  name: CreatePixelTexture
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_CreatePixelTexture_
+  commentId: Overload:MacacaGames.CMEditorUtility.CreatePixelTexture
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorUtility.CreatePixelTexture
+  nameWithType: CMEditorUtility.CreatePixelTexture
+- uid: MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
+  name: InspectTarget(UnityEngine.Object)
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_InspectTarget_UnityEngine_Object_
+  commentId: M:MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
+  fullName: MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
+  nameWithType: CMEditorUtility.InspectTarget(UnityEngine.Object)
+- uid: MacacaGames.CMEditorUtility.InspectTarget*
+  name: InspectTarget
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_InspectTarget_
+  commentId: Overload:MacacaGames.CMEditorUtility.InspectTarget
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorUtility.InspectTarget
+  nameWithType: CMEditorUtility.InspectTarget
+- uid: MacacaGames.CMEditorUtility.LoadResourceAssets
+  name: LoadResourceAssets()
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_LoadResourceAssets
+  commentId: M:MacacaGames.CMEditorUtility.LoadResourceAssets
+  fullName: MacacaGames.CMEditorUtility.LoadResourceAssets()
+  nameWithType: CMEditorUtility.LoadResourceAssets()
+- uid: MacacaGames.CMEditorUtility.LoadResourceAssets*
+  name: LoadResourceAssets
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_LoadResourceAssets_
+  commentId: Overload:MacacaGames.CMEditorUtility.LoadResourceAssets
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorUtility.LoadResourceAssets
+  nameWithType: CMEditorUtility.LoadResourceAssets
+- uid: MacacaGames.CMEditorUtility.TryGetEditorTexture(System.String)
+  name: TryGetEditorTexture(String)
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_TryGetEditorTexture_System_String_
+  commentId: M:MacacaGames.CMEditorUtility.TryGetEditorTexture(System.String)
+  fullName: MacacaGames.CMEditorUtility.TryGetEditorTexture(System.String)
+  nameWithType: CMEditorUtility.TryGetEditorTexture(String)
+- uid: MacacaGames.CMEditorUtility.TryGetEditorTexture*
+  name: TryGetEditorTexture
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_TryGetEditorTexture_
+  commentId: Overload:MacacaGames.CMEditorUtility.TryGetEditorTexture
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorUtility.TryGetEditorTexture
+  nameWithType: CMEditorUtility.TryGetEditorTexture
+- uid: MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
+  name: ViewInInspectorInstance(UnityEngine.Object, UnityEditor.EditorWindow)
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_ViewInInspectorInstance_UnityEngine_Object_UnityEditor_EditorWindow_
+  commentId: M:MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
+  fullName: MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object, UnityEditor.EditorWindow)
+  nameWithType: CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object, UnityEditor.EditorWindow)
+- uid: MacacaGames.CMEditorUtility.ViewInInspectorInstance*
+  name: ViewInInspectorInstance
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_ViewInInspectorInstance_
+  commentId: Overload:MacacaGames.CMEditorUtility.ViewInInspectorInstance
+  isSpec: "True"
+  fullName: MacacaGames.CMEditorUtility.ViewInInspectorInstance
+  nameWithType: CMEditorUtility.ViewInInspectorInstance
+- uid: MacacaGames.CMFloatExtension
+  name: CMFloatExtension
+  href: api/MacacaGames.CMFloatExtension.html
+  commentId: T:MacacaGames.CMFloatExtension
+  fullName: MacacaGames.CMFloatExtension
+  nameWithType: CMFloatExtension
+- uid: MacacaGames.CMFloatExtension.Remap(System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: Remap(Single, Single, Single, Single, Single)
+  href: api/MacacaGames.CMFloatExtension.html#MacacaGames_CMFloatExtension_Remap_System_Single_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:MacacaGames.CMFloatExtension.Remap(System.Single,System.Single,System.Single,System.Single,System.Single)
+  fullName: MacacaGames.CMFloatExtension.Remap(System.Single, System.Single, System.Single, System.Single, System.Single)
+  nameWithType: CMFloatExtension.Remap(Single, Single, Single, Single, Single)
+- uid: MacacaGames.CMFloatExtension.Remap*
+  name: Remap
+  href: api/MacacaGames.CMFloatExtension.html#MacacaGames_CMFloatExtension_Remap_
+  commentId: Overload:MacacaGames.CMFloatExtension.Remap
+  isSpec: "True"
+  fullName: MacacaGames.CMFloatExtension.Remap
+  nameWithType: CMFloatExtension.Remap
+- uid: MacacaGames.CMRandomExtensions
+  name: CMRandomExtensions
+  href: api/MacacaGames.CMRandomExtensions.html
+  commentId: T:MacacaGames.CMRandomExtensions
+  fullName: MacacaGames.CMRandomExtensions
+  nameWithType: CMRandomExtensions
+- uid: MacacaGames.CMRandomExtensions.RandomIndexByWeight(System.Collections.Generic.List{System.Int32})
+  name: RandomIndexByWeight(List<Int32>)
+  href: api/MacacaGames.CMRandomExtensions.html#MacacaGames_CMRandomExtensions_RandomIndexByWeight_System_Collections_Generic_List_System_Int32__
+  commentId: M:MacacaGames.CMRandomExtensions.RandomIndexByWeight(System.Collections.Generic.List{System.Int32})
+  name.vb: RandomIndexByWeight(List(Of Int32))
+  fullName: MacacaGames.CMRandomExtensions.RandomIndexByWeight(System.Collections.Generic.List<System.Int32>)
+  fullName.vb: MacacaGames.CMRandomExtensions.RandomIndexByWeight(System.Collections.Generic.List(Of System.Int32))
+  nameWithType: CMRandomExtensions.RandomIndexByWeight(List<Int32>)
+  nameWithType.vb: CMRandomExtensions.RandomIndexByWeight(List(Of Int32))
+- uid: MacacaGames.CMRandomExtensions.RandomIndexByWeight*
+  name: RandomIndexByWeight
+  href: api/MacacaGames.CMRandomExtensions.html#MacacaGames_CMRandomExtensions_RandomIndexByWeight_
+  commentId: Overload:MacacaGames.CMRandomExtensions.RandomIndexByWeight
+  isSpec: "True"
+  fullName: MacacaGames.CMRandomExtensions.RandomIndexByWeight
+  nameWithType: CMRandomExtensions.RandomIndexByWeight
+- uid: MacacaGames.CMRandomExtensions.RandomItemByWeight*
+  name: RandomItemByWeight
+  href: api/MacacaGames.CMRandomExtensions.html#MacacaGames_CMRandomExtensions_RandomItemByWeight_
+  commentId: Overload:MacacaGames.CMRandomExtensions.RandomItemByWeight
+  isSpec: "True"
+  fullName: MacacaGames.CMRandomExtensions.RandomItemByWeight
+  nameWithType: CMRandomExtensions.RandomItemByWeight
+- uid: MacacaGames.CMRandomExtensions.RandomItemByWeight``1(System.Collections.Generic.List{System.ValueTuple{``0,System.Int32}},System.Int32)
+  name: RandomItemByWeight<T>(List<(T item, Int32 weight)>, Int32)
+  href: api/MacacaGames.CMRandomExtensions.html#MacacaGames_CMRandomExtensions_RandomItemByWeight__1_System_Collections_Generic_List_System_ValueTuple___0_System_Int32___System_Int32_
+  commentId: M:MacacaGames.CMRandomExtensions.RandomItemByWeight``1(System.Collections.Generic.List{System.ValueTuple{``0,System.Int32}},System.Int32)
+  name.vb: RandomItemByWeight(Of T)(List(Of (item As T, weight As Int32)), Int32)
+  fullName: MacacaGames.CMRandomExtensions.RandomItemByWeight<T>(System.Collections.Generic.List<System.ValueTuple<T, System.Int32>>, System.Int32)
+  fullName.vb: MacacaGames.CMRandomExtensions.RandomItemByWeight(Of T)(System.Collections.Generic.List(Of System.ValueTuple(Of T, System.Int32)), System.Int32)
+  nameWithType: CMRandomExtensions.RandomItemByWeight<T>(List<(T item, Int32 weight)>, Int32)
+  nameWithType.vb: CMRandomExtensions.RandomItemByWeight(Of T)(List(Of (item As T, weight As Int32)), Int32)
+- uid: MacacaGames.CustomElement
+  name: CustomElement
+  href: api/MacacaGames.CustomElement.html
+  commentId: T:MacacaGames.CustomElement
+  fullName: MacacaGames.CustomElement
+  nameWithType: CustomElement
+- uid: MacacaGames.CustomElement.Button(System.Int32,Rect,GUIContent,GUIStyle,System.Boolean)
+  name: Button(Int32, Rect, GUIContent, GUIStyle, Boolean)
+  href: api/MacacaGames.CustomElement.html#MacacaGames_CustomElement_Button_System_Int32_Rect_GUIContent_GUIStyle_System_Boolean_
+  commentId: M:MacacaGames.CustomElement.Button(System.Int32,Rect,GUIContent,GUIStyle,System.Boolean)
+  fullName: MacacaGames.CustomElement.Button(System.Int32, Rect, GUIContent, GUIStyle, System.Boolean)
+  nameWithType: CustomElement.Button(Int32, Rect, GUIContent, GUIStyle, Boolean)
+- uid: MacacaGames.CustomElement.Button*
+  name: Button
+  href: api/MacacaGames.CustomElement.html#MacacaGames_CustomElement_Button_
+  commentId: Overload:MacacaGames.CustomElement.Button
+  isSpec: "True"
+  fullName: MacacaGames.CustomElement.Button
+  nameWithType: CustomElement.Button
+- uid: MacacaGames.EditorSetup
+  name: EditorSetup
+  href: api/MacacaGames.EditorSetup.html
+  commentId: T:MacacaGames.EditorSetup
+  fullName: MacacaGames.EditorSetup
+  nameWithType: EditorSetup
+- uid: MacacaGames.EditorSetup.AndroidNdkRoot
+  name: AndroidNdkRoot
+  href: api/MacacaGames.EditorSetup.html#MacacaGames_EditorSetup_AndroidNdkRoot
+  commentId: P:MacacaGames.EditorSetup.AndroidNdkRoot
+  fullName: MacacaGames.EditorSetup.AndroidNdkRoot
+  nameWithType: EditorSetup.AndroidNdkRoot
+- uid: MacacaGames.EditorSetup.AndroidNdkRoot*
+  name: AndroidNdkRoot
+  href: api/MacacaGames.EditorSetup.html#MacacaGames_EditorSetup_AndroidNdkRoot_
+  commentId: Overload:MacacaGames.EditorSetup.AndroidNdkRoot
+  isSpec: "True"
+  fullName: MacacaGames.EditorSetup.AndroidNdkRoot
+  nameWithType: EditorSetup.AndroidNdkRoot
+- uid: MacacaGames.EditorSetup.AndroidSdkRoot
+  name: AndroidSdkRoot
+  href: api/MacacaGames.EditorSetup.html#MacacaGames_EditorSetup_AndroidSdkRoot
+  commentId: P:MacacaGames.EditorSetup.AndroidSdkRoot
+  fullName: MacacaGames.EditorSetup.AndroidSdkRoot
+  nameWithType: EditorSetup.AndroidSdkRoot
+- uid: MacacaGames.EditorSetup.AndroidSdkRoot*
+  name: AndroidSdkRoot
+  href: api/MacacaGames.EditorSetup.html#MacacaGames_EditorSetup_AndroidSdkRoot_
+  commentId: Overload:MacacaGames.EditorSetup.AndroidSdkRoot
+  isSpec: "True"
+  fullName: MacacaGames.EditorSetup.AndroidSdkRoot
+  nameWithType: EditorSetup.AndroidSdkRoot
+- uid: MacacaGames.EditorSetup.JdkRoot
+  name: JdkRoot
+  href: api/MacacaGames.EditorSetup.html#MacacaGames_EditorSetup_JdkRoot
+  commentId: P:MacacaGames.EditorSetup.JdkRoot
+  fullName: MacacaGames.EditorSetup.JdkRoot
+  nameWithType: EditorSetup.JdkRoot
+- uid: MacacaGames.EditorSetup.JdkRoot*
+  name: JdkRoot
+  href: api/MacacaGames.EditorSetup.html#MacacaGames_EditorSetup_JdkRoot_
+  commentId: Overload:MacacaGames.EditorSetup.JdkRoot
+  isSpec: "True"
+  fullName: MacacaGames.EditorSetup.JdkRoot
+  nameWithType: EditorSetup.JdkRoot
+- uid: MacacaGames.EditorTools
+  name: MacacaGames.EditorTools
+  href: api/MacacaGames.EditorTools.html
+  commentId: N:MacacaGames.EditorTools
+  fullName: MacacaGames.EditorTools
+  nameWithType: MacacaGames.EditorTools
+- uid: MacacaGames.EditorTools.ImageConverter
+  name: ImageConverter
+  href: api/MacacaGames.EditorTools.ImageConverter.html
+  commentId: T:MacacaGames.EditorTools.ImageConverter
+  fullName: MacacaGames.EditorTools.ImageConverter
+  nameWithType: ImageConverter
+- uid: MacacaGames.EditorTools.ImageConverter.Init
+  name: Init()
+  href: api/MacacaGames.EditorTools.ImageConverter.html#MacacaGames_EditorTools_ImageConverter_Init
+  commentId: M:MacacaGames.EditorTools.ImageConverter.Init
+  fullName: MacacaGames.EditorTools.ImageConverter.Init()
+  nameWithType: ImageConverter.Init()
+- uid: MacacaGames.EditorTools.ImageConverter.Init*
+  name: Init
+  href: api/MacacaGames.EditorTools.ImageConverter.html#MacacaGames_EditorTools_ImageConverter_Init_
+  commentId: Overload:MacacaGames.EditorTools.ImageConverter.Init
+  isSpec: "True"
+  fullName: MacacaGames.EditorTools.ImageConverter.Init
+  nameWithType: ImageConverter.Init
+- uid: MacacaGames.FixedSizeStack`1
+  name: FixedSizeStack<T>
+  href: api/MacacaGames.FixedSizeStack-1.html
+  commentId: T:MacacaGames.FixedSizeStack`1
+  name.vb: FixedSizeStack(Of T)
+  fullName: MacacaGames.FixedSizeStack<T>
+  fullName.vb: MacacaGames.FixedSizeStack(Of T)
+  nameWithType: FixedSizeStack<T>
+  nameWithType.vb: FixedSizeStack(Of T)
+- uid: MacacaGames.FixedSizeStack`1.#ctor(System.Int32)
+  name: FixedSizeStack(Int32)
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1__ctor_System_Int32_
+  commentId: M:MacacaGames.FixedSizeStack`1.#ctor(System.Int32)
+  fullName: MacacaGames.FixedSizeStack<T>.FixedSizeStack(System.Int32)
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).FixedSizeStack(System.Int32)
+  nameWithType: FixedSizeStack<T>.FixedSizeStack(Int32)
+  nameWithType.vb: FixedSizeStack(Of T).FixedSizeStack(Int32)
+- uid: MacacaGames.FixedSizeStack`1.#ctor*
+  name: FixedSizeStack
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1__ctor_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.#ctor
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.FixedSizeStack
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).FixedSizeStack
+  nameWithType: FixedSizeStack<T>.FixedSizeStack
+  nameWithType.vb: FixedSizeStack(Of T).FixedSizeStack
+- uid: MacacaGames.FixedSizeStack`1.Clear
+  name: Clear()
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Clear
+  commentId: M:MacacaGames.FixedSizeStack`1.Clear
+  fullName: MacacaGames.FixedSizeStack<T>.Clear()
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Clear()
+  nameWithType: FixedSizeStack<T>.Clear()
+  nameWithType.vb: FixedSizeStack(Of T).Clear()
+- uid: MacacaGames.FixedSizeStack`1.Clear*
+  name: Clear
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Clear_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Clear
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.Clear
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Clear
+  nameWithType: FixedSizeStack<T>.Clear
+  nameWithType.vb: FixedSizeStack(Of T).Clear
+- uid: MacacaGames.FixedSizeStack`1.Contains(`0)
+  name: Contains(T)
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Contains__0_
+  commentId: M:MacacaGames.FixedSizeStack`1.Contains(`0)
+  fullName: MacacaGames.FixedSizeStack<T>.Contains(T)
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Contains(T)
+  nameWithType: FixedSizeStack<T>.Contains(T)
+  nameWithType.vb: FixedSizeStack(Of T).Contains(T)
+- uid: MacacaGames.FixedSizeStack`1.Contains*
+  name: Contains
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Contains_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Contains
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.Contains
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Contains
+  nameWithType: FixedSizeStack<T>.Contains
+  nameWithType.vb: FixedSizeStack(Of T).Contains
+- uid: MacacaGames.FixedSizeStack`1.Count
+  name: Count
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Count
+  commentId: P:MacacaGames.FixedSizeStack`1.Count
+  fullName: MacacaGames.FixedSizeStack<T>.Count
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Count
+  nameWithType: FixedSizeStack<T>.Count
+  nameWithType.vb: FixedSizeStack(Of T).Count
+- uid: MacacaGames.FixedSizeStack`1.Count*
+  name: Count
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Count_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Count
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.Count
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Count
+  nameWithType: FixedSizeStack<T>.Count
+  nameWithType.vb: FixedSizeStack(Of T).Count
+- uid: MacacaGames.FixedSizeStack`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_GetEnumerator
+  commentId: M:MacacaGames.FixedSizeStack`1.GetEnumerator
+  fullName: MacacaGames.FixedSizeStack<T>.GetEnumerator()
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).GetEnumerator()
+  nameWithType: FixedSizeStack<T>.GetEnumerator()
+  nameWithType.vb: FixedSizeStack(Of T).GetEnumerator()
+- uid: MacacaGames.FixedSizeStack`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_GetEnumerator_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.GetEnumerator
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.GetEnumerator
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).GetEnumerator
+  nameWithType: FixedSizeStack<T>.GetEnumerator
+  nameWithType.vb: FixedSizeStack(Of T).GetEnumerator
+- uid: MacacaGames.FixedSizeStack`1.IsTop(`0)
+  name: IsTop(T)
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_IsTop__0_
+  commentId: M:MacacaGames.FixedSizeStack`1.IsTop(`0)
+  fullName: MacacaGames.FixedSizeStack<T>.IsTop(T)
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).IsTop(T)
+  nameWithType: FixedSizeStack<T>.IsTop(T)
+  nameWithType.vb: FixedSizeStack(Of T).IsTop(T)
+- uid: MacacaGames.FixedSizeStack`1.IsTop*
+  name: IsTop
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_IsTop_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.IsTop
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.IsTop
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).IsTop
+  nameWithType: FixedSizeStack<T>.IsTop
+  nameWithType.vb: FixedSizeStack(Of T).IsTop
+- uid: MacacaGames.FixedSizeStack`1.Peek
+  name: Peek()
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Peek
+  commentId: M:MacacaGames.FixedSizeStack`1.Peek
+  fullName: MacacaGames.FixedSizeStack<T>.Peek()
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Peek()
+  nameWithType: FixedSizeStack<T>.Peek()
+  nameWithType.vb: FixedSizeStack(Of T).Peek()
+- uid: MacacaGames.FixedSizeStack`1.Peek*
+  name: Peek
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Peek_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Peek
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.Peek
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Peek
+  nameWithType: FixedSizeStack<T>.Peek
+  nameWithType.vb: FixedSizeStack(Of T).Peek
+- uid: MacacaGames.FixedSizeStack`1.Pop
+  name: Pop()
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Pop
+  commentId: M:MacacaGames.FixedSizeStack`1.Pop
+  fullName: MacacaGames.FixedSizeStack<T>.Pop()
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Pop()
+  nameWithType: FixedSizeStack<T>.Pop()
+  nameWithType.vb: FixedSizeStack(Of T).Pop()
+- uid: MacacaGames.FixedSizeStack`1.Pop*
+  name: Pop
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Pop_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Pop
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.Pop
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Pop
+  nameWithType: FixedSizeStack<T>.Pop
+  nameWithType.vb: FixedSizeStack(Of T).Pop
+- uid: MacacaGames.FixedSizeStack`1.Push(`0)
+  name: Push(T)
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Push__0_
+  commentId: M:MacacaGames.FixedSizeStack`1.Push(`0)
+  fullName: MacacaGames.FixedSizeStack<T>.Push(T)
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Push(T)
+  nameWithType: FixedSizeStack<T>.Push(T)
+  nameWithType.vb: FixedSizeStack(Of T).Push(T)
+- uid: MacacaGames.FixedSizeStack`1.Push*
+  name: Push
+  href: api/MacacaGames.FixedSizeStack-1.html#MacacaGames_FixedSizeStack_1_Push_
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Push
+  isSpec: "True"
+  fullName: MacacaGames.FixedSizeStack<T>.Push
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Push
+  nameWithType: FixedSizeStack<T>.Push
+  nameWithType.vb: FixedSizeStack(Of T).Push
+- uid: MacacaGames.GlobalTimer
+  name: GlobalTimer
+  href: api/MacacaGames.GlobalTimer.html
+  commentId: T:MacacaGames.GlobalTimer
+  fullName: MacacaGames.GlobalTimer
+  nameWithType: GlobalTimer
+- uid: MacacaGames.GlobalTimer._currentTimeStamp
+  name: _currentTimeStamp
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer__currentTimeStamp
+  commentId: F:MacacaGames.GlobalTimer._currentTimeStamp
+  fullName: MacacaGames.GlobalTimer._currentTimeStamp
+  nameWithType: GlobalTimer._currentTimeStamp
+- uid: MacacaGames.GlobalTimer._deltaTime
+  name: _deltaTime
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer__deltaTime
+  commentId: F:MacacaGames.GlobalTimer._deltaTime
+  fullName: MacacaGames.GlobalTimer._deltaTime
+  nameWithType: GlobalTimer._deltaTime
+- uid: MacacaGames.GlobalTimer.Counter
+  name: GlobalTimer.Counter
+  href: api/MacacaGames.GlobalTimer.Counter.html
+  commentId: T:MacacaGames.GlobalTimer.Counter
+  fullName: MacacaGames.GlobalTimer.Counter
+  nameWithType: GlobalTimer.Counter
+- uid: MacacaGames.GlobalTimer.Counter.completeTimeStamp
+  name: completeTimeStamp
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_completeTimeStamp
+  commentId: F:MacacaGames.GlobalTimer.Counter.completeTimeStamp
+  fullName: MacacaGames.GlobalTimer.Counter.completeTimeStamp
+  nameWithType: GlobalTimer.Counter.completeTimeStamp
+- uid: MacacaGames.GlobalTimer.Counter.Dispose
+  name: Dispose()
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Dispose
+  commentId: M:MacacaGames.GlobalTimer.Counter.Dispose
+  fullName: MacacaGames.GlobalTimer.Counter.Dispose()
+  nameWithType: GlobalTimer.Counter.Dispose()
+- uid: MacacaGames.GlobalTimer.Counter.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Dispose_System_Boolean_
+  commentId: M:MacacaGames.GlobalTimer.Counter.Dispose(System.Boolean)
+  fullName: MacacaGames.GlobalTimer.Counter.Dispose(System.Boolean)
+  nameWithType: GlobalTimer.Counter.Dispose(Boolean)
+- uid: MacacaGames.GlobalTimer.Counter.Dispose*
+  name: Dispose
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Dispose_
+  commentId: Overload:MacacaGames.GlobalTimer.Counter.Dispose
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.Counter.Dispose
+  nameWithType: GlobalTimer.Counter.Dispose
+- uid: MacacaGames.GlobalTimer.Counter.Finalize
+  name: Finalize()
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Finalize
+  commentId: M:MacacaGames.GlobalTimer.Counter.Finalize
+  fullName: MacacaGames.GlobalTimer.Counter.Finalize()
+  nameWithType: GlobalTimer.Counter.Finalize()
+- uid: MacacaGames.GlobalTimer.Counter.Finalize*
+  name: Finalize
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Finalize_
+  commentId: Overload:MacacaGames.GlobalTimer.Counter.Finalize
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.Counter.Finalize
+  nameWithType: GlobalTimer.Counter.Finalize
+- uid: MacacaGames.GlobalTimer.Counter.Finished
+  name: Finished
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Finished
+  commentId: F:MacacaGames.GlobalTimer.Counter.Finished
+  fullName: MacacaGames.GlobalTimer.Counter.Finished
+  nameWithType: GlobalTimer.Counter.Finished
+- uid: MacacaGames.GlobalTimer.Counter.id
+  name: id
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_id
+  commentId: F:MacacaGames.GlobalTimer.Counter.id
+  fullName: MacacaGames.GlobalTimer.Counter.id
+  nameWithType: GlobalTimer.Counter.id
+- uid: MacacaGames.GlobalTimer.Counter.LeftTime
+  name: LeftTime
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_LeftTime
+  commentId: P:MacacaGames.GlobalTimer.Counter.LeftTime
+  fullName: MacacaGames.GlobalTimer.Counter.LeftTime
+  nameWithType: GlobalTimer.Counter.LeftTime
+- uid: MacacaGames.GlobalTimer.Counter.LeftTime*
+  name: LeftTime
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_LeftTime_
+  commentId: Overload:MacacaGames.GlobalTimer.Counter.LeftTime
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.Counter.LeftTime
+  nameWithType: GlobalTimer.Counter.LeftTime
+- uid: MacacaGames.GlobalTimer.Counter.OnComplete
+  name: OnComplete
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_OnComplete
+  commentId: F:MacacaGames.GlobalTimer.Counter.OnComplete
+  fullName: MacacaGames.GlobalTimer.Counter.OnComplete
+  nameWithType: GlobalTimer.Counter.OnComplete
+- uid: MacacaGames.GlobalTimer.Counter.OnUpdate
+  name: OnUpdate
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_OnUpdate
+  commentId: F:MacacaGames.GlobalTimer.Counter.OnUpdate
+  fullName: MacacaGames.GlobalTimer.Counter.OnUpdate
+  nameWithType: GlobalTimer.Counter.OnUpdate
+- uid: MacacaGames.GlobalTimer.Counter.Update
+  name: Update()
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Update
+  commentId: M:MacacaGames.GlobalTimer.Counter.Update
+  fullName: MacacaGames.GlobalTimer.Counter.Update()
+  nameWithType: GlobalTimer.Counter.Update()
+- uid: MacacaGames.GlobalTimer.Counter.Update*
+  name: Update
+  href: api/MacacaGames.GlobalTimer.Counter.html#MacacaGames_GlobalTimer_Counter_Update_
+  commentId: Overload:MacacaGames.GlobalTimer.Counter.Update
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.Counter.Update
+  nameWithType: GlobalTimer.Counter.Update
+- uid: MacacaGames.GlobalTimer.CurrentTimeStamp
+  name: CurrentTimeStamp
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_CurrentTimeStamp
+  commentId: P:MacacaGames.GlobalTimer.CurrentTimeStamp
+  fullName: MacacaGames.GlobalTimer.CurrentTimeStamp
+  nameWithType: GlobalTimer.CurrentTimeStamp
+- uid: MacacaGames.GlobalTimer.CurrentTimeStamp*
+  name: CurrentTimeStamp
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_CurrentTimeStamp_
+  commentId: Overload:MacacaGames.GlobalTimer.CurrentTimeStamp
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.CurrentTimeStamp
+  nameWithType: GlobalTimer.CurrentTimeStamp
+- uid: MacacaGames.GlobalTimer.deltaTime
+  name: deltaTime
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_deltaTime
+  commentId: P:MacacaGames.GlobalTimer.deltaTime
+  fullName: MacacaGames.GlobalTimer.deltaTime
+  nameWithType: GlobalTimer.deltaTime
+- uid: MacacaGames.GlobalTimer.deltaTime*
+  name: deltaTime
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_deltaTime_
+  commentId: Overload:MacacaGames.GlobalTimer.deltaTime
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.deltaTime
+  nameWithType: GlobalTimer.deltaTime
+- uid: MacacaGames.GlobalTimer.OnResume
+  name: OnResume
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_OnResume
+  commentId: F:MacacaGames.GlobalTimer.OnResume
+  fullName: MacacaGames.GlobalTimer.OnResume
+  nameWithType: GlobalTimer.OnResume
+- uid: MacacaGames.GlobalTimer.RegiesterTimer(System.String,System.Int32,System.Action{System.Int32},System.Action,System.Boolean)
+  name: RegiesterTimer(String, Int32, Action<Int32>, Action, Boolean)
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_RegiesterTimer_System_String_System_Int32_System_Action_System_Int32__System_Action_System_Boolean_
+  commentId: M:MacacaGames.GlobalTimer.RegiesterTimer(System.String,System.Int32,System.Action{System.Int32},System.Action,System.Boolean)
+  name.vb: RegiesterTimer(String, Int32, Action(Of Int32), Action, Boolean)
+  fullName: MacacaGames.GlobalTimer.RegiesterTimer(System.String, System.Int32, System.Action<System.Int32>, System.Action, System.Boolean)
+  fullName.vb: MacacaGames.GlobalTimer.RegiesterTimer(System.String, System.Int32, System.Action(Of System.Int32), System.Action, System.Boolean)
+  nameWithType: GlobalTimer.RegiesterTimer(String, Int32, Action<Int32>, Action, Boolean)
+  nameWithType.vb: GlobalTimer.RegiesterTimer(String, Int32, Action(Of Int32), Action, Boolean)
+- uid: MacacaGames.GlobalTimer.RegiesterTimer*
+  name: RegiesterTimer
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_RegiesterTimer_
+  commentId: Overload:MacacaGames.GlobalTimer.RegiesterTimer
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.RegiesterTimer
+  nameWithType: GlobalTimer.RegiesterTimer
+- uid: MacacaGames.GlobalTimer.RenewTimer(System.String,System.Int32,System.Action{System.Int32},System.Action)
+  name: RenewTimer(String, Int32, Action<Int32>, Action)
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_RenewTimer_System_String_System_Int32_System_Action_System_Int32__System_Action_
+  commentId: M:MacacaGames.GlobalTimer.RenewTimer(System.String,System.Int32,System.Action{System.Int32},System.Action)
+  name.vb: RenewTimer(String, Int32, Action(Of Int32), Action)
+  fullName: MacacaGames.GlobalTimer.RenewTimer(System.String, System.Int32, System.Action<System.Int32>, System.Action)
+  fullName.vb: MacacaGames.GlobalTimer.RenewTimer(System.String, System.Int32, System.Action(Of System.Int32), System.Action)
+  nameWithType: GlobalTimer.RenewTimer(String, Int32, Action<Int32>, Action)
+  nameWithType.vb: GlobalTimer.RenewTimer(String, Int32, Action(Of Int32), Action)
+- uid: MacacaGames.GlobalTimer.RenewTimer*
+  name: RenewTimer
+  href: api/MacacaGames.GlobalTimer.html#MacacaGames_GlobalTimer_RenewTimer_
+  commentId: Overload:MacacaGames.GlobalTimer.RenewTimer
+  isSpec: "True"
+  fullName: MacacaGames.GlobalTimer.RenewTimer
+  nameWithType: GlobalTimer.RenewTimer
+- uid: MacacaGames.GlobalTimerSetting
+  name: GlobalTimerSetting
+  href: api/MacacaGames.GlobalTimerSetting.html
+  commentId: T:MacacaGames.GlobalTimerSetting
+  fullName: MacacaGames.GlobalTimerSetting
+  nameWithType: GlobalTimerSetting
+- uid: MacacaGames.GlobalTimerSetting.refreshTimeMethod
+  name: refreshTimeMethod
+  href: api/MacacaGames.GlobalTimerSetting.html#MacacaGames_GlobalTimerSetting_refreshTimeMethod
+  commentId: F:MacacaGames.GlobalTimerSetting.refreshTimeMethod
+  fullName: MacacaGames.GlobalTimerSetting.refreshTimeMethod
+  nameWithType: GlobalTimerSetting.refreshTimeMethod
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  name: GlobalTimerSetting.RefreshTimeMethod
+  href: api/MacacaGames.GlobalTimerSetting.RefreshTimeMethod.html
+  commentId: T:MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  name: SystemDateTime
+  href: api/MacacaGames.GlobalTimerSetting.RefreshTimeMethod.html#MacacaGames_GlobalTimerSetting_RefreshTimeMethod_SystemDateTime
+  commentId: F:MacacaGames.GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  name: UnityDeltaTime
+  href: api/MacacaGames.GlobalTimerSetting.RefreshTimeMethod.html#MacacaGames_GlobalTimerSetting_RefreshTimeMethod_UnityDeltaTime
+  commentId: F:MacacaGames.GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+- uid: MacacaGames.GlobalTimerSetting.RegulateRateIfDelta
+  name: RegulateRateIfDelta
+  href: api/MacacaGames.GlobalTimerSetting.html#MacacaGames_GlobalTimerSetting_RegulateRateIfDelta
+  commentId: F:MacacaGames.GlobalTimerSetting.RegulateRateIfDelta
+  fullName: MacacaGames.GlobalTimerSetting.RegulateRateIfDelta
+  nameWithType: GlobalTimerSetting.RegulateRateIfDelta
+- uid: MacacaGames.JuicyText
+  name: JuicyText
+  href: api/MacacaGames.JuicyText.html
+  commentId: T:MacacaGames.JuicyText
+  fullName: MacacaGames.JuicyText
+  nameWithType: JuicyText
+- uid: MacacaGames.JuicyText._transform
+  name: _transform
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText__transform
+  commentId: P:MacacaGames.JuicyText._transform
+  fullName: MacacaGames.JuicyText._transform
+  nameWithType: JuicyText._transform
+- uid: MacacaGames.JuicyText._transform*
+  name: _transform
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText__transform_
+  commentId: Overload:MacacaGames.JuicyText._transform
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText._transform
+  nameWithType: JuicyText._transform
+- uid: MacacaGames.JuicyText.ClearTextInstant
+  name: ClearTextInstant()
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_ClearTextInstant
+  commentId: M:MacacaGames.JuicyText.ClearTextInstant
+  fullName: MacacaGames.JuicyText.ClearTextInstant()
+  nameWithType: JuicyText.ClearTextInstant()
+- uid: MacacaGames.JuicyText.ClearTextInstant*
+  name: ClearTextInstant
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_ClearTextInstant_
+  commentId: Overload:MacacaGames.JuicyText.ClearTextInstant
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText.ClearTextInstant
+  nameWithType: JuicyText.ClearTextInstant
+- uid: MacacaGames.JuicyText.PlayAnimation(Vector3,System.Single,EaseStyle,System.Boolean)
+  name: PlayAnimation(Vector3, Single, EaseStyle, Boolean)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_PlayAnimation_Vector3_System_Single_EaseStyle_System_Boolean_
+  commentId: M:MacacaGames.JuicyText.PlayAnimation(Vector3,System.Single,EaseStyle,System.Boolean)
+  fullName: MacacaGames.JuicyText.PlayAnimation(Vector3, System.Single, EaseStyle, System.Boolean)
+  nameWithType: JuicyText.PlayAnimation(Vector3, Single, EaseStyle, Boolean)
+- uid: MacacaGames.JuicyText.PlayAnimation*
+  name: PlayAnimation
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_PlayAnimation_
+  commentId: Overload:MacacaGames.JuicyText.PlayAnimation
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText.PlayAnimation
+  nameWithType: JuicyText.PlayAnimation
+- uid: MacacaGames.JuicyText.scaleTarget
+  name: scaleTarget
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_scaleTarget
+  commentId: F:MacacaGames.JuicyText.scaleTarget
+  fullName: MacacaGames.JuicyText.scaleTarget
+  nameWithType: JuicyText.scaleTarget
+- uid: MacacaGames.JuicyText.ScaleTarget
+  name: JuicyText.ScaleTarget
+  href: api/MacacaGames.JuicyText.ScaleTarget.html
+  commentId: T:MacacaGames.JuicyText.ScaleTarget
+  fullName: MacacaGames.JuicyText.ScaleTarget
+  nameWithType: JuicyText.ScaleTarget
+- uid: MacacaGames.JuicyText.ScaleTarget.Parent
+  name: Parent
+  href: api/MacacaGames.JuicyText.ScaleTarget.html#MacacaGames_JuicyText_ScaleTarget_Parent
+  commentId: F:MacacaGames.JuicyText.ScaleTarget.Parent
+  fullName: MacacaGames.JuicyText.ScaleTarget.Parent
+  nameWithType: JuicyText.ScaleTarget.Parent
+- uid: MacacaGames.JuicyText.ScaleTarget.Self
+  name: Self
+  href: api/MacacaGames.JuicyText.ScaleTarget.html#MacacaGames_JuicyText_ScaleTarget_Self
+  commentId: F:MacacaGames.JuicyText.ScaleTarget.Self
+  fullName: MacacaGames.JuicyText.ScaleTarget.Self
+  nameWithType: JuicyText.ScaleTarget.Self
+- uid: MacacaGames.JuicyText.SetNumberAnimation(System.Int32,System.Single,System.String,System.String,System.Single)
+  name: SetNumberAnimation(Int32, Single, String, String, Single)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetNumberAnimation_System_Int32_System_Single_System_String_System_String_System_Single_
+  commentId: M:MacacaGames.JuicyText.SetNumberAnimation(System.Int32,System.Single,System.String,System.String,System.Single)
+  fullName: MacacaGames.JuicyText.SetNumberAnimation(System.Int32, System.Single, System.String, System.String, System.Single)
+  nameWithType: JuicyText.SetNumberAnimation(Int32, Single, String, String, Single)
+- uid: MacacaGames.JuicyText.SetNumberAnimation*
+  name: SetNumberAnimation
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetNumberAnimation_
+  commentId: Overload:MacacaGames.JuicyText.SetNumberAnimation
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText.SetNumberAnimation
+  nameWithType: JuicyText.SetNumberAnimation
+- uid: MacacaGames.JuicyText.SetTextAnimation(System.String,System.Boolean)
+  name: SetTextAnimation(String, Boolean)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextAnimation_System_String_System_Boolean_
+  commentId: M:MacacaGames.JuicyText.SetTextAnimation(System.String,System.Boolean)
+  fullName: MacacaGames.JuicyText.SetTextAnimation(System.String, System.Boolean)
+  nameWithType: JuicyText.SetTextAnimation(String, Boolean)
+- uid: MacacaGames.JuicyText.SetTextAnimation(System.String,Vector3,System.Single,EaseStyle,System.Boolean)
+  name: SetTextAnimation(String, Vector3, Single, EaseStyle, Boolean)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextAnimation_System_String_Vector3_System_Single_EaseStyle_System_Boolean_
+  commentId: M:MacacaGames.JuicyText.SetTextAnimation(System.String,Vector3,System.Single,EaseStyle,System.Boolean)
+  fullName: MacacaGames.JuicyText.SetTextAnimation(System.String, Vector3, System.Single, EaseStyle, System.Boolean)
+  nameWithType: JuicyText.SetTextAnimation(String, Vector3, Single, EaseStyle, Boolean)
+- uid: MacacaGames.JuicyText.SetTextAnimation*
+  name: SetTextAnimation
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextAnimation_
+  commentId: Overload:MacacaGames.JuicyText.SetTextAnimation
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText.SetTextAnimation
+  nameWithType: JuicyText.SetTextAnimation
+- uid: MacacaGames.JuicyText.SetTextColor(Color)
+  name: SetTextColor(Color)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextColor_Color_
+  commentId: M:MacacaGames.JuicyText.SetTextColor(Color)
+  fullName: MacacaGames.JuicyText.SetTextColor(Color)
+  nameWithType: JuicyText.SetTextColor(Color)
+- uid: MacacaGames.JuicyText.SetTextColor*
+  name: SetTextColor
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextColor_
+  commentId: Overload:MacacaGames.JuicyText.SetTextColor
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText.SetTextColor
+  nameWithType: JuicyText.SetTextColor
+- uid: MacacaGames.JuicyText.SetTextInstant(System.String)
+  name: SetTextInstant(String)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextInstant_System_String_
+  commentId: M:MacacaGames.JuicyText.SetTextInstant(System.String)
+  fullName: MacacaGames.JuicyText.SetTextInstant(System.String)
+  nameWithType: JuicyText.SetTextInstant(String)
+- uid: MacacaGames.JuicyText.SetTextInstant*
+  name: SetTextInstant
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextInstant_
+  commentId: Overload:MacacaGames.JuicyText.SetTextInstant
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText.SetTextInstant
+  nameWithType: JuicyText.SetTextInstant
+- uid: MacacaGames.JuicyText.textComponent
+  name: textComponent
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_textComponent
+  commentId: P:MacacaGames.JuicyText.textComponent
+  fullName: MacacaGames.JuicyText.textComponent
+  nameWithType: JuicyText.textComponent
+- uid: MacacaGames.JuicyText.textComponent*
+  name: textComponent
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_textComponent_
+  commentId: Overload:MacacaGames.JuicyText.textComponent
+  isSpec: "True"
+  fullName: MacacaGames.JuicyText.textComponent
+  nameWithType: JuicyText.textComponent
+- uid: MacacaGames.ObjectPool
+  name: ObjectPool
+  href: api/MacacaGames.ObjectPool.html
+  commentId: T:MacacaGames.ObjectPool
+  fullName: MacacaGames.ObjectPool
+  nameWithType: ObjectPool
+- uid: MacacaGames.ObjectPool.Count
+  name: Count()
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Count
+  commentId: M:MacacaGames.ObjectPool.Count
+  fullName: MacacaGames.ObjectPool.Count()
+  nameWithType: ObjectPool.Count()
+- uid: MacacaGames.ObjectPool.Count*
+  name: Count
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Count_
+  commentId: Overload:MacacaGames.ObjectPool.Count
+  isSpec: "True"
+  fullName: MacacaGames.ObjectPool.Count
+  nameWithType: ObjectPool.Count
+- uid: MacacaGames.ObjectPool.Init
+  name: Init()
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Init
+  commentId: M:MacacaGames.ObjectPool.Init
+  fullName: MacacaGames.ObjectPool.Init()
+  nameWithType: ObjectPool.Init()
+- uid: MacacaGames.ObjectPool.Init(GameObject,System.Int32)
+  name: Init(GameObject, Int32)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Init_GameObject_System_Int32_
+  commentId: M:MacacaGames.ObjectPool.Init(GameObject,System.Int32)
+  fullName: MacacaGames.ObjectPool.Init(GameObject, System.Int32)
+  nameWithType: ObjectPool.Init(GameObject, Int32)
+- uid: MacacaGames.ObjectPool.Init*
+  name: Init
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Init_
+  commentId: Overload:MacacaGames.ObjectPool.Init
+  isSpec: "True"
+  fullName: MacacaGames.ObjectPool.Init
+  nameWithType: ObjectPool.Init
+- uid: MacacaGames.ObjectPool.isReachPoolMax
+  name: isReachPoolMax()
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_isReachPoolMax
+  commentId: M:MacacaGames.ObjectPool.isReachPoolMax
+  fullName: MacacaGames.ObjectPool.isReachPoolMax()
+  nameWithType: ObjectPool.isReachPoolMax()
+- uid: MacacaGames.ObjectPool.isReachPoolMax*
+  name: isReachPoolMax
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_isReachPoolMax_
+  commentId: Overload:MacacaGames.ObjectPool.isReachPoolMax
+  isSpec: "True"
+  fullName: MacacaGames.ObjectPool.isReachPoolMax
+  nameWithType: ObjectPool.isReachPoolMax
+- uid: MacacaGames.ObjectPool.Recovery(GameObject)
+  name: Recovery(GameObject)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Recovery_GameObject_
+  commentId: M:MacacaGames.ObjectPool.Recovery(GameObject)
+  fullName: MacacaGames.ObjectPool.Recovery(GameObject)
+  nameWithType: ObjectPool.Recovery(GameObject)
+- uid: MacacaGames.ObjectPool.Recovery(GameObject,System.Single)
+  name: Recovery(GameObject, Single)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Recovery_GameObject_System_Single_
+  commentId: M:MacacaGames.ObjectPool.Recovery(GameObject,System.Single)
+  fullName: MacacaGames.ObjectPool.Recovery(GameObject, System.Single)
+  nameWithType: ObjectPool.Recovery(GameObject, Single)
+- uid: MacacaGames.ObjectPool.Recovery*
+  name: Recovery
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Recovery_
+  commentId: Overload:MacacaGames.ObjectPool.Recovery
+  isSpec: "True"
+  fullName: MacacaGames.ObjectPool.Recovery
+  nameWithType: ObjectPool.Recovery
+- uid: MacacaGames.ObjectPool.RecoveryAll
+  name: RecoveryAll()
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_RecoveryAll
+  commentId: M:MacacaGames.ObjectPool.RecoveryAll
+  fullName: MacacaGames.ObjectPool.RecoveryAll()
+  nameWithType: ObjectPool.RecoveryAll()
+- uid: MacacaGames.ObjectPool.RecoveryAll*
+  name: RecoveryAll
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_RecoveryAll_
+  commentId: Overload:MacacaGames.ObjectPool.RecoveryAll
+  isSpec: "True"
+  fullName: MacacaGames.ObjectPool.RecoveryAll
+  nameWithType: ObjectPool.RecoveryAll
+- uid: MacacaGames.ObjectPool.ReUse(Vector3,Quaternion)
+  name: ReUse(Vector3, Quaternion)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_ReUse_Vector3_Quaternion_
+  commentId: M:MacacaGames.ObjectPool.ReUse(Vector3,Quaternion)
+  fullName: MacacaGames.ObjectPool.ReUse(Vector3, Quaternion)
+  nameWithType: ObjectPool.ReUse(Vector3, Quaternion)
+- uid: MacacaGames.ObjectPool.ReUse*
+  name: ReUse
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_ReUse_
+  commentId: Overload:MacacaGames.ObjectPool.ReUse
+  isSpec: "True"
+  fullName: MacacaGames.ObjectPool.ReUse
+  nameWithType: ObjectPool.ReUse
+- uid: MacacaGames.ObjectPool.ReUse``1(Vector3,Quaternion)
+  name: ReUse<T>(Vector3, Quaternion)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_ReUse__1_Vector3_Quaternion_
+  commentId: M:MacacaGames.ObjectPool.ReUse``1(Vector3,Quaternion)
+  name.vb: ReUse(Of T)(Vector3, Quaternion)
+  fullName: MacacaGames.ObjectPool.ReUse<T>(Vector3, Quaternion)
+  fullName.vb: MacacaGames.ObjectPool.ReUse(Of T)(Vector3, Quaternion)
+  nameWithType: ObjectPool.ReUse<T>(Vector3, Quaternion)
+  nameWithType.vb: ObjectPool.ReUse(Of T)(Vector3, Quaternion)
+- uid: MacacaGames.PivotPresets
+  name: PivotPresets
+  href: api/MacacaGames.PivotPresets.html
+  commentId: T:MacacaGames.PivotPresets
+  fullName: MacacaGames.PivotPresets
+  nameWithType: PivotPresets
+- uid: MacacaGames.PivotPresets.BottomCenter
+  name: BottomCenter
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_BottomCenter
+  commentId: F:MacacaGames.PivotPresets.BottomCenter
+  fullName: MacacaGames.PivotPresets.BottomCenter
+  nameWithType: PivotPresets.BottomCenter
+- uid: MacacaGames.PivotPresets.BottomLeft
+  name: BottomLeft
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_BottomLeft
+  commentId: F:MacacaGames.PivotPresets.BottomLeft
+  fullName: MacacaGames.PivotPresets.BottomLeft
+  nameWithType: PivotPresets.BottomLeft
+- uid: MacacaGames.PivotPresets.BottomRight
+  name: BottomRight
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_BottomRight
+  commentId: F:MacacaGames.PivotPresets.BottomRight
+  fullName: MacacaGames.PivotPresets.BottomRight
+  nameWithType: PivotPresets.BottomRight
+- uid: MacacaGames.PivotPresets.MiddleCenter
+  name: MiddleCenter
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_MiddleCenter
+  commentId: F:MacacaGames.PivotPresets.MiddleCenter
+  fullName: MacacaGames.PivotPresets.MiddleCenter
+  nameWithType: PivotPresets.MiddleCenter
+- uid: MacacaGames.PivotPresets.MiddleLeft
+  name: MiddleLeft
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_MiddleLeft
+  commentId: F:MacacaGames.PivotPresets.MiddleLeft
+  fullName: MacacaGames.PivotPresets.MiddleLeft
+  nameWithType: PivotPresets.MiddleLeft
+- uid: MacacaGames.PivotPresets.MiddleRight
+  name: MiddleRight
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_MiddleRight
+  commentId: F:MacacaGames.PivotPresets.MiddleRight
+  fullName: MacacaGames.PivotPresets.MiddleRight
+  nameWithType: PivotPresets.MiddleRight
+- uid: MacacaGames.PivotPresets.TopCenter
+  name: TopCenter
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_TopCenter
+  commentId: F:MacacaGames.PivotPresets.TopCenter
+  fullName: MacacaGames.PivotPresets.TopCenter
+  nameWithType: PivotPresets.TopCenter
+- uid: MacacaGames.PivotPresets.TopLeft
+  name: TopLeft
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_TopLeft
+  commentId: F:MacacaGames.PivotPresets.TopLeft
+  fullName: MacacaGames.PivotPresets.TopLeft
+  nameWithType: PivotPresets.TopLeft
+- uid: MacacaGames.PivotPresets.TopRight
+  name: TopRight
+  href: api/MacacaGames.PivotPresets.html#MacacaGames_PivotPresets_TopRight
+  commentId: F:MacacaGames.PivotPresets.TopRight
+  fullName: MacacaGames.PivotPresets.TopRight
+  nameWithType: PivotPresets.TopRight
+- uid: MacacaGames.RectTransformExtensions
+  name: RectTransformExtensions
+  href: api/MacacaGames.RectTransformExtensions.html
+  commentId: T:MacacaGames.RectTransformExtensions
+  fullName: MacacaGames.RectTransformExtensions
+  nameWithType: RectTransformExtensions
+- uid: MacacaGames.RectTransformExtensions.GetAnchorPresets(RectTransform)
+  name: GetAnchorPresets(RectTransform)
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_GetAnchorPresets_RectTransform_
+  commentId: M:MacacaGames.RectTransformExtensions.GetAnchorPresets(RectTransform)
+  fullName: MacacaGames.RectTransformExtensions.GetAnchorPresets(RectTransform)
+  nameWithType: RectTransformExtensions.GetAnchorPresets(RectTransform)
+- uid: MacacaGames.RectTransformExtensions.GetAnchorPresets*
+  name: GetAnchorPresets
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_GetAnchorPresets_
+  commentId: Overload:MacacaGames.RectTransformExtensions.GetAnchorPresets
+  isSpec: "True"
+  fullName: MacacaGames.RectTransformExtensions.GetAnchorPresets
+  nameWithType: RectTransformExtensions.GetAnchorPresets
+- uid: MacacaGames.RectTransformExtensions.SetAnchor(RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+  name: SetAnchor(RectTransform, AnchorPresets, Int32, Int32)
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetAnchor_RectTransform_MacacaGames_AnchorPresets_System_Int32_System_Int32_
+  commentId: M:MacacaGames.RectTransformExtensions.SetAnchor(RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+  fullName: MacacaGames.RectTransformExtensions.SetAnchor(RectTransform, MacacaGames.AnchorPresets, System.Int32, System.Int32)
+  nameWithType: RectTransformExtensions.SetAnchor(RectTransform, AnchorPresets, Int32, Int32)
+- uid: MacacaGames.RectTransformExtensions.SetAnchor*
+  name: SetAnchor
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetAnchor_
+  commentId: Overload:MacacaGames.RectTransformExtensions.SetAnchor
+  isSpec: "True"
+  fullName: MacacaGames.RectTransformExtensions.SetAnchor
+  nameWithType: RectTransformExtensions.SetAnchor
+- uid: MacacaGames.RectTransformExtensions.SetPivot(RectTransform,MacacaGames.PivotPresets)
+  name: SetPivot(RectTransform, PivotPresets)
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetPivot_RectTransform_MacacaGames_PivotPresets_
+  commentId: M:MacacaGames.RectTransformExtensions.SetPivot(RectTransform,MacacaGames.PivotPresets)
+  fullName: MacacaGames.RectTransformExtensions.SetPivot(RectTransform, MacacaGames.PivotPresets)
+  nameWithType: RectTransformExtensions.SetPivot(RectTransform, PivotPresets)
+- uid: MacacaGames.RectTransformExtensions.SetPivot*
+  name: SetPivot
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetPivot_
+  commentId: Overload:MacacaGames.RectTransformExtensions.SetPivot
+  isSpec: "True"
+  fullName: MacacaGames.RectTransformExtensions.SetPivot
+  nameWithType: RectTransformExtensions.SetPivot
+- uid: MacacaGames.ReflectionUtility
+  name: ReflectionUtility
+  href: api/MacacaGames.ReflectionUtility.html
+  commentId: T:MacacaGames.ReflectionUtility
+  fullName: MacacaGames.ReflectionUtility
+  nameWithType: ReflectionUtility
+- uid: MacacaGames.ReflectionUtility.FilterWithAttribute*
+  name: FilterWithAttribute
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FilterWithAttribute_
+  commentId: Overload:MacacaGames.ReflectionUtility.FilterWithAttribute
+  isSpec: "True"
+  fullName: MacacaGames.ReflectionUtility.FilterWithAttribute
+  nameWithType: ReflectionUtility.FilterWithAttribute
+- uid: MacacaGames.ReflectionUtility.FilterWithAttribute``1(System.Collections.Generic.IEnumerable{``0},System.Type)
+  name: FilterWithAttribute<T>(IEnumerable<T>, Type)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FilterWithAttribute__1_System_Collections_Generic_IEnumerable___0__System_Type_
+  commentId: M:MacacaGames.ReflectionUtility.FilterWithAttribute``1(System.Collections.Generic.IEnumerable{``0},System.Type)
+  name.vb: FilterWithAttribute(Of T)(IEnumerable(Of T), Type)
+  fullName: MacacaGames.ReflectionUtility.FilterWithAttribute<T>(System.Collections.Generic.IEnumerable<T>, System.Type)
+  fullName.vb: MacacaGames.ReflectionUtility.FilterWithAttribute(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Type)
+  nameWithType: ReflectionUtility.FilterWithAttribute<T>(IEnumerable<T>, Type)
+  nameWithType.vb: ReflectionUtility.FilterWithAttribute(Of T)(IEnumerable(Of T), Type)
+- uid: MacacaGames.ReflectionUtility.GetMemberInfoType(MemberInfo)
+  name: GetMemberInfoType(MemberInfo)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetMemberInfoType_MemberInfo_
+  commentId: M:MacacaGames.ReflectionUtility.GetMemberInfoType(MemberInfo)
+  fullName: MacacaGames.ReflectionUtility.GetMemberInfoType(MemberInfo)
+  nameWithType: ReflectionUtility.GetMemberInfoType(MemberInfo)
+- uid: MacacaGames.ReflectionUtility.GetMemberInfoType*
+  name: GetMemberInfoType
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetMemberInfoType_
+  commentId: Overload:MacacaGames.ReflectionUtility.GetMemberInfoType
+  isSpec: "True"
+  fullName: MacacaGames.ReflectionUtility.GetMemberInfoType
+  nameWithType: ReflectionUtility.GetMemberInfoType
+- uid: MacacaGames.ReflectionUtility.GetValue*
+  name: GetValue
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetValue_
+  commentId: Overload:MacacaGames.ReflectionUtility.GetValue
+  isSpec: "True"
+  fullName: MacacaGames.ReflectionUtility.GetValue
+  nameWithType: ReflectionUtility.GetValue
+- uid: MacacaGames.ReflectionUtility.GetValue``1(MemberInfo,System.Object)
+  name: GetValue<T>(MemberInfo, Object)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetValue__1_MemberInfo_System_Object_
+  commentId: M:MacacaGames.ReflectionUtility.GetValue``1(MemberInfo,System.Object)
+  name.vb: GetValue(Of T)(MemberInfo, Object)
+  fullName: MacacaGames.ReflectionUtility.GetValue<T>(MemberInfo, System.Object)
+  fullName.vb: MacacaGames.ReflectionUtility.GetValue(Of T)(MemberInfo, System.Object)
+  nameWithType: ReflectionUtility.GetValue<T>(MemberInfo, Object)
+  nameWithType.vb: ReflectionUtility.GetValue(Of T)(MemberInfo, Object)
+- uid: MacacaGames.ReflectionUtility.GetValueResult
+  name: ReflectionUtility.GetValueResult
+  href: api/MacacaGames.ReflectionUtility.GetValueResult.html
+  commentId: T:MacacaGames.ReflectionUtility.GetValueResult
+  fullName: MacacaGames.ReflectionUtility.GetValueResult
+  nameWithType: ReflectionUtility.GetValueResult
+- uid: MacacaGames.ReflectionUtility.GetValueResult.hasValue
+  name: hasValue
+  href: api/MacacaGames.ReflectionUtility.GetValueResult.html#MacacaGames_ReflectionUtility_GetValueResult_hasValue
+  commentId: F:MacacaGames.ReflectionUtility.GetValueResult.hasValue
+  fullName: MacacaGames.ReflectionUtility.GetValueResult.hasValue
+  nameWithType: ReflectionUtility.GetValueResult.hasValue
+- uid: MacacaGames.ReflectionUtility.GetValueResult.value
+  name: value
+  href: api/MacacaGames.ReflectionUtility.GetValueResult.html#MacacaGames_ReflectionUtility_GetValueResult_value
+  commentId: F:MacacaGames.ReflectionUtility.GetValueResult.value
+  fullName: MacacaGames.ReflectionUtility.GetValueResult.value
+  nameWithType: ReflectionUtility.GetValueResult.value
+- uid: MacacaGames.ReflectionUtility.TryGetValue*
+  name: TryGetValue
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_TryGetValue_
+  commentId: Overload:MacacaGames.ReflectionUtility.TryGetValue
+  isSpec: "True"
+  fullName: MacacaGames.ReflectionUtility.TryGetValue
+  nameWithType: ReflectionUtility.TryGetValue
+- uid: MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object)
+  name: TryGetValue<T>(MemberInfo, Object)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_TryGetValue__1_MemberInfo_System_Object_
+  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object)
+  name.vb: TryGetValue(Of T)(MemberInfo, Object)
+  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(MemberInfo, System.Object)
+  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(MemberInfo, System.Object)
+  nameWithType: ReflectionUtility.TryGetValue<T>(MemberInfo, Object)
+  nameWithType.vb: ReflectionUtility.TryGetValue(Of T)(MemberInfo, Object)
+- uid: MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object,``0@)
+  name: TryGetValue<T>(MemberInfo, Object, out T)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_TryGetValue__1_MemberInfo_System_Object___0__
+  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object,``0@)
+  name.vb: TryGetValue(Of T)(MemberInfo, Object, ByRef T)
+  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(MemberInfo, System.Object, out T)
+  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(MemberInfo, System.Object, ByRef T)
+  nameWithType: ReflectionUtility.TryGetValue<T>(MemberInfo, Object, out T)
+  nameWithType.vb: ReflectionUtility.TryGetValue(Of T)(MemberInfo, Object, ByRef T)
+- uid: MacacaGames.SerializedPropertyExtensions
+  name: SerializedPropertyExtensions
+  href: api/MacacaGames.SerializedPropertyExtensions.html
+  commentId: T:MacacaGames.SerializedPropertyExtensions
+  fullName: MacacaGames.SerializedPropertyExtensions
+  nameWithType: SerializedPropertyExtensions
+- uid: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty,System.Object)
+  name: SetTargetObjectOfProperty(SerializedProperty, Object)
+  href: api/MacacaGames.SerializedPropertyExtensions.html#MacacaGames_SerializedPropertyExtensions_SetTargetObjectOfProperty_SerializedProperty_System_Object_
+  commentId: M:MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty,System.Object)
+  fullName: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty, System.Object)
+  nameWithType: SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty, Object)
+- uid: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty*
+  name: SetTargetObjectOfProperty
+  href: api/MacacaGames.SerializedPropertyExtensions.html#MacacaGames_SerializedPropertyExtensions_SetTargetObjectOfProperty_
+  commentId: Overload:MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty
+  isSpec: "True"
+  fullName: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty
+  nameWithType: SerializedPropertyExtensions.SetTargetObjectOfProperty
+- uid: MacacaGames.Singleton`1
+  name: Singleton<T>
+  href: api/MacacaGames.Singleton-1.html
+  commentId: T:MacacaGames.Singleton`1
+  name.vb: Singleton(Of T)
+  fullName: MacacaGames.Singleton<T>
+  fullName.vb: MacacaGames.Singleton(Of T)
+  nameWithType: Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+- uid: MacacaGames.Singleton`1.Instance
+  name: Instance
+  href: api/MacacaGames.Singleton-1.html#MacacaGames_Singleton_1_Instance
+  commentId: P:MacacaGames.Singleton`1.Instance
+  fullName: MacacaGames.Singleton<T>.Instance
+  fullName.vb: MacacaGames.Singleton(Of T).Instance
+  nameWithType: Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+- uid: MacacaGames.Singleton`1.Instance*
+  name: Instance
+  href: api/MacacaGames.Singleton-1.html#MacacaGames_Singleton_1_Instance_
+  commentId: Overload:MacacaGames.Singleton`1.Instance
+  isSpec: "True"
+  fullName: MacacaGames.Singleton<T>.Instance
+  fullName.vb: MacacaGames.Singleton(Of T).Instance
+  nameWithType: Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+- uid: MacacaGames.StringUtilitys
+  name: StringUtilitys
+  href: api/MacacaGames.StringUtilitys.html
+  commentId: T:MacacaGames.StringUtilitys
+  fullName: MacacaGames.StringUtilitys
+  nameWithType: StringUtilitys
+- uid: MacacaGames.StringUtilitys.GetRandomString(System.Int32)
+  name: GetRandomString(Int32)
+  href: api/MacacaGames.StringUtilitys.html#MacacaGames_StringUtilitys_GetRandomString_System_Int32_
+  commentId: M:MacacaGames.StringUtilitys.GetRandomString(System.Int32)
+  fullName: MacacaGames.StringUtilitys.GetRandomString(System.Int32)
+  nameWithType: StringUtilitys.GetRandomString(Int32)
+- uid: MacacaGames.StringUtilitys.GetRandomString*
+  name: GetRandomString
+  href: api/MacacaGames.StringUtilitys.html#MacacaGames_StringUtilitys_GetRandomString_
+  commentId: Overload:MacacaGames.StringUtilitys.GetRandomString
+  isSpec: "True"
+  fullName: MacacaGames.StringUtilitys.GetRandomString
+  nameWithType: StringUtilitys.GetRandomString
+- uid: MacacaGames.StringUtilitys.Random(System.String,System.Int32)
+  name: Random(String, Int32)
+  href: api/MacacaGames.StringUtilitys.html#MacacaGames_StringUtilitys_Random_System_String_System_Int32_
+  commentId: M:MacacaGames.StringUtilitys.Random(System.String,System.Int32)
+  fullName: MacacaGames.StringUtilitys.Random(System.String, System.Int32)
+  nameWithType: StringUtilitys.Random(String, Int32)
+- uid: MacacaGames.StringUtilitys.Random*
+  name: Random
+  href: api/MacacaGames.StringUtilitys.html#MacacaGames_StringUtilitys_Random_
+  commentId: Overload:MacacaGames.StringUtilitys.Random
+  isSpec: "True"
+  fullName: MacacaGames.StringUtilitys.Random
+  nameWithType: StringUtilitys.Random
+- uid: MacacaGames.TextureAndScreenUtility
+  name: TextureAndScreenUtility
+  href: api/MacacaGames.TextureAndScreenUtility.html
+  commentId: T:MacacaGames.TextureAndScreenUtility
+  fullName: MacacaGames.TextureAndScreenUtility
+  nameWithType: TextureAndScreenUtility
+- uid: MacacaGames.TextureAndScreenUtility.AddWatermark(Texture2D,Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  name: AddWatermark(Texture2D, Texture2D, TextureAndScreenUtility.WaterMarkPosition)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_AddWatermark_Texture2D_Texture2D_MacacaGames_TextureAndScreenUtility_WaterMarkPosition_
+  commentId: M:MacacaGames.TextureAndScreenUtility.AddWatermark(Texture2D,Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  fullName: MacacaGames.TextureAndScreenUtility.AddWatermark(Texture2D, Texture2D, MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  nameWithType: TextureAndScreenUtility.AddWatermark(Texture2D, Texture2D, TextureAndScreenUtility.WaterMarkPosition)
+- uid: MacacaGames.TextureAndScreenUtility.AddWatermark*
+  name: AddWatermark
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_AddWatermark_
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.AddWatermark
+  isSpec: "True"
+  fullName: MacacaGames.TextureAndScreenUtility.AddWatermark
+  nameWithType: TextureAndScreenUtility.AddWatermark
+- uid: MacacaGames.TextureAndScreenUtility.photoFilePath
+  name: photoFilePath
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_photoFilePath
+  commentId: F:MacacaGames.TextureAndScreenUtility.photoFilePath
+  fullName: MacacaGames.TextureAndScreenUtility.photoFilePath
+  nameWithType: TextureAndScreenUtility.photoFilePath
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D,System.Int32,System.Int32,FilterMode)
+  name: ScaleTextureUseMutilThread(Texture2D, Int32, Int32, FilterMode)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseMutilThread_Texture2D_System_Int32_System_Int32_FilterMode_
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D,System.Int32,System.Int32,FilterMode)
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D, System.Int32, System.Int32, FilterMode)
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D, Int32, Int32, FilterMode)
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread*
+  name: ScaleTextureUseMutilThread
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseMutilThread_
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread
+  isSpec: "True"
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseMutilThread
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D,System.Int32,System.Int32,FilterMode)
+  name: ScaleTextureUseUnityRenderTexture(Texture2D, Int32, Int32, FilterMode)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseUnityRenderTexture_Texture2D_System_Int32_System_Int32_FilterMode_
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D,System.Int32,System.Int32,FilterMode)
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D, System.Int32, System.Int32, FilterMode)
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D, Int32, Int32, FilterMode)
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture*
+  name: ScaleTextureUseUnityRenderTexture
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseUnityRenderTexture_
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
+  isSpec: "True"
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
+- uid: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{Texture2D},CancellationToken,System.String,System.Int32,System.Single,System.Single,Camera,System.Boolean)
+  name: ScreenShotCoroutine(IObserver<Texture2D>, CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScreenShotCoroutine_System_IObserver_Texture2D__CancellationToken_System_String_System_Int32_System_Single_System_Single_Camera_System_Boolean_
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{Texture2D},CancellationToken,System.String,System.Int32,System.Single,System.Single,Camera,System.Boolean)
+  name.vb: ScreenShotCoroutine(IObserver(Of Texture2D), CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+  fullName: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver<Texture2D>, CancellationToken, System.String, System.Int32, System.Single, System.Single, Camera, System.Boolean)
+  fullName.vb: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver(Of Texture2D), CancellationToken, System.String, System.Int32, System.Single, System.Single, Camera, System.Boolean)
+  nameWithType: TextureAndScreenUtility.ScreenShotCoroutine(IObserver<Texture2D>, CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+  nameWithType.vb: TextureAndScreenUtility.ScreenShotCoroutine(IObserver(Of Texture2D), CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+- uid: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine*
+  name: ScreenShotCoroutine
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScreenShotCoroutine_
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine
+  isSpec: "True"
+  fullName: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine
+  nameWithType: TextureAndScreenUtility.ScreenShotCoroutine
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  name: TextureAndScreenUtility.WaterMarkPosition
+  href: api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.html
+  commentId: T:MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  name: LeftBottom
+  href: api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.html#MacacaGames_TextureAndScreenUtility_WaterMarkPosition_LeftBottom
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  name: LeftTop
+  href: api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.html#MacacaGames_TextureAndScreenUtility_WaterMarkPosition_LeftTop
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.LeftTop
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  name: RightBottom
+  href: api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.html#MacacaGames_TextureAndScreenUtility_WaterMarkPosition_RightBottom
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.RightBottom
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
+  name: RightTop
+  href: api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.html#MacacaGames_TextureAndScreenUtility_WaterMarkPosition_RightTop
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.RightTop
+- uid: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,Texture2D)
+  name: WriteImageToDisk(String, Texture2D)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_WriteImageToDisk_System_String_Texture2D_
+  commentId: M:MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,Texture2D)
+  fullName: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String, Texture2D)
+  nameWithType: TextureAndScreenUtility.WriteImageToDisk(String, Texture2D)
+- uid: MacacaGames.TextureAndScreenUtility.WriteImageToDisk*
+  name: WriteImageToDisk
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_WriteImageToDisk_
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.WriteImageToDisk
+  isSpec: "True"
+  fullName: MacacaGames.TextureAndScreenUtility.WriteImageToDisk
+  nameWithType: TextureAndScreenUtility.WriteImageToDisk
+- uid: MacacaGames.TextureScale
+  name: TextureScale
+  href: api/MacacaGames.TextureScale.html
+  commentId: T:MacacaGames.TextureScale
+  fullName: MacacaGames.TextureScale
+  nameWithType: TextureScale
+- uid: MacacaGames.TextureScale.Bilinear(Texture2D,System.Int32,System.Int32)
+  name: Bilinear(Texture2D, Int32, Int32)
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Bilinear_Texture2D_System_Int32_System_Int32_
+  commentId: M:MacacaGames.TextureScale.Bilinear(Texture2D,System.Int32,System.Int32)
+  fullName: MacacaGames.TextureScale.Bilinear(Texture2D, System.Int32, System.Int32)
+  nameWithType: TextureScale.Bilinear(Texture2D, Int32, Int32)
+- uid: MacacaGames.TextureScale.Bilinear*
+  name: Bilinear
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Bilinear_
+  commentId: Overload:MacacaGames.TextureScale.Bilinear
+  isSpec: "True"
+  fullName: MacacaGames.TextureScale.Bilinear
+  nameWithType: TextureScale.Bilinear
+- uid: MacacaGames.TextureScale.BilinearScale(System.Object)
+  name: BilinearScale(Object)
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_BilinearScale_System_Object_
+  commentId: M:MacacaGames.TextureScale.BilinearScale(System.Object)
+  fullName: MacacaGames.TextureScale.BilinearScale(System.Object)
+  nameWithType: TextureScale.BilinearScale(Object)
+- uid: MacacaGames.TextureScale.BilinearScale*
+  name: BilinearScale
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_BilinearScale_
+  commentId: Overload:MacacaGames.TextureScale.BilinearScale
+  isSpec: "True"
+  fullName: MacacaGames.TextureScale.BilinearScale
+  nameWithType: TextureScale.BilinearScale
+- uid: MacacaGames.TextureScale.Point(Texture2D,System.Int32,System.Int32)
+  name: Point(Texture2D, Int32, Int32)
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Point_Texture2D_System_Int32_System_Int32_
+  commentId: M:MacacaGames.TextureScale.Point(Texture2D,System.Int32,System.Int32)
+  fullName: MacacaGames.TextureScale.Point(Texture2D, System.Int32, System.Int32)
+  nameWithType: TextureScale.Point(Texture2D, Int32, Int32)
+- uid: MacacaGames.TextureScale.Point*
+  name: Point
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Point_
+  commentId: Overload:MacacaGames.TextureScale.Point
+  isSpec: "True"
+  fullName: MacacaGames.TextureScale.Point
+  nameWithType: TextureScale.Point
+- uid: MacacaGames.TextureScale.PointScale(System.Object)
+  name: PointScale(Object)
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_PointScale_System_Object_
+  commentId: M:MacacaGames.TextureScale.PointScale(System.Object)
+  fullName: MacacaGames.TextureScale.PointScale(System.Object)
+  nameWithType: TextureScale.PointScale(Object)
+- uid: MacacaGames.TextureScale.PointScale*
+  name: PointScale
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_PointScale_
+  commentId: Overload:MacacaGames.TextureScale.PointScale
+  isSpec: "True"
+  fullName: MacacaGames.TextureScale.PointScale
+  nameWithType: TextureScale.PointScale
+- uid: MacacaGames.TextureScale.ThreadData
+  name: TextureScale.ThreadData
+  href: api/MacacaGames.TextureScale.ThreadData.html
+  commentId: T:MacacaGames.TextureScale.ThreadData
+  fullName: MacacaGames.TextureScale.ThreadData
+  nameWithType: TextureScale.ThreadData
+- uid: MacacaGames.TextureScale.ThreadData.#ctor(System.Int32,System.Int32)
+  name: ThreadData(Int32, Int32)
+  href: api/MacacaGames.TextureScale.ThreadData.html#MacacaGames_TextureScale_ThreadData__ctor_System_Int32_System_Int32_
+  commentId: M:MacacaGames.TextureScale.ThreadData.#ctor(System.Int32,System.Int32)
+  fullName: MacacaGames.TextureScale.ThreadData.ThreadData(System.Int32, System.Int32)
+  nameWithType: TextureScale.ThreadData.ThreadData(Int32, Int32)
+- uid: MacacaGames.TextureScale.ThreadData.#ctor*
+  name: ThreadData
+  href: api/MacacaGames.TextureScale.ThreadData.html#MacacaGames_TextureScale_ThreadData__ctor_
+  commentId: Overload:MacacaGames.TextureScale.ThreadData.#ctor
+  isSpec: "True"
+  fullName: MacacaGames.TextureScale.ThreadData.ThreadData
+  nameWithType: TextureScale.ThreadData.ThreadData
+- uid: MacacaGames.TextureScale.ThreadData.end
+  name: end
+  href: api/MacacaGames.TextureScale.ThreadData.html#MacacaGames_TextureScale_ThreadData_end
+  commentId: F:MacacaGames.TextureScale.ThreadData.end
+  fullName: MacacaGames.TextureScale.ThreadData.end
+  nameWithType: TextureScale.ThreadData.end
+- uid: MacacaGames.TextureScale.ThreadData.start
+  name: start
+  href: api/MacacaGames.TextureScale.ThreadData.html#MacacaGames_TextureScale_ThreadData_start
+  commentId: F:MacacaGames.TextureScale.ThreadData.start
+  fullName: MacacaGames.TextureScale.ThreadData.start
+  nameWithType: TextureScale.ThreadData.start
+- uid: MacacaGames.Utility
+  name: Utility
+  href: api/MacacaGames.Utility.html
+  commentId: T:MacacaGames.Utility
+  fullName: MacacaGames.Utility
+  nameWithType: Utility
+- uid: MacacaGames.Utility.Base64Decode(System.String)
+  name: Base64Decode(String)
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_Base64Decode_System_String_
+  commentId: M:MacacaGames.Utility.Base64Decode(System.String)
+  fullName: MacacaGames.Utility.Base64Decode(System.String)
+  nameWithType: Utility.Base64Decode(String)
+- uid: MacacaGames.Utility.Base64Decode*
+  name: Base64Decode
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_Base64Decode_
+  commentId: Overload:MacacaGames.Utility.Base64Decode
+  isSpec: "True"
+  fullName: MacacaGames.Utility.Base64Decode
+  nameWithType: Utility.Base64Decode
+- uid: MacacaGames.Utility.Base64Encode(System.String)
+  name: Base64Encode(String)
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_Base64Encode_System_String_
+  commentId: M:MacacaGames.Utility.Base64Encode(System.String)
+  fullName: MacacaGames.Utility.Base64Encode(System.String)
+  nameWithType: Utility.Base64Encode(String)
+- uid: MacacaGames.Utility.Base64Encode*
+  name: Base64Encode
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_Base64Encode_
+  commentId: Overload:MacacaGames.Utility.Base64Encode
+  isSpec: "True"
+  fullName: MacacaGames.Utility.Base64Encode
+  nameWithType: Utility.Base64Encode
+- uid: MacacaGames.Utility.BytesToString(System.Byte[])
+  name: BytesToString(Byte[])
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_BytesToString_System_Byte___
+  commentId: M:MacacaGames.Utility.BytesToString(System.Byte[])
+  name.vb: BytesToString(Byte())
+  fullName: MacacaGames.Utility.BytesToString(System.Byte[])
+  fullName.vb: MacacaGames.Utility.BytesToString(System.Byte())
+  nameWithType: Utility.BytesToString(Byte[])
+  nameWithType.vb: Utility.BytesToString(Byte())
+- uid: MacacaGames.Utility.BytesToString*
+  name: BytesToString
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_BytesToString_
+  commentId: Overload:MacacaGames.Utility.BytesToString
+  isSpec: "True"
+  fullName: MacacaGames.Utility.BytesToString
+  nameWithType: Utility.BytesToString
+- uid: MacacaGames.Utility.GetDateTimeFromTimeStamp(System.Int32)
+  name: GetDateTimeFromTimeStamp(Int32)
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_GetDateTimeFromTimeStamp_System_Int32_
+  commentId: M:MacacaGames.Utility.GetDateTimeFromTimeStamp(System.Int32)
+  fullName: MacacaGames.Utility.GetDateTimeFromTimeStamp(System.Int32)
+  nameWithType: Utility.GetDateTimeFromTimeStamp(Int32)
+- uid: MacacaGames.Utility.GetDateTimeFromTimeStamp*
+  name: GetDateTimeFromTimeStamp
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_GetDateTimeFromTimeStamp_
+  commentId: Overload:MacacaGames.Utility.GetDateTimeFromTimeStamp
+  isSpec: "True"
+  fullName: MacacaGames.Utility.GetDateTimeFromTimeStamp
+  nameWithType: Utility.GetDateTimeFromTimeStamp
+- uid: MacacaGames.Utility.GetTimeStamp
+  name: GetTimeStamp()
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_GetTimeStamp
+  commentId: M:MacacaGames.Utility.GetTimeStamp
+  fullName: MacacaGames.Utility.GetTimeStamp()
+  nameWithType: Utility.GetTimeStamp()
+- uid: MacacaGames.Utility.GetTimeStamp*
+  name: GetTimeStamp
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_GetTimeStamp_
+  commentId: Overload:MacacaGames.Utility.GetTimeStamp
+  isSpec: "True"
+  fullName: MacacaGames.Utility.GetTimeStamp
+  nameWithType: Utility.GetTimeStamp
+- uid: MacacaGames.Utility.GetType(System.String)
+  name: GetType(String)
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_GetType_System_String_
+  commentId: M:MacacaGames.Utility.GetType(System.String)
+  fullName: MacacaGames.Utility.GetType(System.String)
+  nameWithType: Utility.GetType(String)
+- uid: MacacaGames.Utility.GetType*
+  name: GetType
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_GetType_
+  commentId: Overload:MacacaGames.Utility.GetType
+  isSpec: "True"
+  fullName: MacacaGames.Utility.GetType
+  nameWithType: Utility.GetType
+- uid: MacacaGames.Utility.StringToBytes(System.String)
+  name: StringToBytes(String)
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_StringToBytes_System_String_
+  commentId: M:MacacaGames.Utility.StringToBytes(System.String)
+  fullName: MacacaGames.Utility.StringToBytes(System.String)
+  nameWithType: Utility.StringToBytes(String)
+- uid: MacacaGames.Utility.StringToBytes*
+  name: StringToBytes
+  href: api/MacacaGames.Utility.html#MacacaGames_Utility_StringToBytes_
+  commentId: Overload:MacacaGames.Utility.StringToBytes
+  isSpec: "True"
+  fullName: MacacaGames.Utility.StringToBytes
+  nameWithType: Utility.StringToBytes

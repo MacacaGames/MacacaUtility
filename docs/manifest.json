@@ -1,0 +1,546 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/miki/Documents/SquidBeat/SB_Unity/Packages/MacacaUtility/Document",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.AnchorPresets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.AnchorPresets.html",
+          "hash": "LctjbLr1onr18ORZGBOwKA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.ArrayUtilitys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.ArrayUtilitys.html",
+          "hash": "ZnqKtDCLCe83tp7gtnBnTw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html",
+          "hash": "hJy+EP6vMsVcQcB4eSNviw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMAutoBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMAutoBuilder.html",
+          "hash": "UjONa41SCkYOES66+nNtBw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupData-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupData-1.html",
+          "hash": "32qG1A0hQ3JtOB26ekMnKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupData.html",
+          "hash": "aGjKOrcLdI7Ex5Y5gynmbg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html",
+          "hash": "2YM+bheN0yedGant+HUBhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html",
+          "hash": "sKjrIQeOezZmDJSo8qsnFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMEditorLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMEditorLayout.html",
+          "hash": "daoLixPQXNC/kk+MTwE4gA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMEditorUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMEditorUtility.html",
+          "hash": "7d/qexmkNA6yLt6nQIAZOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMFloatExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMFloatExtension.html",
+          "hash": "umDcKZROl/uBBypcsmahMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CMRandomExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CMRandomExtensions.html",
+          "hash": "KzPEmWDkPyu1JVzqVzkg9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.CustomElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.CustomElement.html",
+          "hash": "2JSDyN1Pv71X9bFbGzbvJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.EditorSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.EditorSetup.html",
+          "hash": "HlCnvz2I6s+P4WnKKQeRFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.EditorTools.ImageConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.EditorTools.ImageConverter.html",
+          "hash": "mZwRfyKs07m6Fap31w3Peg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.EditorTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.EditorTools.html",
+          "hash": "upxf1Lu1fndNe2FrYt53Mg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.FixedSizeStack-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.FixedSizeStack-1.html",
+          "hash": "R5QT+D0WZOF+7zqx4HL/1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.GlobalTimer.Counter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.GlobalTimer.Counter.html",
+          "hash": "1yg+0+c1E5RV0ZLm6kpACQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.GlobalTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.GlobalTimer.html",
+          "hash": "nVmOB0fev88coANekh0kVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.GlobalTimerSetting.RefreshTimeMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.GlobalTimerSetting.RefreshTimeMethod.html",
+          "hash": "t9VFkSi82FztB4zDoCaxIA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.GlobalTimerSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.GlobalTimerSetting.html",
+          "hash": "SH7fob4ONuga2xMPIbVdSg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.JuicyText.ScaleTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.JuicyText.ScaleTarget.html",
+          "hash": "aqaJnGL1v1WCq1R20Z/Vsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.JuicyText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.JuicyText.html",
+          "hash": "K4D2HADkGvja3mB0fQZ1MA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.ObjectPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.ObjectPool.html",
+          "hash": "zDEt0m6n2ps9GQBFLEF2YQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.PivotPresets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.PivotPresets.html",
+          "hash": "icyMHImVuRcQAHjzazUHAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.RectTransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.RectTransformExtensions.html",
+          "hash": "kJ9WEtS982/twZU4c0Wbbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.ReflectionUtility.GetValueResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.ReflectionUtility.GetValueResult.html",
+          "hash": "tTZZ3PoOMn7B6f64UDBd/g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.ReflectionUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.ReflectionUtility.html",
+          "hash": "ML4efEhuWLeovG37QSmohQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.SerializedPropertyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.SerializedPropertyExtensions.html",
+          "hash": "GqCM/ZfblqM+tpNr8NdsOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.Singleton-1.html",
+          "hash": "NfHhg/I55VGj/3mAttkNlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.StringUtilitys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.StringUtilitys.html",
+          "hash": "kr+uqGl1C14hAHRSVDEmAA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.html",
+          "hash": "g1Y5zwyQ0WKQUgQyQGnW7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.TextureAndScreenUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.TextureAndScreenUtility.html",
+          "hash": "c1MXM9lnsn+2tfCdQzKsLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.TextureScale.ThreadData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.TextureScale.ThreadData.html",
+          "hash": "FrQtFdICTO2E3KTy7ZT6LQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.TextureScale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.TextureScale.html",
+          "hash": "xIiHjQIVhlfr/qZxKteYCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.Utility.html",
+          "hash": "1vB8bGYPjjEK/o3V1OTPqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MacacaGames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MacacaGames.html",
+          "hash": "2K2FfWCfepVy54BoI7ANfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "NWGPANvwYtKLf3lUFRDImA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Cp+Gz+kYNHof5iIYSXLQrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "edWiu0M5/dF5cSvxCWRM7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "EIhwD2+o19OxxQFCB6JJTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 37,
+          "skipped_file_count": 37
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
