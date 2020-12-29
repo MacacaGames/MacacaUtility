@@ -47,7 +47,7 @@ public class TraceBehaviour : PoolableObject
 
             currentAcc += Time.deltaTime * acc_ad;
             v += Time.deltaTime * currentAcc * delta.normalized;
-            v *= 1 - Mathf.Pow(smoothFactor, Time.deltaTime * 60f);
+            v *= Mathf.Pow(1 - smoothFactor, Time.deltaTime * 60f);
             transformCache.position += v;
 
             bool _face = Mathf.Sign(delta.x) > 0;
@@ -86,7 +86,7 @@ public class TraceBehaviour : PoolableObject
             v.z = 0;
         }
 
-        currentAcc = acc*l;
+        currentAcc = acc * l;
         do
         {
 
@@ -95,8 +95,10 @@ public class TraceBehaviour : PoolableObject
             currentAcc += Time.deltaTime * acc_ad * l;
             v += Time.deltaTime * currentAcc * delta.normalized;
             v *= Mathf.Pow(1 - smoothFactor, Time.deltaTime * 60);
+
             if (is2D)
                 v.z = 0;
+
             transformCache.position += v;
 
             bool _face = Mathf.Sign(delta.x) > 0;
