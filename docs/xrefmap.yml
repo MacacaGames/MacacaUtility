@@ -280,13 +280,13 @@ references:
   fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData(Of T).item
   nameWithType: CMEditorLayout.GroupedPopupData<T>.item
   nameWithType.vb: CMEditorLayout.GroupedPopupData(Of T).item
-- uid: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},GUILayoutOption[])
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},UnityEngine.GUILayoutOption[])
   name: GroupedPopupField(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData>, CMEditorLayout.GroupedPopupData, Action<CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
-  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_GroupedPopupField_System_Int32_GUIContent_System_Collections_Generic_IEnumerable_MacacaGames_CMEditorLayout_GroupedPopupData__MacacaGames_CMEditorLayout_GroupedPopupData_System_Action_MacacaGames_CMEditorLayout_GroupedPopupData__GUILayoutOption___
-  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},GUILayoutOption[])
+  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_GroupedPopupField_System_Int32_UnityEngine_GUIContent_System_Collections_Generic_IEnumerable_MacacaGames_CMEditorLayout_GroupedPopupData__MacacaGames_CMEditorLayout_GroupedPopupData_System_Action_MacacaGames_CMEditorLayout_GroupedPopupData__UnityEngine_GUILayoutOption___
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},UnityEngine.GUILayoutOption[])
   name.vb: GroupedPopupField(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData), CMEditorLayout.GroupedPopupData, Action(Of CMEditorLayout.GroupedPopupData), GUILayoutOption())
-  fullName: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData>, MacacaGames.CMEditorLayout.GroupedPopupData, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
-  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData), MacacaGames.CMEditorLayout.GroupedPopupData, System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData), GUILayoutOption())
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData>, MacacaGames.CMEditorLayout.GroupedPopupData, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData>, UnityEngine.GUILayoutOption[])
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData), MacacaGames.CMEditorLayout.GroupedPopupData, System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData), UnityEngine.GUILayoutOption())
   nameWithType: CMEditorLayout.GroupedPopupField(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData>, CMEditorLayout.GroupedPopupData, Action<CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
   nameWithType.vb: CMEditorLayout.GroupedPopupField(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData), CMEditorLayout.GroupedPopupData, Action(Of CMEditorLayout.GroupedPopupData), GUILayoutOption())
 - uid: MacacaGames.CMEditorLayout.GroupedPopupField*
@@ -296,13 +296,13 @@ references:
   isSpec: "True"
   fullName: MacacaGames.CMEditorLayout.GroupedPopupField
   nameWithType: CMEditorLayout.GroupedPopupField
-- uid: MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},GUILayoutOption[])
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},UnityEngine.GUILayoutOption[])
   name: GroupedPopupField<T>(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData<T>>, CMEditorLayout.GroupedPopupData<T>, Action<CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
-  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_GroupedPopupField__1_System_Int32_GUIContent_System_Collections_Generic_IEnumerable_MacacaGames_CMEditorLayout_GroupedPopupData___0___MacacaGames_CMEditorLayout_GroupedPopupData___0__System_Action_MacacaGames_CMEditorLayout_GroupedPopupData___0___GUILayoutOption___
-  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},GUILayoutOption[])
+  href: api/MacacaGames.CMEditorLayout.html#MacacaGames_CMEditorLayout_GroupedPopupField__1_System_Int32_UnityEngine_GUIContent_System_Collections_Generic_IEnumerable_MacacaGames_CMEditorLayout_GroupedPopupData___0___MacacaGames_CMEditorLayout_GroupedPopupData___0__System_Action_MacacaGames_CMEditorLayout_GroupedPopupData___0___UnityEngine_GUILayoutOption___
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},UnityEngine.GUILayoutOption[])
   name.vb: GroupedPopupField(Of T)(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T)), CMEditorLayout.GroupedPopupData(Of T), Action(Of CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
-  fullName: MacacaGames.CMEditorLayout.GroupedPopupField<T>(System.Int32, GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, MacacaGames.CMEditorLayout.GroupedPopupData<T>, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
-  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(Of T)(System.Int32, GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), MacacaGames.CMEditorLayout.GroupedPopupData(Of T), System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField<T>(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, MacacaGames.CMEditorLayout.GroupedPopupData<T>, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, UnityEngine.GUILayoutOption[])
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(Of T)(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), MacacaGames.CMEditorLayout.GroupedPopupData(Of T), System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), UnityEngine.GUILayoutOption())
   nameWithType: CMEditorLayout.GroupedPopupField<T>(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData<T>>, CMEditorLayout.GroupedPopupData<T>, Action<CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
   nameWithType.vb: CMEditorLayout.GroupedPopupField(Of T)(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T)), CMEditorLayout.GroupedPopupData(Of T), Action(Of CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
 - uid: MacacaGames.CMEditorLayout.GroupedPopupWindow
@@ -388,11 +388,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
   nameWithType: CMEditorLayout.GroupedPopupWindow.ItemStyle
-- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(UnityEngine.Rect)
   name: OnGUI(Rect)
-  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_OnGUI_Rect_
-  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
-  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
+  href: api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html#MacacaGames_CMEditorLayout_GroupedPopupWindow_OnGUI_UnityEngine_Rect_
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(UnityEngine.Rect)
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(UnityEngine.Rect)
   nameWithType: CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
 - uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI*
   name: OnGUI
@@ -481,11 +481,11 @@ references:
   commentId: T:MacacaGames.CMEditorUtility
   fullName: MacacaGames.CMEditorUtility
   nameWithType: CMEditorUtility
-- uid: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,Color)
+- uid: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,UnityEngine.Color)
   name: CreatePixelTexture(String, Color)
-  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_CreatePixelTexture_System_String_Color_
-  commentId: M:MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,Color)
-  fullName: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String, Color)
+  href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_CreatePixelTexture_System_String_UnityEngine_Color_
+  commentId: M:MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,UnityEngine.Color)
+  fullName: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String, UnityEngine.Color)
   nameWithType: CMEditorUtility.CreatePixelTexture(String, Color)
 - uid: MacacaGames.CMEditorUtility.CreatePixelTexture*
   name: CreatePixelTexture
@@ -495,11 +495,11 @@ references:
   fullName: MacacaGames.CMEditorUtility.CreatePixelTexture
   nameWithType: CMEditorUtility.CreatePixelTexture
 - uid: MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
-  name: InspectTarget(UnityEngine.Object)
+  name: InspectTarget(Object)
   href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_InspectTarget_UnityEngine_Object_
   commentId: M:MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
   fullName: MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
-  nameWithType: CMEditorUtility.InspectTarget(UnityEngine.Object)
+  nameWithType: CMEditorUtility.InspectTarget(Object)
 - uid: MacacaGames.CMEditorUtility.InspectTarget*
   name: InspectTarget
   href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_InspectTarget_
@@ -534,11 +534,11 @@ references:
   fullName: MacacaGames.CMEditorUtility.TryGetEditorTexture
   nameWithType: CMEditorUtility.TryGetEditorTexture
 - uid: MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
-  name: ViewInInspectorInstance(UnityEngine.Object, UnityEditor.EditorWindow)
+  name: ViewInInspectorInstance(Object, EditorWindow)
   href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_ViewInInspectorInstance_UnityEngine_Object_UnityEditor_EditorWindow_
   commentId: M:MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
   fullName: MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object, UnityEditor.EditorWindow)
-  nameWithType: CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object, UnityEditor.EditorWindow)
+  nameWithType: CMEditorUtility.ViewInInspectorInstance(Object, EditorWindow)
 - uid: MacacaGames.CMEditorUtility.ViewInInspectorInstance*
   name: ViewInInspectorInstance
   href: api/MacacaGames.CMEditorUtility.html#MacacaGames_CMEditorUtility_ViewInInspectorInstance_
@@ -609,11 +609,11 @@ references:
   commentId: T:MacacaGames.CustomElement
   fullName: MacacaGames.CustomElement
   nameWithType: CustomElement
-- uid: MacacaGames.CustomElement.Button(System.Int32,Rect,GUIContent,GUIStyle,System.Boolean)
+- uid: MacacaGames.CustomElement.Button(System.Int32,UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle,System.Boolean)
   name: Button(Int32, Rect, GUIContent, GUIStyle, Boolean)
-  href: api/MacacaGames.CustomElement.html#MacacaGames_CustomElement_Button_System_Int32_Rect_GUIContent_GUIStyle_System_Boolean_
-  commentId: M:MacacaGames.CustomElement.Button(System.Int32,Rect,GUIContent,GUIStyle,System.Boolean)
-  fullName: MacacaGames.CustomElement.Button(System.Int32, Rect, GUIContent, GUIStyle, System.Boolean)
+  href: api/MacacaGames.CustomElement.html#MacacaGames_CustomElement_Button_System_Int32_UnityEngine_Rect_UnityEngine_GUIContent_UnityEngine_GUIStyle_System_Boolean_
+  commentId: M:MacacaGames.CustomElement.Button(System.Int32,UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle,System.Boolean)
+  fullName: MacacaGames.CustomElement.Button(System.Int32, UnityEngine.Rect, UnityEngine.GUIContent, UnityEngine.GUIStyle, System.Boolean)
   nameWithType: CustomElement.Button(Int32, Rect, GUIContent, GUIStyle, Boolean)
 - uid: MacacaGames.CustomElement.Button*
   name: Button
@@ -1098,11 +1098,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.JuicyText.ClearTextInstant
   nameWithType: JuicyText.ClearTextInstant
-- uid: MacacaGames.JuicyText.PlayAnimation(Vector3,System.Single,EaseStyle,System.Boolean)
+- uid: MacacaGames.JuicyText.PlayAnimation(UnityEngine.Vector3,System.Single,EaseStyle,System.Boolean)
   name: PlayAnimation(Vector3, Single, EaseStyle, Boolean)
-  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_PlayAnimation_Vector3_System_Single_EaseStyle_System_Boolean_
-  commentId: M:MacacaGames.JuicyText.PlayAnimation(Vector3,System.Single,EaseStyle,System.Boolean)
-  fullName: MacacaGames.JuicyText.PlayAnimation(Vector3, System.Single, EaseStyle, System.Boolean)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_PlayAnimation_UnityEngine_Vector3_System_Single_EaseStyle_System_Boolean_
+  commentId: M:MacacaGames.JuicyText.PlayAnimation(UnityEngine.Vector3,System.Single,EaseStyle,System.Boolean)
+  fullName: MacacaGames.JuicyText.PlayAnimation(UnityEngine.Vector3, System.Single, EaseStyle, System.Boolean)
   nameWithType: JuicyText.PlayAnimation(Vector3, Single, EaseStyle, Boolean)
 - uid: MacacaGames.JuicyText.PlayAnimation*
   name: PlayAnimation
@@ -1154,11 +1154,11 @@ references:
   commentId: M:MacacaGames.JuicyText.SetTextAnimation(System.String,System.Boolean)
   fullName: MacacaGames.JuicyText.SetTextAnimation(System.String, System.Boolean)
   nameWithType: JuicyText.SetTextAnimation(String, Boolean)
-- uid: MacacaGames.JuicyText.SetTextAnimation(System.String,Vector3,System.Single,EaseStyle,System.Boolean)
+- uid: MacacaGames.JuicyText.SetTextAnimation(System.String,UnityEngine.Vector3,System.Single,EaseStyle,System.Boolean)
   name: SetTextAnimation(String, Vector3, Single, EaseStyle, Boolean)
-  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextAnimation_System_String_Vector3_System_Single_EaseStyle_System_Boolean_
-  commentId: M:MacacaGames.JuicyText.SetTextAnimation(System.String,Vector3,System.Single,EaseStyle,System.Boolean)
-  fullName: MacacaGames.JuicyText.SetTextAnimation(System.String, Vector3, System.Single, EaseStyle, System.Boolean)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextAnimation_System_String_UnityEngine_Vector3_System_Single_EaseStyle_System_Boolean_
+  commentId: M:MacacaGames.JuicyText.SetTextAnimation(System.String,UnityEngine.Vector3,System.Single,EaseStyle,System.Boolean)
+  fullName: MacacaGames.JuicyText.SetTextAnimation(System.String, UnityEngine.Vector3, System.Single, EaseStyle, System.Boolean)
   nameWithType: JuicyText.SetTextAnimation(String, Vector3, Single, EaseStyle, Boolean)
 - uid: MacacaGames.JuicyText.SetTextAnimation*
   name: SetTextAnimation
@@ -1167,11 +1167,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.JuicyText.SetTextAnimation
   nameWithType: JuicyText.SetTextAnimation
-- uid: MacacaGames.JuicyText.SetTextColor(Color)
+- uid: MacacaGames.JuicyText.SetTextColor(UnityEngine.Color)
   name: SetTextColor(Color)
-  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextColor_Color_
-  commentId: M:MacacaGames.JuicyText.SetTextColor(Color)
-  fullName: MacacaGames.JuicyText.SetTextColor(Color)
+  href: api/MacacaGames.JuicyText.html#MacacaGames_JuicyText_SetTextColor_UnityEngine_Color_
+  commentId: M:MacacaGames.JuicyText.SetTextColor(UnityEngine.Color)
+  fullName: MacacaGames.JuicyText.SetTextColor(UnityEngine.Color)
   nameWithType: JuicyText.SetTextColor(Color)
 - uid: MacacaGames.JuicyText.SetTextColor*
   name: SetTextColor
@@ -1231,11 +1231,11 @@ references:
   commentId: M:MacacaGames.ObjectPool.Init
   fullName: MacacaGames.ObjectPool.Init()
   nameWithType: ObjectPool.Init()
-- uid: MacacaGames.ObjectPool.Init(GameObject,System.Int32)
+- uid: MacacaGames.ObjectPool.Init(UnityEngine.GameObject,System.Int32)
   name: Init(GameObject, Int32)
-  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Init_GameObject_System_Int32_
-  commentId: M:MacacaGames.ObjectPool.Init(GameObject,System.Int32)
-  fullName: MacacaGames.ObjectPool.Init(GameObject, System.Int32)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Init_UnityEngine_GameObject_System_Int32_
+  commentId: M:MacacaGames.ObjectPool.Init(UnityEngine.GameObject,System.Int32)
+  fullName: MacacaGames.ObjectPool.Init(UnityEngine.GameObject, System.Int32)
   nameWithType: ObjectPool.Init(GameObject, Int32)
 - uid: MacacaGames.ObjectPool.Init*
   name: Init
@@ -1257,17 +1257,17 @@ references:
   isSpec: "True"
   fullName: MacacaGames.ObjectPool.isReachPoolMax
   nameWithType: ObjectPool.isReachPoolMax
-- uid: MacacaGames.ObjectPool.Recovery(GameObject)
+- uid: MacacaGames.ObjectPool.Recovery(UnityEngine.GameObject)
   name: Recovery(GameObject)
-  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Recovery_GameObject_
-  commentId: M:MacacaGames.ObjectPool.Recovery(GameObject)
-  fullName: MacacaGames.ObjectPool.Recovery(GameObject)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Recovery_UnityEngine_GameObject_
+  commentId: M:MacacaGames.ObjectPool.Recovery(UnityEngine.GameObject)
+  fullName: MacacaGames.ObjectPool.Recovery(UnityEngine.GameObject)
   nameWithType: ObjectPool.Recovery(GameObject)
-- uid: MacacaGames.ObjectPool.Recovery(GameObject,System.Single)
+- uid: MacacaGames.ObjectPool.Recovery(UnityEngine.GameObject,System.Single)
   name: Recovery(GameObject, Single)
-  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Recovery_GameObject_System_Single_
-  commentId: M:MacacaGames.ObjectPool.Recovery(GameObject,System.Single)
-  fullName: MacacaGames.ObjectPool.Recovery(GameObject, System.Single)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_Recovery_UnityEngine_GameObject_System_Single_
+  commentId: M:MacacaGames.ObjectPool.Recovery(UnityEngine.GameObject,System.Single)
+  fullName: MacacaGames.ObjectPool.Recovery(UnityEngine.GameObject, System.Single)
   nameWithType: ObjectPool.Recovery(GameObject, Single)
 - uid: MacacaGames.ObjectPool.Recovery*
   name: Recovery
@@ -1289,11 +1289,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.ObjectPool.RecoveryAll
   nameWithType: ObjectPool.RecoveryAll
-- uid: MacacaGames.ObjectPool.ReUse(Vector3,Quaternion)
+- uid: MacacaGames.ObjectPool.ReUse(UnityEngine.Vector3,UnityEngine.Quaternion)
   name: ReUse(Vector3, Quaternion)
-  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_ReUse_Vector3_Quaternion_
-  commentId: M:MacacaGames.ObjectPool.ReUse(Vector3,Quaternion)
-  fullName: MacacaGames.ObjectPool.ReUse(Vector3, Quaternion)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_ReUse_UnityEngine_Vector3_UnityEngine_Quaternion_
+  commentId: M:MacacaGames.ObjectPool.ReUse(UnityEngine.Vector3,UnityEngine.Quaternion)
+  fullName: MacacaGames.ObjectPool.ReUse(UnityEngine.Vector3, UnityEngine.Quaternion)
   nameWithType: ObjectPool.ReUse(Vector3, Quaternion)
 - uid: MacacaGames.ObjectPool.ReUse*
   name: ReUse
@@ -1302,13 +1302,13 @@ references:
   isSpec: "True"
   fullName: MacacaGames.ObjectPool.ReUse
   nameWithType: ObjectPool.ReUse
-- uid: MacacaGames.ObjectPool.ReUse``1(Vector3,Quaternion)
+- uid: MacacaGames.ObjectPool.ReUse``1(UnityEngine.Vector3,UnityEngine.Quaternion)
   name: ReUse<T>(Vector3, Quaternion)
-  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_ReUse__1_Vector3_Quaternion_
-  commentId: M:MacacaGames.ObjectPool.ReUse``1(Vector3,Quaternion)
+  href: api/MacacaGames.ObjectPool.html#MacacaGames_ObjectPool_ReUse__1_UnityEngine_Vector3_UnityEngine_Quaternion_
+  commentId: M:MacacaGames.ObjectPool.ReUse``1(UnityEngine.Vector3,UnityEngine.Quaternion)
   name.vb: ReUse(Of T)(Vector3, Quaternion)
-  fullName: MacacaGames.ObjectPool.ReUse<T>(Vector3, Quaternion)
-  fullName.vb: MacacaGames.ObjectPool.ReUse(Of T)(Vector3, Quaternion)
+  fullName: MacacaGames.ObjectPool.ReUse<T>(UnityEngine.Vector3, UnityEngine.Quaternion)
+  fullName.vb: MacacaGames.ObjectPool.ReUse(Of T)(UnityEngine.Vector3, UnityEngine.Quaternion)
   nameWithType: ObjectPool.ReUse<T>(Vector3, Quaternion)
   nameWithType.vb: ObjectPool.ReUse(Of T)(Vector3, Quaternion)
 - uid: MacacaGames.PivotPresets
@@ -1377,11 +1377,11 @@ references:
   commentId: T:MacacaGames.RectTransformExtensions
   fullName: MacacaGames.RectTransformExtensions
   nameWithType: RectTransformExtensions
-- uid: MacacaGames.RectTransformExtensions.GetAnchorPresets(RectTransform)
+- uid: MacacaGames.RectTransformExtensions.GetAnchorPresets(UnityEngine.RectTransform)
   name: GetAnchorPresets(RectTransform)
-  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_GetAnchorPresets_RectTransform_
-  commentId: M:MacacaGames.RectTransformExtensions.GetAnchorPresets(RectTransform)
-  fullName: MacacaGames.RectTransformExtensions.GetAnchorPresets(RectTransform)
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_GetAnchorPresets_UnityEngine_RectTransform_
+  commentId: M:MacacaGames.RectTransformExtensions.GetAnchorPresets(UnityEngine.RectTransform)
+  fullName: MacacaGames.RectTransformExtensions.GetAnchorPresets(UnityEngine.RectTransform)
   nameWithType: RectTransformExtensions.GetAnchorPresets(RectTransform)
 - uid: MacacaGames.RectTransformExtensions.GetAnchorPresets*
   name: GetAnchorPresets
@@ -1390,11 +1390,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.RectTransformExtensions.GetAnchorPresets
   nameWithType: RectTransformExtensions.GetAnchorPresets
-- uid: MacacaGames.RectTransformExtensions.SetAnchor(RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+- uid: MacacaGames.RectTransformExtensions.SetAnchor(UnityEngine.RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
   name: SetAnchor(RectTransform, AnchorPresets, Int32, Int32)
-  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetAnchor_RectTransform_MacacaGames_AnchorPresets_System_Int32_System_Int32_
-  commentId: M:MacacaGames.RectTransformExtensions.SetAnchor(RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
-  fullName: MacacaGames.RectTransformExtensions.SetAnchor(RectTransform, MacacaGames.AnchorPresets, System.Int32, System.Int32)
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetAnchor_UnityEngine_RectTransform_MacacaGames_AnchorPresets_System_Int32_System_Int32_
+  commentId: M:MacacaGames.RectTransformExtensions.SetAnchor(UnityEngine.RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+  fullName: MacacaGames.RectTransformExtensions.SetAnchor(UnityEngine.RectTransform, MacacaGames.AnchorPresets, System.Int32, System.Int32)
   nameWithType: RectTransformExtensions.SetAnchor(RectTransform, AnchorPresets, Int32, Int32)
 - uid: MacacaGames.RectTransformExtensions.SetAnchor*
   name: SetAnchor
@@ -1403,11 +1403,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.RectTransformExtensions.SetAnchor
   nameWithType: RectTransformExtensions.SetAnchor
-- uid: MacacaGames.RectTransformExtensions.SetPivot(RectTransform,MacacaGames.PivotPresets)
+- uid: MacacaGames.RectTransformExtensions.SetPivot(UnityEngine.RectTransform,MacacaGames.PivotPresets)
   name: SetPivot(RectTransform, PivotPresets)
-  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetPivot_RectTransform_MacacaGames_PivotPresets_
-  commentId: M:MacacaGames.RectTransformExtensions.SetPivot(RectTransform,MacacaGames.PivotPresets)
-  fullName: MacacaGames.RectTransformExtensions.SetPivot(RectTransform, MacacaGames.PivotPresets)
+  href: api/MacacaGames.RectTransformExtensions.html#MacacaGames_RectTransformExtensions_SetPivot_UnityEngine_RectTransform_MacacaGames_PivotPresets_
+  commentId: M:MacacaGames.RectTransformExtensions.SetPivot(UnityEngine.RectTransform,MacacaGames.PivotPresets)
+  fullName: MacacaGames.RectTransformExtensions.SetPivot(UnityEngine.RectTransform, MacacaGames.PivotPresets)
   nameWithType: RectTransformExtensions.SetPivot(RectTransform, PivotPresets)
 - uid: MacacaGames.RectTransformExtensions.SetPivot*
   name: SetPivot
@@ -1438,11 +1438,11 @@ references:
   fullName.vb: MacacaGames.ReflectionUtility.FilterWithAttribute(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Type)
   nameWithType: ReflectionUtility.FilterWithAttribute<T>(IEnumerable<T>, Type)
   nameWithType.vb: ReflectionUtility.FilterWithAttribute(Of T)(IEnumerable(Of T), Type)
-- uid: MacacaGames.ReflectionUtility.GetMemberInfoType(MemberInfo)
+- uid: MacacaGames.ReflectionUtility.GetMemberInfoType(System.Reflection.MemberInfo)
   name: GetMemberInfoType(MemberInfo)
-  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetMemberInfoType_MemberInfo_
-  commentId: M:MacacaGames.ReflectionUtility.GetMemberInfoType(MemberInfo)
-  fullName: MacacaGames.ReflectionUtility.GetMemberInfoType(MemberInfo)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetMemberInfoType_System_Reflection_MemberInfo_
+  commentId: M:MacacaGames.ReflectionUtility.GetMemberInfoType(System.Reflection.MemberInfo)
+  fullName: MacacaGames.ReflectionUtility.GetMemberInfoType(System.Reflection.MemberInfo)
   nameWithType: ReflectionUtility.GetMemberInfoType(MemberInfo)
 - uid: MacacaGames.ReflectionUtility.GetMemberInfoType*
   name: GetMemberInfoType
@@ -1458,13 +1458,13 @@ references:
   isSpec: "True"
   fullName: MacacaGames.ReflectionUtility.GetValue
   nameWithType: ReflectionUtility.GetValue
-- uid: MacacaGames.ReflectionUtility.GetValue``1(MemberInfo,System.Object)
+- uid: MacacaGames.ReflectionUtility.GetValue``1(System.Reflection.MemberInfo,System.Object)
   name: GetValue<T>(MemberInfo, Object)
-  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetValue__1_MemberInfo_System_Object_
-  commentId: M:MacacaGames.ReflectionUtility.GetValue``1(MemberInfo,System.Object)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_GetValue__1_System_Reflection_MemberInfo_System_Object_
+  commentId: M:MacacaGames.ReflectionUtility.GetValue``1(System.Reflection.MemberInfo,System.Object)
   name.vb: GetValue(Of T)(MemberInfo, Object)
-  fullName: MacacaGames.ReflectionUtility.GetValue<T>(MemberInfo, System.Object)
-  fullName.vb: MacacaGames.ReflectionUtility.GetValue(Of T)(MemberInfo, System.Object)
+  fullName: MacacaGames.ReflectionUtility.GetValue<T>(System.Reflection.MemberInfo, System.Object)
+  fullName.vb: MacacaGames.ReflectionUtility.GetValue(Of T)(System.Reflection.MemberInfo, System.Object)
   nameWithType: ReflectionUtility.GetValue<T>(MemberInfo, Object)
   nameWithType.vb: ReflectionUtility.GetValue(Of T)(MemberInfo, Object)
 - uid: MacacaGames.ReflectionUtility.GetValueResult
@@ -1492,22 +1492,22 @@ references:
   isSpec: "True"
   fullName: MacacaGames.ReflectionUtility.TryGetValue
   nameWithType: ReflectionUtility.TryGetValue
-- uid: MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object)
+- uid: MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object)
   name: TryGetValue<T>(MemberInfo, Object)
-  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_TryGetValue__1_MemberInfo_System_Object_
-  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_TryGetValue__1_System_Reflection_MemberInfo_System_Object_
+  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object)
   name.vb: TryGetValue(Of T)(MemberInfo, Object)
-  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(MemberInfo, System.Object)
-  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(MemberInfo, System.Object)
+  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(System.Reflection.MemberInfo, System.Object)
+  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(System.Reflection.MemberInfo, System.Object)
   nameWithType: ReflectionUtility.TryGetValue<T>(MemberInfo, Object)
   nameWithType.vb: ReflectionUtility.TryGetValue(Of T)(MemberInfo, Object)
-- uid: MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object,``0@)
+- uid: MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object,``0@)
   name: TryGetValue<T>(MemberInfo, Object, out T)
-  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_TryGetValue__1_MemberInfo_System_Object___0__
-  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(MemberInfo,System.Object,``0@)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_TryGetValue__1_System_Reflection_MemberInfo_System_Object___0__
+  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object,``0@)
   name.vb: TryGetValue(Of T)(MemberInfo, Object, ByRef T)
-  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(MemberInfo, System.Object, out T)
-  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(MemberInfo, System.Object, ByRef T)
+  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(System.Reflection.MemberInfo, System.Object, out T)
+  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(System.Reflection.MemberInfo, System.Object, ByRef T)
   nameWithType: ReflectionUtility.TryGetValue<T>(MemberInfo, Object, out T)
   nameWithType.vb: ReflectionUtility.TryGetValue(Of T)(MemberInfo, Object, ByRef T)
 - uid: MacacaGames.SerializedPropertyExtensions
@@ -1516,11 +1516,11 @@ references:
   commentId: T:MacacaGames.SerializedPropertyExtensions
   fullName: MacacaGames.SerializedPropertyExtensions
   nameWithType: SerializedPropertyExtensions
-- uid: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty,System.Object)
+- uid: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(UnityEditor.SerializedProperty,System.Object)
   name: SetTargetObjectOfProperty(SerializedProperty, Object)
-  href: api/MacacaGames.SerializedPropertyExtensions.html#MacacaGames_SerializedPropertyExtensions_SetTargetObjectOfProperty_SerializedProperty_System_Object_
-  commentId: M:MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty,System.Object)
-  fullName: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty, System.Object)
+  href: api/MacacaGames.SerializedPropertyExtensions.html#MacacaGames_SerializedPropertyExtensions_SetTargetObjectOfProperty_UnityEditor_SerializedProperty_System_Object_
+  commentId: M:MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(UnityEditor.SerializedProperty,System.Object)
+  fullName: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty(UnityEditor.SerializedProperty, System.Object)
   nameWithType: SerializedPropertyExtensions.SetTargetObjectOfProperty(SerializedProperty, Object)
 - uid: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty*
   name: SetTargetObjectOfProperty
@@ -1593,11 +1593,11 @@ references:
   commentId: T:MacacaGames.TextureAndScreenUtility
   fullName: MacacaGames.TextureAndScreenUtility
   nameWithType: TextureAndScreenUtility
-- uid: MacacaGames.TextureAndScreenUtility.AddWatermark(Texture2D,Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+- uid: MacacaGames.TextureAndScreenUtility.AddWatermark(UnityEngine.Texture2D,UnityEngine.Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
   name: AddWatermark(Texture2D, Texture2D, TextureAndScreenUtility.WaterMarkPosition)
-  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_AddWatermark_Texture2D_Texture2D_MacacaGames_TextureAndScreenUtility_WaterMarkPosition_
-  commentId: M:MacacaGames.TextureAndScreenUtility.AddWatermark(Texture2D,Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
-  fullName: MacacaGames.TextureAndScreenUtility.AddWatermark(Texture2D, Texture2D, MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_AddWatermark_UnityEngine_Texture2D_UnityEngine_Texture2D_MacacaGames_TextureAndScreenUtility_WaterMarkPosition_
+  commentId: M:MacacaGames.TextureAndScreenUtility.AddWatermark(UnityEngine.Texture2D,UnityEngine.Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  fullName: MacacaGames.TextureAndScreenUtility.AddWatermark(UnityEngine.Texture2D, UnityEngine.Texture2D, MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
   nameWithType: TextureAndScreenUtility.AddWatermark(Texture2D, Texture2D, TextureAndScreenUtility.WaterMarkPosition)
 - uid: MacacaGames.TextureAndScreenUtility.AddWatermark*
   name: AddWatermark
@@ -1612,11 +1612,11 @@ references:
   commentId: F:MacacaGames.TextureAndScreenUtility.photoFilePath
   fullName: MacacaGames.TextureAndScreenUtility.photoFilePath
   nameWithType: TextureAndScreenUtility.photoFilePath
-- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D,System.Int32,System.Int32,FilterMode)
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
   name: ScaleTextureUseMutilThread(Texture2D, Int32, Int32, FilterMode)
-  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseMutilThread_Texture2D_System_Int32_System_Int32_FilterMode_
-  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D,System.Int32,System.Int32,FilterMode)
-  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D, System.Int32, System.Int32, FilterMode)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseMutilThread_UnityEngine_Texture2D_System_Int32_System_Int32_UnityEngine_FilterMode_
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(UnityEngine.Texture2D, System.Int32, System.Int32, UnityEngine.FilterMode)
   nameWithType: TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D, Int32, Int32, FilterMode)
 - uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread*
   name: ScaleTextureUseMutilThread
@@ -1625,11 +1625,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread
   nameWithType: TextureAndScreenUtility.ScaleTextureUseMutilThread
-- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D,System.Int32,System.Int32,FilterMode)
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
   name: ScaleTextureUseUnityRenderTexture(Texture2D, Int32, Int32, FilterMode)
-  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseUnityRenderTexture_Texture2D_System_Int32_System_Int32_FilterMode_
-  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D,System.Int32,System.Int32,FilterMode)
-  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D, System.Int32, System.Int32, FilterMode)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScaleTextureUseUnityRenderTexture_UnityEngine_Texture2D_System_Int32_System_Int32_UnityEngine_FilterMode_
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D, System.Int32, System.Int32, UnityEngine.FilterMode)
   nameWithType: TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D, Int32, Int32, FilterMode)
 - uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture*
   name: ScaleTextureUseUnityRenderTexture
@@ -1638,13 +1638,13 @@ references:
   isSpec: "True"
   fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
   nameWithType: TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
-- uid: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{Texture2D},CancellationToken,System.String,System.Int32,System.Single,System.Single,Camera,System.Boolean)
+- uid: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{UnityEngine.Texture2D},System.Threading.CancellationToken,System.String,System.Int32,System.Single,System.Single,UnityEngine.Camera,System.Boolean)
   name: ScreenShotCoroutine(IObserver<Texture2D>, CancellationToken, String, Int32, Single, Single, Camera, Boolean)
-  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScreenShotCoroutine_System_IObserver_Texture2D__CancellationToken_System_String_System_Int32_System_Single_System_Single_Camera_System_Boolean_
-  commentId: M:MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{Texture2D},CancellationToken,System.String,System.Int32,System.Single,System.Single,Camera,System.Boolean)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_ScreenShotCoroutine_System_IObserver_UnityEngine_Texture2D__System_Threading_CancellationToken_System_String_System_Int32_System_Single_System_Single_UnityEngine_Camera_System_Boolean_
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{UnityEngine.Texture2D},System.Threading.CancellationToken,System.String,System.Int32,System.Single,System.Single,UnityEngine.Camera,System.Boolean)
   name.vb: ScreenShotCoroutine(IObserver(Of Texture2D), CancellationToken, String, Int32, Single, Single, Camera, Boolean)
-  fullName: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver<Texture2D>, CancellationToken, System.String, System.Int32, System.Single, System.Single, Camera, System.Boolean)
-  fullName.vb: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver(Of Texture2D), CancellationToken, System.String, System.Int32, System.Single, System.Single, Camera, System.Boolean)
+  fullName: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver<UnityEngine.Texture2D>, System.Threading.CancellationToken, System.String, System.Int32, System.Single, System.Single, UnityEngine.Camera, System.Boolean)
+  fullName.vb: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver(Of UnityEngine.Texture2D), System.Threading.CancellationToken, System.String, System.Int32, System.Single, System.Single, UnityEngine.Camera, System.Boolean)
   nameWithType: TextureAndScreenUtility.ScreenShotCoroutine(IObserver<Texture2D>, CancellationToken, String, Int32, Single, Single, Camera, Boolean)
   nameWithType.vb: TextureAndScreenUtility.ScreenShotCoroutine(IObserver(Of Texture2D), CancellationToken, String, Int32, Single, Single, Camera, Boolean)
 - uid: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine*
@@ -1684,11 +1684,11 @@ references:
   commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
   fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
   nameWithType: TextureAndScreenUtility.WaterMarkPosition.RightTop
-- uid: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,Texture2D)
+- uid: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,UnityEngine.Texture2D)
   name: WriteImageToDisk(String, Texture2D)
-  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_WriteImageToDisk_System_String_Texture2D_
-  commentId: M:MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,Texture2D)
-  fullName: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String, Texture2D)
+  href: api/MacacaGames.TextureAndScreenUtility.html#MacacaGames_TextureAndScreenUtility_WriteImageToDisk_System_String_UnityEngine_Texture2D_
+  commentId: M:MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,UnityEngine.Texture2D)
+  fullName: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String, UnityEngine.Texture2D)
   nameWithType: TextureAndScreenUtility.WriteImageToDisk(String, Texture2D)
 - uid: MacacaGames.TextureAndScreenUtility.WriteImageToDisk*
   name: WriteImageToDisk
@@ -1703,11 +1703,11 @@ references:
   commentId: T:MacacaGames.TextureScale
   fullName: MacacaGames.TextureScale
   nameWithType: TextureScale
-- uid: MacacaGames.TextureScale.Bilinear(Texture2D,System.Int32,System.Int32)
+- uid: MacacaGames.TextureScale.Bilinear(UnityEngine.Texture2D,System.Int32,System.Int32)
   name: Bilinear(Texture2D, Int32, Int32)
-  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Bilinear_Texture2D_System_Int32_System_Int32_
-  commentId: M:MacacaGames.TextureScale.Bilinear(Texture2D,System.Int32,System.Int32)
-  fullName: MacacaGames.TextureScale.Bilinear(Texture2D, System.Int32, System.Int32)
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Bilinear_UnityEngine_Texture2D_System_Int32_System_Int32_
+  commentId: M:MacacaGames.TextureScale.Bilinear(UnityEngine.Texture2D,System.Int32,System.Int32)
+  fullName: MacacaGames.TextureScale.Bilinear(UnityEngine.Texture2D, System.Int32, System.Int32)
   nameWithType: TextureScale.Bilinear(Texture2D, Int32, Int32)
 - uid: MacacaGames.TextureScale.Bilinear*
   name: Bilinear
@@ -1729,11 +1729,11 @@ references:
   isSpec: "True"
   fullName: MacacaGames.TextureScale.BilinearScale
   nameWithType: TextureScale.BilinearScale
-- uid: MacacaGames.TextureScale.Point(Texture2D,System.Int32,System.Int32)
+- uid: MacacaGames.TextureScale.Point(UnityEngine.Texture2D,System.Int32,System.Int32)
   name: Point(Texture2D, Int32, Int32)
-  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Point_Texture2D_System_Int32_System_Int32_
-  commentId: M:MacacaGames.TextureScale.Point(Texture2D,System.Int32,System.Int32)
-  fullName: MacacaGames.TextureScale.Point(Texture2D, System.Int32, System.Int32)
+  href: api/MacacaGames.TextureScale.html#MacacaGames_TextureScale_Point_UnityEngine_Texture2D_System_Int32_System_Int32_
+  commentId: M:MacacaGames.TextureScale.Point(UnityEngine.Texture2D,System.Int32,System.Int32)
+  fullName: MacacaGames.TextureScale.Point(UnityEngine.Texture2D, System.Int32, System.Int32)
   nameWithType: TextureScale.Point(Texture2D, Int32, Int32)
 - uid: MacacaGames.TextureScale.Point*
   name: Point
