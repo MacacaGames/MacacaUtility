@@ -20,6 +20,17 @@ public class PerlinShaker : MonoBehaviour
         set { Instance = value; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="transform"></param>
+    /// <param name="magnetude"></param>
+    /// <param name="duration"></param>
+    /// <param name="motion"> Perlin 在 Sameple 時遊走的速度。白話文：震度速率。 </param>
+    /// <param name="isSexy"> Motion 會不會隨著時間遞減/削弱！白話文：會不會漸緩。 </param>
+    /// <param name="isIgnoreTimeScale"></param>
+    /// <param name="easeStyle"></param>
+    /// <returns></returns>
     public static Coroutine ShakePosition(Transform transform, Vector3 magnetude, float duration, float motion, bool isSexy = false, bool isIgnoreTimeScale = false, EaseStyle easeStyle = EaseStyle.QuadEaseOut)
     {
         return Instance.StartCoroutine(Instance.Shaking(transform, magnetude, duration, motion, isSexy, isIgnoreTimeScale));
