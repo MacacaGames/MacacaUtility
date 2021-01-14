@@ -74,15 +74,50 @@ public class CoroutineManager : MonoBehaviour
     /// <returns></returns>
     public static YieldInstruction ProgressionTask(float duration, System.Action<float> progressAction, EaseStyle easeType = EaseStyle.Linear)
     {
-        // return
-        //     DOTween.To(() => 0f,
-        //     x =>
-        //     {
-        //         progressAction(x);
-        //     },
-        //     1f, duration)
-        //     .SetEase(easeType)
-        //     .WaitForCompletion();
         return CoroutineManager.instance.StartCoroutine(EaseUtility.To(0, 1, duration, easeType, progressAction, null));
+    }
+}
+
+public class WaitForStandardYieldInstruction : CustomYieldInstruction
+{
+    bool isRunning;
+
+    private MonoBehaviour mono;
+    private Coroutine coroutine;
+    private YieldInstruction yieldInstruction;
+
+    // in case we need to do anything with it
+    public Coroutine Coroutine
+    {
+        get
+        {
+            return coroutine;
+        }
+    }
+
+    // we need a standard Coroutine running for DOTween's YieldInstruction to work
+    // so we invoke it here, running on the monobehaviour we passed as argument
+    public WaitForStandardYieldInstruction(MonoBehaviour mono, YieldInstruction yieldInstruction)
+    {
+        this.mono = mono;
+        this.yieldInstruction = yieldInstruction;
+        this.coroutine = mono.StartCoroutine(IEWaitForYieldInstruction());
+    }
+
+    // this is where the original YieldInstruction is called, to halt the flow until complete
+    // in the example case we are waiting on `myTween.WaitForCompletion()`
+    public IEnumerator IEWaitForYieldInstruction()
+    {
+        isRunning = true;
+        yield return yieldInstruction;
+        isRunning = false;
+    }
+
+    public override bool keepWaiting
+    {
+        get
+        {
+            return isRunning;
+        }
     }
 }
