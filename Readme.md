@@ -7,7 +7,7 @@ See [Document](https://macacagames.github.io/MacacaUtility/) for more detail.
 ### Option 1: Unity Package manager
 Add it to your editor's `manifest.json` file like this:
 ```json
-    {
+{
     "dependencies": {
         "com.macacagames.utility": "https://github.com/MacacaGames/MacacaUtility.git#1.0.0",
     }

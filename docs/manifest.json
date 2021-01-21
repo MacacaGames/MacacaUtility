@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.AnchorPresets.html",
-          "hash": "BEI8Kz4OK94pR+2kkm8a0w=="
+          "hash": "2LBKCyBWlaL3XHB360GKUg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html",
-          "hash": "b+nROYiM5Rx3xW9SnGi/xQ=="
+          "hash": "EosqaBVlytt0oQal5pcdzg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMAutoBuilder.html",
-          "hash": "cr6Cjp0JI8TYgtTeEcT4Yw=="
+          "hash": "DXhc6Ad36pBqmLzZfgPrOA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupData-1.html",
-          "hash": "s5L1GwA++bl4o1gLDeIy7A=="
+          "hash": "NC6QESZHIWNeGfWMGJweCA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupData.html",
-          "hash": "veACZzjvDDn/+vYfYVv/Cw=="
+          "hash": "hKMQgKF8unJyrOLUHCYZyA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupWindow-1.html",
-          "hash": "2IUdJH9oE0WacVB+F4dmbQ=="
+          "hash": "2+bJoq9XRuoGPZnL9Vo2/Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMEditorLayout.GroupedPopupWindow.html",
-          "hash": "OPR+8/wYxKCugeE74sAXHA=="
+          "hash": "hMm4tKpfUeQySVDM+HPDvA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMEditorLayout.html",
-          "hash": "8DxqwWyMVsFDG5dIX6sMDw=="
+          "hash": "FDjxlHLFgAGD9lW8nmZPkg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CMEditorUtility.html",
-          "hash": "SYnfjI+LUD10PYD5s/LBMQ=="
+          "hash": "O+OYTxW7DCQJFc9hRn74vw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.CustomElement.html",
-          "hash": "yI5lpizZs8c9uygv31NGjw=="
+          "hash": "e2QaqeAvyI9gIMcc+84bMA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.EditorTools.ImageConverter.html",
-          "hash": "XBFlVcqmJYQBDI7GZZZhGw=="
+          "hash": "Usz1SKnUmPZ3TxFVr2WYvQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.EditorTools.html",
-          "hash": "TV6A40e3KDhGvNE+z2GA2w=="
+          "hash": "upxf1Lu1fndNe2FrYt53Mg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.FixedSizeStack-1.html",
-          "hash": "z5vj5/f9likZNhQu3w/6xg=="
+          "hash": "5eeA3+e7E6wr80ZVJf0JPQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.FloatExtension.html",
-          "hash": "ekU0j3EoHwPC8ELZpc9nnw=="
+          "hash": "ltfyzQCRzctILW6p6t3GFg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.GlobalTimer.Timer.html",
-          "hash": "dN1cHfj2mUQn91tkld3GOw=="
+          "hash": "ZDt7ahK0SvOwtzNHoNkcmw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.GlobalTimer.html",
-          "hash": "7/FoTP1XBkLMg/GrCPHLLQ=="
+          "hash": "vuQW7zamT0Lheupkzcbgxw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.GlobalTimerSetting.RefreshTimeMethod.html",
-          "hash": "8cAEHVjaYVnAPuh8rOrpcQ=="
+          "hash": "jf0ZLFyY+Aqm+xlr61KMAw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.GlobalTimerSetting.html",
-          "hash": "u5OMW1DRJlFbWXYPuSYogQ=="
+          "hash": "K8NNtqXTNLZrJfEO15W7og=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.JuicyText.ScaleTarget.html",
-          "hash": "Zc81Du1f+bVUmvd4zKduxQ=="
+          "hash": "9SNpwmBk7q4xdYITv9TSCw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.JuicyText.html",
-          "hash": "oEWlgOz4zUR6Pg9dHNk+cg=="
+          "hash": "WWhmZjO8qXh1o0v+jWA6OQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.ObjectPool.html",
-          "hash": "wuSLKseitY5VNDdw8sHNag=="
+          "hash": "zHjhLtFAt9TuXV3ESUanFw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.PivotPresets.html",
-          "hash": "G2Y5l3zSMh8Ejj2sG6jhGg=="
+          "hash": "ZfrACpbxUD0zN7lFREbnDg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.RandomUtility.html",
-          "hash": "hY9npNJKSPTjS/7arvSNSA=="
+          "hash": "HEK2EJvo3DpxnaXTwSlxwg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.RectTransformExtensions.html",
-          "hash": "7YXki42uDKNrzhuWARMWpg=="
+          "hash": "2DN29EAHgpyqNQvL1IZICw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.ReflectionUtility.GetValueResult.html",
-          "hash": "1ZgBQCO/o3++rNLh2CMvDw=="
+          "hash": "JVFGCZpwi4GhgmYVTRrLkA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.ReflectionUtility.html",
-          "hash": "JmbnYQxOu/j7e+i+qjjMQg=="
+          "hash": "p6PdZqi5hDvt70cQybXOXg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.SerializedPropertyExtensions.html",
-          "hash": "l8rl2cRD8cq5x7ZJ1R0FVQ=="
+          "hash": "QY4jkSP4qOwlXBlLro50xg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.Singleton-1.html",
-          "hash": "5ASXbBppS0ex17B52lc+Hg=="
+          "hash": "87yre6Jb/KIsEYqCMJSBrQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.TextureAndScreenUtility.WaterMarkPosition.html",
-          "hash": "udni+1oNWBosIAwDSpjLyw=="
+          "hash": "R3Tp+DgN+XwwYJjOhNQlBA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.TextureAndScreenUtility.html",
-          "hash": "hOrF5YAKkxYvmOjT6dro+g=="
+          "hash": "wNGo4jMw5oAJsrtqhmkpXQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.TextureScale.ThreadData.html",
-          "hash": "9fEfyqMRgcaUfW2lvbvVwg=="
+          "hash": "NFX66TdLfVhCSUEmP8f38Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -381,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.TextureScale.html",
-          "hash": "bf80f3qafwRxqvWHeKpGqg=="
+          "hash": "3iyvopSxxwbYTyIWQtp/rA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.Utility.html",
-          "hash": "CY0asWAZWdb5SitB59WAlA=="
+          "hash": "+qWARsEF8GwTe22pbxjuRg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MacacaGames.html",
-          "hash": "0iuh2OHHlOg8Z3ZqZTbtjA=="
+          "hash": "tYS8gjWv4RK1KsW0Pf07dw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "WXJE3M9d7MKzvfheC56OXA=="
+          "hash": "L5zyk22iETgqubcU7cssOQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -452,7 +452,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "rv3QTKUluZ17xpivU9JwAQ=="
+          "hash": "NmS/+P/pAPd6jWLAzHRxlA=="
         }
       },
       "is_incremental": false,
@@ -495,7 +495,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 2
+          "skipped_file_count": 1
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
