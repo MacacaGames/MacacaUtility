@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="styles/docfx.vendor.css">
     <link rel="stylesheet" href="styles/docfx.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -68,10 +68,11 @@
 <p>Add it to your editor's <code>manifest.json</code> file like this:</p>
 <pre><code class="lang-json">    {
     &quot;dependencies&quot;: {
-        &quot;com.macacagames.utility&quot;: &quot;https://github.com/MacacaGames/MacacaUtility.git&quot;,
+        &quot;com.macacagames.utility&quot;: &quot;https://github.com/MacacaGames/MacacaUtility.git#1.0.0&quot;,
     }
 }
 </code></pre>
+<p>You can remove the #1.0.0 to use the latest version (unstable)</p>
 <h3 id="option-2-git-submodule">Option 2: Git SubModule</h3>
 <p>Note: GameSystem is dependency with Rayark.Mast, so also add it in git submodule.</p>
 <pre><code class="lang-bash">git submodule add https://github.com/MacacaGames/MacacaUtility.git Assets/MacacaUtility
@@ -84,7 +85,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Document/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Document/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

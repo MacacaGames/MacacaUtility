@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MacacaGames
 {
-    public static class CMFloatExtension
+    public static class FloatExtension
     {
         public static float Remap(this float value, float from1, float to1, float from2, float to2)
         {
