@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[AddComponentMenu("UI/Effects/Extensions/Gradient")]
+namespace MacacaGames
+{
+    [AddComponentMenu("UI/Effects/Extensions/Gradient")]
     public class Gradient : BaseMeshEffect
     {
         [SerializeField]
@@ -117,3 +119,4 @@ using UnityEngine.UI;
         //Free
     }
     //enum color mode Additive, Multiply, Overwrite
+}
