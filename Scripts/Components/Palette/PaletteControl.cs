@@ -17,6 +17,10 @@ namespace MacacaGames
 
         [SerializeField]
         SelectablePalette palette;
+        public void SetPalette(SelectablePalette _palette)
+        {
+            palette = _palette;
+        }
 
         [SerializeField]
         Selectable selectable;

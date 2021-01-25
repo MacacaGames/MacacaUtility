@@ -78,6 +78,11 @@ public class CoroutineManager : MonoBehaviour
     }
 }
 
+
+/// <summary>
+/// WaitForStandardYieldInstruction is a helper to make a YieldInstruction into CustomYieldInstruction
+/// Therefore you can iterate it with a third-party Coroutine implement, e.g. Rayark.Mast
+/// </summary>
 public class WaitForStandardYieldInstruction : CustomYieldInstruction
 {
     bool isRunning;
@@ -85,18 +90,24 @@ public class WaitForStandardYieldInstruction : CustomYieldInstruction
     private MonoBehaviour mono;
     private Coroutine coroutine;
     private YieldInstruction yieldInstruction;
+    public Coroutine Coroutine => coroutine;
 
-    // in case we need to do anything with it
-    public Coroutine Coroutine
+    /// <summary>
+    /// Create a CustomYieldInstruction by YieldInstruction which iterate itself based on CoroutineManager
+    /// </summary>
+    /// <param name="yieldInstruction"></param>
+    public WaitForStandardYieldInstruction(YieldInstruction yieldInstruction)
     {
-        get
-        {
-            return coroutine;
-        }
+        this.mono = CoroutineManager.Instance;
+        this.yieldInstruction = yieldInstruction;
+        this.coroutine = mono.StartCoroutine(IEWaitForYieldInstruction());
     }
 
-    // we need a standard Coroutine running for DOTween's YieldInstruction to work
-    // so we invoke it here, running on the monobehaviour we passed as argument
+    /// <summary>
+    /// Create a CustomYieldInstruction by YieldInstruction and iterate by target MonoBehaviour
+    /// </summary>
+    /// <param name="mono"></param>
+    /// <param name="yieldInstruction"></param>
     public WaitForStandardYieldInstruction(MonoBehaviour mono, YieldInstruction yieldInstruction)
     {
         this.mono = mono;
@@ -105,7 +116,6 @@ public class WaitForStandardYieldInstruction : CustomYieldInstruction
     }
 
     // this is where the original YieldInstruction is called, to halt the flow until complete
-    // in the example case we are waiting on `myTween.WaitForCompletion()`
     public IEnumerator IEWaitForYieldInstruction()
     {
         isRunning = true;
