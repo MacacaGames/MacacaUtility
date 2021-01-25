@@ -20,6 +20,7 @@ namespace MacacaGames
         public void SetPalette(SelectablePalette _palette)
         {
             palette = _palette;
+            OnSelectionStateChagne(currentSelectionState);
         }
 
         [SerializeField]
@@ -118,6 +119,7 @@ namespace MacacaGames
         void OnEnable()
         {
             isPointerDown = false;
+            OnSelectionStateChagne(currentSelectionState);
         }
 
         void OnDisable()
