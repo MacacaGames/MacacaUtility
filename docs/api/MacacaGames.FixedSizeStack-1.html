@@ -80,6 +80,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">FixedSizeStack&lt;T&gt;</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -109,7 +114,7 @@
   <h5 id="MacacaGames_FixedSizeStack_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class FixedSizeStack&lt;T&gt;</code></pre>
+public class FixedSizeStack&lt;T&gt; : IEnumerable&lt;T&gt;, IEnumerable</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -130,14 +135,15 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L18">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L22">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1__ctor_" data-uid="MacacaGames.FixedSizeStack`1.#ctor*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1__ctor_System_Int32_" data-uid="MacacaGames.FixedSizeStack`1.#ctor(System.Int32)">FixedSizeStack(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a FixedSizeStack</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,7 +162,8 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">maxSize</span></td>
-        <td></td>
+        <td><p>The size of the stack</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -164,10 +171,10 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Count.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Count.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L81">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L90">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_Count_" data-uid="MacacaGames.FixedSizeStack`1.Count*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_Count" data-uid="MacacaGames.FixedSizeStack`1.Count">Count</h4>
@@ -196,14 +203,15 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Clear.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Clear.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L75">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L85">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_Clear_" data-uid="MacacaGames.FixedSizeStack`1.Clear*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_Clear" data-uid="MacacaGames.FixedSizeStack`1.Clear">Clear()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clear the stack</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -211,14 +219,15 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Contains__0_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Contains(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Contains__0_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Contains(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L101">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L116">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_Contains_" data-uid="MacacaGames.FixedSizeStack`1.Contains*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_Contains__0_" data-uid="MacacaGames.FixedSizeStack`1.Contains(`0)">Contains(T)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Is the item in stack</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,7 +246,8 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>item</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,20 +262,22 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if the item is in stack</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_GetEnumerator.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_GetEnumerator.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L111">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L130">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_GetEnumerator_" data-uid="MacacaGames.FixedSizeStack`1.GetEnumerator*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_GetEnumerator" data-uid="MacacaGames.FixedSizeStack`1.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get Enumerator</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -282,16 +294,17 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.IEnumerator</span></td>
-        <td></td>
+        <td><p>The IEnumerator</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_IsTop__0_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.IsTop(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_IsTop__0_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.IsTop(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L91">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L100">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_IsTop_" data-uid="MacacaGames.FixedSizeStack`1.IsTop*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_IsTop__0_" data-uid="MacacaGames.FixedSizeStack`1.IsTop(`0)">IsTop(T)</h4>
@@ -336,14 +349,14 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Peek.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Peek.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L61">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L67">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_Peek_" data-uid="MacacaGames.FixedSizeStack`1.Peek*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_Peek" data-uid="MacacaGames.FixedSizeStack`1.Peek">Peek()</h4>
-  <div class="markdown level1 summary"><p>取出最後一個項目 但不從 Stack 移除該項目</p>
+  <div class="markdown level1 summary"><p>Take the last item but &quot;not&quot; remove from stack</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -361,20 +374,21 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>The item</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Pop.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Pop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Pop.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Pop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L43">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L48">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_Pop_" data-uid="MacacaGames.FixedSizeStack`1.Pop*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_Pop" data-uid="MacacaGames.FixedSizeStack`1.Pop">Pop()</h4>
-  <div class="markdown level1 summary"><p>取出最後一個項目並從 Stack 移除該項目</p>
+  <div class="markdown level1 summary"><p>Take the last item and remove from stack</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -392,20 +406,21 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>The item</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Push__0_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Push(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_Push__0_.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.Push(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L32">View Source</a>
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L35">View Source</a>
   </span>
   <a id="MacacaGames_FixedSizeStack_1_Push_" data-uid="MacacaGames.FixedSizeStack`1.Push*"></a>
   <h4 id="MacacaGames_FixedSizeStack_1_Push__0_" data-uid="MacacaGames.FixedSizeStack`1.Push(`0)">Push(T)</h4>
-  <div class="markdown level1 summary"><p>將一個項目存入 Stack</p>
+  <div class="markdown level1 summary"><p>Add ont item to Stack</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -429,6 +444,47 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1_System_Collections_Generic_IEnumerable_T__GetEnumerator.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601.System%23Collections%23Generic%23IEnumerable%7BT%7D%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L139">View Source</a>
+  </span>
+  <a id="MacacaGames_FixedSizeStack_1_System_Collections_Generic_IEnumerable_T__GetEnumerator_" data-uid="MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*"></a>
+  <h4 id="MacacaGames_FixedSizeStack_1_System_Collections_Generic_IEnumerable_T__GetEnumerator" data-uid="MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">IEnumerable&lt;T&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Get Enumerator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;T&gt;</td>
+        <td><p>The IEnumerator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
 </article>
           </div>
           
@@ -437,10 +493,10 @@ public class FixedSizeStack&lt;T&gt;</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/MacacaGames/MacacaUtility/new/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/apiSpec/new?filename=MacacaGames_FixedSizeStack_1.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/MacacaGames/MacacaUtility/new/master/apiSpec/new?filename=MacacaGames_FixedSizeStack_1.md&amp;value=---%0Auid%3A%20MacacaGames.FixedSizeStack%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/MacacaGames/MacacaUtility/blob/a4c5f0a0e15df0344d9a8f97ebd3e7bff8ae35ee/Scripts/Utilitys/FixedSizeStack.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/MacacaGames/MacacaUtility/blob/master/Scripts/Utilitys/FixedSizeStack.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
