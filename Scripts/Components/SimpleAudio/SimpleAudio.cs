@@ -80,7 +80,7 @@ public class SimpleAudio : MonoBehaviour
     {
         if (mixer)
         {
-            if (IsMusicMute)
+            if (!IsMusicMute)
             {
                 mixer.SetFloat("Music", oriVolumeMusic);
                 mixer.SetFloat("LobbyMusic", oriVolumeLobby);
@@ -93,7 +93,7 @@ public class SimpleAudio : MonoBehaviour
         }
         else
         {
-            if (IsMusicMute)
+            if (!IsMusicMute)
             {
                 AudioListener.volume = 1;
             }
@@ -108,7 +108,7 @@ public class SimpleAudio : MonoBehaviour
     {
         if (mixer)
         {
-            if (IsSfxMute)
+            if (!IsSfxMute)
             {
                 mixer.SetFloat("Sfx", oriVolumeSFX);
                 mixer.SetFloat("Voice", oriVolumeVoice);
