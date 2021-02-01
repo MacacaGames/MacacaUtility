@@ -121,101 +121,51 @@ references:
   commentId: F:MacacaGames.AnchorPresets.VertStretchRight
   fullName: MacacaGames.AnchorPresets.VertStretchRight
   nameWithType: AnchorPresets.VertStretchRight
-- uid: MacacaGames.CMAutoBuilder
-  name: CMAutoBuilder
-  href: api/MacacaGames.CMAutoBuilder.html
-  commentId: T:MacacaGames.CMAutoBuilder
-  fullName: MacacaGames.CMAutoBuilder
-  nameWithType: CMAutoBuilder
-- uid: MacacaGames.CMAutoBuilder.AndroidNdkRoot
-  name: AndroidNdkRoot
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_AndroidNdkRoot
-  commentId: P:MacacaGames.CMAutoBuilder.AndroidNdkRoot
-  fullName: MacacaGames.CMAutoBuilder.AndroidNdkRoot
-  nameWithType: CMAutoBuilder.AndroidNdkRoot
-- uid: MacacaGames.CMAutoBuilder.AndroidNdkRoot*
-  name: AndroidNdkRoot
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_AndroidNdkRoot_
-  commentId: Overload:MacacaGames.CMAutoBuilder.AndroidNdkRoot
+- uid: MacacaGames.CacheFactories
+  name: CacheFactories
+  href: api/MacacaGames.CacheFactories.html
+  commentId: T:MacacaGames.CacheFactories
+  fullName: MacacaGames.CacheFactories
+  nameWithType: CacheFactories
+- uid: MacacaGames.CacheFactories.FieldAccessorFactory
+  name: FieldAccessorFactory
+  href: api/MacacaGames.CacheFactories.html#MacacaGames_CacheFactories_FieldAccessorFactory
+  commentId: P:MacacaGames.CacheFactories.FieldAccessorFactory
+  fullName: MacacaGames.CacheFactories.FieldAccessorFactory
+  nameWithType: CacheFactories.FieldAccessorFactory
+- uid: MacacaGames.CacheFactories.FieldAccessorFactory*
+  name: FieldAccessorFactory
+  href: api/MacacaGames.CacheFactories.html#MacacaGames_CacheFactories_FieldAccessorFactory_
+  commentId: Overload:MacacaGames.CacheFactories.FieldAccessorFactory
   isSpec: "True"
-  fullName: MacacaGames.CMAutoBuilder.AndroidNdkRoot
-  nameWithType: CMAutoBuilder.AndroidNdkRoot
-- uid: MacacaGames.CMAutoBuilder.AndroidSdkRoot
-  name: AndroidSdkRoot
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_AndroidSdkRoot
-  commentId: P:MacacaGames.CMAutoBuilder.AndroidSdkRoot
-  fullName: MacacaGames.CMAutoBuilder.AndroidSdkRoot
-  nameWithType: CMAutoBuilder.AndroidSdkRoot
-- uid: MacacaGames.CMAutoBuilder.AndroidSdkRoot*
-  name: AndroidSdkRoot
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_AndroidSdkRoot_
-  commentId: Overload:MacacaGames.CMAutoBuilder.AndroidSdkRoot
+  fullName: MacacaGames.CacheFactories.FieldAccessorFactory
+  nameWithType: CacheFactories.FieldAccessorFactory
+- uid: MacacaGames.CacheFactories.MethodInvokerFactory
+  name: MethodInvokerFactory
+  href: api/MacacaGames.CacheFactories.html#MacacaGames_CacheFactories_MethodInvokerFactory
+  commentId: P:MacacaGames.CacheFactories.MethodInvokerFactory
+  fullName: MacacaGames.CacheFactories.MethodInvokerFactory
+  nameWithType: CacheFactories.MethodInvokerFactory
+- uid: MacacaGames.CacheFactories.MethodInvokerFactory*
+  name: MethodInvokerFactory
+  href: api/MacacaGames.CacheFactories.html#MacacaGames_CacheFactories_MethodInvokerFactory_
+  commentId: Overload:MacacaGames.CacheFactories.MethodInvokerFactory
   isSpec: "True"
-  fullName: MacacaGames.CMAutoBuilder.AndroidSdkRoot
-  nameWithType: CMAutoBuilder.AndroidSdkRoot
-- uid: MacacaGames.CMAutoBuilder.BuildAndroid
-  name: BuildAndroid()
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildAndroid
-  commentId: M:MacacaGames.CMAutoBuilder.BuildAndroid
-  fullName: MacacaGames.CMAutoBuilder.BuildAndroid()
-  nameWithType: CMAutoBuilder.BuildAndroid()
-- uid: MacacaGames.CMAutoBuilder.BuildAndroid*
-  name: BuildAndroid
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildAndroid_
-  commentId: Overload:MacacaGames.CMAutoBuilder.BuildAndroid
+  fullName: MacacaGames.CacheFactories.MethodInvokerFactory
+  nameWithType: CacheFactories.MethodInvokerFactory
+- uid: MacacaGames.CacheFactories.PropertyAccessorFactory
+  name: PropertyAccessorFactory
+  href: api/MacacaGames.CacheFactories.html#MacacaGames_CacheFactories_PropertyAccessorFactory
+  commentId: P:MacacaGames.CacheFactories.PropertyAccessorFactory
+  fullName: MacacaGames.CacheFactories.PropertyAccessorFactory
+  nameWithType: CacheFactories.PropertyAccessorFactory
+- uid: MacacaGames.CacheFactories.PropertyAccessorFactory*
+  name: PropertyAccessorFactory
+  href: api/MacacaGames.CacheFactories.html#MacacaGames_CacheFactories_PropertyAccessorFactory_
+  commentId: Overload:MacacaGames.CacheFactories.PropertyAccessorFactory
   isSpec: "True"
-  fullName: MacacaGames.CMAutoBuilder.BuildAndroid
-  nameWithType: CMAutoBuilder.BuildAndroid
-- uid: MacacaGames.CMAutoBuilder.BuildiOS
-  name: BuildiOS()
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildiOS
-  commentId: M:MacacaGames.CMAutoBuilder.BuildiOS
-  fullName: MacacaGames.CMAutoBuilder.BuildiOS()
-  nameWithType: CMAutoBuilder.BuildiOS()
-- uid: MacacaGames.CMAutoBuilder.BuildiOS*
-  name: BuildiOS
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_BuildiOS_
-  commentId: Overload:MacacaGames.CMAutoBuilder.BuildiOS
-  isSpec: "True"
-  fullName: MacacaGames.CMAutoBuilder.BuildiOS
-  nameWithType: CMAutoBuilder.BuildiOS
-- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod
-  name: CMAutoBuilder.CocoapodsIntegrationMethod
-  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html
-  commentId: T:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod
-  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod
-  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod
-- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.None
-  name: None
-  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html#MacacaGames_CMAutoBuilder_CocoapodsIntegrationMethod_None
-  commentId: F:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.None
-  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.None
-  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod.None
-- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Project
-  name: Project
-  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html#MacacaGames_CMAutoBuilder_CocoapodsIntegrationMethod_Project
-  commentId: F:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Project
-  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Project
-  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod.Project
-- uid: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
-  name: Workspace
-  href: api/MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.html#MacacaGames_CMAutoBuilder_CocoapodsIntegrationMethod_Workspace
-  commentId: F:MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
-  fullName: MacacaGames.CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
-  nameWithType: CMAutoBuilder.CocoapodsIntegrationMethod.Workspace
-- uid: MacacaGames.CMAutoBuilder.JdkRoot
-  name: JdkRoot
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_JdkRoot
-  commentId: P:MacacaGames.CMAutoBuilder.JdkRoot
-  fullName: MacacaGames.CMAutoBuilder.JdkRoot
-  nameWithType: CMAutoBuilder.JdkRoot
-- uid: MacacaGames.CMAutoBuilder.JdkRoot*
-  name: JdkRoot
-  href: api/MacacaGames.CMAutoBuilder.html#MacacaGames_CMAutoBuilder_JdkRoot_
-  commentId: Overload:MacacaGames.CMAutoBuilder.JdkRoot
-  isSpec: "True"
-  fullName: MacacaGames.CMAutoBuilder.JdkRoot
-  nameWithType: CMAutoBuilder.JdkRoot
+  fullName: MacacaGames.CacheFactories.PropertyAccessorFactory
+  nameWithType: CacheFactories.PropertyAccessorFactory
 - uid: MacacaGames.CMEditorLayout
   name: CMEditorLayout
   href: api/MacacaGames.CMEditorLayout.html
@@ -591,6 +541,136 @@ references:
   isSpec: "True"
   fullName: MacacaGames.EditorTools.ImageConverter.Init
   nameWithType: ImageConverter.Init
+- uid: MacacaGames.FieldAccessor
+  name: FieldAccessor
+  href: api/MacacaGames.FieldAccessor.html
+  commentId: T:MacacaGames.FieldAccessor
+  fullName: MacacaGames.FieldAccessor
+  nameWithType: FieldAccessor
+- uid: MacacaGames.FieldAccessor.#ctor(System.Reflection.FieldInfo)
+  name: FieldAccessor(FieldInfo)
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor__ctor_System_Reflection_FieldInfo_
+  commentId: M:MacacaGames.FieldAccessor.#ctor(System.Reflection.FieldInfo)
+  fullName: MacacaGames.FieldAccessor.FieldAccessor(System.Reflection.FieldInfo)
+  nameWithType: FieldAccessor.FieldAccessor(FieldInfo)
+- uid: MacacaGames.FieldAccessor.#ctor*
+  name: FieldAccessor
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor__ctor_
+  commentId: Overload:MacacaGames.FieldAccessor.#ctor
+  isSpec: "True"
+  fullName: MacacaGames.FieldAccessor.FieldAccessor
+  nameWithType: FieldAccessor.FieldAccessor
+- uid: MacacaGames.FieldAccessor.fieldInfo
+  name: fieldInfo
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_fieldInfo
+  commentId: P:MacacaGames.FieldAccessor.fieldInfo
+  fullName: MacacaGames.FieldAccessor.fieldInfo
+  nameWithType: FieldAccessor.fieldInfo
+- uid: MacacaGames.FieldAccessor.fieldInfo*
+  name: fieldInfo
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_fieldInfo_
+  commentId: Overload:MacacaGames.FieldAccessor.fieldInfo
+  isSpec: "True"
+  fullName: MacacaGames.FieldAccessor.fieldInfo
+  nameWithType: FieldAccessor.fieldInfo
+- uid: MacacaGames.FieldAccessor.GetValue(System.Object)
+  name: GetValue(Object)
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_GetValue_System_Object_
+  commentId: M:MacacaGames.FieldAccessor.GetValue(System.Object)
+  fullName: MacacaGames.FieldAccessor.GetValue(System.Object)
+  nameWithType: FieldAccessor.GetValue(Object)
+- uid: MacacaGames.FieldAccessor.GetValue*
+  name: GetValue
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_GetValue_
+  commentId: Overload:MacacaGames.FieldAccessor.GetValue
+  isSpec: "True"
+  fullName: MacacaGames.FieldAccessor.GetValue
+  nameWithType: FieldAccessor.GetValue
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue(System.Object)
+  name: IAccessor.GetValue(Object)
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_MacacaGames_IAccessor_GetValue_System_Object_
+  commentId: M:MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue(System.Object)
+  name.vb: MacacaGames.IAccessor.GetValue(Object)
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.GetValue(System.Object)
+  nameWithType: FieldAccessor.IAccessor.GetValue(Object)
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.GetValue(Object)
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue*
+  name: IAccessor.GetValue
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_MacacaGames_IAccessor_GetValue_
+  commentId: Overload:MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue
+  isSpec: "True"
+  name.vb: MacacaGames.IAccessor.GetValue
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.GetValue
+  nameWithType: FieldAccessor.IAccessor.GetValue
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.GetValue
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  name: IAccessor.SetValue(Object, Object)
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_MacacaGames_IAccessor_SetValue_System_Object_System_Object_
+  commentId: M:MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  name.vb: MacacaGames.IAccessor.SetValue(Object, Object)
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.SetValue(System.Object, System.Object)
+  nameWithType: FieldAccessor.IAccessor.SetValue(Object, Object)
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.SetValue(Object, Object)
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue*
+  name: IAccessor.SetValue
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_MacacaGames_IAccessor_SetValue_
+  commentId: Overload:MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue
+  isSpec: "True"
+  name.vb: MacacaGames.IAccessor.SetValue
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.SetValue
+  nameWithType: FieldAccessor.IAccessor.SetValue
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.SetValue
+- uid: MacacaGames.FieldAccessor.SetValue(System.Object,System.Object)
+  name: SetValue(Object, Object)
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_SetValue_System_Object_System_Object_
+  commentId: M:MacacaGames.FieldAccessor.SetValue(System.Object,System.Object)
+  fullName: MacacaGames.FieldAccessor.SetValue(System.Object, System.Object)
+  nameWithType: FieldAccessor.SetValue(Object, Object)
+- uid: MacacaGames.FieldAccessor.SetValue*
+  name: SetValue
+  href: api/MacacaGames.FieldAccessor.html#MacacaGames_FieldAccessor_SetValue_
+  commentId: Overload:MacacaGames.FieldAccessor.SetValue
+  isSpec: "True"
+  fullName: MacacaGames.FieldAccessor.SetValue
+  nameWithType: FieldAccessor.SetValue
+- uid: MacacaGames.FieldAccessorFactory
+  name: FieldAccessorFactory
+  href: api/MacacaGames.FieldAccessorFactory.html
+  commentId: T:MacacaGames.FieldAccessorFactory
+  fullName: MacacaGames.FieldAccessorFactory
+  nameWithType: FieldAccessorFactory
+- uid: MacacaGames.FieldAccessorFactory.Create(System.Reflection.FieldInfo)
+  name: Create(FieldInfo)
+  href: api/MacacaGames.FieldAccessorFactory.html#MacacaGames_FieldAccessorFactory_Create_System_Reflection_FieldInfo_
+  commentId: M:MacacaGames.FieldAccessorFactory.Create(System.Reflection.FieldInfo)
+  fullName: MacacaGames.FieldAccessorFactory.Create(System.Reflection.FieldInfo)
+  nameWithType: FieldAccessorFactory.Create(FieldInfo)
+- uid: MacacaGames.FieldAccessorFactory.Create*
+  name: Create
+  href: api/MacacaGames.FieldAccessorFactory.html#MacacaGames_FieldAccessorFactory_Create_
+  commentId: Overload:MacacaGames.FieldAccessorFactory.Create
+  isSpec: "True"
+  fullName: MacacaGames.FieldAccessorFactory.Create
+  nameWithType: FieldAccessorFactory.Create
+- uid: MacacaGames.FieldAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#FieldInfo,MacacaGames#IAccessor}#Create(System.Reflection.FieldInfo)
+  name: ICacheFactory<FieldInfo, IAccessor>.Create(FieldInfo)
+  href: api/MacacaGames.FieldAccessorFactory.html#MacacaGames_FieldAccessorFactory_MacacaGames_ICacheFactory_System_Reflection_FieldInfo_MacacaGames_IAccessor__Create_System_Reflection_FieldInfo_
+  commentId: M:MacacaGames.FieldAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#FieldInfo,MacacaGames#IAccessor}#Create(System.Reflection.FieldInfo)
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.FieldInfo,MacacaGames.IAccessor>.Create(FieldInfo)
+  fullName: MacacaGames.FieldAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.FieldInfo, MacacaGames.IAccessor>.Create(System.Reflection.FieldInfo)
+  fullName.vb: MacacaGames.FieldAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.FieldInfo,MacacaGames.IAccessor>.Create(System.Reflection.FieldInfo)
+  nameWithType: FieldAccessorFactory.ICacheFactory<FieldInfo, IAccessor>.Create(FieldInfo)
+  nameWithType.vb: FieldAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.FieldInfo,MacacaGames.IAccessor>.Create(FieldInfo)
+- uid: MacacaGames.FieldAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#FieldInfo,MacacaGames#IAccessor}#Create*
+  name: ICacheFactory<FieldInfo, IAccessor>.Create
+  href: api/MacacaGames.FieldAccessorFactory.html#MacacaGames_FieldAccessorFactory_MacacaGames_ICacheFactory_System_Reflection_FieldInfo_MacacaGames_IAccessor__Create_
+  commentId: Overload:MacacaGames.FieldAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#FieldInfo,MacacaGames#IAccessor}#Create
+  isSpec: "True"
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.FieldInfo,MacacaGames.IAccessor>.Create
+  fullName: MacacaGames.FieldAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.FieldInfo, MacacaGames.IAccessor>.Create
+  fullName.vb: MacacaGames.FieldAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.FieldInfo,MacacaGames.IAccessor>.Create
+  nameWithType: FieldAccessorFactory.ICacheFactory<FieldInfo, IAccessor>.Create
+  nameWithType.vb: FieldAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.FieldInfo,MacacaGames.IAccessor>.Create
 - uid: MacacaGames.FixedSizeStack`1
   name: FixedSizeStack<T>
   href: api/MacacaGames.FixedSizeStack-1.html
@@ -1013,6 +1093,270 @@ references:
   commentId: F:MacacaGames.GlobalTimerSetting.RegulateRateIfDelta
   fullName: MacacaGames.GlobalTimerSetting.RegulateRateIfDelta
   nameWithType: GlobalTimerSetting.RegulateRateIfDelta
+- uid: MacacaGames.Gradient
+  name: Gradient
+  href: api/MacacaGames.Gradient.html
+  commentId: T:MacacaGames.Gradient
+  fullName: MacacaGames.Gradient
+  nameWithType: Gradient
+- uid: MacacaGames.Gradient.Awake
+  name: Awake()
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Awake
+  commentId: M:MacacaGames.Gradient.Awake
+  fullName: MacacaGames.Gradient.Awake()
+  nameWithType: Gradient.Awake()
+- uid: MacacaGames.Gradient.Awake*
+  name: Awake
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Awake_
+  commentId: Overload:MacacaGames.Gradient.Awake
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.Awake
+  nameWithType: Gradient.Awake
+- uid: MacacaGames.Gradient.GradientDir
+  name: GradientDir
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_GradientDir
+  commentId: P:MacacaGames.Gradient.GradientDir
+  fullName: MacacaGames.Gradient.GradientDir
+  nameWithType: Gradient.GradientDir
+- uid: MacacaGames.Gradient.GradientDir*
+  name: GradientDir
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_GradientDir_
+  commentId: Overload:MacacaGames.Gradient.GradientDir
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.GradientDir
+  nameWithType: Gradient.GradientDir
+- uid: MacacaGames.Gradient.GradientMode
+  name: GradientMode
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_GradientMode
+  commentId: P:MacacaGames.Gradient.GradientMode
+  fullName: MacacaGames.Gradient.GradientMode
+  nameWithType: Gradient.GradientMode
+- uid: MacacaGames.Gradient.GradientMode*
+  name: GradientMode
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_GradientMode_
+  commentId: Overload:MacacaGames.Gradient.GradientMode
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.GradientMode
+  nameWithType: Gradient.GradientMode
+- uid: MacacaGames.Gradient.ModifyMesh(UnityEngine.UI.VertexHelper)
+  name: ModifyMesh(VertexHelper)
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_ModifyMesh_UnityEngine_UI_VertexHelper_
+  commentId: M:MacacaGames.Gradient.ModifyMesh(UnityEngine.UI.VertexHelper)
+  fullName: MacacaGames.Gradient.ModifyMesh(UnityEngine.UI.VertexHelper)
+  nameWithType: Gradient.ModifyMesh(VertexHelper)
+- uid: MacacaGames.Gradient.ModifyMesh*
+  name: ModifyMesh
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_ModifyMesh_
+  commentId: Overload:MacacaGames.Gradient.ModifyMesh
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.ModifyMesh
+  nameWithType: Gradient.ModifyMesh
+- uid: MacacaGames.Gradient.OverwriteAllColor
+  name: OverwriteAllColor
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_OverwriteAllColor
+  commentId: P:MacacaGames.Gradient.OverwriteAllColor
+  fullName: MacacaGames.Gradient.OverwriteAllColor
+  nameWithType: Gradient.OverwriteAllColor
+- uid: MacacaGames.Gradient.OverwriteAllColor*
+  name: OverwriteAllColor
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_OverwriteAllColor_
+  commentId: Overload:MacacaGames.Gradient.OverwriteAllColor
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.OverwriteAllColor
+  nameWithType: Gradient.OverwriteAllColor
+- uid: MacacaGames.Gradient.Refresh
+  name: Refresh()
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Refresh
+  commentId: M:MacacaGames.Gradient.Refresh
+  fullName: MacacaGames.Gradient.Refresh()
+  nameWithType: Gradient.Refresh()
+- uid: MacacaGames.Gradient.Refresh*
+  name: Refresh
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Refresh_
+  commentId: Overload:MacacaGames.Gradient.Refresh
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.Refresh
+  nameWithType: Gradient.Refresh
+- uid: MacacaGames.Gradient.Vertex1
+  name: Vertex1
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Vertex1
+  commentId: P:MacacaGames.Gradient.Vertex1
+  fullName: MacacaGames.Gradient.Vertex1
+  nameWithType: Gradient.Vertex1
+- uid: MacacaGames.Gradient.Vertex1*
+  name: Vertex1
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Vertex1_
+  commentId: Overload:MacacaGames.Gradient.Vertex1
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.Vertex1
+  nameWithType: Gradient.Vertex1
+- uid: MacacaGames.Gradient.Vertex2
+  name: Vertex2
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Vertex2
+  commentId: P:MacacaGames.Gradient.Vertex2
+  fullName: MacacaGames.Gradient.Vertex2
+  nameWithType: Gradient.Vertex2
+- uid: MacacaGames.Gradient.Vertex2*
+  name: Vertex2
+  href: api/MacacaGames.Gradient.html#MacacaGames_Gradient_Vertex2_
+  commentId: Overload:MacacaGames.Gradient.Vertex2
+  isSpec: "True"
+  fullName: MacacaGames.Gradient.Vertex2
+  nameWithType: Gradient.Vertex2
+- uid: MacacaGames.GradientDir
+  name: GradientDir
+  href: api/MacacaGames.GradientDir.html
+  commentId: T:MacacaGames.GradientDir
+  fullName: MacacaGames.GradientDir
+  nameWithType: GradientDir
+- uid: MacacaGames.GradientDir.DiagonalLeftToRight
+  name: DiagonalLeftToRight
+  href: api/MacacaGames.GradientDir.html#MacacaGames_GradientDir_DiagonalLeftToRight
+  commentId: F:MacacaGames.GradientDir.DiagonalLeftToRight
+  fullName: MacacaGames.GradientDir.DiagonalLeftToRight
+  nameWithType: GradientDir.DiagonalLeftToRight
+- uid: MacacaGames.GradientDir.DiagonalRightToLeft
+  name: DiagonalRightToLeft
+  href: api/MacacaGames.GradientDir.html#MacacaGames_GradientDir_DiagonalRightToLeft
+  commentId: F:MacacaGames.GradientDir.DiagonalRightToLeft
+  fullName: MacacaGames.GradientDir.DiagonalRightToLeft
+  nameWithType: GradientDir.DiagonalRightToLeft
+- uid: MacacaGames.GradientDir.Horizontal
+  name: Horizontal
+  href: api/MacacaGames.GradientDir.html#MacacaGames_GradientDir_Horizontal
+  commentId: F:MacacaGames.GradientDir.Horizontal
+  fullName: MacacaGames.GradientDir.Horizontal
+  nameWithType: GradientDir.Horizontal
+- uid: MacacaGames.GradientDir.Vertical
+  name: Vertical
+  href: api/MacacaGames.GradientDir.html#MacacaGames_GradientDir_Vertical
+  commentId: F:MacacaGames.GradientDir.Vertical
+  fullName: MacacaGames.GradientDir.Vertical
+  nameWithType: GradientDir.Vertical
+- uid: MacacaGames.GradientMode
+  name: GradientMode
+  href: api/MacacaGames.GradientMode.html
+  commentId: T:MacacaGames.GradientMode
+  fullName: MacacaGames.GradientMode
+  nameWithType: GradientMode
+- uid: MacacaGames.GradientMode.Global
+  name: Global
+  href: api/MacacaGames.GradientMode.html#MacacaGames_GradientMode_Global
+  commentId: F:MacacaGames.GradientMode.Global
+  fullName: MacacaGames.GradientMode.Global
+  nameWithType: GradientMode.Global
+- uid: MacacaGames.GradientMode.Local
+  name: Local
+  href: api/MacacaGames.GradientMode.html#MacacaGames_GradientMode_Local
+  commentId: F:MacacaGames.GradientMode.Local
+  fullName: MacacaGames.GradientMode.Local
+  nameWithType: GradientMode.Local
+- uid: MacacaGames.IAccessor
+  name: IAccessor
+  href: api/MacacaGames.IAccessor.html
+  commentId: T:MacacaGames.IAccessor
+  fullName: MacacaGames.IAccessor
+  nameWithType: IAccessor
+- uid: MacacaGames.IAccessor.GetValue(System.Object)
+  name: GetValue(Object)
+  href: api/MacacaGames.IAccessor.html#MacacaGames_IAccessor_GetValue_System_Object_
+  commentId: M:MacacaGames.IAccessor.GetValue(System.Object)
+  fullName: MacacaGames.IAccessor.GetValue(System.Object)
+  nameWithType: IAccessor.GetValue(Object)
+- uid: MacacaGames.IAccessor.GetValue*
+  name: GetValue
+  href: api/MacacaGames.IAccessor.html#MacacaGames_IAccessor_GetValue_
+  commentId: Overload:MacacaGames.IAccessor.GetValue
+  isSpec: "True"
+  fullName: MacacaGames.IAccessor.GetValue
+  nameWithType: IAccessor.GetValue
+- uid: MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  name: SetValue(Object, Object)
+  href: api/MacacaGames.IAccessor.html#MacacaGames_IAccessor_SetValue_System_Object_System_Object_
+  commentId: M:MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  fullName: MacacaGames.IAccessor.SetValue(System.Object, System.Object)
+  nameWithType: IAccessor.SetValue(Object, Object)
+- uid: MacacaGames.IAccessor.SetValue*
+  name: SetValue
+  href: api/MacacaGames.IAccessor.html#MacacaGames_IAccessor_SetValue_
+  commentId: Overload:MacacaGames.IAccessor.SetValue
+  isSpec: "True"
+  fullName: MacacaGames.IAccessor.SetValue
+  nameWithType: IAccessor.SetValue
+- uid: MacacaGames.ICacheFactory`2
+  name: ICacheFactory<TKey, TValue>
+  href: api/MacacaGames.ICacheFactory-2.html
+  commentId: T:MacacaGames.ICacheFactory`2
+  name.vb: ICacheFactory(Of TKey, TValue)
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue)
+  nameWithType: ICacheFactory<TKey, TValue>
+  nameWithType.vb: ICacheFactory(Of TKey, TValue)
+- uid: MacacaGames.ICacheFactory`2.Create(`0)
+  name: Create(TKey)
+  href: api/MacacaGames.ICacheFactory-2.html#MacacaGames_ICacheFactory_2_Create__0_
+  commentId: M:MacacaGames.ICacheFactory`2.Create(`0)
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>.Create(TKey)
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue).Create(TKey)
+  nameWithType: ICacheFactory<TKey, TValue>.Create(TKey)
+  nameWithType.vb: ICacheFactory(Of TKey, TValue).Create(TKey)
+- uid: MacacaGames.ICacheFactory`2.Create*
+  name: Create
+  href: api/MacacaGames.ICacheFactory-2.html#MacacaGames_ICacheFactory_2_Create_
+  commentId: Overload:MacacaGames.ICacheFactory`2.Create
+  isSpec: "True"
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>.Create
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue).Create
+  nameWithType: ICacheFactory<TKey, TValue>.Create
+  nameWithType.vb: ICacheFactory(Of TKey, TValue).Create
+- uid: MacacaGames.IMethodInvoker
+  name: IMethodInvoker
+  href: api/MacacaGames.IMethodInvoker.html
+  commentId: T:MacacaGames.IMethodInvoker
+  fullName: MacacaGames.IMethodInvoker
+  nameWithType: IMethodInvoker
+- uid: MacacaGames.IMethodInvoker.Invoke(System.Object,System.Object[])
+  name: Invoke(Object, Object[])
+  href: api/MacacaGames.IMethodInvoker.html#MacacaGames_IMethodInvoker_Invoke_System_Object_System_Object___
+  commentId: M:MacacaGames.IMethodInvoker.Invoke(System.Object,System.Object[])
+  name.vb: Invoke(Object, Object())
+  fullName: MacacaGames.IMethodInvoker.Invoke(System.Object, System.Object[])
+  fullName.vb: MacacaGames.IMethodInvoker.Invoke(System.Object, System.Object())
+  nameWithType: IMethodInvoker.Invoke(Object, Object[])
+  nameWithType.vb: IMethodInvoker.Invoke(Object, Object())
+- uid: MacacaGames.IMethodInvoker.Invoke*
+  name: Invoke
+  href: api/MacacaGames.IMethodInvoker.html#MacacaGames_IMethodInvoker_Invoke_
+  commentId: Overload:MacacaGames.IMethodInvoker.Invoke
+  isSpec: "True"
+  fullName: MacacaGames.IMethodInvoker.Invoke
+  nameWithType: IMethodInvoker.Invoke
+- uid: MacacaGames.IReflactorCache`2
+  name: IReflactorCache<TKey, TValue>
+  href: api/MacacaGames.IReflactorCache-2.html
+  commentId: T:MacacaGames.IReflactorCache`2
+  name.vb: IReflactorCache(Of TKey, TValue)
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue)
+  nameWithType: IReflactorCache<TKey, TValue>
+  nameWithType.vb: IReflactorCache(Of TKey, TValue)
+- uid: MacacaGames.IReflactorCache`2.Get(`0)
+  name: Get(TKey)
+  href: api/MacacaGames.IReflactorCache-2.html#MacacaGames_IReflactorCache_2_Get__0_
+  commentId: M:MacacaGames.IReflactorCache`2.Get(`0)
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>.Get(TKey)
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue).Get(TKey)
+  nameWithType: IReflactorCache<TKey, TValue>.Get(TKey)
+  nameWithType.vb: IReflactorCache(Of TKey, TValue).Get(TKey)
+- uid: MacacaGames.IReflactorCache`2.Get*
+  name: Get
+  href: api/MacacaGames.IReflactorCache-2.html#MacacaGames_IReflactorCache_2_Get_
+  commentId: Overload:MacacaGames.IReflactorCache`2.Get
+  isSpec: "True"
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>.Get
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue).Get
+  nameWithType: IReflactorCache<TKey, TValue>.Get
+  nameWithType.vb: IReflactorCache(Of TKey, TValue).Get
 - uid: MacacaGames.JuicyText
   name: JuicyText
   href: api/MacacaGames.JuicyText.html
@@ -1153,6 +1497,110 @@ references:
   isSpec: "True"
   fullName: MacacaGames.JuicyText.textComponent
   nameWithType: JuicyText.textComponent
+- uid: MacacaGames.MethodInvoker
+  name: MethodInvoker
+  href: api/MacacaGames.MethodInvoker.html
+  commentId: T:MacacaGames.MethodInvoker
+  fullName: MacacaGames.MethodInvoker
+  nameWithType: MethodInvoker
+- uid: MacacaGames.MethodInvoker.#ctor(System.Reflection.MethodInfo)
+  name: MethodInvoker(MethodInfo)
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker__ctor_System_Reflection_MethodInfo_
+  commentId: M:MacacaGames.MethodInvoker.#ctor(System.Reflection.MethodInfo)
+  fullName: MacacaGames.MethodInvoker.MethodInvoker(System.Reflection.MethodInfo)
+  nameWithType: MethodInvoker.MethodInvoker(MethodInfo)
+- uid: MacacaGames.MethodInvoker.#ctor*
+  name: MethodInvoker
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker__ctor_
+  commentId: Overload:MacacaGames.MethodInvoker.#ctor
+  isSpec: "True"
+  fullName: MacacaGames.MethodInvoker.MethodInvoker
+  nameWithType: MethodInvoker.MethodInvoker
+- uid: MacacaGames.MethodInvoker.Invoke(System.Object,System.Object[])
+  name: Invoke(Object, Object[])
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker_Invoke_System_Object_System_Object___
+  commentId: M:MacacaGames.MethodInvoker.Invoke(System.Object,System.Object[])
+  name.vb: Invoke(Object, Object())
+  fullName: MacacaGames.MethodInvoker.Invoke(System.Object, System.Object[])
+  fullName.vb: MacacaGames.MethodInvoker.Invoke(System.Object, System.Object())
+  nameWithType: MethodInvoker.Invoke(Object, Object[])
+  nameWithType.vb: MethodInvoker.Invoke(Object, Object())
+- uid: MacacaGames.MethodInvoker.Invoke*
+  name: Invoke
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker_Invoke_
+  commentId: Overload:MacacaGames.MethodInvoker.Invoke
+  isSpec: "True"
+  fullName: MacacaGames.MethodInvoker.Invoke
+  nameWithType: MethodInvoker.Invoke
+- uid: MacacaGames.MethodInvoker.MacacaGames#IMethodInvoker#Invoke(System.Object,System.Object[])
+  name: IMethodInvoker.Invoke(Object, Object[])
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker_MacacaGames_IMethodInvoker_Invoke_System_Object_System_Object___
+  commentId: M:MacacaGames.MethodInvoker.MacacaGames#IMethodInvoker#Invoke(System.Object,System.Object[])
+  name.vb: MacacaGames.IMethodInvoker.Invoke(Object, Object())
+  fullName: MacacaGames.MethodInvoker.MacacaGames.IMethodInvoker.Invoke(System.Object, System.Object[])
+  fullName.vb: MacacaGames.MethodInvoker.MacacaGames.IMethodInvoker.Invoke(System.Object, System.Object())
+  nameWithType: MethodInvoker.IMethodInvoker.Invoke(Object, Object[])
+  nameWithType.vb: MethodInvoker.MacacaGames.IMethodInvoker.Invoke(Object, Object())
+- uid: MacacaGames.MethodInvoker.MacacaGames#IMethodInvoker#Invoke*
+  name: IMethodInvoker.Invoke
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker_MacacaGames_IMethodInvoker_Invoke_
+  commentId: Overload:MacacaGames.MethodInvoker.MacacaGames#IMethodInvoker#Invoke
+  isSpec: "True"
+  name.vb: MacacaGames.IMethodInvoker.Invoke
+  fullName: MacacaGames.MethodInvoker.MacacaGames.IMethodInvoker.Invoke
+  nameWithType: MethodInvoker.IMethodInvoker.Invoke
+  nameWithType.vb: MethodInvoker.MacacaGames.IMethodInvoker.Invoke
+- uid: MacacaGames.MethodInvoker.MethodInfo
+  name: MethodInfo
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker_MethodInfo
+  commentId: P:MacacaGames.MethodInvoker.MethodInfo
+  fullName: MacacaGames.MethodInvoker.MethodInfo
+  nameWithType: MethodInvoker.MethodInfo
+- uid: MacacaGames.MethodInvoker.MethodInfo*
+  name: MethodInfo
+  href: api/MacacaGames.MethodInvoker.html#MacacaGames_MethodInvoker_MethodInfo_
+  commentId: Overload:MacacaGames.MethodInvoker.MethodInfo
+  isSpec: "True"
+  fullName: MacacaGames.MethodInvoker.MethodInfo
+  nameWithType: MethodInvoker.MethodInfo
+- uid: MacacaGames.MethodInvokerFactory
+  name: MethodInvokerFactory
+  href: api/MacacaGames.MethodInvokerFactory.html
+  commentId: T:MacacaGames.MethodInvokerFactory
+  fullName: MacacaGames.MethodInvokerFactory
+  nameWithType: MethodInvokerFactory
+- uid: MacacaGames.MethodInvokerFactory.Create(System.Reflection.MethodInfo)
+  name: Create(MethodInfo)
+  href: api/MacacaGames.MethodInvokerFactory.html#MacacaGames_MethodInvokerFactory_Create_System_Reflection_MethodInfo_
+  commentId: M:MacacaGames.MethodInvokerFactory.Create(System.Reflection.MethodInfo)
+  fullName: MacacaGames.MethodInvokerFactory.Create(System.Reflection.MethodInfo)
+  nameWithType: MethodInvokerFactory.Create(MethodInfo)
+- uid: MacacaGames.MethodInvokerFactory.Create*
+  name: Create
+  href: api/MacacaGames.MethodInvokerFactory.html#MacacaGames_MethodInvokerFactory_Create_
+  commentId: Overload:MacacaGames.MethodInvokerFactory.Create
+  isSpec: "True"
+  fullName: MacacaGames.MethodInvokerFactory.Create
+  nameWithType: MethodInvokerFactory.Create
+- uid: MacacaGames.MethodInvokerFactory.MacacaGames#ICacheFactory{System#Reflection#MethodInfo,MacacaGames#IMethodInvoker}#Create(System.Reflection.MethodInfo)
+  name: ICacheFactory<MethodInfo, IMethodInvoker>.Create(MethodInfo)
+  href: api/MacacaGames.MethodInvokerFactory.html#MacacaGames_MethodInvokerFactory_MacacaGames_ICacheFactory_System_Reflection_MethodInfo_MacacaGames_IMethodInvoker__Create_System_Reflection_MethodInfo_
+  commentId: M:MacacaGames.MethodInvokerFactory.MacacaGames#ICacheFactory{System#Reflection#MethodInfo,MacacaGames#IMethodInvoker}#Create(System.Reflection.MethodInfo)
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.MethodInfo,MacacaGames.IMethodInvoker>.Create(MethodInfo)
+  fullName: MacacaGames.MethodInvokerFactory.MacacaGames.ICacheFactory<System.Reflection.MethodInfo, MacacaGames.IMethodInvoker>.Create(System.Reflection.MethodInfo)
+  fullName.vb: MacacaGames.MethodInvokerFactory.MacacaGames.ICacheFactory<System.Reflection.MethodInfo,MacacaGames.IMethodInvoker>.Create(System.Reflection.MethodInfo)
+  nameWithType: MethodInvokerFactory.ICacheFactory<MethodInfo, IMethodInvoker>.Create(MethodInfo)
+  nameWithType.vb: MethodInvokerFactory.MacacaGames.ICacheFactory<System.Reflection.MethodInfo,MacacaGames.IMethodInvoker>.Create(MethodInfo)
+- uid: MacacaGames.MethodInvokerFactory.MacacaGames#ICacheFactory{System#Reflection#MethodInfo,MacacaGames#IMethodInvoker}#Create*
+  name: ICacheFactory<MethodInfo, IMethodInvoker>.Create
+  href: api/MacacaGames.MethodInvokerFactory.html#MacacaGames_MethodInvokerFactory_MacacaGames_ICacheFactory_System_Reflection_MethodInfo_MacacaGames_IMethodInvoker__Create_
+  commentId: Overload:MacacaGames.MethodInvokerFactory.MacacaGames#ICacheFactory{System#Reflection#MethodInfo,MacacaGames#IMethodInvoker}#Create
+  isSpec: "True"
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.MethodInfo,MacacaGames.IMethodInvoker>.Create
+  fullName: MacacaGames.MethodInvokerFactory.MacacaGames.ICacheFactory<System.Reflection.MethodInfo, MacacaGames.IMethodInvoker>.Create
+  fullName.vb: MacacaGames.MethodInvokerFactory.MacacaGames.ICacheFactory<System.Reflection.MethodInfo,MacacaGames.IMethodInvoker>.Create
+  nameWithType: MethodInvokerFactory.ICacheFactory<MethodInfo, IMethodInvoker>.Create
+  nameWithType.vb: MethodInvokerFactory.MacacaGames.ICacheFactory<System.Reflection.MethodInfo,MacacaGames.IMethodInvoker>.Create
 - uid: MacacaGames.ObjectPool
   name: ObjectPool
   href: api/MacacaGames.ObjectPool.html
@@ -1258,6 +1706,170 @@ references:
   fullName.vb: MacacaGames.ObjectPool.ReUse(Of T)(UnityEngine.Vector3, UnityEngine.Quaternion)
   nameWithType: ObjectPool.ReUse<T>(Vector3, Quaternion)
   nameWithType.vb: ObjectPool.ReUse(Of T)(Vector3, Quaternion)
+- uid: MacacaGames.PaletteControl
+  name: PaletteControl
+  href: api/MacacaGames.PaletteControl.html
+  commentId: T:MacacaGames.PaletteControl
+  fullName: MacacaGames.PaletteControl
+  nameWithType: PaletteControl
+- uid: MacacaGames.PaletteControl.currentSelectionState
+  name: currentSelectionState
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_currentSelectionState
+  commentId: P:MacacaGames.PaletteControl.currentSelectionState
+  fullName: MacacaGames.PaletteControl.currentSelectionState
+  nameWithType: PaletteControl.currentSelectionState
+- uid: MacacaGames.PaletteControl.currentSelectionState*
+  name: currentSelectionState
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_currentSelectionState_
+  commentId: Overload:MacacaGames.PaletteControl.currentSelectionState
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.currentSelectionState
+  nameWithType: PaletteControl.currentSelectionState
+- uid: MacacaGames.PaletteControl.gradient
+  name: gradient
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_gradient
+  commentId: F:MacacaGames.PaletteControl.gradient
+  fullName: MacacaGames.PaletteControl.gradient
+  nameWithType: PaletteControl.gradient
+- uid: MacacaGames.PaletteControl.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  name: OnDeselect(BaseEventData)
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnDeselect_UnityEngine_EventSystems_BaseEventData_
+  commentId: M:MacacaGames.PaletteControl.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  fullName: MacacaGames.PaletteControl.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  nameWithType: PaletteControl.OnDeselect(BaseEventData)
+- uid: MacacaGames.PaletteControl.OnDeselect*
+  name: OnDeselect
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnDeselect_
+  commentId: Overload:MacacaGames.PaletteControl.OnDeselect
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.OnDeselect
+  nameWithType: PaletteControl.OnDeselect
+- uid: MacacaGames.PaletteControl.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerDown(PointerEventData)
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerDown_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.PaletteControl.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.PaletteControl.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: PaletteControl.OnPointerDown(PointerEventData)
+- uid: MacacaGames.PaletteControl.OnPointerDown*
+  name: OnPointerDown
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerDown_
+  commentId: Overload:MacacaGames.PaletteControl.OnPointerDown
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.OnPointerDown
+  nameWithType: PaletteControl.OnPointerDown
+- uid: MacacaGames.PaletteControl.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerEnter(PointerEventData)
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.PaletteControl.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.PaletteControl.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: PaletteControl.OnPointerEnter(PointerEventData)
+- uid: MacacaGames.PaletteControl.OnPointerEnter*
+  name: OnPointerEnter
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerEnter_
+  commentId: Overload:MacacaGames.PaletteControl.OnPointerEnter
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.OnPointerEnter
+  nameWithType: PaletteControl.OnPointerEnter
+- uid: MacacaGames.PaletteControl.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerExit(PointerEventData)
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerExit_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.PaletteControl.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.PaletteControl.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: PaletteControl.OnPointerExit(PointerEventData)
+- uid: MacacaGames.PaletteControl.OnPointerExit*
+  name: OnPointerExit
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerExit_
+  commentId: Overload:MacacaGames.PaletteControl.OnPointerExit
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.OnPointerExit
+  nameWithType: PaletteControl.OnPointerExit
+- uid: MacacaGames.PaletteControl.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerUp(PointerEventData)
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerUp_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.PaletteControl.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.PaletteControl.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: PaletteControl.OnPointerUp(PointerEventData)
+- uid: MacacaGames.PaletteControl.OnPointerUp*
+  name: OnPointerUp
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnPointerUp_
+  commentId: Overload:MacacaGames.PaletteControl.OnPointerUp
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.OnPointerUp
+  nameWithType: PaletteControl.OnPointerUp
+- uid: MacacaGames.PaletteControl.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  name: OnSelect(BaseEventData)
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnSelect_UnityEngine_EventSystems_BaseEventData_
+  commentId: M:MacacaGames.PaletteControl.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  fullName: MacacaGames.PaletteControl.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  nameWithType: PaletteControl.OnSelect(BaseEventData)
+- uid: MacacaGames.PaletteControl.OnSelect*
+  name: OnSelect
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_OnSelect_
+  commentId: Overload:MacacaGames.PaletteControl.OnSelect
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.OnSelect
+  nameWithType: PaletteControl.OnSelect
+- uid: MacacaGames.PaletteControl.SelectionState
+  name: PaletteControl.SelectionState
+  href: api/MacacaGames.PaletteControl.SelectionState.html
+  commentId: T:MacacaGames.PaletteControl.SelectionState
+  fullName: MacacaGames.PaletteControl.SelectionState
+  nameWithType: PaletteControl.SelectionState
+- uid: MacacaGames.PaletteControl.SelectionState.Disabled
+  name: Disabled
+  href: api/MacacaGames.PaletteControl.SelectionState.html#MacacaGames_PaletteControl_SelectionState_Disabled
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Disabled
+  fullName: MacacaGames.PaletteControl.SelectionState.Disabled
+  nameWithType: PaletteControl.SelectionState.Disabled
+- uid: MacacaGames.PaletteControl.SelectionState.Highlighted
+  name: Highlighted
+  href: api/MacacaGames.PaletteControl.SelectionState.html#MacacaGames_PaletteControl_SelectionState_Highlighted
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Highlighted
+  fullName: MacacaGames.PaletteControl.SelectionState.Highlighted
+  nameWithType: PaletteControl.SelectionState.Highlighted
+- uid: MacacaGames.PaletteControl.SelectionState.Normal
+  name: Normal
+  href: api/MacacaGames.PaletteControl.SelectionState.html#MacacaGames_PaletteControl_SelectionState_Normal
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Normal
+  fullName: MacacaGames.PaletteControl.SelectionState.Normal
+  nameWithType: PaletteControl.SelectionState.Normal
+- uid: MacacaGames.PaletteControl.SelectionState.Pressed
+  name: Pressed
+  href: api/MacacaGames.PaletteControl.SelectionState.html#MacacaGames_PaletteControl_SelectionState_Pressed
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Pressed
+  fullName: MacacaGames.PaletteControl.SelectionState.Pressed
+  nameWithType: PaletteControl.SelectionState.Pressed
+- uid: MacacaGames.PaletteControl.SelectionState.Selected
+  name: Selected
+  href: api/MacacaGames.PaletteControl.SelectionState.html#MacacaGames_PaletteControl_SelectionState_Selected
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Selected
+  fullName: MacacaGames.PaletteControl.SelectionState.Selected
+  nameWithType: PaletteControl.SelectionState.Selected
+- uid: MacacaGames.PaletteControl.SetPalette(MacacaGames.SelectablePalette)
+  name: SetPalette(SelectablePalette)
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_SetPalette_MacacaGames_SelectablePalette_
+  commentId: M:MacacaGames.PaletteControl.SetPalette(MacacaGames.SelectablePalette)
+  fullName: MacacaGames.PaletteControl.SetPalette(MacacaGames.SelectablePalette)
+  nameWithType: PaletteControl.SetPalette(SelectablePalette)
+- uid: MacacaGames.PaletteControl.SetPalette*
+  name: SetPalette
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_SetPalette_
+  commentId: Overload:MacacaGames.PaletteControl.SetPalette
+  isSpec: "True"
+  fullName: MacacaGames.PaletteControl.SetPalette
+  nameWithType: PaletteControl.SetPalette
+- uid: MacacaGames.PaletteControl.shadowComponent
+  name: shadowComponent
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_shadowComponent
+  commentId: F:MacacaGames.PaletteControl.shadowComponent
+  fullName: MacacaGames.PaletteControl.shadowComponent
+  nameWithType: PaletteControl.shadowComponent
+- uid: MacacaGames.PaletteControl.shadowImage
+  name: shadowImage
+  href: api/MacacaGames.PaletteControl.html#MacacaGames_PaletteControl_shadowImage
+  commentId: F:MacacaGames.PaletteControl.shadowImage
+  fullName: MacacaGames.PaletteControl.shadowImage
+  nameWithType: PaletteControl.shadowImage
 - uid: MacacaGames.PivotPresets
   name: PivotPresets
   href: api/MacacaGames.PivotPresets.html
@@ -1318,6 +1930,136 @@ references:
   commentId: F:MacacaGames.PivotPresets.TopRight
   fullName: MacacaGames.PivotPresets.TopRight
   nameWithType: PivotPresets.TopRight
+- uid: MacacaGames.PropertyAccessor
+  name: PropertyAccessor
+  href: api/MacacaGames.PropertyAccessor.html
+  commentId: T:MacacaGames.PropertyAccessor
+  fullName: MacacaGames.PropertyAccessor
+  nameWithType: PropertyAccessor
+- uid: MacacaGames.PropertyAccessor.#ctor(System.Reflection.PropertyInfo)
+  name: PropertyAccessor(PropertyInfo)
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor__ctor_System_Reflection_PropertyInfo_
+  commentId: M:MacacaGames.PropertyAccessor.#ctor(System.Reflection.PropertyInfo)
+  fullName: MacacaGames.PropertyAccessor.PropertyAccessor(System.Reflection.PropertyInfo)
+  nameWithType: PropertyAccessor.PropertyAccessor(PropertyInfo)
+- uid: MacacaGames.PropertyAccessor.#ctor*
+  name: PropertyAccessor
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor__ctor_
+  commentId: Overload:MacacaGames.PropertyAccessor.#ctor
+  isSpec: "True"
+  fullName: MacacaGames.PropertyAccessor.PropertyAccessor
+  nameWithType: PropertyAccessor.PropertyAccessor
+- uid: MacacaGames.PropertyAccessor.GetValue(System.Object)
+  name: GetValue(Object)
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_GetValue_System_Object_
+  commentId: M:MacacaGames.PropertyAccessor.GetValue(System.Object)
+  fullName: MacacaGames.PropertyAccessor.GetValue(System.Object)
+  nameWithType: PropertyAccessor.GetValue(Object)
+- uid: MacacaGames.PropertyAccessor.GetValue*
+  name: GetValue
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_GetValue_
+  commentId: Overload:MacacaGames.PropertyAccessor.GetValue
+  isSpec: "True"
+  fullName: MacacaGames.PropertyAccessor.GetValue
+  nameWithType: PropertyAccessor.GetValue
+- uid: MacacaGames.PropertyAccessor.MacacaGames#IAccessor#GetValue(System.Object)
+  name: IAccessor.GetValue(Object)
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_MacacaGames_IAccessor_GetValue_System_Object_
+  commentId: M:MacacaGames.PropertyAccessor.MacacaGames#IAccessor#GetValue(System.Object)
+  name.vb: MacacaGames.IAccessor.GetValue(Object)
+  fullName: MacacaGames.PropertyAccessor.MacacaGames.IAccessor.GetValue(System.Object)
+  nameWithType: PropertyAccessor.IAccessor.GetValue(Object)
+  nameWithType.vb: PropertyAccessor.MacacaGames.IAccessor.GetValue(Object)
+- uid: MacacaGames.PropertyAccessor.MacacaGames#IAccessor#GetValue*
+  name: IAccessor.GetValue
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_MacacaGames_IAccessor_GetValue_
+  commentId: Overload:MacacaGames.PropertyAccessor.MacacaGames#IAccessor#GetValue
+  isSpec: "True"
+  name.vb: MacacaGames.IAccessor.GetValue
+  fullName: MacacaGames.PropertyAccessor.MacacaGames.IAccessor.GetValue
+  nameWithType: PropertyAccessor.IAccessor.GetValue
+  nameWithType.vb: PropertyAccessor.MacacaGames.IAccessor.GetValue
+- uid: MacacaGames.PropertyAccessor.MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  name: IAccessor.SetValue(Object, Object)
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_MacacaGames_IAccessor_SetValue_System_Object_System_Object_
+  commentId: M:MacacaGames.PropertyAccessor.MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  name.vb: MacacaGames.IAccessor.SetValue(Object, Object)
+  fullName: MacacaGames.PropertyAccessor.MacacaGames.IAccessor.SetValue(System.Object, System.Object)
+  nameWithType: PropertyAccessor.IAccessor.SetValue(Object, Object)
+  nameWithType.vb: PropertyAccessor.MacacaGames.IAccessor.SetValue(Object, Object)
+- uid: MacacaGames.PropertyAccessor.MacacaGames#IAccessor#SetValue*
+  name: IAccessor.SetValue
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_MacacaGames_IAccessor_SetValue_
+  commentId: Overload:MacacaGames.PropertyAccessor.MacacaGames#IAccessor#SetValue
+  isSpec: "True"
+  name.vb: MacacaGames.IAccessor.SetValue
+  fullName: MacacaGames.PropertyAccessor.MacacaGames.IAccessor.SetValue
+  nameWithType: PropertyAccessor.IAccessor.SetValue
+  nameWithType.vb: PropertyAccessor.MacacaGames.IAccessor.SetValue
+- uid: MacacaGames.PropertyAccessor.PropertyInfo
+  name: PropertyInfo
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_PropertyInfo
+  commentId: P:MacacaGames.PropertyAccessor.PropertyInfo
+  fullName: MacacaGames.PropertyAccessor.PropertyInfo
+  nameWithType: PropertyAccessor.PropertyInfo
+- uid: MacacaGames.PropertyAccessor.PropertyInfo*
+  name: PropertyInfo
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_PropertyInfo_
+  commentId: Overload:MacacaGames.PropertyAccessor.PropertyInfo
+  isSpec: "True"
+  fullName: MacacaGames.PropertyAccessor.PropertyInfo
+  nameWithType: PropertyAccessor.PropertyInfo
+- uid: MacacaGames.PropertyAccessor.SetValue(System.Object,System.Object)
+  name: SetValue(Object, Object)
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_SetValue_System_Object_System_Object_
+  commentId: M:MacacaGames.PropertyAccessor.SetValue(System.Object,System.Object)
+  fullName: MacacaGames.PropertyAccessor.SetValue(System.Object, System.Object)
+  nameWithType: PropertyAccessor.SetValue(Object, Object)
+- uid: MacacaGames.PropertyAccessor.SetValue*
+  name: SetValue
+  href: api/MacacaGames.PropertyAccessor.html#MacacaGames_PropertyAccessor_SetValue_
+  commentId: Overload:MacacaGames.PropertyAccessor.SetValue
+  isSpec: "True"
+  fullName: MacacaGames.PropertyAccessor.SetValue
+  nameWithType: PropertyAccessor.SetValue
+- uid: MacacaGames.PropertyAccessorFactory
+  name: PropertyAccessorFactory
+  href: api/MacacaGames.PropertyAccessorFactory.html
+  commentId: T:MacacaGames.PropertyAccessorFactory
+  fullName: MacacaGames.PropertyAccessorFactory
+  nameWithType: PropertyAccessorFactory
+- uid: MacacaGames.PropertyAccessorFactory.Create(System.Reflection.PropertyInfo)
+  name: Create(PropertyInfo)
+  href: api/MacacaGames.PropertyAccessorFactory.html#MacacaGames_PropertyAccessorFactory_Create_System_Reflection_PropertyInfo_
+  commentId: M:MacacaGames.PropertyAccessorFactory.Create(System.Reflection.PropertyInfo)
+  fullName: MacacaGames.PropertyAccessorFactory.Create(System.Reflection.PropertyInfo)
+  nameWithType: PropertyAccessorFactory.Create(PropertyInfo)
+- uid: MacacaGames.PropertyAccessorFactory.Create*
+  name: Create
+  href: api/MacacaGames.PropertyAccessorFactory.html#MacacaGames_PropertyAccessorFactory_Create_
+  commentId: Overload:MacacaGames.PropertyAccessorFactory.Create
+  isSpec: "True"
+  fullName: MacacaGames.PropertyAccessorFactory.Create
+  nameWithType: PropertyAccessorFactory.Create
+- uid: MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create(System.Reflection.PropertyInfo)
+  name: ICacheFactory<PropertyInfo, IAccessor>.Create(PropertyInfo)
+  href: api/MacacaGames.PropertyAccessorFactory.html#MacacaGames_PropertyAccessorFactory_MacacaGames_ICacheFactory_System_Reflection_PropertyInfo_MacacaGames_IAccessor__Create_System_Reflection_PropertyInfo_
+  commentId: M:MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create(System.Reflection.PropertyInfo)
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create(PropertyInfo)
+  fullName: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo, MacacaGames.IAccessor>.Create(System.Reflection.PropertyInfo)
+  fullName.vb: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create(System.Reflection.PropertyInfo)
+  nameWithType: PropertyAccessorFactory.ICacheFactory<PropertyInfo, IAccessor>.Create(PropertyInfo)
+  nameWithType.vb: PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create(PropertyInfo)
+- uid: MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create*
+  name: ICacheFactory<PropertyInfo, IAccessor>.Create
+  href: api/MacacaGames.PropertyAccessorFactory.html#MacacaGames_PropertyAccessorFactory_MacacaGames_ICacheFactory_System_Reflection_PropertyInfo_MacacaGames_IAccessor__Create_
+  commentId: Overload:MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create
+  isSpec: "True"
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create
+  fullName: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo, MacacaGames.IAccessor>.Create
+  fullName.vb: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create
+  nameWithType: PropertyAccessorFactory.ICacheFactory<PropertyInfo, IAccessor>.Create
+  nameWithType.vb: PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create
 - uid: MacacaGames.RandomUtility
   name: RandomUtility
   href: api/MacacaGames.RandomUtility.html
@@ -1465,6 +2207,60 @@ references:
   commentId: T:MacacaGames.ReflectionUtility
   fullName: MacacaGames.ReflectionUtility
   nameWithType: ReflectionUtility
+- uid: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.FieldInfo,System.Object)
+  name: FastGetValue(FieldInfo, Object)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastGetValue_System_Reflection_FieldInfo_System_Object_
+  commentId: M:MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.FieldInfo,System.Object)
+  fullName: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.FieldInfo, System.Object)
+  nameWithType: ReflectionUtility.FastGetValue(FieldInfo, Object)
+- uid: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.PropertyInfo,System.Object,System.Boolean)
+  name: FastGetValue(PropertyInfo, Object, Boolean)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastGetValue_System_Reflection_PropertyInfo_System_Object_System_Boolean_
+  commentId: M:MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.PropertyInfo,System.Object,System.Boolean)
+  fullName: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.PropertyInfo, System.Object, System.Boolean)
+  nameWithType: ReflectionUtility.FastGetValue(PropertyInfo, Object, Boolean)
+- uid: MacacaGames.ReflectionUtility.FastGetValue*
+  name: FastGetValue
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastGetValue_
+  commentId: Overload:MacacaGames.ReflectionUtility.FastGetValue
+  isSpec: "True"
+  fullName: MacacaGames.ReflectionUtility.FastGetValue
+  nameWithType: ReflectionUtility.FastGetValue
+- uid: MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo,System.Object,System.Object[])
+  name: FastInvoke(MethodInfo, Object, Object[])
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastInvoke_System_Reflection_MethodInfo_System_Object_System_Object___
+  commentId: M:MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo,System.Object,System.Object[])
+  name.vb: FastInvoke(MethodInfo, Object, Object())
+  fullName: MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo, System.Object, System.Object[])
+  fullName.vb: MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo, System.Object, System.Object())
+  nameWithType: ReflectionUtility.FastInvoke(MethodInfo, Object, Object[])
+  nameWithType.vb: ReflectionUtility.FastInvoke(MethodInfo, Object, Object())
+- uid: MacacaGames.ReflectionUtility.FastInvoke*
+  name: FastInvoke
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastInvoke_
+  commentId: Overload:MacacaGames.ReflectionUtility.FastInvoke
+  isSpec: "True"
+  fullName: MacacaGames.ReflectionUtility.FastInvoke
+  nameWithType: ReflectionUtility.FastInvoke
+- uid: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.FieldInfo,System.Object,System.Object)
+  name: FastSetValue(FieldInfo, Object, Object)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastSetValue_System_Reflection_FieldInfo_System_Object_System_Object_
+  commentId: M:MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.FieldInfo,System.Object,System.Object)
+  fullName: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.FieldInfo, System.Object, System.Object)
+  nameWithType: ReflectionUtility.FastSetValue(FieldInfo, Object, Object)
+- uid: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.PropertyInfo,System.Object,System.Object)
+  name: FastSetValue(PropertyInfo, Object, Object)
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastSetValue_System_Reflection_PropertyInfo_System_Object_System_Object_
+  commentId: M:MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.PropertyInfo,System.Object,System.Object)
+  fullName: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.PropertyInfo, System.Object, System.Object)
+  nameWithType: ReflectionUtility.FastSetValue(PropertyInfo, Object, Object)
+- uid: MacacaGames.ReflectionUtility.FastSetValue*
+  name: FastSetValue
+  href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FastSetValue_
+  commentId: Overload:MacacaGames.ReflectionUtility.FastSetValue
+  isSpec: "True"
+  fullName: MacacaGames.ReflectionUtility.FastSetValue
+  nameWithType: ReflectionUtility.FastSetValue
 - uid: MacacaGames.ReflectionUtility.FilterWithAttribute*
   name: FilterWithAttribute
   href: api/MacacaGames.ReflectionUtility.html#MacacaGames_ReflectionUtility_FilterWithAttribute_
@@ -1553,6 +2349,367 @@ references:
   fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(System.Reflection.MemberInfo, System.Object, ByRef T)
   nameWithType: ReflectionUtility.TryGetValue<T>(MemberInfo, Object, out T)
   nameWithType.vb: ReflectionUtility.TryGetValue(Of T)(MemberInfo, Object, ByRef T)
+- uid: MacacaGames.ReflectorCache`2
+  name: ReflectorCache<TKey, TValue>
+  href: api/MacacaGames.ReflectorCache-2.html
+  commentId: T:MacacaGames.ReflectorCache`2
+  name.vb: ReflectorCache(Of TKey, TValue)
+  fullName: MacacaGames.ReflectorCache<TKey, TValue>
+  fullName.vb: MacacaGames.ReflectorCache(Of TKey, TValue)
+  nameWithType: ReflectorCache<TKey, TValue>
+  nameWithType.vb: ReflectorCache(Of TKey, TValue)
+- uid: MacacaGames.ReflectorCache`2.Create(`0)
+  name: Create(TKey)
+  href: api/MacacaGames.ReflectorCache-2.html#MacacaGames_ReflectorCache_2_Create__0_
+  commentId: M:MacacaGames.ReflectorCache`2.Create(`0)
+  fullName: MacacaGames.ReflectorCache<TKey, TValue>.Create(TKey)
+  fullName.vb: MacacaGames.ReflectorCache(Of TKey, TValue).Create(TKey)
+  nameWithType: ReflectorCache<TKey, TValue>.Create(TKey)
+  nameWithType.vb: ReflectorCache(Of TKey, TValue).Create(TKey)
+- uid: MacacaGames.ReflectorCache`2.Create*
+  name: Create
+  href: api/MacacaGames.ReflectorCache-2.html#MacacaGames_ReflectorCache_2_Create_
+  commentId: Overload:MacacaGames.ReflectorCache`2.Create
+  isSpec: "True"
+  fullName: MacacaGames.ReflectorCache<TKey, TValue>.Create
+  fullName.vb: MacacaGames.ReflectorCache(Of TKey, TValue).Create
+  nameWithType: ReflectorCache<TKey, TValue>.Create
+  nameWithType.vb: ReflectorCache(Of TKey, TValue).Create
+- uid: MacacaGames.ReflectorCache`2.Get(`0)
+  name: Get(TKey)
+  href: api/MacacaGames.ReflectorCache-2.html#MacacaGames_ReflectorCache_2_Get__0_
+  commentId: M:MacacaGames.ReflectorCache`2.Get(`0)
+  fullName: MacacaGames.ReflectorCache<TKey, TValue>.Get(TKey)
+  fullName.vb: MacacaGames.ReflectorCache(Of TKey, TValue).Get(TKey)
+  nameWithType: ReflectorCache<TKey, TValue>.Get(TKey)
+  nameWithType.vb: ReflectorCache(Of TKey, TValue).Get(TKey)
+- uid: MacacaGames.ReflectorCache`2.Get*
+  name: Get
+  href: api/MacacaGames.ReflectorCache-2.html#MacacaGames_ReflectorCache_2_Get_
+  commentId: Overload:MacacaGames.ReflectorCache`2.Get
+  isSpec: "True"
+  fullName: MacacaGames.ReflectorCache<TKey, TValue>.Get
+  fullName.vb: MacacaGames.ReflectorCache(Of TKey, TValue).Get
+  nameWithType: ReflectorCache<TKey, TValue>.Get
+  nameWithType.vb: ReflectorCache(Of TKey, TValue).Get
+- uid: MacacaGames.ReflectorCaches
+  name: ReflectorCaches
+  href: api/MacacaGames.ReflectorCaches.html
+  commentId: T:MacacaGames.ReflectorCaches
+  fullName: MacacaGames.ReflectorCaches
+  nameWithType: ReflectorCaches
+- uid: MacacaGames.ReflectorCaches.FieldAccessorCache
+  name: FieldAccessorCache
+  href: api/MacacaGames.ReflectorCaches.html#MacacaGames_ReflectorCaches_FieldAccessorCache
+  commentId: P:MacacaGames.ReflectorCaches.FieldAccessorCache
+  fullName: MacacaGames.ReflectorCaches.FieldAccessorCache
+  nameWithType: ReflectorCaches.FieldAccessorCache
+- uid: MacacaGames.ReflectorCaches.FieldAccessorCache*
+  name: FieldAccessorCache
+  href: api/MacacaGames.ReflectorCaches.html#MacacaGames_ReflectorCaches_FieldAccessorCache_
+  commentId: Overload:MacacaGames.ReflectorCaches.FieldAccessorCache
+  isSpec: "True"
+  fullName: MacacaGames.ReflectorCaches.FieldAccessorCache
+  nameWithType: ReflectorCaches.FieldAccessorCache
+- uid: MacacaGames.ReflectorCaches.MethodInvokerCache
+  name: MethodInvokerCache
+  href: api/MacacaGames.ReflectorCaches.html#MacacaGames_ReflectorCaches_MethodInvokerCache
+  commentId: P:MacacaGames.ReflectorCaches.MethodInvokerCache
+  fullName: MacacaGames.ReflectorCaches.MethodInvokerCache
+  nameWithType: ReflectorCaches.MethodInvokerCache
+- uid: MacacaGames.ReflectorCaches.MethodInvokerCache*
+  name: MethodInvokerCache
+  href: api/MacacaGames.ReflectorCaches.html#MacacaGames_ReflectorCaches_MethodInvokerCache_
+  commentId: Overload:MacacaGames.ReflectorCaches.MethodInvokerCache
+  isSpec: "True"
+  fullName: MacacaGames.ReflectorCaches.MethodInvokerCache
+  nameWithType: ReflectorCaches.MethodInvokerCache
+- uid: MacacaGames.ReflectorCaches.PropertyAccessorCache
+  name: PropertyAccessorCache
+  href: api/MacacaGames.ReflectorCaches.html#MacacaGames_ReflectorCaches_PropertyAccessorCache
+  commentId: P:MacacaGames.ReflectorCaches.PropertyAccessorCache
+  fullName: MacacaGames.ReflectorCaches.PropertyAccessorCache
+  nameWithType: ReflectorCaches.PropertyAccessorCache
+- uid: MacacaGames.ReflectorCaches.PropertyAccessorCache*
+  name: PropertyAccessorCache
+  href: api/MacacaGames.ReflectorCaches.html#MacacaGames_ReflectorCaches_PropertyAccessorCache_
+  commentId: Overload:MacacaGames.ReflectorCaches.PropertyAccessorCache
+  isSpec: "True"
+  fullName: MacacaGames.ReflectorCaches.PropertyAccessorCache
+  nameWithType: ReflectorCaches.PropertyAccessorCache
+- uid: MacacaGames.SelectablePalette
+  name: SelectablePalette
+  href: api/MacacaGames.SelectablePalette.html
+  commentId: T:MacacaGames.SelectablePalette
+  fullName: MacacaGames.SelectablePalette
+  nameWithType: SelectablePalette
+- uid: MacacaGames.SelectablePalette.addHighlightedColor
+  name: addHighlightedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_addHighlightedColor
+  commentId: F:MacacaGames.SelectablePalette.addHighlightedColor
+  fullName: MacacaGames.SelectablePalette.addHighlightedColor
+  nameWithType: SelectablePalette.addHighlightedColor
+- uid: MacacaGames.SelectablePalette.addPressedColor
+  name: addPressedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_addPressedColor
+  commentId: F:MacacaGames.SelectablePalette.addPressedColor
+  fullName: MacacaGames.SelectablePalette.addPressedColor
+  nameWithType: SelectablePalette.addPressedColor
+- uid: MacacaGames.SelectablePalette.ChangeColor(MacacaGames.SelectablePalette.PaletteSet,UnityEngine.UI.Image,UnityEngine.UI.Shadow,MacacaGames.Gradient)
+  name: ChangeColor(SelectablePalette.PaletteSet, Image, Shadow, Gradient)
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_ChangeColor_MacacaGames_SelectablePalette_PaletteSet_UnityEngine_UI_Image_UnityEngine_UI_Shadow_MacacaGames_Gradient_
+  commentId: M:MacacaGames.SelectablePalette.ChangeColor(MacacaGames.SelectablePalette.PaletteSet,UnityEngine.UI.Image,UnityEngine.UI.Shadow,MacacaGames.Gradient)
+  fullName: MacacaGames.SelectablePalette.ChangeColor(MacacaGames.SelectablePalette.PaletteSet, UnityEngine.UI.Image, UnityEngine.UI.Shadow, MacacaGames.Gradient)
+  nameWithType: SelectablePalette.ChangeColor(SelectablePalette.PaletteSet, Image, Shadow, Gradient)
+- uid: MacacaGames.SelectablePalette.ChangeColor*
+  name: ChangeColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_ChangeColor_
+  commentId: Overload:MacacaGames.SelectablePalette.ChangeColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.ChangeColor
+  nameWithType: SelectablePalette.ChangeColor
+- uid: MacacaGames.SelectablePalette.disabledColorV1
+  name: disabledColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_disabledColorV1
+  commentId: F:MacacaGames.SelectablePalette.disabledColorV1
+  fullName: MacacaGames.SelectablePalette.disabledColorV1
+  nameWithType: SelectablePalette.disabledColorV1
+- uid: MacacaGames.SelectablePalette.disabledColorV2
+  name: disabledColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_disabledColorV2
+  commentId: F:MacacaGames.SelectablePalette.disabledColorV2
+  fullName: MacacaGames.SelectablePalette.disabledColorV2
+  nameWithType: SelectablePalette.disabledColorV2
+- uid: MacacaGames.SelectablePalette.GetDisabledColor
+  name: GetDisabledColor()
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetDisabledColor
+  commentId: M:MacacaGames.SelectablePalette.GetDisabledColor
+  fullName: MacacaGames.SelectablePalette.GetDisabledColor()
+  nameWithType: SelectablePalette.GetDisabledColor()
+- uid: MacacaGames.SelectablePalette.GetDisabledColor*
+  name: GetDisabledColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetDisabledColor_
+  commentId: Overload:MacacaGames.SelectablePalette.GetDisabledColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.GetDisabledColor
+  nameWithType: SelectablePalette.GetDisabledColor
+- uid: MacacaGames.SelectablePalette.GetHighlightedColor
+  name: GetHighlightedColor()
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetHighlightedColor
+  commentId: M:MacacaGames.SelectablePalette.GetHighlightedColor
+  fullName: MacacaGames.SelectablePalette.GetHighlightedColor()
+  nameWithType: SelectablePalette.GetHighlightedColor()
+- uid: MacacaGames.SelectablePalette.GetHighlightedColor*
+  name: GetHighlightedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetHighlightedColor_
+  commentId: Overload:MacacaGames.SelectablePalette.GetHighlightedColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.GetHighlightedColor
+  nameWithType: SelectablePalette.GetHighlightedColor
+- uid: MacacaGames.SelectablePalette.GetNormalColor
+  name: GetNormalColor()
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetNormalColor
+  commentId: M:MacacaGames.SelectablePalette.GetNormalColor
+  fullName: MacacaGames.SelectablePalette.GetNormalColor()
+  nameWithType: SelectablePalette.GetNormalColor()
+- uid: MacacaGames.SelectablePalette.GetNormalColor*
+  name: GetNormalColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetNormalColor_
+  commentId: Overload:MacacaGames.SelectablePalette.GetNormalColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.GetNormalColor
+  nameWithType: SelectablePalette.GetNormalColor
+- uid: MacacaGames.SelectablePalette.GetPressedColor
+  name: GetPressedColor()
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetPressedColor
+  commentId: M:MacacaGames.SelectablePalette.GetPressedColor
+  fullName: MacacaGames.SelectablePalette.GetPressedColor()
+  nameWithType: SelectablePalette.GetPressedColor()
+- uid: MacacaGames.SelectablePalette.GetPressedColor*
+  name: GetPressedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetPressedColor_
+  commentId: Overload:MacacaGames.SelectablePalette.GetPressedColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.GetPressedColor
+  nameWithType: SelectablePalette.GetPressedColor
+- uid: MacacaGames.SelectablePalette.GetSelectedColor
+  name: GetSelectedColor()
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetSelectedColor
+  commentId: M:MacacaGames.SelectablePalette.GetSelectedColor
+  fullName: MacacaGames.SelectablePalette.GetSelectedColor()
+  nameWithType: SelectablePalette.GetSelectedColor()
+- uid: MacacaGames.SelectablePalette.GetSelectedColor*
+  name: GetSelectedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_GetSelectedColor_
+  commentId: Overload:MacacaGames.SelectablePalette.GetSelectedColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.GetSelectedColor
+  nameWithType: SelectablePalette.GetSelectedColor
+- uid: MacacaGames.SelectablePalette.highlightedColorV1
+  name: highlightedColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_highlightedColorV1
+  commentId: P:MacacaGames.SelectablePalette.highlightedColorV1
+  fullName: MacacaGames.SelectablePalette.highlightedColorV1
+  nameWithType: SelectablePalette.highlightedColorV1
+- uid: MacacaGames.SelectablePalette.highlightedColorV1*
+  name: highlightedColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_highlightedColorV1_
+  commentId: Overload:MacacaGames.SelectablePalette.highlightedColorV1
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.highlightedColorV1
+  nameWithType: SelectablePalette.highlightedColorV1
+- uid: MacacaGames.SelectablePalette.highlightedColorV2
+  name: highlightedColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_highlightedColorV2
+  commentId: P:MacacaGames.SelectablePalette.highlightedColorV2
+  fullName: MacacaGames.SelectablePalette.highlightedColorV2
+  nameWithType: SelectablePalette.highlightedColorV2
+- uid: MacacaGames.SelectablePalette.highlightedColorV2*
+  name: highlightedColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_highlightedColorV2_
+  commentId: Overload:MacacaGames.SelectablePalette.highlightedColorV2
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.highlightedColorV2
+  nameWithType: SelectablePalette.highlightedColorV2
+- uid: MacacaGames.SelectablePalette.normalColorV1
+  name: normalColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_normalColorV1
+  commentId: F:MacacaGames.SelectablePalette.normalColorV1
+  fullName: MacacaGames.SelectablePalette.normalColorV1
+  nameWithType: SelectablePalette.normalColorV1
+- uid: MacacaGames.SelectablePalette.normalColorV2
+  name: normalColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_normalColorV2
+  commentId: F:MacacaGames.SelectablePalette.normalColorV2
+  fullName: MacacaGames.SelectablePalette.normalColorV2
+  nameWithType: SelectablePalette.normalColorV2
+- uid: MacacaGames.SelectablePalette.PaletteSet
+  name: SelectablePalette.PaletteSet
+  href: api/MacacaGames.SelectablePalette.PaletteSet.html
+  commentId: T:MacacaGames.SelectablePalette.PaletteSet
+  fullName: MacacaGames.SelectablePalette.PaletteSet
+  nameWithType: SelectablePalette.PaletteSet
+- uid: MacacaGames.SelectablePalette.PaletteSet.color1
+  name: color1
+  href: api/MacacaGames.SelectablePalette.PaletteSet.html#MacacaGames_SelectablePalette_PaletteSet_color1
+  commentId: F:MacacaGames.SelectablePalette.PaletteSet.color1
+  fullName: MacacaGames.SelectablePalette.PaletteSet.color1
+  nameWithType: SelectablePalette.PaletteSet.color1
+- uid: MacacaGames.SelectablePalette.PaletteSet.color2
+  name: color2
+  href: api/MacacaGames.SelectablePalette.PaletteSet.html#MacacaGames_SelectablePalette_PaletteSet_color2
+  commentId: F:MacacaGames.SelectablePalette.PaletteSet.color2
+  fullName: MacacaGames.SelectablePalette.PaletteSet.color2
+  nameWithType: SelectablePalette.PaletteSet.color2
+- uid: MacacaGames.SelectablePalette.PaletteSet.shadowColor
+  name: shadowColor
+  href: api/MacacaGames.SelectablePalette.PaletteSet.html#MacacaGames_SelectablePalette_PaletteSet_shadowColor
+  commentId: F:MacacaGames.SelectablePalette.PaletteSet.shadowColor
+  fullName: MacacaGames.SelectablePalette.PaletteSet.shadowColor
+  nameWithType: SelectablePalette.PaletteSet.shadowColor
+- uid: MacacaGames.SelectablePalette.pressedColorV1
+  name: pressedColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_pressedColorV1
+  commentId: P:MacacaGames.SelectablePalette.pressedColorV1
+  fullName: MacacaGames.SelectablePalette.pressedColorV1
+  nameWithType: SelectablePalette.pressedColorV1
+- uid: MacacaGames.SelectablePalette.pressedColorV1*
+  name: pressedColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_pressedColorV1_
+  commentId: Overload:MacacaGames.SelectablePalette.pressedColorV1
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.pressedColorV1
+  nameWithType: SelectablePalette.pressedColorV1
+- uid: MacacaGames.SelectablePalette.pressedColorV2
+  name: pressedColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_pressedColorV2
+  commentId: P:MacacaGames.SelectablePalette.pressedColorV2
+  fullName: MacacaGames.SelectablePalette.pressedColorV2
+  nameWithType: SelectablePalette.pressedColorV2
+- uid: MacacaGames.SelectablePalette.pressedColorV2*
+  name: pressedColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_pressedColorV2_
+  commentId: Overload:MacacaGames.SelectablePalette.pressedColorV2
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.pressedColorV2
+  nameWithType: SelectablePalette.pressedColorV2
+- uid: MacacaGames.SelectablePalette.selectedColorV1
+  name: selectedColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_selectedColorV1
+  commentId: P:MacacaGames.SelectablePalette.selectedColorV1
+  fullName: MacacaGames.SelectablePalette.selectedColorV1
+  nameWithType: SelectablePalette.selectedColorV1
+- uid: MacacaGames.SelectablePalette.selectedColorV1*
+  name: selectedColorV1
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_selectedColorV1_
+  commentId: Overload:MacacaGames.SelectablePalette.selectedColorV1
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.selectedColorV1
+  nameWithType: SelectablePalette.selectedColorV1
+- uid: MacacaGames.SelectablePalette.selectedColorV2
+  name: selectedColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_selectedColorV2
+  commentId: P:MacacaGames.SelectablePalette.selectedColorV2
+  fullName: MacacaGames.SelectablePalette.selectedColorV2
+  nameWithType: SelectablePalette.selectedColorV2
+- uid: MacacaGames.SelectablePalette.selectedColorV2*
+  name: selectedColorV2
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_selectedColorV2_
+  commentId: Overload:MacacaGames.SelectablePalette.selectedColorV2
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.selectedColorV2
+  nameWithType: SelectablePalette.selectedColorV2
+- uid: MacacaGames.SelectablePalette.shadowDisabledColor
+  name: shadowDisabledColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowDisabledColor
+  commentId: F:MacacaGames.SelectablePalette.shadowDisabledColor
+  fullName: MacacaGames.SelectablePalette.shadowDisabledColor
+  nameWithType: SelectablePalette.shadowDisabledColor
+- uid: MacacaGames.SelectablePalette.shadowHighlightedColor
+  name: shadowHighlightedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowHighlightedColor
+  commentId: P:MacacaGames.SelectablePalette.shadowHighlightedColor
+  fullName: MacacaGames.SelectablePalette.shadowHighlightedColor
+  nameWithType: SelectablePalette.shadowHighlightedColor
+- uid: MacacaGames.SelectablePalette.shadowHighlightedColor*
+  name: shadowHighlightedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowHighlightedColor_
+  commentId: Overload:MacacaGames.SelectablePalette.shadowHighlightedColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.shadowHighlightedColor
+  nameWithType: SelectablePalette.shadowHighlightedColor
+- uid: MacacaGames.SelectablePalette.shadowNormalColor
+  name: shadowNormalColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowNormalColor
+  commentId: F:MacacaGames.SelectablePalette.shadowNormalColor
+  fullName: MacacaGames.SelectablePalette.shadowNormalColor
+  nameWithType: SelectablePalette.shadowNormalColor
+- uid: MacacaGames.SelectablePalette.shadowPressedColor
+  name: shadowPressedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowPressedColor
+  commentId: P:MacacaGames.SelectablePalette.shadowPressedColor
+  fullName: MacacaGames.SelectablePalette.shadowPressedColor
+  nameWithType: SelectablePalette.shadowPressedColor
+- uid: MacacaGames.SelectablePalette.shadowPressedColor*
+  name: shadowPressedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowPressedColor_
+  commentId: Overload:MacacaGames.SelectablePalette.shadowPressedColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.shadowPressedColor
+  nameWithType: SelectablePalette.shadowPressedColor
+- uid: MacacaGames.SelectablePalette.shadowSelectedColor
+  name: shadowSelectedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowSelectedColor
+  commentId: P:MacacaGames.SelectablePalette.shadowSelectedColor
+  fullName: MacacaGames.SelectablePalette.shadowSelectedColor
+  nameWithType: SelectablePalette.shadowSelectedColor
+- uid: MacacaGames.SelectablePalette.shadowSelectedColor*
+  name: shadowSelectedColor
+  href: api/MacacaGames.SelectablePalette.html#MacacaGames_SelectablePalette_shadowSelectedColor_
+  commentId: Overload:MacacaGames.SelectablePalette.shadowSelectedColor
+  isSpec: "True"
+  fullName: MacacaGames.SelectablePalette.shadowSelectedColor
+  nameWithType: SelectablePalette.shadowSelectedColor
 - uid: MacacaGames.SerializedPropertyExtensions
   name: SerializedPropertyExtensions
   href: api/MacacaGames.SerializedPropertyExtensions.html
@@ -1572,6 +2729,414 @@ references:
   isSpec: "True"
   fullName: MacacaGames.SerializedPropertyExtensions.SetTargetObjectOfProperty
   nameWithType: SerializedPropertyExtensions.SetTargetObjectOfProperty
+- uid: MacacaGames.SimpleAudio
+  name: SimpleAudio
+  href: api/MacacaGames.SimpleAudio.html
+  commentId: T:MacacaGames.SimpleAudio
+  fullName: MacacaGames.SimpleAudio
+  nameWithType: SimpleAudio
+- uid: MacacaGames.SimpleAudio.ApplyMusicState
+  name: ApplyMusicState()
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_ApplyMusicState
+  commentId: M:MacacaGames.SimpleAudio.ApplyMusicState
+  fullName: MacacaGames.SimpleAudio.ApplyMusicState()
+  nameWithType: SimpleAudio.ApplyMusicState()
+- uid: MacacaGames.SimpleAudio.ApplyMusicState*
+  name: ApplyMusicState
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_ApplyMusicState_
+  commentId: Overload:MacacaGames.SimpleAudio.ApplyMusicState
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.ApplyMusicState
+  nameWithType: SimpleAudio.ApplyMusicState
+- uid: MacacaGames.SimpleAudio.ApplySFXState
+  name: ApplySFXState()
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_ApplySFXState
+  commentId: M:MacacaGames.SimpleAudio.ApplySFXState
+  fullName: MacacaGames.SimpleAudio.ApplySFXState()
+  nameWithType: SimpleAudio.ApplySFXState()
+- uid: MacacaGames.SimpleAudio.ApplySFXState*
+  name: ApplySFXState
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_ApplySFXState_
+  commentId: Overload:MacacaGames.SimpleAudio.ApplySFXState
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.ApplySFXState
+  nameWithType: SimpleAudio.ApplySFXState
+- uid: MacacaGames.SimpleAudio.AudioOutput
+  name: SimpleAudio.AudioOutput
+  href: api/MacacaGames.SimpleAudio.AudioOutput.html
+  commentId: T:MacacaGames.SimpleAudio.AudioOutput
+  fullName: MacacaGames.SimpleAudio.AudioOutput
+  nameWithType: SimpleAudio.AudioOutput
+- uid: MacacaGames.SimpleAudio.AudioOutput.Sfx
+  name: Sfx
+  href: api/MacacaGames.SimpleAudio.AudioOutput.html#MacacaGames_SimpleAudio_AudioOutput_Sfx
+  commentId: F:MacacaGames.SimpleAudio.AudioOutput.Sfx
+  fullName: MacacaGames.SimpleAudio.AudioOutput.Sfx
+  nameWithType: SimpleAudio.AudioOutput.Sfx
+- uid: MacacaGames.SimpleAudio.AudioOutput.Voice
+  name: Voice
+  href: api/MacacaGames.SimpleAudio.AudioOutput.html#MacacaGames_SimpleAudio_AudioOutput_Voice
+  commentId: F:MacacaGames.SimpleAudio.AudioOutput.Voice
+  fullName: MacacaGames.SimpleAudio.AudioOutput.Voice
+  nameWithType: SimpleAudio.AudioOutput.Voice
+- uid: MacacaGames.SimpleAudio.GetMusicPlayTime
+  name: GetMusicPlayTime()
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_GetMusicPlayTime
+  commentId: M:MacacaGames.SimpleAudio.GetMusicPlayTime
+  fullName: MacacaGames.SimpleAudio.GetMusicPlayTime()
+  nameWithType: SimpleAudio.GetMusicPlayTime()
+- uid: MacacaGames.SimpleAudio.GetMusicPlayTime*
+  name: GetMusicPlayTime
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_GetMusicPlayTime_
+  commentId: Overload:MacacaGames.SimpleAudio.GetMusicPlayTime
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.GetMusicPlayTime
+  nameWithType: SimpleAudio.GetMusicPlayTime
+- uid: MacacaGames.SimpleAudio.GetMusicProgress
+  name: GetMusicProgress()
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_GetMusicProgress
+  commentId: M:MacacaGames.SimpleAudio.GetMusicProgress
+  fullName: MacacaGames.SimpleAudio.GetMusicProgress()
+  nameWithType: SimpleAudio.GetMusicProgress()
+- uid: MacacaGames.SimpleAudio.GetMusicProgress*
+  name: GetMusicProgress
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_GetMusicProgress_
+  commentId: Overload:MacacaGames.SimpleAudio.GetMusicProgress
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.GetMusicProgress
+  nameWithType: SimpleAudio.GetMusicProgress
+- uid: MacacaGames.SimpleAudio.Instance
+  name: Instance
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_Instance
+  commentId: P:MacacaGames.SimpleAudio.Instance
+  fullName: MacacaGames.SimpleAudio.Instance
+  nameWithType: SimpleAudio.Instance
+- uid: MacacaGames.SimpleAudio.Instance*
+  name: Instance
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_Instance_
+  commentId: Overload:MacacaGames.SimpleAudio.Instance
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.Instance
+  nameWithType: SimpleAudio.Instance
+- uid: MacacaGames.SimpleAudio.IsMusicMute
+  name: IsMusicMute
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_IsMusicMute
+  commentId: P:MacacaGames.SimpleAudio.IsMusicMute
+  fullName: MacacaGames.SimpleAudio.IsMusicMute
+  nameWithType: SimpleAudio.IsMusicMute
+- uid: MacacaGames.SimpleAudio.IsMusicMute*
+  name: IsMusicMute
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_IsMusicMute_
+  commentId: Overload:MacacaGames.SimpleAudio.IsMusicMute
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.IsMusicMute
+  nameWithType: SimpleAudio.IsMusicMute
+- uid: MacacaGames.SimpleAudio.IsMusicPlaying
+  name: IsMusicPlaying()
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_IsMusicPlaying
+  commentId: M:MacacaGames.SimpleAudio.IsMusicPlaying
+  fullName: MacacaGames.SimpleAudio.IsMusicPlaying()
+  nameWithType: SimpleAudio.IsMusicPlaying()
+- uid: MacacaGames.SimpleAudio.IsMusicPlaying(UnityEngine.AudioClip)
+  name: IsMusicPlaying(AudioClip)
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_IsMusicPlaying_UnityEngine_AudioClip_
+  commentId: M:MacacaGames.SimpleAudio.IsMusicPlaying(UnityEngine.AudioClip)
+  fullName: MacacaGames.SimpleAudio.IsMusicPlaying(UnityEngine.AudioClip)
+  nameWithType: SimpleAudio.IsMusicPlaying(AudioClip)
+- uid: MacacaGames.SimpleAudio.IsMusicPlaying*
+  name: IsMusicPlaying
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_IsMusicPlaying_
+  commentId: Overload:MacacaGames.SimpleAudio.IsMusicPlaying
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.IsMusicPlaying
+  nameWithType: SimpleAudio.IsMusicPlaying
+- uid: MacacaGames.SimpleAudio.IsSfxMute
+  name: IsSfxMute
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_IsSfxMute
+  commentId: P:MacacaGames.SimpleAudio.IsSfxMute
+  fullName: MacacaGames.SimpleAudio.IsSfxMute
+  nameWithType: SimpleAudio.IsSfxMute
+- uid: MacacaGames.SimpleAudio.IsSfxMute*
+  name: IsSfxMute
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_IsSfxMute_
+  commentId: Overload:MacacaGames.SimpleAudio.IsSfxMute
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.IsSfxMute
+  nameWithType: SimpleAudio.IsSfxMute
+- uid: MacacaGames.SimpleAudio.PlayLobbyMusic(UnityEngine.AudioClip)
+  name: PlayLobbyMusic(AudioClip)
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlayLobbyMusic_UnityEngine_AudioClip_
+  commentId: M:MacacaGames.SimpleAudio.PlayLobbyMusic(UnityEngine.AudioClip)
+  fullName: MacacaGames.SimpleAudio.PlayLobbyMusic(UnityEngine.AudioClip)
+  nameWithType: SimpleAudio.PlayLobbyMusic(AudioClip)
+- uid: MacacaGames.SimpleAudio.PlayLobbyMusic*
+  name: PlayLobbyMusic
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlayLobbyMusic_
+  commentId: Overload:MacacaGames.SimpleAudio.PlayLobbyMusic
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.PlayLobbyMusic
+  nameWithType: SimpleAudio.PlayLobbyMusic
+- uid: MacacaGames.SimpleAudio.PlayMusic(UnityEngine.AudioClip)
+  name: PlayMusic(AudioClip)
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlayMusic_UnityEngine_AudioClip_
+  commentId: M:MacacaGames.SimpleAudio.PlayMusic(UnityEngine.AudioClip)
+  fullName: MacacaGames.SimpleAudio.PlayMusic(UnityEngine.AudioClip)
+  nameWithType: SimpleAudio.PlayMusic(AudioClip)
+- uid: MacacaGames.SimpleAudio.PlayMusic*
+  name: PlayMusic
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlayMusic_
+  commentId: Overload:MacacaGames.SimpleAudio.PlayMusic
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.PlayMusic
+  nameWithType: SimpleAudio.PlayMusic
+- uid: MacacaGames.SimpleAudio.PlayMusicPreview(UnityEngine.AudioClip)
+  name: PlayMusicPreview(AudioClip)
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlayMusicPreview_UnityEngine_AudioClip_
+  commentId: M:MacacaGames.SimpleAudio.PlayMusicPreview(UnityEngine.AudioClip)
+  fullName: MacacaGames.SimpleAudio.PlayMusicPreview(UnityEngine.AudioClip)
+  nameWithType: SimpleAudio.PlayMusicPreview(AudioClip)
+- uid: MacacaGames.SimpleAudio.PlayMusicPreview*
+  name: PlayMusicPreview
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlayMusicPreview_
+  commentId: Overload:MacacaGames.SimpleAudio.PlayMusicPreview
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.PlayMusicPreview
+  nameWithType: SimpleAudio.PlayMusicPreview
+- uid: MacacaGames.SimpleAudio.PlaySFX(UnityEngine.AudioClip,MacacaGames.SimpleAudio.AudioOutput)
+  name: PlaySFX(AudioClip, SimpleAudio.AudioOutput)
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlaySFX_UnityEngine_AudioClip_MacacaGames_SimpleAudio_AudioOutput_
+  commentId: M:MacacaGames.SimpleAudio.PlaySFX(UnityEngine.AudioClip,MacacaGames.SimpleAudio.AudioOutput)
+  fullName: MacacaGames.SimpleAudio.PlaySFX(UnityEngine.AudioClip, MacacaGames.SimpleAudio.AudioOutput)
+  nameWithType: SimpleAudio.PlaySFX(AudioClip, SimpleAudio.AudioOutput)
+- uid: MacacaGames.SimpleAudio.PlaySFX(UnityEngine.AudioClip[],MacacaGames.SimpleAudio.AudioOutput)
+  name: PlaySFX(AudioClip[], SimpleAudio.AudioOutput)
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlaySFX_UnityEngine_AudioClip___MacacaGames_SimpleAudio_AudioOutput_
+  commentId: M:MacacaGames.SimpleAudio.PlaySFX(UnityEngine.AudioClip[],MacacaGames.SimpleAudio.AudioOutput)
+  name.vb: PlaySFX(AudioClip(), SimpleAudio.AudioOutput)
+  fullName: MacacaGames.SimpleAudio.PlaySFX(UnityEngine.AudioClip[], MacacaGames.SimpleAudio.AudioOutput)
+  fullName.vb: MacacaGames.SimpleAudio.PlaySFX(UnityEngine.AudioClip(), MacacaGames.SimpleAudio.AudioOutput)
+  nameWithType: SimpleAudio.PlaySFX(AudioClip[], SimpleAudio.AudioOutput)
+  nameWithType.vb: SimpleAudio.PlaySFX(AudioClip(), SimpleAudio.AudioOutput)
+- uid: MacacaGames.SimpleAudio.PlaySFX*
+  name: PlaySFX
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_PlaySFX_
+  commentId: Overload:MacacaGames.SimpleAudio.PlaySFX
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.PlaySFX
+  nameWithType: SimpleAudio.PlaySFX
+- uid: MacacaGames.SimpleAudio.StopMusic
+  name: StopMusic()
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_StopMusic
+  commentId: M:MacacaGames.SimpleAudio.StopMusic
+  fullName: MacacaGames.SimpleAudio.StopMusic()
+  nameWithType: SimpleAudio.StopMusic()
+- uid: MacacaGames.SimpleAudio.StopMusic*
+  name: StopMusic
+  href: api/MacacaGames.SimpleAudio.html#MacacaGames_SimpleAudio_StopMusic_
+  commentId: Overload:MacacaGames.SimpleAudio.StopMusic
+  isSpec: "True"
+  fullName: MacacaGames.SimpleAudio.StopMusic
+  nameWithType: SimpleAudio.StopMusic
+- uid: MacacaGames.SimpleSFXPlayer
+  name: SimpleSFXPlayer
+  href: api/MacacaGames.SimpleSFXPlayer.html
+  commentId: T:MacacaGames.SimpleSFXPlayer
+  fullName: MacacaGames.SimpleSFXPlayer
+  nameWithType: SimpleSFXPlayer
+- uid: MacacaGames.SimpleSFXPlayer.IsInteractable
+  name: IsInteractable
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_IsInteractable
+  commentId: P:MacacaGames.SimpleSFXPlayer.IsInteractable
+  fullName: MacacaGames.SimpleSFXPlayer.IsInteractable
+  nameWithType: SimpleSFXPlayer.IsInteractable
+- uid: MacacaGames.SimpleSFXPlayer.IsInteractable*
+  name: IsInteractable
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_IsInteractable_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.IsInteractable
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.IsInteractable
+  nameWithType: SimpleSFXPlayer.IsInteractable
+- uid: MacacaGames.SimpleSFXPlayer.OnCanvasGroupChanged
+  name: OnCanvasGroupChanged()
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnCanvasGroupChanged
+  commentId: M:MacacaGames.SimpleSFXPlayer.OnCanvasGroupChanged
+  fullName: MacacaGames.SimpleSFXPlayer.OnCanvasGroupChanged()
+  nameWithType: SimpleSFXPlayer.OnCanvasGroupChanged()
+- uid: MacacaGames.SimpleSFXPlayer.OnCanvasGroupChanged*
+  name: OnCanvasGroupChanged
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnCanvasGroupChanged_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.OnCanvasGroupChanged
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.OnCanvasGroupChanged
+  nameWithType: SimpleSFXPlayer.OnCanvasGroupChanged
+- uid: MacacaGames.SimpleSFXPlayer.OnPlaySfx
+  name: OnPlaySfx
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPlaySfx
+  commentId: F:MacacaGames.SimpleSFXPlayer.OnPlaySfx
+  fullName: MacacaGames.SimpleSFXPlayer.OnPlaySfx
+  nameWithType: SimpleSFXPlayer.OnPlaySfx
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerDown(PointerEventData)
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerDown_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.SimpleSFXPlayer.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: SimpleSFXPlayer.OnPointerDown(PointerEventData)
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerDown*
+  name: OnPointerDown
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerDown_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.OnPointerDown
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerDown
+  nameWithType: SimpleSFXPlayer.OnPointerDown
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerEnter(PointerEventData)
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.SimpleSFXPlayer.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: SimpleSFXPlayer.OnPointerEnter(PointerEventData)
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerEnter*
+  name: OnPointerEnter
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerEnter_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.OnPointerEnter
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerEnter
+  nameWithType: SimpleSFXPlayer.OnPointerEnter
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerExit(PointerEventData)
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerExit_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.SimpleSFXPlayer.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: SimpleSFXPlayer.OnPointerExit(PointerEventData)
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerExit*
+  name: OnPointerExit
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerExit_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.OnPointerExit
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerExit
+  nameWithType: SimpleSFXPlayer.OnPointerExit
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerUp(PointerEventData)
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerUp_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.SimpleSFXPlayer.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: SimpleSFXPlayer.OnPointerUp(PointerEventData)
+- uid: MacacaGames.SimpleSFXPlayer.OnPointerUp*
+  name: OnPointerUp
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnPointerUp_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.OnPointerUp
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.OnPointerUp
+  nameWithType: SimpleSFXPlayer.OnPointerUp
+- uid: MacacaGames.SimpleSFXPlayer.OnScroll(UnityEngine.EventSystems.PointerEventData)
+  name: OnScroll(PointerEventData)
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnScroll_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:MacacaGames.SimpleSFXPlayer.OnScroll(UnityEngine.EventSystems.PointerEventData)
+  fullName: MacacaGames.SimpleSFXPlayer.OnScroll(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: SimpleSFXPlayer.OnScroll(PointerEventData)
+- uid: MacacaGames.SimpleSFXPlayer.OnScroll*
+  name: OnScroll
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_OnScroll_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.OnScroll
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.OnScroll
+  nameWithType: SimpleSFXPlayer.OnScroll
+- uid: MacacaGames.SimpleSFXPlayer.Play
+  name: Play()
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_Play
+  commentId: M:MacacaGames.SimpleSFXPlayer.Play
+  fullName: MacacaGames.SimpleSFXPlayer.Play()
+  nameWithType: SimpleSFXPlayer.Play()
+- uid: MacacaGames.SimpleSFXPlayer.Play*
+  name: Play
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_Play_
+  commentId: Overload:MacacaGames.SimpleSFXPlayer.Play
+  isSpec: "True"
+  fullName: MacacaGames.SimpleSFXPlayer.Play
+  nameWithType: SimpleSFXPlayer.Play
+- uid: MacacaGames.SimpleSFXPlayer.PlayerModule
+  name: SimpleSFXPlayer.PlayerModule
+  href: api/MacacaGames.SimpleSFXPlayer.PlayerModule.html
+  commentId: T:MacacaGames.SimpleSFXPlayer.PlayerModule
+  fullName: MacacaGames.SimpleSFXPlayer.PlayerModule
+  nameWithType: SimpleSFXPlayer.PlayerModule
+- uid: MacacaGames.SimpleSFXPlayer.PlayerModule.clip
+  name: clip
+  href: api/MacacaGames.SimpleSFXPlayer.PlayerModule.html#MacacaGames_SimpleSFXPlayer_PlayerModule_clip
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayerModule.clip
+  fullName: MacacaGames.SimpleSFXPlayer.PlayerModule.clip
+  nameWithType: SimpleSFXPlayer.PlayerModule.clip
+- uid: MacacaGames.SimpleSFXPlayer.PlayerModule.playTiming
+  name: playTiming
+  href: api/MacacaGames.SimpleSFXPlayer.PlayerModule.html#MacacaGames_SimpleSFXPlayer_PlayerModule_playTiming
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayerModule.playTiming
+  fullName: MacacaGames.SimpleSFXPlayer.PlayerModule.playTiming
+  nameWithType: SimpleSFXPlayer.PlayerModule.playTiming
+- uid: MacacaGames.SimpleSFXPlayer.playerModules
+  name: playerModules
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_playerModules
+  commentId: F:MacacaGames.SimpleSFXPlayer.playerModules
+  fullName: MacacaGames.SimpleSFXPlayer.playerModules
+  nameWithType: SimpleSFXPlayer.playerModules
+- uid: MacacaGames.SimpleSFXPlayer.playOnAwake
+  name: playOnAwake
+  href: api/MacacaGames.SimpleSFXPlayer.html#MacacaGames_SimpleSFXPlayer_playOnAwake
+  commentId: F:MacacaGames.SimpleSFXPlayer.playOnAwake
+  fullName: MacacaGames.SimpleSFXPlayer.playOnAwake
+  nameWithType: SimpleSFXPlayer.playOnAwake
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming
+  name: SimpleSFXPlayer.PlayTiming
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html
+  commentId: T:MacacaGames.SimpleSFXPlayer.PlayTiming
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming
+  nameWithType: SimpleSFXPlayer.PlayTiming
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.DontPlay
+  name: DontPlay
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_DontPlay
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.DontPlay
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.DontPlay
+  nameWithType: SimpleSFXPlayer.PlayTiming.DontPlay
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.OnClickDown
+  name: OnClickDown
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_OnClickDown
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.OnClickDown
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.OnClickDown
+  nameWithType: SimpleSFXPlayer.PlayTiming.OnClickDown
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.OnClickUp
+  name: OnClickUp
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_OnClickUp
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.OnClickUp
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.OnClickUp
+  nameWithType: SimpleSFXPlayer.PlayTiming.OnClickUp
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.OnDisable
+  name: OnDisable
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_OnDisable
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.OnDisable
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.OnDisable
+  nameWithType: SimpleSFXPlayer.PlayTiming.OnDisable
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.OnEnable
+  name: OnEnable
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_OnEnable
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.OnEnable
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.OnEnable
+  nameWithType: SimpleSFXPlayer.PlayTiming.OnEnable
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.OnHoverEnter
+  name: OnHoverEnter
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_OnHoverEnter
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.OnHoverEnter
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.OnHoverEnter
+  nameWithType: SimpleSFXPlayer.PlayTiming.OnHoverEnter
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.OnHoverExit
+  name: OnHoverExit
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_OnHoverExit
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.OnHoverExit
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.OnHoverExit
+  nameWithType: SimpleSFXPlayer.PlayTiming.OnHoverExit
+- uid: MacacaGames.SimpleSFXPlayer.PlayTiming.OnScroll
+  name: OnScroll
+  href: api/MacacaGames.SimpleSFXPlayer.PlayTiming.html#MacacaGames_SimpleSFXPlayer_PlayTiming_OnScroll
+  commentId: F:MacacaGames.SimpleSFXPlayer.PlayTiming.OnScroll
+  fullName: MacacaGames.SimpleSFXPlayer.PlayTiming.OnScroll
+  nameWithType: SimpleSFXPlayer.PlayTiming.OnScroll
 - uid: MacacaGames.Singleton`1
   name: Singleton<T>
   href: api/MacacaGames.Singleton-1.html
