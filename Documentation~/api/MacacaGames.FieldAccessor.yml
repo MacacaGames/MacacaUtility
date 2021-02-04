@@ -1,0 +1,709 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.FieldAccessor
+  commentId: T:MacacaGames.FieldAccessor
+  id: FieldAccessor
+  parent: MacacaGames
+  children:
+  - MacacaGames.FieldAccessor.#ctor(System.Reflection.FieldInfo)
+  - MacacaGames.FieldAccessor.fieldInfo
+  - MacacaGames.FieldAccessor.GetValue(System.Object)
+  - MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue(System.Object)
+  - MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  - MacacaGames.FieldAccessor.SetValue(System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: FieldAccessor
+  nameWithType: FieldAccessor
+  fullName: MacacaGames.FieldAccessor
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FieldAccessor
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 97
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: 'public class FieldAccessor : IAccessor'
+    content.vb: >-
+      Public Class FieldAccessor
+          Implements IAccessor
+  inheritance:
+  - System.Object
+  implements:
+  - MacacaGames.IAccessor
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.FieldAccessor.fieldInfo
+  commentId: P:MacacaGames.FieldAccessor.fieldInfo
+  id: fieldInfo
+  parent: MacacaGames.FieldAccessor
+  langs:
+  - csharp
+  - vb
+  name: fieldInfo
+  nameWithType: FieldAccessor.fieldInfo
+  fullName: MacacaGames.FieldAccessor.fieldInfo
+  type: Property
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: fieldInfo
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 101
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public FieldInfo fieldInfo { get; }
+    parameters: []
+    return:
+      type: System.Reflection.FieldInfo
+    content.vb: Public ReadOnly Property fieldInfo As FieldInfo
+  overload: MacacaGames.FieldAccessor.fieldInfo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: MacacaGames.FieldAccessor.#ctor(System.Reflection.FieldInfo)
+  commentId: M:MacacaGames.FieldAccessor.#ctor(System.Reflection.FieldInfo)
+  id: '#ctor(System.Reflection.FieldInfo)'
+  parent: MacacaGames.FieldAccessor
+  langs:
+  - csharp
+  - vb
+  name: FieldAccessor(FieldInfo)
+  nameWithType: FieldAccessor.FieldAccessor(FieldInfo)
+  fullName: MacacaGames.FieldAccessor.FieldAccessor(System.Reflection.FieldInfo)
+  type: Constructor
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: .ctor
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 103
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public FieldAccessor(FieldInfo fieldInfo)
+    parameters:
+    - id: fieldInfo
+      type: System.Reflection.FieldInfo
+    content.vb: Public Sub New(fieldInfo As FieldInfo)
+  overload: MacacaGames.FieldAccessor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.FieldAccessor.GetValue(System.Object)
+  commentId: M:MacacaGames.FieldAccessor.GetValue(System.Object)
+  id: GetValue(System.Object)
+  parent: MacacaGames.FieldAccessor
+  langs:
+  - csharp
+  - vb
+  name: GetValue(Object)
+  nameWithType: FieldAccessor.GetValue(Object)
+  fullName: MacacaGames.FieldAccessor.GetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GetValue
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 132
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public object GetValue(object instance)
+    parameters:
+    - id: instance
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Function GetValue(instance As Object) As Object
+  overload: MacacaGames.FieldAccessor.GetValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.FieldAccessor.SetValue(System.Object,System.Object)
+  commentId: M:MacacaGames.FieldAccessor.SetValue(System.Object,System.Object)
+  id: SetValue(System.Object,System.Object)
+  parent: MacacaGames.FieldAccessor
+  langs:
+  - csharp
+  - vb
+  name: SetValue(Object, Object)
+  nameWithType: FieldAccessor.SetValue(Object, Object)
+  fullName: MacacaGames.FieldAccessor.SetValue(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: SetValue
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 136
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public void SetValue(object instance, object value)
+    parameters:
+    - id: instance
+      type: System.Object
+    - id: value
+      type: System.Object
+    content.vb: Public Sub SetValue(instance As Object, value As Object)
+  overload: MacacaGames.FieldAccessor.SetValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue(System.Object)
+  commentId: M:MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue(System.Object)
+  id: MacacaGames#IAccessor#GetValue(System.Object)
+  isEii: true
+  parent: MacacaGames.FieldAccessor
+  langs:
+  - csharp
+  - vb
+  name: IAccessor.GetValue(Object)
+  nameWithType: FieldAccessor.IAccessor.GetValue(Object)
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.GetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MacacaGames.IAccessor.GetValue
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 143
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: object IAccessor.GetValue(object instance)
+    parameters:
+    - id: instance
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Function MacacaGames.IAccessor.GetValue(instance As Object) As Object Implements IAccessor.GetValue
+  overload: MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue*
+  implements:
+  - MacacaGames.IAccessor.GetValue(System.Object)
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.GetValue(Object)
+  name.vb: MacacaGames.IAccessor.GetValue(Object)
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  commentId: M:MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  id: MacacaGames#IAccessor#SetValue(System.Object,System.Object)
+  isEii: true
+  parent: MacacaGames.FieldAccessor
+  langs:
+  - csharp
+  - vb
+  name: IAccessor.SetValue(Object, Object)
+  nameWithType: FieldAccessor.IAccessor.SetValue(Object, Object)
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.SetValue(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MacacaGames.IAccessor.SetValue
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 148
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: void IAccessor.SetValue(object instance, object value)
+    parameters:
+    - id: instance
+      type: System.Object
+    - id: value
+      type: System.Object
+    content.vb: Sub MacacaGames.IAccessor.SetValue(instance As Object, value As Object) Implements IAccessor.SetValue
+  overload: MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue*
+  implements:
+  - MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.SetValue(Object, Object)
+  name.vb: MacacaGames.IAccessor.SetValue(Object, Object)
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: MacacaGames.IAccessor
+  commentId: T:MacacaGames.IAccessor
+  parent: MacacaGames
+  name: IAccessor
+  nameWithType: IAccessor
+  fullName: MacacaGames.IAccessor
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.FieldAccessor.fieldInfo*
+  commentId: Overload:MacacaGames.FieldAccessor.fieldInfo
+  name: fieldInfo
+  nameWithType: FieldAccessor.fieldInfo
+  fullName: MacacaGames.FieldAccessor.fieldInfo
+- uid: System.Reflection.FieldInfo
+  commentId: T:System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  nameWithType: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: MacacaGames.FieldAccessor.#ctor*
+  commentId: Overload:MacacaGames.FieldAccessor.#ctor
+  name: FieldAccessor
+  nameWithType: FieldAccessor.FieldAccessor
+  fullName: MacacaGames.FieldAccessor.FieldAccessor
+- uid: MacacaGames.FieldAccessor.GetValue*
+  commentId: Overload:MacacaGames.FieldAccessor.GetValue
+  name: GetValue
+  nameWithType: FieldAccessor.GetValue
+  fullName: MacacaGames.FieldAccessor.GetValue
+- uid: MacacaGames.FieldAccessor.SetValue*
+  commentId: Overload:MacacaGames.FieldAccessor.SetValue
+  name: SetValue
+  nameWithType: FieldAccessor.SetValue
+  fullName: MacacaGames.FieldAccessor.SetValue
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue*
+  commentId: Overload:MacacaGames.FieldAccessor.MacacaGames#IAccessor#GetValue
+  name: IAccessor.GetValue
+  nameWithType: FieldAccessor.IAccessor.GetValue
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.GetValue
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.GetValue
+  name.vb: MacacaGames.IAccessor.GetValue
+- uid: MacacaGames.IAccessor.GetValue(System.Object)
+  commentId: M:MacacaGames.IAccessor.GetValue(System.Object)
+  parent: MacacaGames.IAccessor
+  isExternal: true
+  name: GetValue(Object)
+  nameWithType: IAccessor.GetValue(Object)
+  fullName: MacacaGames.IAccessor.GetValue(System.Object)
+  spec.csharp:
+  - uid: MacacaGames.IAccessor.GetValue(System.Object)
+    name: GetValue
+    nameWithType: IAccessor.GetValue
+    fullName: MacacaGames.IAccessor.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: MacacaGames.IAccessor.GetValue(System.Object)
+    name: GetValue
+    nameWithType: IAccessor.GetValue
+    fullName: MacacaGames.IAccessor.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue*
+  commentId: Overload:MacacaGames.FieldAccessor.MacacaGames#IAccessor#SetValue
+  name: IAccessor.SetValue
+  nameWithType: FieldAccessor.IAccessor.SetValue
+  fullName: MacacaGames.FieldAccessor.MacacaGames.IAccessor.SetValue
+  nameWithType.vb: FieldAccessor.MacacaGames.IAccessor.SetValue
+  name.vb: MacacaGames.IAccessor.SetValue
+- uid: MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  commentId: M:MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  parent: MacacaGames.IAccessor
+  isExternal: true
+  name: SetValue(Object, Object)
+  nameWithType: IAccessor.SetValue(Object, Object)
+  fullName: MacacaGames.IAccessor.SetValue(System.Object, System.Object)
+  spec.csharp:
+  - uid: MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+    name: SetValue
+    nameWithType: IAccessor.SetValue
+    fullName: MacacaGames.IAccessor.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+    name: SetValue
+    nameWithType: IAccessor.SetValue
+    fullName: MacacaGames.IAccessor.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

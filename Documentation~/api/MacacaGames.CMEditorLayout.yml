@@ -1,0 +1,921 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.CMEditorLayout
+  commentId: T:MacacaGames.CMEditorLayout
+  id: CMEditorLayout
+  parent: MacacaGames
+  children:
+  - MacacaGames.CMEditorLayout.BitMaskField``1(``0@)
+  - MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},UnityEngine.GUILayoutOption[])
+  - MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},UnityEngine.GUILayoutOption[])
+  langs:
+  - csharp
+  - vb
+  name: CMEditorLayout
+  nameWithType: CMEditorLayout
+  fullName: MacacaGames.CMEditorLayout
+  type: Class
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: CMEditorLayout
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 196
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public class CMEditorLayout
+    content.vb: Public Class CMEditorLayout
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.CMEditorLayout.BitMaskField``1(``0@)
+  commentId: M:MacacaGames.CMEditorLayout.BitMaskField``1(``0@)
+  id: BitMaskField``1(``0@)
+  parent: MacacaGames.CMEditorLayout
+  langs:
+  - csharp
+  - vb
+  name: BitMaskField<T>(ref T)
+  nameWithType: CMEditorLayout.BitMaskField<T>(ref T)
+  fullName: MacacaGames.CMEditorLayout.BitMaskField<T>(ref T)
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BitMaskField
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 230
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: >-
+      public static void BitMaskField<T>(ref T enumValue)
+          where T : Enum
+    parameters:
+    - id: enumValue
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub BitMaskField(Of T As  Enum)(ByRef enumValue As T)
+  overload: MacacaGames.CMEditorLayout.BitMaskField*
+  nameWithType.vb: CMEditorLayout.BitMaskField(Of T)(ByRef T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.CMEditorLayout.BitMaskField(Of T)(ByRef T)
+  name.vb: BitMaskField(Of T)(ByRef T)
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},UnityEngine.GUILayoutOption[])
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},UnityEngine.GUILayoutOption[])
+  id: GroupedPopupField(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData},MacacaGames.CMEditorLayout.GroupedPopupData,System.Action{MacacaGames.CMEditorLayout.GroupedPopupData},UnityEngine.GUILayoutOption[])
+  parent: MacacaGames.CMEditorLayout
+  langs:
+  - csharp
+  - vb
+  name: GroupedPopupField(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData>, CMEditorLayout.GroupedPopupData, Action<CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
+  nameWithType: CMEditorLayout.GroupedPopupField(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData>, CMEditorLayout.GroupedPopupData, Action<CMEditorLayout.GroupedPopupData>, GUILayoutOption[])
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData>, MacacaGames.CMEditorLayout.GroupedPopupData, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData>, UnityEngine.GUILayoutOption[])
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GroupedPopupField
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 281
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public static void GroupedPopupField(int id, GUIContent content, IEnumerable<CMEditorLayout.GroupedPopupData> groupedPopupData, CMEditorLayout.GroupedPopupData selected, Action<CMEditorLayout.GroupedPopupData> OnSelect, params GUILayoutOption[] layoutOptions)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: content
+      type: UnityEngine.GUIContent
+    - id: groupedPopupData
+      type: System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData}
+    - id: selected
+      type: MacacaGames.CMEditorLayout.GroupedPopupData
+    - id: OnSelect
+      type: System.Action{MacacaGames.CMEditorLayout.GroupedPopupData}
+    - id: layoutOptions
+      type: UnityEngine.GUILayoutOption[]
+    content.vb: Public Shared Sub GroupedPopupField(id As Integer, content As GUIContent, groupedPopupData As IEnumerable(Of CMEditorLayout.GroupedPopupData), selected As CMEditorLayout.GroupedPopupData, OnSelect As Action(Of CMEditorLayout.GroupedPopupData), ParamArray layoutOptions As GUILayoutOption())
+  overload: MacacaGames.CMEditorLayout.GroupedPopupField*
+  nameWithType.vb: CMEditorLayout.GroupedPopupField(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData), CMEditorLayout.GroupedPopupData, Action(Of CMEditorLayout.GroupedPopupData), GUILayoutOption())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData), MacacaGames.CMEditorLayout.GroupedPopupData, System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData), UnityEngine.GUILayoutOption())
+  name.vb: GroupedPopupField(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData), CMEditorLayout.GroupedPopupData, Action(Of CMEditorLayout.GroupedPopupData), GUILayoutOption())
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},UnityEngine.GUILayoutOption[])
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupField``1(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},UnityEngine.GUILayoutOption[])
+  id: GroupedPopupField``1(System.Int32,UnityEngine.GUIContent,System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},MacacaGames.CMEditorLayout.GroupedPopupData{``0},System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}},UnityEngine.GUILayoutOption[])
+  parent: MacacaGames.CMEditorLayout
+  langs:
+  - csharp
+  - vb
+  name: GroupedPopupField<T>(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData<T>>, CMEditorLayout.GroupedPopupData<T>, Action<CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
+  nameWithType: CMEditorLayout.GroupedPopupField<T>(Int32, GUIContent, IEnumerable<CMEditorLayout.GroupedPopupData<T>>, CMEditorLayout.GroupedPopupData<T>, Action<CMEditorLayout.GroupedPopupData<T>>, GUILayoutOption[])
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField<T>(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, MacacaGames.CMEditorLayout.GroupedPopupData<T>, System.Action<MacacaGames.CMEditorLayout.GroupedPopupData<T>>, UnityEngine.GUILayoutOption[])
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GroupedPopupField
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 310
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: >-
+      public static void GroupedPopupField<T>(int id, GUIContent content, IEnumerable<CMEditorLayout.GroupedPopupData<T>> groupedPopupData, CMEditorLayout.GroupedPopupData<T> selected, Action<CMEditorLayout.GroupedPopupData<T>> OnSelect, params GUILayoutOption[] layoutOptions)
+          where T : struct
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: content
+      type: UnityEngine.GUIContent
+    - id: groupedPopupData
+      type: System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{{T}}}
+    - id: selected
+      type: MacacaGames.CMEditorLayout.GroupedPopupData{{T}}
+    - id: OnSelect
+      type: System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{{T}}}
+    - id: layoutOptions
+      type: UnityEngine.GUILayoutOption[]
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub GroupedPopupField(Of T As Structure)(id As Integer, content As GUIContent, groupedPopupData As IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T)), selected As CMEditorLayout.GroupedPopupData(Of T), OnSelect As Action(Of CMEditorLayout.GroupedPopupData(Of T)), ParamArray layoutOptions As GUILayoutOption())
+  overload: MacacaGames.CMEditorLayout.GroupedPopupField*
+  nameWithType.vb: CMEditorLayout.GroupedPopupField(Of T)(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T)), CMEditorLayout.GroupedPopupData(Of T), Action(Of CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupField(Of T)(System.Int32, UnityEngine.GUIContent, System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), MacacaGames.CMEditorLayout.GroupedPopupData(Of T), System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T)), UnityEngine.GUILayoutOption())
+  name.vb: GroupedPopupField(Of T)(Int32, GUIContent, IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T)), CMEditorLayout.GroupedPopupData(Of T), Action(Of CMEditorLayout.GroupedPopupData(Of T)), GUILayoutOption())
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.CMEditorLayout.BitMaskField*
+  commentId: Overload:MacacaGames.CMEditorLayout.BitMaskField
+  name: BitMaskField
+  nameWithType: CMEditorLayout.BitMaskField
+  fullName: MacacaGames.CMEditorLayout.BitMaskField
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MacacaGames.CMEditorLayout.GroupedPopupField*
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupField
+  name: GroupedPopupField
+  nameWithType: CMEditorLayout.GroupedPopupField
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupField
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine.GUIContent
+  commentId: T:UnityEngine.GUIContent
+  parent: UnityEngine
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData}
+  commentId: T:System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<CMEditorLayout.GroupedPopupData>
+  nameWithType: IEnumerable<CMEditorLayout.GroupedPopupData>
+  fullName: System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData>
+  nameWithType.vb: IEnumerable(Of CMEditorLayout.GroupedPopupData)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData)
+  name.vb: IEnumerable(Of CMEditorLayout.GroupedPopupData)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData
+  parent: MacacaGames
+  name: CMEditorLayout.GroupedPopupData
+  nameWithType: CMEditorLayout.GroupedPopupData
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+- uid: System.Action{MacacaGames.CMEditorLayout.GroupedPopupData}
+  commentId: T:System.Action{MacacaGames.CMEditorLayout.GroupedPopupData}
+  parent: System
+  definition: System.Action`1
+  name: Action<CMEditorLayout.GroupedPopupData>
+  nameWithType: Action<CMEditorLayout.GroupedPopupData>
+  fullName: System.Action<MacacaGames.CMEditorLayout.GroupedPopupData>
+  nameWithType.vb: Action(Of CMEditorLayout.GroupedPopupData)
+  fullName.vb: System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData)
+  name.vb: Action(Of CMEditorLayout.GroupedPopupData)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.GUILayoutOption[]
+  isExternal: true
+  name: GUILayoutOption[]
+  nameWithType: GUILayoutOption[]
+  fullName: UnityEngine.GUILayoutOption[]
+  nameWithType.vb: GUILayoutOption()
+  fullName.vb: UnityEngine.GUILayoutOption()
+  name.vb: GUILayoutOption()
+  spec.csharp:
+  - uid: UnityEngine.GUILayoutOption
+    name: GUILayoutOption
+    nameWithType: GUILayoutOption
+    fullName: UnityEngine.GUILayoutOption
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.GUILayoutOption
+    name: GUILayoutOption
+    nameWithType: GUILayoutOption
+    fullName: UnityEngine.GUILayoutOption
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{{T}}}
+  commentId: T:System.Collections.Generic.IEnumerable{MacacaGames.CMEditorLayout.GroupedPopupData{``0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<CMEditorLayout.GroupedPopupData<T>>
+  nameWithType: IEnumerable<CMEditorLayout.GroupedPopupData<T>>
+  fullName: System.Collections.Generic.IEnumerable<MacacaGames.CMEditorLayout.GroupedPopupData<T>>
+  nameWithType.vb: IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T))
+  name.vb: IEnumerable(Of CMEditorLayout.GroupedPopupData(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData{{T}}
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData{``0}
+  parent: MacacaGames
+  definition: MacacaGames.CMEditorLayout.GroupedPopupData`1
+  name: CMEditorLayout.GroupedPopupData<T>
+  nameWithType: CMEditorLayout.GroupedPopupData<T>
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData<T>
+  nameWithType.vb: CMEditorLayout.GroupedPopupData(Of T)
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData(Of T)
+  name.vb: CMEditorLayout.GroupedPopupData(Of T)
+  spec.csharp:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{{T}}}
+  commentId: T:System.Action{MacacaGames.CMEditorLayout.GroupedPopupData{``0}}
+  parent: System
+  definition: System.Action`1
+  name: Action<CMEditorLayout.GroupedPopupData<T>>
+  nameWithType: Action<CMEditorLayout.GroupedPopupData<T>>
+  fullName: System.Action<MacacaGames.CMEditorLayout.GroupedPopupData<T>>
+  nameWithType.vb: Action(Of CMEditorLayout.GroupedPopupData(Of T))
+  fullName.vb: System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData(Of T))
+  name.vb: Action(Of CMEditorLayout.GroupedPopupData(Of T))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData`1
+  name: CMEditorLayout.GroupedPopupData<T>
+  nameWithType: CMEditorLayout.GroupedPopupData<T>
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData<T>
+  nameWithType.vb: CMEditorLayout.GroupedPopupData(Of T)
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData(Of T)
+  name.vb: CMEditorLayout.GroupedPopupData(Of T)
+  spec.csharp:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,1124 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.FixedSizeStack`1
+  commentId: T:MacacaGames.FixedSizeStack`1
+  id: FixedSizeStack`1
+  parent: MacacaGames
+  children:
+  - MacacaGames.FixedSizeStack`1.#ctor(System.Int32)
+  - MacacaGames.FixedSizeStack`1.Clear
+  - MacacaGames.FixedSizeStack`1.Contains(`0)
+  - MacacaGames.FixedSizeStack`1.Count
+  - MacacaGames.FixedSizeStack`1.GetEnumerator
+  - MacacaGames.FixedSizeStack`1.IsTop(`0)
+  - MacacaGames.FixedSizeStack`1.Peek
+  - MacacaGames.FixedSizeStack`1.Pop
+  - MacacaGames.FixedSizeStack`1.Push(`0)
+  - MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: FixedSizeStack<T>
+  nameWithType: FixedSizeStack<T>
+  fullName: MacacaGames.FixedSizeStack<T>
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FixedSizeStack
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 5
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class FixedSizeStack<T> : IEnumerable<T>, IEnumerable
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <Serializable>
+
+      Public Class FixedSizeStack(Of T)
+          Implements IEnumerable(Of T), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: FixedSizeStack(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: MacacaGames.FixedSizeStack(Of T)
+  name.vb: FixedSizeStack(Of T)
+- uid: MacacaGames.FixedSizeStack`1.#ctor(System.Int32)
+  commentId: M:MacacaGames.FixedSizeStack`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: FixedSizeStack(Int32)
+  nameWithType: FixedSizeStack<T>.FixedSizeStack(Int32)
+  fullName: MacacaGames.FixedSizeStack<T>.FixedSizeStack(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: .ctor
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 21
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nCreate a FixedSizeStack\n"
+  example: []
+  syntax:
+    content: public FixedSizeStack(int maxSize)
+    parameters:
+    - id: maxSize
+      type: System.Int32
+      description: The size of the stack
+    content.vb: Public Sub New(maxSize As Integer)
+  overload: MacacaGames.FixedSizeStack`1.#ctor*
+  nameWithType.vb: FixedSizeStack(Of T).FixedSizeStack(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).FixedSizeStack(System.Int32)
+- uid: MacacaGames.FixedSizeStack`1.Push(`0)
+  commentId: M:MacacaGames.FixedSizeStack`1.Push(`0)
+  id: Push(`0)
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: Push(T)
+  nameWithType: FixedSizeStack<T>.Push(T)
+  fullName: MacacaGames.FixedSizeStack<T>.Push(T)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Push
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 34
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nAdd ont item to Stack\n"
+  example: []
+  syntax:
+    content: public void Push(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+    content.vb: Public Sub Push(value As T)
+  overload: MacacaGames.FixedSizeStack`1.Push*
+  nameWithType.vb: FixedSizeStack(Of T).Push(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Push(T)
+- uid: MacacaGames.FixedSizeStack`1.Pop
+  commentId: M:MacacaGames.FixedSizeStack`1.Pop
+  id: Pop
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: Pop()
+  nameWithType: FixedSizeStack<T>.Pop()
+  fullName: MacacaGames.FixedSizeStack<T>.Pop()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Pop
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 47
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nTake the last item and remove from stack\n"
+  example: []
+  syntax:
+    content: public T Pop()
+    return:
+      type: '{T}'
+      description: The item
+    content.vb: Public Function Pop As T
+  overload: MacacaGames.FixedSizeStack`1.Pop*
+  nameWithType.vb: FixedSizeStack(Of T).Pop()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Pop()
+- uid: MacacaGames.FixedSizeStack`1.Peek
+  commentId: M:MacacaGames.FixedSizeStack`1.Peek
+  id: Peek
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: Peek()
+  nameWithType: FixedSizeStack<T>.Peek()
+  fullName: MacacaGames.FixedSizeStack<T>.Peek()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Peek
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 66
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nTake the last item but &quot;not&quot; remove from stack\n"
+  example: []
+  syntax:
+    content: public T Peek()
+    return:
+      type: '{T}'
+      description: The item
+    content.vb: Public Function Peek As T
+  overload: MacacaGames.FixedSizeStack`1.Peek*
+  nameWithType.vb: FixedSizeStack(Of T).Peek()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Peek()
+- uid: MacacaGames.FixedSizeStack`1.Clear
+  commentId: M:MacacaGames.FixedSizeStack`1.Clear
+  id: Clear
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: FixedSizeStack<T>.Clear()
+  fullName: MacacaGames.FixedSizeStack<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Clear
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 84
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nClear the stack\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: MacacaGames.FixedSizeStack`1.Clear*
+  nameWithType.vb: FixedSizeStack(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Clear()
+- uid: MacacaGames.FixedSizeStack`1.Count
+  commentId: P:MacacaGames.FixedSizeStack`1.Count
+  id: Count
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: FixedSizeStack<T>.Count
+  fullName: MacacaGames.FixedSizeStack<T>.Count
+  type: Property
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Count
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 89
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: MacacaGames.FixedSizeStack`1.Count*
+  nameWithType.vb: FixedSizeStack(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Count
+- uid: MacacaGames.FixedSizeStack`1.IsTop(`0)
+  commentId: M:MacacaGames.FixedSizeStack`1.IsTop(`0)
+  id: IsTop(`0)
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: IsTop(T)
+  nameWithType: FixedSizeStack<T>.IsTop(T)
+  fullName: MacacaGames.FixedSizeStack<T>.IsTop(T)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: IsTop
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 99
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nChecks if the top object on the stack matches the value passed in\n"
+  example: []
+  syntax:
+    content: public bool IsTop(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function IsTop(value As T) As Boolean
+  overload: MacacaGames.FixedSizeStack`1.IsTop*
+  nameWithType.vb: FixedSizeStack(Of T).IsTop(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).IsTop(T)
+- uid: MacacaGames.FixedSizeStack`1.Contains(`0)
+  commentId: M:MacacaGames.FixedSizeStack`1.Contains(`0)
+  id: Contains(`0)
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: FixedSizeStack<T>.Contains(T)
+  fullName: MacacaGames.FixedSizeStack<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Contains
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 115
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nIs the item in stack\n"
+  example: []
+  syntax:
+    content: public bool Contains(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: item
+    return:
+      type: System.Boolean
+      description: True if the item is in stack
+    content.vb: Public Function Contains(value As T) As Boolean
+  overload: MacacaGames.FixedSizeStack`1.Contains*
+  nameWithType.vb: FixedSizeStack(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Contains(T)
+- uid: MacacaGames.FixedSizeStack`1.GetEnumerator
+  commentId: M:MacacaGames.FixedSizeStack`1.GetEnumerator
+  id: GetEnumerator
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: FixedSizeStack<T>.GetEnumerator()
+  fullName: MacacaGames.FixedSizeStack<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GetEnumerator
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 129
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nGet Enumerator\n"
+  example: []
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: The IEnumerator
+    content.vb: Public Function GetEnumerator As IEnumerator
+  overload: MacacaGames.FixedSizeStack`1.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: FixedSizeStack(Of T).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).GetEnumerator()
+- uid: MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  commentId: M:MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  isEii: true
+  parent: MacacaGames.FixedSizeStack`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable<T>.GetEnumerator()
+  nameWithType: FixedSizeStack<T>.IEnumerable<T>.GetEnumerator()
+  fullName: MacacaGames.FixedSizeStack<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/FixedSizeStack.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    path: ../Scripts/Utilitys/FixedSizeStack.cs
+    startLine: 138
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nGet Enumerator\n"
+  example: []
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: The IEnumerator
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+  overload: MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: FixedSizeStack(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: MacacaGames.FixedSizeStack`1.#ctor*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.#ctor
+  name: FixedSizeStack
+  nameWithType: FixedSizeStack<T>.FixedSizeStack
+  fullName: MacacaGames.FixedSizeStack<T>.FixedSizeStack
+  nameWithType.vb: FixedSizeStack(Of T).FixedSizeStack
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).FixedSizeStack
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MacacaGames.FixedSizeStack`1.Push*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Push
+  name: Push
+  nameWithType: FixedSizeStack<T>.Push
+  fullName: MacacaGames.FixedSizeStack<T>.Push
+  nameWithType.vb: FixedSizeStack(Of T).Push
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Push
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MacacaGames.FixedSizeStack`1.Pop*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Pop
+  name: Pop
+  nameWithType: FixedSizeStack<T>.Pop
+  fullName: MacacaGames.FixedSizeStack<T>.Pop
+  nameWithType.vb: FixedSizeStack(Of T).Pop
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Pop
+- uid: MacacaGames.FixedSizeStack`1.Peek*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Peek
+  name: Peek
+  nameWithType: FixedSizeStack<T>.Peek
+  fullName: MacacaGames.FixedSizeStack<T>.Peek
+  nameWithType.vb: FixedSizeStack(Of T).Peek
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Peek
+- uid: MacacaGames.FixedSizeStack`1.Clear*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Clear
+  name: Clear
+  nameWithType: FixedSizeStack<T>.Clear
+  fullName: MacacaGames.FixedSizeStack<T>.Clear
+  nameWithType.vb: FixedSizeStack(Of T).Clear
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Clear
+- uid: MacacaGames.FixedSizeStack`1.Count*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Count
+  name: Count
+  nameWithType: FixedSizeStack<T>.Count
+  fullName: MacacaGames.FixedSizeStack<T>.Count
+  nameWithType.vb: FixedSizeStack(Of T).Count
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Count
+- uid: MacacaGames.FixedSizeStack`1.IsTop*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.IsTop
+  name: IsTop
+  nameWithType: FixedSizeStack<T>.IsTop
+  fullName: MacacaGames.FixedSizeStack<T>.IsTop
+  nameWithType.vb: FixedSizeStack(Of T).IsTop
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).IsTop
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: MacacaGames.FixedSizeStack`1.Contains*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.Contains
+  name: Contains
+  nameWithType: FixedSizeStack<T>.Contains
+  fullName: MacacaGames.FixedSizeStack<T>.Contains
+  nameWithType.vb: FixedSizeStack(Of T).Contains
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).Contains
+- uid: MacacaGames.FixedSizeStack`1.GetEnumerator*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.GetEnumerator
+  name: GetEnumerator
+  nameWithType: FixedSizeStack<T>.GetEnumerator
+  fullName: MacacaGames.FixedSizeStack<T>.GetEnumerator
+  nameWithType.vb: FixedSizeStack(Of T).GetEnumerator
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*
+  commentId: Overload:MacacaGames.FixedSizeStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  name: IEnumerable<T>.GetEnumerator
+  nameWithType: FixedSizeStack<T>.IEnumerable<T>.GetEnumerator
+  fullName: MacacaGames.FixedSizeStack<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  nameWithType.vb: FixedSizeStack(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  fullName.vb: MacacaGames.FixedSizeStack(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

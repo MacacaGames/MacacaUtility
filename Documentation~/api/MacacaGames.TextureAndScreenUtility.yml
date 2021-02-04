@@ -1,0 +1,794 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.TextureAndScreenUtility
+  commentId: T:MacacaGames.TextureAndScreenUtility
+  id: TextureAndScreenUtility
+  parent: MacacaGames
+  children:
+  - MacacaGames.TextureAndScreenUtility.AddWatermark(UnityEngine.Texture2D,UnityEngine.Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  - MacacaGames.TextureAndScreenUtility.photoFilePath
+  - MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  - MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  - MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{UnityEngine.Texture2D},System.Threading.CancellationToken,System.String,System.Int32,System.Single,System.Single,UnityEngine.Camera,System.Boolean)
+  - MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,UnityEngine.Texture2D)
+  langs:
+  - csharp
+  - vb
+  name: TextureAndScreenUtility
+  nameWithType: TextureAndScreenUtility
+  fullName: MacacaGames.TextureAndScreenUtility
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TextureAndScreenUtility
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 11
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public class TextureAndScreenUtility
+    content.vb: Public Class TextureAndScreenUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.TextureAndScreenUtility.photoFilePath
+  commentId: F:MacacaGames.TextureAndScreenUtility.photoFilePath
+  id: photoFilePath
+  parent: MacacaGames.TextureAndScreenUtility
+  langs:
+  - csharp
+  - vb
+  name: photoFilePath
+  nameWithType: TextureAndScreenUtility.photoFilePath
+  fullName: MacacaGames.TextureAndScreenUtility.photoFilePath
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: photoFilePath
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 13
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static string photoFilePath
+    return:
+      type: System.String
+    content.vb: Public Shared photoFilePath As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{UnityEngine.Texture2D},System.Threading.CancellationToken,System.String,System.Int32,System.Single,System.Single,UnityEngine.Camera,System.Boolean)
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver{UnityEngine.Texture2D},System.Threading.CancellationToken,System.String,System.Int32,System.Single,System.Single,UnityEngine.Camera,System.Boolean)
+  id: ScreenShotCoroutine(System.IObserver{UnityEngine.Texture2D},System.Threading.CancellationToken,System.String,System.Int32,System.Single,System.Single,UnityEngine.Camera,System.Boolean)
+  parent: MacacaGames.TextureAndScreenUtility
+  langs:
+  - csharp
+  - vb
+  name: ScreenShotCoroutine(IObserver<Texture2D>, CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+  nameWithType: TextureAndScreenUtility.ScreenShotCoroutine(IObserver<Texture2D>, CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+  fullName: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver<UnityEngine.Texture2D>, System.Threading.CancellationToken, System.String, System.Int32, System.Single, System.Single, UnityEngine.Camera, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ScreenShotCoroutine
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 28
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static IEnumerator ScreenShotCoroutine(IObserver<Texture2D> observer, CancellationToken cancellationToken, string screenShotName, int yOffect, float ratio, float delay, Camera camera = null, bool writeToDisk = false)
+    parameters:
+    - id: observer
+      type: System.IObserver{UnityEngine.Texture2D}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: screenShotName
+      type: System.String
+    - id: yOffect
+      type: System.Int32
+    - id: ratio
+      type: System.Single
+    - id: delay
+      type: System.Single
+    - id: camera
+      type: UnityEngine.Camera
+    - id: writeToDisk
+      type: System.Boolean
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function ScreenShotCoroutine(observer As IObserver(Of Texture2D), cancellationToken As CancellationToken, screenShotName As String, yOffect As Integer, ratio As Single, delay As Single, camera As Camera = Nothing, writeToDisk As Boolean = False) As IEnumerator
+  overload: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine*
+  nameWithType.vb: TextureAndScreenUtility.ScreenShotCoroutine(IObserver(Of Texture2D), CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine(System.IObserver(Of UnityEngine.Texture2D), System.Threading.CancellationToken, System.String, System.Int32, System.Single, System.Single, UnityEngine.Camera, System.Boolean)
+  name.vb: ScreenShotCoroutine(IObserver(Of Texture2D), CancellationToken, String, Int32, Single, Single, Camera, Boolean)
+- uid: MacacaGames.TextureAndScreenUtility.AddWatermark(UnityEngine.Texture2D,UnityEngine.Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  commentId: M:MacacaGames.TextureAndScreenUtility.AddWatermark(UnityEngine.Texture2D,UnityEngine.Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  id: AddWatermark(UnityEngine.Texture2D,UnityEngine.Texture2D,MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  parent: MacacaGames.TextureAndScreenUtility
+  langs:
+  - csharp
+  - vb
+  name: AddWatermark(Texture2D, Texture2D, TextureAndScreenUtility.WaterMarkPosition)
+  nameWithType: TextureAndScreenUtility.AddWatermark(Texture2D, Texture2D, TextureAndScreenUtility.WaterMarkPosition)
+  fullName: MacacaGames.TextureAndScreenUtility.AddWatermark(UnityEngine.Texture2D, UnityEngine.Texture2D, MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: AddWatermark
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 80
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static Texture2D AddWatermark(Texture2D background, Texture2D watermark, TextureAndScreenUtility.WaterMarkPosition position = TextureAndScreenUtility.WaterMarkPosition.RightTop)
+    parameters:
+    - id: background
+      type: UnityEngine.Texture2D
+    - id: watermark
+      type: UnityEngine.Texture2D
+    - id: position
+      type: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Function AddWatermark(background As Texture2D, watermark As Texture2D, position As TextureAndScreenUtility.WaterMarkPosition = TextureAndScreenUtility.WaterMarkPosition.RightTop) As Texture2D
+  overload: MacacaGames.TextureAndScreenUtility.AddWatermark*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  id: ScaleTextureUseMutilThread(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  parent: MacacaGames.TextureAndScreenUtility
+  langs:
+  - csharp
+  - vb
+  name: ScaleTextureUseMutilThread(Texture2D, Int32, Int32, FilterMode)
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseMutilThread(Texture2D, Int32, Int32, FilterMode)
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread(UnityEngine.Texture2D, System.Int32, System.Int32, UnityEngine.FilterMode)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ScaleTextureUseMutilThread
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 123
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static Texture2D ScaleTextureUseMutilThread(Texture2D src, int width, int height, FilterMode mode = FilterMode.Trilinear)
+    parameters:
+    - id: src
+      type: UnityEngine.Texture2D
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: mode
+      type: UnityEngine.FilterMode
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Function ScaleTextureUseMutilThread(src As Texture2D, width As Integer, height As Integer, mode As FilterMode = FilterMode.Trilinear) As Texture2D
+  overload: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  commentId: M:MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  id: ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.FilterMode)
+  parent: MacacaGames.TextureAndScreenUtility
+  langs:
+  - csharp
+  - vb
+  name: ScaleTextureUseUnityRenderTexture(Texture2D, Int32, Int32, FilterMode)
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(Texture2D, Int32, Int32, FilterMode)
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture(UnityEngine.Texture2D, System.Int32, System.Int32, UnityEngine.FilterMode)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ScaleTextureUseUnityRenderTexture
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 131
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static Texture2D ScaleTextureUseUnityRenderTexture(Texture2D src, int width, int height, FilterMode mode = FilterMode.Trilinear)
+    parameters:
+    - id: src
+      type: UnityEngine.Texture2D
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: mode
+      type: UnityEngine.FilterMode
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Function ScaleTextureUseUnityRenderTexture(src As Texture2D, width As Integer, height As Integer, mode As FilterMode = FilterMode.Trilinear) As Texture2D
+  overload: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,UnityEngine.Texture2D)
+  commentId: M:MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String,UnityEngine.Texture2D)
+  id: WriteImageToDisk(System.String,UnityEngine.Texture2D)
+  parent: MacacaGames.TextureAndScreenUtility
+  langs:
+  - csharp
+  - vb
+  name: WriteImageToDisk(String, Texture2D)
+  nameWithType: TextureAndScreenUtility.WriteImageToDisk(String, Texture2D)
+  fullName: MacacaGames.TextureAndScreenUtility.WriteImageToDisk(System.String, UnityEngine.Texture2D)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: WriteImageToDisk
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 164
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void WriteImageToDisk(string fileName, Texture2D imageOverview)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: imageOverview
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Sub WriteImageToDisk(fileName As String, imageOverview As Texture2D)
+  overload: MacacaGames.TextureAndScreenUtility.WriteImageToDisk*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine*
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine
+  name: ScreenShotCoroutine
+  nameWithType: TextureAndScreenUtility.ScreenShotCoroutine
+  fullName: MacacaGames.TextureAndScreenUtility.ScreenShotCoroutine
+- uid: System.IObserver{UnityEngine.Texture2D}
+  commentId: T:System.IObserver{UnityEngine.Texture2D}
+  parent: System
+  definition: System.IObserver`1
+  name: IObserver<Texture2D>
+  nameWithType: IObserver<Texture2D>
+  fullName: System.IObserver<UnityEngine.Texture2D>
+  nameWithType.vb: IObserver(Of Texture2D)
+  fullName.vb: System.IObserver(Of UnityEngine.Texture2D)
+  name.vb: IObserver(Of Texture2D)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Texture2D
+    name: Texture2D
+    nameWithType: Texture2D
+    fullName: UnityEngine.Texture2D
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Texture2D
+    name: Texture2D
+    nameWithType: Texture2D
+    fullName: UnityEngine.Texture2D
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.IObserver`1
+  commentId: T:System.IObserver`1
+  isExternal: true
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: System.IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  fullName.vb: System.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: MacacaGames.TextureAndScreenUtility.AddWatermark*
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.AddWatermark
+  name: AddWatermark
+  nameWithType: TextureAndScreenUtility.AddWatermark
+  fullName: MacacaGames.TextureAndScreenUtility.AddWatermark
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  commentId: T:MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  parent: MacacaGames
+  name: TextureAndScreenUtility.WaterMarkPosition
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread*
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread
+  name: ScaleTextureUseMutilThread
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseMutilThread
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseMutilThread
+- uid: UnityEngine.FilterMode
+  commentId: T:UnityEngine.FilterMode
+  parent: UnityEngine
+  isExternal: true
+  name: FilterMode
+  nameWithType: FilterMode
+  fullName: UnityEngine.FilterMode
+- uid: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture*
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
+  name: ScaleTextureUseUnityRenderTexture
+  nameWithType: TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
+  fullName: MacacaGames.TextureAndScreenUtility.ScaleTextureUseUnityRenderTexture
+- uid: MacacaGames.TextureAndScreenUtility.WriteImageToDisk*
+  commentId: Overload:MacacaGames.TextureAndScreenUtility.WriteImageToDisk
+  name: WriteImageToDisk
+  nameWithType: TextureAndScreenUtility.WriteImageToDisk
+  fullName: MacacaGames.TextureAndScreenUtility.WriteImageToDisk

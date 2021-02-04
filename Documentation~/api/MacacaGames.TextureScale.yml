@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.TextureScale
+  commentId: T:MacacaGames.TextureScale
+  id: TextureScale
+  parent: MacacaGames
+  children:
+  - MacacaGames.TextureScale.Bilinear(UnityEngine.Texture2D,System.Int32,System.Int32)
+  - MacacaGames.TextureScale.BilinearScale(System.Object)
+  - MacacaGames.TextureScale.Point(UnityEngine.Texture2D,System.Int32,System.Int32)
+  - MacacaGames.TextureScale.PointScale(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: TextureScale
+  nameWithType: TextureScale
+  fullName: MacacaGames.TextureScale
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TextureScale
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 182
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public class TextureScale
+    content.vb: Public Class TextureScale
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.TextureScale.Point(UnityEngine.Texture2D,System.Int32,System.Int32)
+  commentId: M:MacacaGames.TextureScale.Point(UnityEngine.Texture2D,System.Int32,System.Int32)
+  id: Point(UnityEngine.Texture2D,System.Int32,System.Int32)
+  parent: MacacaGames.TextureScale
+  langs:
+  - csharp
+  - vb
+  name: Point(Texture2D, Int32, Int32)
+  nameWithType: TextureScale.Point(Texture2D, Int32, Int32)
+  fullName: MacacaGames.TextureScale.Point(UnityEngine.Texture2D, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Point
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 204
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void Point(Texture2D tex, int newWidth, int newHeight)
+    parameters:
+    - id: tex
+      type: UnityEngine.Texture2D
+    - id: newWidth
+      type: System.Int32
+    - id: newHeight
+      type: System.Int32
+    content.vb: Public Shared Sub Point(tex As Texture2D, newWidth As Integer, newHeight As Integer)
+  overload: MacacaGames.TextureScale.Point*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.TextureScale.Bilinear(UnityEngine.Texture2D,System.Int32,System.Int32)
+  commentId: M:MacacaGames.TextureScale.Bilinear(UnityEngine.Texture2D,System.Int32,System.Int32)
+  id: Bilinear(UnityEngine.Texture2D,System.Int32,System.Int32)
+  parent: MacacaGames.TextureScale
+  langs:
+  - csharp
+  - vb
+  name: Bilinear(Texture2D, Int32, Int32)
+  nameWithType: TextureScale.Bilinear(Texture2D, Int32, Int32)
+  fullName: MacacaGames.TextureScale.Bilinear(UnityEngine.Texture2D, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Bilinear
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 209
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void Bilinear(Texture2D tex, int newWidth, int newHeight)
+    parameters:
+    - id: tex
+      type: UnityEngine.Texture2D
+    - id: newWidth
+      type: System.Int32
+    - id: newHeight
+      type: System.Int32
+    content.vb: Public Shared Sub Bilinear(tex As Texture2D, newWidth As Integer, newHeight As Integer)
+  overload: MacacaGames.TextureScale.Bilinear*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.TextureScale.BilinearScale(System.Object)
+  commentId: M:MacacaGames.TextureScale.BilinearScale(System.Object)
+  id: BilinearScale(System.Object)
+  parent: MacacaGames.TextureScale
+  langs:
+  - csharp
+  - vb
+  name: BilinearScale(Object)
+  nameWithType: TextureScale.BilinearScale(Object)
+  fullName: MacacaGames.TextureScale.BilinearScale(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BilinearScale
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 284
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void BilinearScale(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    content.vb: Public Shared Sub BilinearScale(obj As Object)
+  overload: MacacaGames.TextureScale.BilinearScale*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.TextureScale.PointScale(System.Object)
+  commentId: M:MacacaGames.TextureScale.PointScale(System.Object)
+  id: PointScale(System.Object)
+  parent: MacacaGames.TextureScale
+  langs:
+  - csharp
+  - vb
+  name: PointScale(Object)
+  nameWithType: TextureScale.PointScale(Object)
+  fullName: MacacaGames.TextureScale.PointScale(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: PointScale
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 309
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void PointScale(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    content.vb: Public Shared Sub PointScale(obj As Object)
+  overload: MacacaGames.TextureScale.PointScale*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.TextureScale.Point*
+  commentId: Overload:MacacaGames.TextureScale.Point
+  name: Point
+  nameWithType: TextureScale.Point
+  fullName: MacacaGames.TextureScale.Point
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MacacaGames.TextureScale.Bilinear*
+  commentId: Overload:MacacaGames.TextureScale.Bilinear
+  name: Bilinear
+  nameWithType: TextureScale.Bilinear
+  fullName: MacacaGames.TextureScale.Bilinear
+- uid: MacacaGames.TextureScale.BilinearScale*
+  commentId: Overload:MacacaGames.TextureScale.BilinearScale
+  name: BilinearScale
+  nameWithType: TextureScale.BilinearScale
+  fullName: MacacaGames.TextureScale.BilinearScale
+- uid: MacacaGames.TextureScale.PointScale*
+  commentId: Overload:MacacaGames.TextureScale.PointScale
+  name: PointScale
+  nameWithType: TextureScale.PointScale
+  fullName: MacacaGames.TextureScale.PointScale

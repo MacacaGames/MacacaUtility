@@ -1,0 +1,722 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.CMEditorUtility
+  commentId: T:MacacaGames.CMEditorUtility
+  id: CMEditorUtility
+  parent: MacacaGames
+  children:
+  - MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,UnityEngine.Color)
+  - MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
+  - MacacaGames.CMEditorUtility.LoadResourceAssets
+  - MacacaGames.CMEditorUtility.TryGetEditorTexture(System.String)
+  - MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
+  langs:
+  - csharp
+  - vb
+  name: CMEditorUtility
+  nameWithType: CMEditorUtility
+  fullName: MacacaGames.CMEditorUtility
+  type: Class
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: CMEditorUtility
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 9
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public class CMEditorUtility
+    content.vb: Public Class CMEditorUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,UnityEngine.Color)
+  commentId: M:MacacaGames.CMEditorUtility.CreatePixelTexture(System.String,UnityEngine.Color)
+  id: CreatePixelTexture(System.String,UnityEngine.Color)
+  parent: MacacaGames.CMEditorUtility
+  langs:
+  - csharp
+  - vb
+  name: CreatePixelTexture(String, Color)
+  nameWithType: CMEditorUtility.CreatePixelTexture(String, Color)
+  fullName: MacacaGames.CMEditorUtility.CreatePixelTexture(System.String, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: CreatePixelTexture
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 12
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public static Texture2D CreatePixelTexture(string name, Color color)
+    parameters:
+    - id: name
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Function CreatePixelTexture(name As String, color As Color) As Texture2D
+  overload: MacacaGames.CMEditorUtility.CreatePixelTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.CMEditorUtility.TryGetEditorTexture(System.String)
+  commentId: M:MacacaGames.CMEditorUtility.TryGetEditorTexture(System.String)
+  id: TryGetEditorTexture(System.String)
+  parent: MacacaGames.CMEditorUtility
+  langs:
+  - csharp
+  - vb
+  name: TryGetEditorTexture(String)
+  nameWithType: CMEditorUtility.TryGetEditorTexture(String)
+  fullName: MacacaGames.CMEditorUtility.TryGetEditorTexture(System.String)
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TryGetEditorTexture
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 40
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public static Texture2D TryGetEditorTexture(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Function TryGetEditorTexture(name As String) As Texture2D
+  overload: MacacaGames.CMEditorUtility.TryGetEditorTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.CMEditorUtility.LoadResourceAssets
+  commentId: M:MacacaGames.CMEditorUtility.LoadResourceAssets
+  id: LoadResourceAssets
+  parent: MacacaGames.CMEditorUtility
+  langs:
+  - csharp
+  - vb
+  name: LoadResourceAssets()
+  nameWithType: CMEditorUtility.LoadResourceAssets()
+  fullName: MacacaGames.CMEditorUtility.LoadResourceAssets()
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: LoadResourceAssets
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 60
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  summary: "\nRead textures from base-64 encoded strings. Automatically selects assets based upon\nwhether the light or dark (pro) skin is active.\n"
+  example: []
+  syntax:
+    content: public static Dictionary<string, Texture2D> LoadResourceAssets()
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,UnityEngine.Texture2D}
+    content.vb: Public Shared Function LoadResourceAssets As Dictionary(Of String, Texture2D)
+  overload: MacacaGames.CMEditorUtility.LoadResourceAssets*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
+  commentId: M:MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
+  id: InspectTarget(UnityEngine.Object)
+  parent: MacacaGames.CMEditorUtility
+  langs:
+  - csharp
+  - vb
+  name: InspectTarget(Object)
+  nameWithType: CMEditorUtility.InspectTarget(Object)
+  fullName: MacacaGames.CMEditorUtility.InspectTarget(UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: InspectTarget
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 93
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public static void InspectTarget(Object target)
+    parameters:
+    - id: target
+      type: UnityEngine.Object
+    content.vb: Public Shared Sub InspectTarget(target As Object)
+  overload: MacacaGames.CMEditorUtility.InspectTarget*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
+  commentId: M:MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
+  id: ViewInInspectorInstance(UnityEngine.Object,UnityEditor.EditorWindow)
+  parent: MacacaGames.CMEditorUtility
+  langs:
+  - csharp
+  - vb
+  name: ViewInInspectorInstance(Object, EditorWindow)
+  nameWithType: CMEditorUtility.ViewInInspectorInstance(Object, EditorWindow)
+  fullName: MacacaGames.CMEditorUtility.ViewInInspectorInstance(UnityEngine.Object, UnityEditor.EditorWindow)
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ViewInInspectorInstance
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 97
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public static EditorWindow ViewInInspectorInstance(Object viewTarget, EditorWindow inspectorInstance = null)
+    parameters:
+    - id: viewTarget
+      type: UnityEngine.Object
+    - id: inspectorInstance
+      type: UnityEditor.EditorWindow
+    return:
+      type: UnityEditor.EditorWindow
+    content.vb: Public Shared Function ViewInInspectorInstance(viewTarget As Object, inspectorInstance As EditorWindow = Nothing) As EditorWindow
+  overload: MacacaGames.CMEditorUtility.ViewInInspectorInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.CMEditorUtility.CreatePixelTexture*
+  commentId: Overload:MacacaGames.CMEditorUtility.CreatePixelTexture
+  name: CreatePixelTexture
+  nameWithType: CMEditorUtility.CreatePixelTexture
+  fullName: MacacaGames.CMEditorUtility.CreatePixelTexture
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MacacaGames.CMEditorUtility.TryGetEditorTexture*
+  commentId: Overload:MacacaGames.CMEditorUtility.TryGetEditorTexture
+  name: TryGetEditorTexture
+  nameWithType: CMEditorUtility.TryGetEditorTexture
+  fullName: MacacaGames.CMEditorUtility.TryGetEditorTexture
+- uid: MacacaGames.CMEditorUtility.LoadResourceAssets*
+  commentId: Overload:MacacaGames.CMEditorUtility.LoadResourceAssets
+  name: LoadResourceAssets
+  nameWithType: CMEditorUtility.LoadResourceAssets
+  fullName: MacacaGames.CMEditorUtility.LoadResourceAssets
+- uid: System.Collections.Generic.Dictionary{System.String,UnityEngine.Texture2D}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,UnityEngine.Texture2D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Texture2D>
+  nameWithType: Dictionary<String, Texture2D>
+  fullName: System.Collections.Generic.Dictionary<System.String, UnityEngine.Texture2D>
+  nameWithType.vb: Dictionary(Of String, Texture2D)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, UnityEngine.Texture2D)
+  name.vb: Dictionary(Of String, Texture2D)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Texture2D
+    name: Texture2D
+    nameWithType: Texture2D
+    fullName: UnityEngine.Texture2D
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Texture2D
+    name: Texture2D
+    nameWithType: Texture2D
+    fullName: UnityEngine.Texture2D
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: MacacaGames.CMEditorUtility.InspectTarget*
+  commentId: Overload:MacacaGames.CMEditorUtility.InspectTarget
+  name: InspectTarget
+  nameWithType: CMEditorUtility.InspectTarget
+  fullName: MacacaGames.CMEditorUtility.InspectTarget
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: MacacaGames.CMEditorUtility.ViewInInspectorInstance*
+  commentId: Overload:MacacaGames.CMEditorUtility.ViewInInspectorInstance
+  name: ViewInInspectorInstance
+  nameWithType: CMEditorUtility.ViewInInspectorInstance
+  fullName: MacacaGames.CMEditorUtility.ViewInInspectorInstance
+- uid: UnityEditor.EditorWindow
+  commentId: T:UnityEditor.EditorWindow
+  parent: UnityEditor
+  isExternal: true
+  name: EditorWindow
+  nameWithType: EditorWindow
+  fullName: UnityEditor.EditorWindow
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor

@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.GradientMode
+  commentId: T:MacacaGames.GradientMode
+  id: GradientMode
+  parent: MacacaGames
+  children:
+  - MacacaGames.GradientMode.Global
+  - MacacaGames.GradientMode.Local
+  langs:
+  - csharp
+  - vb
+  name: GradientMode
+  nameWithType: GradientMode
+  fullName: MacacaGames.GradientMode
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GradientMode
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 106
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public enum GradientMode
+    content.vb: Public Enum GradientMode
+  extensionMethods:
+  - MacacaGames.GradientMode.FlagsHelperExtensions.IsSet``1(MacacaGames.GradientMode)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MacacaGames.GradientMode.Global
+  commentId: F:MacacaGames.GradientMode.Global
+  id: Global
+  parent: MacacaGames.GradientMode
+  langs:
+  - csharp
+  - vb
+  name: Global
+  nameWithType: GradientMode.Global
+  fullName: MacacaGames.GradientMode.Global
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Global
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 108
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: Global = 0
+    return:
+      type: MacacaGames.GradientMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.GradientMode.Local
+  commentId: F:MacacaGames.GradientMode.Local
+  id: Local
+  parent: MacacaGames.GradientMode
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: GradientMode.Local
+  fullName: MacacaGames.GradientMode.Local
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Local
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 109
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: Local = 1
+    return:
+      type: MacacaGames.GradientMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.GradientMode.FlagsHelperExtensions.IsSet``1(MacacaGames.GradientMode)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<GradientMode>(GradientMode)
+  nameWithType: FlagsHelperExtensions.IsSet<GradientMode>(GradientMode)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.GradientMode>(MacacaGames.GradientMode)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of GradientMode)(GradientMode)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.GradientMode)(MacacaGames.GradientMode)
+  name.vb: IsSet(Of GradientMode)(GradientMode)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<GradientMode>
+    nameWithType: FlagsHelperExtensions.IsSet<GradientMode>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.GradientMode>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.GradientMode
+    name: GradientMode
+    nameWithType: GradientMode
+    fullName: MacacaGames.GradientMode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of GradientMode)
+    nameWithType: FlagsHelperExtensions.IsSet(Of GradientMode)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.GradientMode)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.GradientMode
+    name: GradientMode
+    nameWithType: GradientMode
+    fullName: MacacaGames.GradientMode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.GradientMode
+  commentId: T:MacacaGames.GradientMode
+  parent: MacacaGames
+  name: GradientMode
+  nameWithType: GradientMode
+  fullName: MacacaGames.GradientMode

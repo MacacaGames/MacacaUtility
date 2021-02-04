@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.ICacheFactory`2
+  commentId: T:MacacaGames.ICacheFactory`2
+  id: ICacheFactory`2
+  parent: MacacaGames
+  children:
+  - MacacaGames.ICacheFactory`2.Create(`0)
+  langs:
+  - csharp
+  - vb
+  name: ICacheFactory<TKey, TValue>
+  nameWithType: ICacheFactory<TKey, TValue>
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>
+  type: Interface
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ICacheFactory
+    path: ../Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+    startLine: 27
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public interface ICacheFactory<TKey, TValue>
+    typeParameters:
+    - id: TKey
+    - id: TValue
+    content.vb: Public Interface ICacheFactory(Of TKey, TValue)
+  nameWithType.vb: ICacheFactory(Of TKey, TValue)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue)
+  name.vb: ICacheFactory(Of TKey, TValue)
+- uid: MacacaGames.ICacheFactory`2.Create(`0)
+  commentId: M:MacacaGames.ICacheFactory`2.Create(`0)
+  id: Create(`0)
+  parent: MacacaGames.ICacheFactory`2
+  langs:
+  - csharp
+  - vb
+  name: Create(TKey)
+  nameWithType: ICacheFactory<TKey, TValue>.Create(TKey)
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>.Create(TKey)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Create
+    path: ../Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+    startLine: 29
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TValue Create(TKey key)
+    parameters:
+    - id: key
+      type: '{TKey}'
+    return:
+      type: '{TValue}'
+    content.vb: Function Create(key As TKey) As TValue
+  overload: MacacaGames.ICacheFactory`2.Create*
+  nameWithType.vb: ICacheFactory(Of TKey, TValue).Create(TKey)
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue).Create(TKey)
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.ICacheFactory`2.Create*
+  commentId: Overload:MacacaGames.ICacheFactory`2.Create
+  name: Create
+  nameWithType: ICacheFactory<TKey, TValue>.Create
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>.Create
+  nameWithType.vb: ICacheFactory(Of TKey, TValue).Create
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue).Create
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue

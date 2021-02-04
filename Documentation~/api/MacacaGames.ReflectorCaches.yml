@@ -1,0 +1,688 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.ReflectorCaches
+  commentId: T:MacacaGames.ReflectorCaches
+  id: ReflectorCaches
+  parent: MacacaGames
+  children:
+  - MacacaGames.ReflectorCaches.FieldAccessorCache
+  - MacacaGames.ReflectorCaches.MethodInvokerCache
+  - MacacaGames.ReflectorCaches.PropertyAccessorCache
+  langs:
+  - csharp
+  - vb
+  name: ReflectorCaches
+  nameWithType: ReflectorCaches
+  fullName: MacacaGames.ReflectorCaches
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ReflectorCaches
+    path: ../Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+    startLine: 10
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static class ReflectorCaches
+    content.vb: Public Module ReflectorCaches
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: MacacaGames.ReflectorCaches.MethodInvokerCache
+  commentId: P:MacacaGames.ReflectorCaches.MethodInvokerCache
+  id: MethodInvokerCache
+  parent: MacacaGames.ReflectorCaches
+  langs:
+  - csharp
+  - vb
+  name: MethodInvokerCache
+  nameWithType: ReflectorCaches.MethodInvokerCache
+  fullName: MacacaGames.ReflectorCaches.MethodInvokerCache
+  type: Property
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MethodInvokerCache
+    path: ../Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+    startLine: 20
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static IReflactorCache<MethodInfo, IMethodInvoker> MethodInvokerCache { get; set; }
+    parameters: []
+    return:
+      type: MacacaGames.IReflactorCache{System.Reflection.MethodInfo,MacacaGames.IMethodInvoker}
+    content.vb: Public Shared Property MethodInvokerCache As IReflactorCache(Of MethodInfo, IMethodInvoker)
+  overload: MacacaGames.ReflectorCaches.MethodInvokerCache*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.ReflectorCaches.PropertyAccessorCache
+  commentId: P:MacacaGames.ReflectorCaches.PropertyAccessorCache
+  id: PropertyAccessorCache
+  parent: MacacaGames.ReflectorCaches
+  langs:
+  - csharp
+  - vb
+  name: PropertyAccessorCache
+  nameWithType: ReflectorCaches.PropertyAccessorCache
+  fullName: MacacaGames.ReflectorCaches.PropertyAccessorCache
+  type: Property
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: PropertyAccessorCache
+    path: ../Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+    startLine: 22
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static IReflactorCache<PropertyInfo, IAccessor> PropertyAccessorCache { get; set; }
+    parameters: []
+    return:
+      type: MacacaGames.IReflactorCache{System.Reflection.PropertyInfo,MacacaGames.IAccessor}
+    content.vb: Public Shared Property PropertyAccessorCache As IReflactorCache(Of PropertyInfo, IAccessor)
+  overload: MacacaGames.ReflectorCaches.PropertyAccessorCache*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.ReflectorCaches.FieldAccessorCache
+  commentId: P:MacacaGames.ReflectorCaches.FieldAccessorCache
+  id: FieldAccessorCache
+  parent: MacacaGames.ReflectorCaches
+  langs:
+  - csharp
+  - vb
+  name: FieldAccessorCache
+  nameWithType: ReflectorCaches.FieldAccessorCache
+  fullName: MacacaGames.ReflectorCaches.FieldAccessorCache
+  type: Property
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FieldAccessorCache
+    path: ../Scripts/Utilitys/Reflactor/Cache/ReflactorCache.cs
+    startLine: 24
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static IReflactorCache<FieldInfo, IAccessor> FieldAccessorCache { get; set; }
+    parameters: []
+    return:
+      type: MacacaGames.IReflactorCache{System.Reflection.FieldInfo,MacacaGames.IAccessor}
+    content.vb: Public Shared Property FieldAccessorCache As IReflactorCache(Of FieldInfo, IAccessor)
+  overload: MacacaGames.ReflectorCaches.FieldAccessorCache*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.ReflectorCaches.MethodInvokerCache*
+  commentId: Overload:MacacaGames.ReflectorCaches.MethodInvokerCache
+  name: MethodInvokerCache
+  nameWithType: ReflectorCaches.MethodInvokerCache
+  fullName: MacacaGames.ReflectorCaches.MethodInvokerCache
+- uid: MacacaGames.IReflactorCache{System.Reflection.MethodInfo,MacacaGames.IMethodInvoker}
+  commentId: T:MacacaGames.IReflactorCache{System.Reflection.MethodInfo,MacacaGames.IMethodInvoker}
+  parent: MacacaGames
+  definition: MacacaGames.IReflactorCache`2
+  name: IReflactorCache<MethodInfo, IMethodInvoker>
+  nameWithType: IReflactorCache<MethodInfo, IMethodInvoker>
+  fullName: MacacaGames.IReflactorCache<System.Reflection.MethodInfo, MacacaGames.IMethodInvoker>
+  nameWithType.vb: IReflactorCache(Of MethodInfo, IMethodInvoker)
+  fullName.vb: MacacaGames.IReflactorCache(Of System.Reflection.MethodInfo, MacacaGames.IMethodInvoker)
+  name.vb: IReflactorCache(Of MethodInfo, IMethodInvoker)
+  spec.csharp:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IMethodInvoker
+    name: IMethodInvoker
+    nameWithType: IMethodInvoker
+    fullName: MacacaGames.IMethodInvoker
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IMethodInvoker
+    name: IMethodInvoker
+    nameWithType: IMethodInvoker
+    fullName: MacacaGames.IMethodInvoker
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.IReflactorCache`2
+  commentId: T:MacacaGames.IReflactorCache`2
+  name: IReflactorCache<TKey, TValue>
+  nameWithType: IReflactorCache<TKey, TValue>
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>
+  nameWithType.vb: IReflactorCache(Of TKey, TValue)
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue)
+  name.vb: IReflactorCache(Of TKey, TValue)
+  spec.csharp:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.ReflectorCaches.PropertyAccessorCache*
+  commentId: Overload:MacacaGames.ReflectorCaches.PropertyAccessorCache
+  name: PropertyAccessorCache
+  nameWithType: ReflectorCaches.PropertyAccessorCache
+  fullName: MacacaGames.ReflectorCaches.PropertyAccessorCache
+- uid: MacacaGames.IReflactorCache{System.Reflection.PropertyInfo,MacacaGames.IAccessor}
+  commentId: T:MacacaGames.IReflactorCache{System.Reflection.PropertyInfo,MacacaGames.IAccessor}
+  parent: MacacaGames
+  definition: MacacaGames.IReflactorCache`2
+  name: IReflactorCache<PropertyInfo, IAccessor>
+  nameWithType: IReflactorCache<PropertyInfo, IAccessor>
+  fullName: MacacaGames.IReflactorCache<System.Reflection.PropertyInfo, MacacaGames.IAccessor>
+  nameWithType.vb: IReflactorCache(Of PropertyInfo, IAccessor)
+  fullName.vb: MacacaGames.IReflactorCache(Of System.Reflection.PropertyInfo, MacacaGames.IAccessor)
+  name.vb: IReflactorCache(Of PropertyInfo, IAccessor)
+  spec.csharp:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IAccessor
+    name: IAccessor
+    nameWithType: IAccessor
+    fullName: MacacaGames.IAccessor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IAccessor
+    name: IAccessor
+    nameWithType: IAccessor
+    fullName: MacacaGames.IAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.ReflectorCaches.FieldAccessorCache*
+  commentId: Overload:MacacaGames.ReflectorCaches.FieldAccessorCache
+  name: FieldAccessorCache
+  nameWithType: ReflectorCaches.FieldAccessorCache
+  fullName: MacacaGames.ReflectorCaches.FieldAccessorCache
+- uid: MacacaGames.IReflactorCache{System.Reflection.FieldInfo,MacacaGames.IAccessor}
+  commentId: T:MacacaGames.IReflactorCache{System.Reflection.FieldInfo,MacacaGames.IAccessor}
+  parent: MacacaGames
+  definition: MacacaGames.IReflactorCache`2
+  name: IReflactorCache<FieldInfo, IAccessor>
+  nameWithType: IReflactorCache<FieldInfo, IAccessor>
+  fullName: MacacaGames.IReflactorCache<System.Reflection.FieldInfo, MacacaGames.IAccessor>
+  nameWithType.vb: IReflactorCache(Of FieldInfo, IAccessor)
+  fullName.vb: MacacaGames.IReflactorCache(Of System.Reflection.FieldInfo, MacacaGames.IAccessor)
+  name.vb: IReflactorCache(Of FieldInfo, IAccessor)
+  spec.csharp:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    nameWithType: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IAccessor
+    name: IAccessor
+    nameWithType: IAccessor
+    fullName: MacacaGames.IAccessor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    nameWithType: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IAccessor
+    name: IAccessor
+    nameWithType: IAccessor
+    fullName: MacacaGames.IAccessor
+  - name: )
+    nameWithType: )
+    fullName: )

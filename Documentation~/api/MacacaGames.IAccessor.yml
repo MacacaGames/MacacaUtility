@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.IAccessor
+  commentId: T:MacacaGames.IAccessor
+  id: IAccessor
+  parent: MacacaGames
+  children:
+  - MacacaGames.IAccessor.GetValue(System.Object)
+  - MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IAccessor
+  nameWithType: IAccessor
+  fullName: MacacaGames.IAccessor
+  type: Interface
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: IAccessor
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 11
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public interface IAccessor
+    content.vb: Public Interface IAccessor
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: MacacaGames.IAccessor.GetValue(System.Object)
+  commentId: M:MacacaGames.IAccessor.GetValue(System.Object)
+  id: GetValue(System.Object)
+  parent: MacacaGames.IAccessor
+  langs:
+  - csharp
+  - vb
+  name: GetValue(Object)
+  nameWithType: IAccessor.GetValue(Object)
+  fullName: MacacaGames.IAccessor.GetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GetValue
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 13
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: object GetValue(object instance)
+    parameters:
+    - id: instance
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Function GetValue(instance As Object) As Object
+  overload: MacacaGames.IAccessor.GetValue*
+- uid: MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  commentId: M:MacacaGames.IAccessor.SetValue(System.Object,System.Object)
+  id: SetValue(System.Object,System.Object)
+  parent: MacacaGames.IAccessor
+  langs:
+  - csharp
+  - vb
+  name: SetValue(Object, Object)
+  nameWithType: IAccessor.SetValue(Object, Object)
+  fullName: MacacaGames.IAccessor.SetValue(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Accessors.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: SetValue
+    path: ../Scripts/Utilitys/Reflactor/Accessors.cs
+    startLine: 14
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: void SetValue(object instance, object value)
+    parameters:
+    - id: instance
+      type: System.Object
+    - id: value
+      type: System.Object
+    content.vb: Sub SetValue(instance As Object, value As Object)
+  overload: MacacaGames.IAccessor.SetValue*
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.IAccessor.GetValue*
+  commentId: Overload:MacacaGames.IAccessor.GetValue
+  name: GetValue
+  nameWithType: IAccessor.GetValue
+  fullName: MacacaGames.IAccessor.GetValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.IAccessor.SetValue*
+  commentId: Overload:MacacaGames.IAccessor.SetValue
+  name: SetValue
+  nameWithType: IAccessor.SetValue
+  fullName: MacacaGames.IAccessor.SetValue

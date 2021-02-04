@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.PaletteControl.SelectionState
+  commentId: T:MacacaGames.PaletteControl.SelectionState
+  id: PaletteControl.SelectionState
+  parent: MacacaGames
+  children:
+  - MacacaGames.PaletteControl.SelectionState.Disabled
+  - MacacaGames.PaletteControl.SelectionState.Highlighted
+  - MacacaGames.PaletteControl.SelectionState.Normal
+  - MacacaGames.PaletteControl.SelectionState.Pressed
+  - MacacaGames.PaletteControl.SelectionState.Selected
+  langs:
+  - csharp
+  - vb
+  name: PaletteControl.SelectionState
+  nameWithType: PaletteControl.SelectionState
+  fullName: MacacaGames.PaletteControl.SelectionState
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Components/Palette/PaletteControl.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: SelectionState
+    path: ../Scripts/Components/Palette/PaletteControl.cs
+    startLine: 142
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nAn enumeration of selected states of objects\n"
+  example: []
+  syntax:
+    content: protected enum SelectionState
+    content.vb: Protected Enum SelectionState
+  extensionMethods:
+  - MacacaGames.PaletteControl.SelectionState.FlagsHelperExtensions.IsSet``1(MacacaGames.PaletteControl.SelectionState)
+  modifiers.csharp:
+  - protected
+  - enum
+  modifiers.vb:
+  - Protected
+  - Enum
+- uid: MacacaGames.PaletteControl.SelectionState.Normal
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Normal
+  id: Normal
+  parent: MacacaGames.PaletteControl.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: PaletteControl.SelectionState.Normal
+  fullName: MacacaGames.PaletteControl.SelectionState.Normal
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/PaletteControl.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Normal
+    path: ../Scripts/Components/Palette/PaletteControl.cs
+    startLine: 147
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nThe UI object can be selected.\n"
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: MacacaGames.PaletteControl.SelectionState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PaletteControl.SelectionState.Highlighted
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Highlighted
+  id: Highlighted
+  parent: MacacaGames.PaletteControl.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Highlighted
+  nameWithType: PaletteControl.SelectionState.Highlighted
+  fullName: MacacaGames.PaletteControl.SelectionState.Highlighted
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/PaletteControl.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Highlighted
+    path: ../Scripts/Components/Palette/PaletteControl.cs
+    startLine: 152
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nThe UI object is highlighted.\n"
+  example: []
+  syntax:
+    content: Highlighted = 1
+    return:
+      type: MacacaGames.PaletteControl.SelectionState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PaletteControl.SelectionState.Pressed
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Pressed
+  id: Pressed
+  parent: MacacaGames.PaletteControl.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Pressed
+  nameWithType: PaletteControl.SelectionState.Pressed
+  fullName: MacacaGames.PaletteControl.SelectionState.Pressed
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/PaletteControl.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Pressed
+    path: ../Scripts/Components/Palette/PaletteControl.cs
+    startLine: 157
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nThe UI object is pressed.\n"
+  example: []
+  syntax:
+    content: Pressed = 2
+    return:
+      type: MacacaGames.PaletteControl.SelectionState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PaletteControl.SelectionState.Selected
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Selected
+  id: Selected
+  parent: MacacaGames.PaletteControl.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Selected
+  nameWithType: PaletteControl.SelectionState.Selected
+  fullName: MacacaGames.PaletteControl.SelectionState.Selected
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/PaletteControl.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Selected
+    path: ../Scripts/Components/Palette/PaletteControl.cs
+    startLine: 162
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nThe UI object is selected\n"
+  example: []
+  syntax:
+    content: Selected = 3
+    return:
+      type: MacacaGames.PaletteControl.SelectionState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PaletteControl.SelectionState.Disabled
+  commentId: F:MacacaGames.PaletteControl.SelectionState.Disabled
+  id: Disabled
+  parent: MacacaGames.PaletteControl.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: PaletteControl.SelectionState.Disabled
+  fullName: MacacaGames.PaletteControl.SelectionState.Disabled
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/PaletteControl.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Disabled
+    path: ../Scripts/Components/Palette/PaletteControl.cs
+    startLine: 167
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nThe UI object cannot be selected.\n"
+  example: []
+  syntax:
+    content: Disabled = 4
+    return:
+      type: MacacaGames.PaletteControl.SelectionState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.PaletteControl.SelectionState.FlagsHelperExtensions.IsSet``1(MacacaGames.PaletteControl.SelectionState)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<PaletteControl.SelectionState>(PaletteControl.SelectionState)
+  nameWithType: FlagsHelperExtensions.IsSet<PaletteControl.SelectionState>(PaletteControl.SelectionState)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.PaletteControl.SelectionState>(MacacaGames.PaletteControl.SelectionState)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of PaletteControl.SelectionState)(PaletteControl.SelectionState)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.PaletteControl.SelectionState)(MacacaGames.PaletteControl.SelectionState)
+  name.vb: IsSet(Of PaletteControl.SelectionState)(PaletteControl.SelectionState)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<PaletteControl.SelectionState>
+    nameWithType: FlagsHelperExtensions.IsSet<PaletteControl.SelectionState>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.PaletteControl.SelectionState>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.PaletteControl.SelectionState
+    name: PaletteControl.SelectionState
+    nameWithType: PaletteControl.SelectionState
+    fullName: MacacaGames.PaletteControl.SelectionState
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of PaletteControl.SelectionState)
+    nameWithType: FlagsHelperExtensions.IsSet(Of PaletteControl.SelectionState)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.PaletteControl.SelectionState)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.PaletteControl.SelectionState
+    name: PaletteControl.SelectionState
+    nameWithType: PaletteControl.SelectionState
+    fullName: MacacaGames.PaletteControl.SelectionState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.PaletteControl.SelectionState
+  commentId: T:MacacaGames.PaletteControl.SelectionState
+  parent: MacacaGames
+  name: PaletteControl.SelectionState
+  nameWithType: PaletteControl.SelectionState
+  fullName: MacacaGames.PaletteControl.SelectionState

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.EditorTools
+  commentId: N:MacacaGames.EditorTools
+  id: MacacaGames.EditorTools
+  children:
+  - MacacaGames.EditorTools.ImageConverter
+  langs:
+  - csharp
+  - vb
+  name: MacacaGames.EditorTools
+  nameWithType: MacacaGames.EditorTools
+  fullName: MacacaGames.EditorTools
+  type: Namespace
+  assemblies:
+  - Macaca.Utility.Editor
+references:
+- uid: MacacaGames.EditorTools.ImageConverter
+  commentId: T:MacacaGames.EditorTools.ImageConverter
+  name: ImageConverter
+  nameWithType: ImageConverter
+  fullName: MacacaGames.EditorTools.ImageConverter

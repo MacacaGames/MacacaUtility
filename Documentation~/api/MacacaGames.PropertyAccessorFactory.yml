@@ -1,0 +1,632 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.PropertyAccessorFactory
+  commentId: T:MacacaGames.PropertyAccessorFactory
+  id: PropertyAccessorFactory
+  parent: MacacaGames
+  children:
+  - MacacaGames.PropertyAccessorFactory.Create(System.Reflection.PropertyInfo)
+  - MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create(System.Reflection.PropertyInfo)
+  langs:
+  - csharp
+  - vb
+  name: PropertyAccessorFactory
+  nameWithType: PropertyAccessorFactory
+  fullName: MacacaGames.PropertyAccessorFactory
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: PropertyAccessorFactory
+    path: ../Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+    startLine: 31
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: 'public class PropertyAccessorFactory : ICacheFactory<PropertyInfo, IAccessor>'
+    content.vb: >-
+      Public Class PropertyAccessorFactory
+          Implements ICacheFactory(Of PropertyInfo, IAccessor)
+  inheritance:
+  - System.Object
+  implements:
+  - MacacaGames.ICacheFactory{System.Reflection.PropertyInfo,MacacaGames.IAccessor}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.PropertyAccessorFactory.Create(System.Reflection.PropertyInfo)
+  commentId: M:MacacaGames.PropertyAccessorFactory.Create(System.Reflection.PropertyInfo)
+  id: Create(System.Reflection.PropertyInfo)
+  parent: MacacaGames.PropertyAccessorFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(PropertyInfo)
+  nameWithType: PropertyAccessorFactory.Create(PropertyInfo)
+  fullName: MacacaGames.PropertyAccessorFactory.Create(System.Reflection.PropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Create
+    path: ../Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+    startLine: 33
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public IAccessor Create(PropertyInfo key)
+    parameters:
+    - id: key
+      type: System.Reflection.PropertyInfo
+    return:
+      type: MacacaGames.IAccessor
+    content.vb: Public Function Create(key As PropertyInfo) As IAccessor
+  overload: MacacaGames.PropertyAccessorFactory.Create*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create(System.Reflection.PropertyInfo)
+  commentId: M:MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create(System.Reflection.PropertyInfo)
+  id: MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create(System.Reflection.PropertyInfo)
+  isEii: true
+  parent: MacacaGames.PropertyAccessorFactory
+  langs:
+  - csharp
+  - vb
+  name: ICacheFactory<PropertyInfo, IAccessor>.Create(PropertyInfo)
+  nameWithType: PropertyAccessorFactory.ICacheFactory<PropertyInfo, IAccessor>.Create(PropertyInfo)
+  fullName: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo, MacacaGames.IAccessor>.Create(System.Reflection.PropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create
+    path: ../Scripts/Utilitys/Reflactor/Cache/CacheFactory.cs
+    startLine: 40
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: IAccessor ICacheFactory<PropertyInfo, IAccessor>.Create(PropertyInfo key)
+    parameters:
+    - id: key
+      type: System.Reflection.PropertyInfo
+    return:
+      type: MacacaGames.IAccessor
+    content.vb: Function MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create(key As PropertyInfo) As IAccessor Implements ICacheFactory(Of PropertyInfo, IAccessor).Create
+  overload: MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create*
+  implements:
+  - MacacaGames.ICacheFactory{System.Reflection.PropertyInfo,MacacaGames.IAccessor}.Create(System.Reflection.PropertyInfo)
+  nameWithType.vb: PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create(PropertyInfo)
+  fullName.vb: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create(System.Reflection.PropertyInfo)
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create(PropertyInfo)
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: MacacaGames.ICacheFactory{System.Reflection.PropertyInfo,MacacaGames.IAccessor}
+  commentId: T:MacacaGames.ICacheFactory{System.Reflection.PropertyInfo,MacacaGames.IAccessor}
+  parent: MacacaGames
+  definition: MacacaGames.ICacheFactory`2
+  name: ICacheFactory<PropertyInfo, IAccessor>
+  nameWithType: ICacheFactory<PropertyInfo, IAccessor>
+  fullName: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo, MacacaGames.IAccessor>
+  nameWithType.vb: ICacheFactory(Of PropertyInfo, IAccessor)
+  fullName.vb: MacacaGames.ICacheFactory(Of System.Reflection.PropertyInfo, MacacaGames.IAccessor)
+  name.vb: ICacheFactory(Of PropertyInfo, IAccessor)
+  spec.csharp:
+  - uid: MacacaGames.ICacheFactory`2
+    name: ICacheFactory
+    nameWithType: ICacheFactory
+    fullName: MacacaGames.ICacheFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IAccessor
+    name: IAccessor
+    nameWithType: IAccessor
+    fullName: MacacaGames.IAccessor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.ICacheFactory`2
+    name: ICacheFactory
+    nameWithType: ICacheFactory
+    fullName: MacacaGames.ICacheFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MacacaGames.IAccessor
+    name: IAccessor
+    nameWithType: IAccessor
+    fullName: MacacaGames.IAccessor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.ICacheFactory`2
+  commentId: T:MacacaGames.ICacheFactory`2
+  name: ICacheFactory<TKey, TValue>
+  nameWithType: ICacheFactory<TKey, TValue>
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>
+  nameWithType.vb: ICacheFactory(Of TKey, TValue)
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue)
+  name.vb: ICacheFactory(Of TKey, TValue)
+  spec.csharp:
+  - uid: MacacaGames.ICacheFactory`2
+    name: ICacheFactory
+    nameWithType: ICacheFactory
+    fullName: MacacaGames.ICacheFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.ICacheFactory`2
+    name: ICacheFactory
+    nameWithType: ICacheFactory
+    fullName: MacacaGames.ICacheFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.PropertyAccessorFactory.Create*
+  commentId: Overload:MacacaGames.PropertyAccessorFactory.Create
+  name: Create
+  nameWithType: PropertyAccessorFactory.Create
+  fullName: MacacaGames.PropertyAccessorFactory.Create
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: MacacaGames.IAccessor
+  commentId: T:MacacaGames.IAccessor
+  parent: MacacaGames
+  name: IAccessor
+  nameWithType: IAccessor
+  fullName: MacacaGames.IAccessor
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create*
+  commentId: Overload:MacacaGames.PropertyAccessorFactory.MacacaGames#ICacheFactory{System#Reflection#PropertyInfo,MacacaGames#IAccessor}#Create
+  name: ICacheFactory<PropertyInfo, IAccessor>.Create
+  nameWithType: PropertyAccessorFactory.ICacheFactory<PropertyInfo, IAccessor>.Create
+  fullName: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo, MacacaGames.IAccessor>.Create
+  nameWithType.vb: PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create
+  fullName.vb: MacacaGames.PropertyAccessorFactory.MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create
+  name.vb: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo,MacacaGames.IAccessor>.Create
+- uid: MacacaGames.ICacheFactory{System.Reflection.PropertyInfo,MacacaGames.IAccessor}.Create(System.Reflection.PropertyInfo)
+  commentId: M:MacacaGames.ICacheFactory{System.Reflection.PropertyInfo,MacacaGames.IAccessor}.Create(System.Reflection.PropertyInfo)
+  parent: MacacaGames.ICacheFactory{System.Reflection.PropertyInfo,MacacaGames.IAccessor}
+  definition: MacacaGames.ICacheFactory`2.Create(`0)
+  name: Create(PropertyInfo)
+  nameWithType: ICacheFactory<PropertyInfo, IAccessor>.Create(PropertyInfo)
+  fullName: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo, MacacaGames.IAccessor>.Create(System.Reflection.PropertyInfo)
+  nameWithType.vb: ICacheFactory(Of PropertyInfo, IAccessor).Create(PropertyInfo)
+  fullName.vb: MacacaGames.ICacheFactory(Of System.Reflection.PropertyInfo, MacacaGames.IAccessor).Create(System.Reflection.PropertyInfo)
+  spec.csharp:
+  - uid: MacacaGames.ICacheFactory`2.Create(`0)
+    name: Create
+    nameWithType: ICacheFactory<PropertyInfo, IAccessor>.Create
+    fullName: MacacaGames.ICacheFactory<System.Reflection.PropertyInfo, MacacaGames.IAccessor>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: MacacaGames.ICacheFactory`2.Create(`0)
+    name: Create
+    nameWithType: ICacheFactory(Of PropertyInfo, IAccessor).Create
+    fullName: MacacaGames.ICacheFactory(Of System.Reflection.PropertyInfo, MacacaGames.IAccessor).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.ICacheFactory`2.Create(`0)
+  commentId: M:MacacaGames.ICacheFactory`2.Create(`0)
+  name: Create(TKey)
+  nameWithType: ICacheFactory<TKey, TValue>.Create(TKey)
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>.Create(TKey)
+  nameWithType.vb: ICacheFactory(Of TKey, TValue).Create(TKey)
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue).Create(TKey)
+  spec.csharp:
+  - uid: MacacaGames.ICacheFactory`2.Create(`0)
+    name: Create
+    nameWithType: ICacheFactory<TKey, TValue>.Create
+    fullName: MacacaGames.ICacheFactory<TKey, TValue>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: MacacaGames.ICacheFactory`2.Create(`0)
+    name: Create
+    nameWithType: ICacheFactory(Of TKey, TValue).Create
+    fullName: MacacaGames.ICacheFactory(Of TKey, TValue).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )

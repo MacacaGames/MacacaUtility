@@ -1,0 +1,520 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.RectTransformExtensions
+  commentId: T:MacacaGames.RectTransformExtensions
+  id: RectTransformExtensions
+  parent: MacacaGames
+  children:
+  - MacacaGames.RectTransformExtensions.GetAnchorPresets(UnityEngine.RectTransform)
+  - MacacaGames.RectTransformExtensions.SetAnchor(UnityEngine.RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+  - MacacaGames.RectTransformExtensions.SetPivot(UnityEngine.RectTransform,MacacaGames.PivotPresets)
+  langs:
+  - csharp
+  - vb
+  name: RectTransformExtensions
+  nameWithType: RectTransformExtensions
+  fullName: MacacaGames.RectTransformExtensions
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: RectTransformExtensions
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 50
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static class RectTransformExtensions
+    content.vb: Public Module RectTransformExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: MacacaGames.RectTransformExtensions.GetAnchorPresets(UnityEngine.RectTransform)
+  commentId: M:MacacaGames.RectTransformExtensions.GetAnchorPresets(UnityEngine.RectTransform)
+  id: GetAnchorPresets(UnityEngine.RectTransform)
+  isExtensionMethod: true
+  parent: MacacaGames.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAnchorPresets(RectTransform)
+  nameWithType: RectTransformExtensions.GetAnchorPresets(RectTransform)
+  fullName: MacacaGames.RectTransformExtensions.GetAnchorPresets(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GetAnchorPresets
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 52
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static AnchorPresets GetAnchorPresets(this RectTransform source)
+    parameters:
+    - id: source
+      type: UnityEngine.RectTransform
+    return:
+      type: MacacaGames.AnchorPresets
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAnchorPresets(source As RectTransform) As AnchorPresets
+  overload: MacacaGames.RectTransformExtensions.GetAnchorPresets*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.RectTransformExtensions.SetAnchor(UnityEngine.RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+  commentId: M:MacacaGames.RectTransformExtensions.SetAnchor(UnityEngine.RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+  id: SetAnchor(UnityEngine.RectTransform,MacacaGames.AnchorPresets,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: MacacaGames.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetAnchor(RectTransform, AnchorPresets, Int32, Int32)
+  nameWithType: RectTransformExtensions.SetAnchor(RectTransform, AnchorPresets, Int32, Int32)
+  fullName: MacacaGames.RectTransformExtensions.SetAnchor(UnityEngine.RectTransform, MacacaGames.AnchorPresets, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: SetAnchor
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 156
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void SetAnchor(this RectTransform source, AnchorPresets allign, int offsetX = 0, int offsetY = 0)
+    parameters:
+    - id: source
+      type: UnityEngine.RectTransform
+    - id: allign
+      type: MacacaGames.AnchorPresets
+    - id: offsetX
+      type: System.Int32
+    - id: offsetY
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub SetAnchor(source As RectTransform, allign As AnchorPresets, offsetX As Integer = 0, offsetY As Integer = 0)
+  overload: MacacaGames.RectTransformExtensions.SetAnchor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.RectTransformExtensions.SetPivot(UnityEngine.RectTransform,MacacaGames.PivotPresets)
+  commentId: M:MacacaGames.RectTransformExtensions.SetPivot(UnityEngine.RectTransform,MacacaGames.PivotPresets)
+  id: SetPivot(UnityEngine.RectTransform,MacacaGames.PivotPresets)
+  isExtensionMethod: true
+  parent: MacacaGames.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetPivot(RectTransform, PivotPresets)
+  nameWithType: RectTransformExtensions.SetPivot(RectTransform, PivotPresets)
+  fullName: MacacaGames.RectTransformExtensions.SetPivot(UnityEngine.RectTransform, MacacaGames.PivotPresets)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: SetPivot
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 266
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void SetPivot(this RectTransform source, PivotPresets preset)
+    parameters:
+    - id: source
+      type: UnityEngine.RectTransform
+    - id: preset
+      type: MacacaGames.PivotPresets
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub SetPivot(source As RectTransform, preset As PivotPresets)
+  overload: MacacaGames.RectTransformExtensions.SetPivot*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.RectTransformExtensions.GetAnchorPresets*
+  commentId: Overload:MacacaGames.RectTransformExtensions.GetAnchorPresets
+  name: GetAnchorPresets
+  nameWithType: RectTransformExtensions.GetAnchorPresets
+  fullName: MacacaGames.RectTransformExtensions.GetAnchorPresets
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: MacacaGames.AnchorPresets
+  commentId: T:MacacaGames.AnchorPresets
+  parent: MacacaGames
+  name: AnchorPresets
+  nameWithType: AnchorPresets
+  fullName: MacacaGames.AnchorPresets
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MacacaGames.RectTransformExtensions.SetAnchor*
+  commentId: Overload:MacacaGames.RectTransformExtensions.SetAnchor
+  name: SetAnchor
+  nameWithType: RectTransformExtensions.SetAnchor
+  fullName: MacacaGames.RectTransformExtensions.SetAnchor
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MacacaGames.RectTransformExtensions.SetPivot*
+  commentId: Overload:MacacaGames.RectTransformExtensions.SetPivot
+  name: SetPivot
+  nameWithType: RectTransformExtensions.SetPivot
+  fullName: MacacaGames.RectTransformExtensions.SetPivot
+- uid: MacacaGames.PivotPresets
+  commentId: T:MacacaGames.PivotPresets
+  parent: MacacaGames
+  name: PivotPresets
+  nameWithType: PivotPresets
+  fullName: MacacaGames.PivotPresets

@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.IReflactorCache`2
+  commentId: T:MacacaGames.IReflactorCache`2
+  id: IReflactorCache`2
+  parent: MacacaGames
+  children:
+  - MacacaGames.IReflactorCache`2.Get(`0)
+  langs:
+  - csharp
+  - vb
+  name: IReflactorCache<TKey, TValue>
+  nameWithType: IReflactorCache<TKey, TValue>
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>
+  type: Interface
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/IReflactorCache.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: IReflactorCache
+    path: ../Scripts/Utilitys/Reflactor/Cache/IReflactorCache.cs
+    startLine: 8
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public interface IReflactorCache<TKey, TValue>
+    typeParameters:
+    - id: TKey
+    - id: TValue
+    content.vb: Public Interface IReflactorCache(Of TKey, TValue)
+  nameWithType.vb: IReflactorCache(Of TKey, TValue)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue)
+  name.vb: IReflactorCache(Of TKey, TValue)
+- uid: MacacaGames.IReflactorCache`2.Get(`0)
+  commentId: M:MacacaGames.IReflactorCache`2.Get(`0)
+  id: Get(`0)
+  parent: MacacaGames.IReflactorCache`2
+  langs:
+  - csharp
+  - vb
+  name: Get(TKey)
+  nameWithType: IReflactorCache<TKey, TValue>.Get(TKey)
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>.Get(TKey)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/Cache/IReflactorCache.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Get
+    path: ../Scripts/Utilitys/Reflactor/Cache/IReflactorCache.cs
+    startLine: 10
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TValue Get(TKey key)
+    parameters:
+    - id: key
+      type: '{TKey}'
+    return:
+      type: '{TValue}'
+    content.vb: Function Get(key As TKey) As TValue
+  overload: MacacaGames.IReflactorCache`2.Get*
+  nameWithType.vb: IReflactorCache(Of TKey, TValue).Get(TKey)
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue).Get(TKey)
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.IReflactorCache`2.Get*
+  commentId: Overload:MacacaGames.IReflactorCache`2.Get
+  name: Get
+  nameWithType: IReflactorCache<TKey, TValue>.Get
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>.Get
+  nameWithType.vb: IReflactorCache(Of TKey, TValue).Get
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue).Get
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue

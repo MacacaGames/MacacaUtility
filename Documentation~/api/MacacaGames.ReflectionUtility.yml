@@ -1,0 +1,1038 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.ReflectionUtility
+  commentId: T:MacacaGames.ReflectionUtility
+  id: ReflectionUtility
+  parent: MacacaGames
+  children:
+  - MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.FieldInfo,System.Object)
+  - MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.PropertyInfo,System.Object,System.Boolean)
+  - MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo,System.Object,System.Object[])
+  - MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.FieldInfo,System.Object,System.Object)
+  - MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.PropertyInfo,System.Object,System.Object)
+  - MacacaGames.ReflectionUtility.FilterWithAttribute``1(System.Collections.Generic.IEnumerable{``0},System.Type)
+  - MacacaGames.ReflectionUtility.GetMemberInfoType(System.Reflection.MemberInfo)
+  - MacacaGames.ReflectionUtility.GetValue``1(System.Reflection.MemberInfo,System.Object)
+  - MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object)
+  - MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object,``0@)
+  langs:
+  - csharp
+  - vb
+  name: ReflectionUtility
+  nameWithType: ReflectionUtility
+  fullName: MacacaGames.ReflectionUtility
+  type: Class
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ReflectionUtility
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 6
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static class ReflectionUtility
+    content.vb: Public Module ReflectionUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: MacacaGames.ReflectionUtility.GetValue``1(System.Reflection.MemberInfo,System.Object)
+  commentId: M:MacacaGames.ReflectionUtility.GetValue``1(System.Reflection.MemberInfo,System.Object)
+  id: GetValue``1(System.Reflection.MemberInfo,System.Object)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: GetValue<T>(MemberInfo, Object)
+  nameWithType: ReflectionUtility.GetValue<T>(MemberInfo, Object)
+  fullName: MacacaGames.ReflectionUtility.GetValue<T>(System.Reflection.MemberInfo, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GetValue
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 11
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: 取得MemberInfo的值。
+  example: []
+  syntax:
+    content: >-
+      public static T GetValue<T>(this MemberInfo memberInfo, object forObject)
+          where T : class
+    parameters:
+    - id: memberInfo
+      type: System.Reflection.MemberInfo
+    - id: forObject
+      type: System.Object
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetValue(Of T As Class)(memberInfo As MemberInfo, forObject As Object) As T
+  overload: MacacaGames.ReflectionUtility.GetValue*
+  nameWithType.vb: ReflectionUtility.GetValue(Of T)(MemberInfo, Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.ReflectionUtility.GetValue(Of T)(System.Reflection.MemberInfo, System.Object)
+  name.vb: GetValue(Of T)(MemberInfo, Object)
+- uid: MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object,``0@)
+  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object,``0@)
+  id: TryGetValue``1(System.Reflection.MemberInfo,System.Object,``0@)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue<T>(MemberInfo, Object, out T)
+  nameWithType: ReflectionUtility.TryGetValue<T>(MemberInfo, Object, out T)
+  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(System.Reflection.MemberInfo, System.Object, out T)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TryGetValue
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 25
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: 嘗試取得MemberInfo的值，並回傳取得成功與否。
+  example: []
+  syntax:
+    content: >-
+      public static bool TryGetValue<T>(this MemberInfo memberInfo, object forObject, out T value)
+          where T : class
+    parameters:
+    - id: memberInfo
+      type: System.Reflection.MemberInfo
+    - id: forObject
+      type: System.Object
+    - id: value
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetValue(Of T As Class)(memberInfo As MemberInfo, forObject As Object, ByRef value As T) As Boolean
+  overload: MacacaGames.ReflectionUtility.TryGetValue*
+  nameWithType.vb: ReflectionUtility.TryGetValue(Of T)(MemberInfo, Object, ByRef T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(System.Reflection.MemberInfo, System.Object, ByRef T)
+  name.vb: TryGetValue(Of T)(MemberInfo, Object, ByRef T)
+- uid: MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object)
+  commentId: M:MacacaGames.ReflectionUtility.TryGetValue``1(System.Reflection.MemberInfo,System.Object)
+  id: TryGetValue``1(System.Reflection.MemberInfo,System.Object)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue<T>(MemberInfo, Object)
+  nameWithType: ReflectionUtility.TryGetValue<T>(MemberInfo, Object)
+  fullName: MacacaGames.ReflectionUtility.TryGetValue<T>(System.Reflection.MemberInfo, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TryGetValue
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 32
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: 嘗試取得MemberInfo的值，並回傳取得資訊。
+  example: []
+  syntax:
+    content: >-
+      public static ReflectionUtility.GetValueResult TryGetValue<T>(this MemberInfo memberInfo, object forObject)
+          where T : class
+    parameters:
+    - id: memberInfo
+      type: System.Reflection.MemberInfo
+    - id: forObject
+      type: System.Object
+    typeParameters:
+    - id: T
+    return:
+      type: MacacaGames.ReflectionUtility.GetValueResult
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetValue(Of T As Class)(memberInfo As MemberInfo, forObject As Object) As ReflectionUtility.GetValueResult
+  overload: MacacaGames.ReflectionUtility.TryGetValue*
+  nameWithType.vb: ReflectionUtility.TryGetValue(Of T)(MemberInfo, Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.ReflectionUtility.TryGetValue(Of T)(System.Reflection.MemberInfo, System.Object)
+  name.vb: TryGetValue(Of T)(MemberInfo, Object)
+- uid: MacacaGames.ReflectionUtility.FilterWithAttribute``1(System.Collections.Generic.IEnumerable{``0},System.Type)
+  commentId: M:MacacaGames.ReflectionUtility.FilterWithAttribute``1(System.Collections.Generic.IEnumerable{``0},System.Type)
+  id: FilterWithAttribute``1(System.Collections.Generic.IEnumerable{``0},System.Type)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: FilterWithAttribute<T>(IEnumerable<T>, Type)
+  nameWithType: ReflectionUtility.FilterWithAttribute<T>(IEnumerable<T>, Type)
+  fullName: MacacaGames.ReflectionUtility.FilterWithAttribute<T>(System.Collections.Generic.IEnumerable<T>, System.Type)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FilterWithAttribute
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 64
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: 從MemberInfo集合中，篩選出有特定Attribute的項目。
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<T> FilterWithAttribute<T>(this IEnumerable<T> target, Type attribute)
+          where T : MemberInfo
+    parameters:
+    - id: target
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: attribute
+      type: System.Type
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FilterWithAttribute(Of T As MemberInfo)(target As IEnumerable(Of T), attribute As Type) As IEnumerable(Of T)
+  overload: MacacaGames.ReflectionUtility.FilterWithAttribute*
+  nameWithType.vb: ReflectionUtility.FilterWithAttribute(Of T)(IEnumerable(Of T), Type)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.ReflectionUtility.FilterWithAttribute(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Type)
+  name.vb: FilterWithAttribute(Of T)(IEnumerable(Of T), Type)
+- uid: MacacaGames.ReflectionUtility.GetMemberInfoType(System.Reflection.MemberInfo)
+  commentId: M:MacacaGames.ReflectionUtility.GetMemberInfoType(System.Reflection.MemberInfo)
+  id: GetMemberInfoType(System.Reflection.MemberInfo)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: GetMemberInfoType(MemberInfo)
+  nameWithType: ReflectionUtility.GetMemberInfoType(MemberInfo)
+  fullName: MacacaGames.ReflectionUtility.GetMemberInfoType(System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GetMemberInfoType
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 83
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: 取得MemberInfo的System.Type。
+  example: []
+  syntax:
+    content: public static Type GetMemberInfoType(this MemberInfo memberInfo)
+    parameters:
+    - id: memberInfo
+      type: System.Reflection.MemberInfo
+    return:
+      type: System.Type
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetMemberInfoType(memberInfo As MemberInfo) As Type
+  overload: MacacaGames.ReflectionUtility.GetMemberInfoType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo,System.Object,System.Object[])
+  commentId: M:MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo,System.Object,System.Object[])
+  id: FastInvoke(System.Reflection.MethodInfo,System.Object,System.Object[])
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: FastInvoke(MethodInfo, Object, Object[])
+  nameWithType: ReflectionUtility.FastInvoke(MethodInfo, Object, Object[])
+  fullName: MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo, System.Object, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FastInvoke
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 97
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static object FastInvoke(this MethodInfo methodInfo, object instance, params object[] parameters)
+    parameters:
+    - id: methodInfo
+      type: System.Reflection.MethodInfo
+    - id: instance
+      type: System.Object
+    - id: parameters
+      type: System.Object[]
+    return:
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FastInvoke(methodInfo As MethodInfo, instance As Object, ParamArray parameters As Object()) As Object
+  overload: MacacaGames.ReflectionUtility.FastInvoke*
+  nameWithType.vb: ReflectionUtility.FastInvoke(MethodInfo, Object, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MacacaGames.ReflectionUtility.FastInvoke(System.Reflection.MethodInfo, System.Object, System.Object())
+  name.vb: FastInvoke(MethodInfo, Object, Object())
+- uid: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.PropertyInfo,System.Object,System.Object)
+  commentId: M:MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.PropertyInfo,System.Object,System.Object)
+  id: FastSetValue(System.Reflection.PropertyInfo,System.Object,System.Object)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: FastSetValue(PropertyInfo, Object, Object)
+  nameWithType: ReflectionUtility.FastSetValue(PropertyInfo, Object, Object)
+  fullName: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.PropertyInfo, System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FastSetValue
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 102
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void FastSetValue(this PropertyInfo propertyInfo, object instance, object value)
+    parameters:
+    - id: propertyInfo
+      type: System.Reflection.PropertyInfo
+    - id: instance
+      type: System.Object
+    - id: value
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub FastSetValue(propertyInfo As PropertyInfo, instance As Object, value As Object)
+  overload: MacacaGames.ReflectionUtility.FastSetValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.PropertyInfo,System.Object,System.Boolean)
+  commentId: M:MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.PropertyInfo,System.Object,System.Boolean)
+  id: FastGetValue(System.Reflection.PropertyInfo,System.Object,System.Boolean)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: FastGetValue(PropertyInfo, Object, Boolean)
+  nameWithType: ReflectionUtility.FastGetValue(PropertyInfo, Object, Boolean)
+  fullName: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.PropertyInfo, System.Object, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FastGetValue
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 107
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static object FastGetValue(this PropertyInfo propertyInfo, object instance, bool cache = false)
+    parameters:
+    - id: propertyInfo
+      type: System.Reflection.PropertyInfo
+    - id: instance
+      type: System.Object
+    - id: cache
+      type: System.Boolean
+    return:
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FastGetValue(propertyInfo As PropertyInfo, instance As Object, cache As Boolean = False) As Object
+  overload: MacacaGames.ReflectionUtility.FastGetValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.FieldInfo,System.Object)
+  commentId: M:MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.FieldInfo,System.Object)
+  id: FastGetValue(System.Reflection.FieldInfo,System.Object)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: FastGetValue(FieldInfo, Object)
+  nameWithType: ReflectionUtility.FastGetValue(FieldInfo, Object)
+  fullName: MacacaGames.ReflectionUtility.FastGetValue(System.Reflection.FieldInfo, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FastGetValue
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 112
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static object FastGetValue(this FieldInfo fieldInfo, object instance)
+    parameters:
+    - id: fieldInfo
+      type: System.Reflection.FieldInfo
+    - id: instance
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FastGetValue(fieldInfo As FieldInfo, instance As Object) As Object
+  overload: MacacaGames.ReflectionUtility.FastGetValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.FieldInfo,System.Object,System.Object)
+  commentId: M:MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.FieldInfo,System.Object,System.Object)
+  id: FastSetValue(System.Reflection.FieldInfo,System.Object,System.Object)
+  isExtensionMethod: true
+  parent: MacacaGames.ReflectionUtility
+  langs:
+  - csharp
+  - vb
+  name: FastSetValue(FieldInfo, Object, Object)
+  nameWithType: ReflectionUtility.FastSetValue(FieldInfo, Object, Object)
+  fullName: MacacaGames.ReflectionUtility.FastSetValue(System.Reflection.FieldInfo, System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: FastSetValue
+    path: ../Scripts/Utilitys/Reflactor/ReflectionUtility.cs
+    startLine: 117
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public static void FastSetValue(this FieldInfo fieldInfo, object instance, object value)
+    parameters:
+    - id: fieldInfo
+      type: System.Reflection.FieldInfo
+    - id: instance
+      type: System.Object
+    - id: value
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub FastSetValue(fieldInfo As FieldInfo, instance As Object, value As Object)
+  overload: MacacaGames.ReflectionUtility.FastSetValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MacacaGames.ReflectionUtility.GetValue*
+  commentId: Overload:MacacaGames.ReflectionUtility.GetValue
+  name: GetValue
+  nameWithType: ReflectionUtility.GetValue
+  fullName: MacacaGames.ReflectionUtility.GetValue
+- uid: System.Reflection.MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MemberInfo
+  nameWithType: MemberInfo
+  fullName: System.Reflection.MemberInfo
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MacacaGames.ReflectionUtility.TryGetValue*
+  commentId: Overload:MacacaGames.ReflectionUtility.TryGetValue
+  name: TryGetValue
+  nameWithType: ReflectionUtility.TryGetValue
+  fullName: MacacaGames.ReflectionUtility.TryGetValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: MacacaGames.ReflectionUtility.GetValueResult
+  commentId: T:MacacaGames.ReflectionUtility.GetValueResult
+  parent: MacacaGames
+  name: ReflectionUtility.GetValueResult
+  nameWithType: ReflectionUtility.GetValueResult
+  fullName: MacacaGames.ReflectionUtility.GetValueResult
+- uid: MacacaGames.ReflectionUtility.FilterWithAttribute*
+  commentId: Overload:MacacaGames.ReflectionUtility.FilterWithAttribute
+  name: FilterWithAttribute
+  nameWithType: ReflectionUtility.FilterWithAttribute
+  fullName: MacacaGames.ReflectionUtility.FilterWithAttribute
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: MacacaGames.ReflectionUtility.GetMemberInfoType*
+  commentId: Overload:MacacaGames.ReflectionUtility.GetMemberInfoType
+  name: GetMemberInfoType
+  nameWithType: ReflectionUtility.GetMemberInfoType
+  fullName: MacacaGames.ReflectionUtility.GetMemberInfoType
+- uid: MacacaGames.ReflectionUtility.FastInvoke*
+  commentId: Overload:MacacaGames.ReflectionUtility.FastInvoke
+  name: FastInvoke
+  nameWithType: ReflectionUtility.FastInvoke
+  fullName: MacacaGames.ReflectionUtility.FastInvoke
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: MacacaGames.ReflectionUtility.FastSetValue*
+  commentId: Overload:MacacaGames.ReflectionUtility.FastSetValue
+  name: FastSetValue
+  nameWithType: ReflectionUtility.FastSetValue
+  fullName: MacacaGames.ReflectionUtility.FastSetValue
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: MacacaGames.ReflectionUtility.FastGetValue*
+  commentId: Overload:MacacaGames.ReflectionUtility.FastGetValue
+  name: FastGetValue
+  nameWithType: ReflectionUtility.FastGetValue
+  fullName: MacacaGames.ReflectionUtility.FastGetValue
+- uid: System.Reflection.FieldInfo
+  commentId: T:System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  nameWithType: FieldInfo
+  fullName: System.Reflection.FieldInfo

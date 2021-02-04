@@ -1,0 +1,735 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.AnchorPresets
+  commentId: T:MacacaGames.AnchorPresets
+  id: AnchorPresets
+  parent: MacacaGames
+  children:
+  - MacacaGames.AnchorPresets.BottomLeft
+  - MacacaGames.AnchorPresets.BottomRight
+  - MacacaGames.AnchorPresets.BottomStretch
+  - MacacaGames.AnchorPresets.BottonCenter
+  - MacacaGames.AnchorPresets.HorStretchBottom
+  - MacacaGames.AnchorPresets.HorStretchMiddle
+  - MacacaGames.AnchorPresets.HorStretchTop
+  - MacacaGames.AnchorPresets.MiddleCenter
+  - MacacaGames.AnchorPresets.MiddleLeft
+  - MacacaGames.AnchorPresets.MiddleRight
+  - MacacaGames.AnchorPresets.StretchAll
+  - MacacaGames.AnchorPresets.TopCenter
+  - MacacaGames.AnchorPresets.TopLeft
+  - MacacaGames.AnchorPresets.TopRight
+  - MacacaGames.AnchorPresets.UnKnown
+  - MacacaGames.AnchorPresets.VertStretchCenter
+  - MacacaGames.AnchorPresets.VertStretchLeft
+  - MacacaGames.AnchorPresets.VertStretchRight
+  langs:
+  - csharp
+  - vb
+  name: AnchorPresets
+  nameWithType: AnchorPresets
+  fullName: MacacaGames.AnchorPresets
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: AnchorPresets
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 5
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public enum AnchorPresets
+    content.vb: Public Enum AnchorPresets
+  extensionMethods:
+  - MacacaGames.AnchorPresets.FlagsHelperExtensions.IsSet``1(MacacaGames.AnchorPresets)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MacacaGames.AnchorPresets.TopLeft
+  commentId: F:MacacaGames.AnchorPresets.TopLeft
+  id: TopLeft
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: TopLeft
+  nameWithType: AnchorPresets.TopLeft
+  fullName: MacacaGames.AnchorPresets.TopLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TopLeft
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 7
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TopLeft = 0
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.TopCenter
+  commentId: F:MacacaGames.AnchorPresets.TopCenter
+  id: TopCenter
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: TopCenter
+  nameWithType: AnchorPresets.TopCenter
+  fullName: MacacaGames.AnchorPresets.TopCenter
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TopCenter
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 8
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TopCenter = 1
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.TopRight
+  commentId: F:MacacaGames.AnchorPresets.TopRight
+  id: TopRight
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: TopRight
+  nameWithType: AnchorPresets.TopRight
+  fullName: MacacaGames.AnchorPresets.TopRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TopRight
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 9
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TopRight = 2
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.MiddleLeft
+  commentId: F:MacacaGames.AnchorPresets.MiddleLeft
+  id: MiddleLeft
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: MiddleLeft
+  nameWithType: AnchorPresets.MiddleLeft
+  fullName: MacacaGames.AnchorPresets.MiddleLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MiddleLeft
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 11
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: MiddleLeft = 3
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.MiddleCenter
+  commentId: F:MacacaGames.AnchorPresets.MiddleCenter
+  id: MiddleCenter
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: MiddleCenter
+  nameWithType: AnchorPresets.MiddleCenter
+  fullName: MacacaGames.AnchorPresets.MiddleCenter
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MiddleCenter
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 12
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: MiddleCenter = 4
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.MiddleRight
+  commentId: F:MacacaGames.AnchorPresets.MiddleRight
+  id: MiddleRight
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: MiddleRight
+  nameWithType: AnchorPresets.MiddleRight
+  fullName: MacacaGames.AnchorPresets.MiddleRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MiddleRight
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 13
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: MiddleRight = 5
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.BottomLeft
+  commentId: F:MacacaGames.AnchorPresets.BottomLeft
+  id: BottomLeft
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: BottomLeft
+  nameWithType: AnchorPresets.BottomLeft
+  fullName: MacacaGames.AnchorPresets.BottomLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BottomLeft
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 15
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: BottomLeft = 6
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.BottonCenter
+  commentId: F:MacacaGames.AnchorPresets.BottonCenter
+  id: BottonCenter
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: BottonCenter
+  nameWithType: AnchorPresets.BottonCenter
+  fullName: MacacaGames.AnchorPresets.BottonCenter
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BottonCenter
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 16
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: BottonCenter = 7
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.BottomRight
+  commentId: F:MacacaGames.AnchorPresets.BottomRight
+  id: BottomRight
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: BottomRight
+  nameWithType: AnchorPresets.BottomRight
+  fullName: MacacaGames.AnchorPresets.BottomRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BottomRight
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 17
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: BottomRight = 8
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.BottomStretch
+  commentId: F:MacacaGames.AnchorPresets.BottomStretch
+  id: BottomStretch
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: BottomStretch
+  nameWithType: AnchorPresets.BottomStretch
+  fullName: MacacaGames.AnchorPresets.BottomStretch
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BottomStretch
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 18
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: BottomStretch = 9
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.VertStretchLeft
+  commentId: F:MacacaGames.AnchorPresets.VertStretchLeft
+  id: VertStretchLeft
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: VertStretchLeft
+  nameWithType: AnchorPresets.VertStretchLeft
+  fullName: MacacaGames.AnchorPresets.VertStretchLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: VertStretchLeft
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 20
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: VertStretchLeft = 10
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.VertStretchRight
+  commentId: F:MacacaGames.AnchorPresets.VertStretchRight
+  id: VertStretchRight
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: VertStretchRight
+  nameWithType: AnchorPresets.VertStretchRight
+  fullName: MacacaGames.AnchorPresets.VertStretchRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: VertStretchRight
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 21
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: VertStretchRight = 11
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.VertStretchCenter
+  commentId: F:MacacaGames.AnchorPresets.VertStretchCenter
+  id: VertStretchCenter
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: VertStretchCenter
+  nameWithType: AnchorPresets.VertStretchCenter
+  fullName: MacacaGames.AnchorPresets.VertStretchCenter
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: VertStretchCenter
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 22
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: VertStretchCenter = 12
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.HorStretchTop
+  commentId: F:MacacaGames.AnchorPresets.HorStretchTop
+  id: HorStretchTop
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: HorStretchTop
+  nameWithType: AnchorPresets.HorStretchTop
+  fullName: MacacaGames.AnchorPresets.HorStretchTop
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: HorStretchTop
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 24
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: HorStretchTop = 13
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.HorStretchMiddle
+  commentId: F:MacacaGames.AnchorPresets.HorStretchMiddle
+  id: HorStretchMiddle
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: HorStretchMiddle
+  nameWithType: AnchorPresets.HorStretchMiddle
+  fullName: MacacaGames.AnchorPresets.HorStretchMiddle
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: HorStretchMiddle
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 25
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: HorStretchMiddle = 14
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.HorStretchBottom
+  commentId: F:MacacaGames.AnchorPresets.HorStretchBottom
+  id: HorStretchBottom
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: HorStretchBottom
+  nameWithType: AnchorPresets.HorStretchBottom
+  fullName: MacacaGames.AnchorPresets.HorStretchBottom
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: HorStretchBottom
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 26
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: HorStretchBottom = 15
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.StretchAll
+  commentId: F:MacacaGames.AnchorPresets.StretchAll
+  id: StretchAll
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: StretchAll
+  nameWithType: AnchorPresets.StretchAll
+  fullName: MacacaGames.AnchorPresets.StretchAll
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: StretchAll
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 28
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: StretchAll = 16
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.AnchorPresets.UnKnown
+  commentId: F:MacacaGames.AnchorPresets.UnKnown
+  id: UnKnown
+  parent: MacacaGames.AnchorPresets
+  langs:
+  - csharp
+  - vb
+  name: UnKnown
+  nameWithType: AnchorPresets.UnKnown
+  fullName: MacacaGames.AnchorPresets.UnKnown
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: UnKnown
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 30
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: UnKnown = 17
+    return:
+      type: MacacaGames.AnchorPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.AnchorPresets.FlagsHelperExtensions.IsSet``1(MacacaGames.AnchorPresets)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<AnchorPresets>(AnchorPresets)
+  nameWithType: FlagsHelperExtensions.IsSet<AnchorPresets>(AnchorPresets)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.AnchorPresets>(MacacaGames.AnchorPresets)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of AnchorPresets)(AnchorPresets)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.AnchorPresets)(MacacaGames.AnchorPresets)
+  name.vb: IsSet(Of AnchorPresets)(AnchorPresets)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<AnchorPresets>
+    nameWithType: FlagsHelperExtensions.IsSet<AnchorPresets>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.AnchorPresets>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.AnchorPresets
+    name: AnchorPresets
+    nameWithType: AnchorPresets
+    fullName: MacacaGames.AnchorPresets
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of AnchorPresets)
+    nameWithType: FlagsHelperExtensions.IsSet(Of AnchorPresets)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.AnchorPresets)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.AnchorPresets
+    name: AnchorPresets
+    nameWithType: AnchorPresets
+    fullName: MacacaGames.AnchorPresets
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.AnchorPresets
+  commentId: T:MacacaGames.AnchorPresets
+  parent: MacacaGames
+  name: AnchorPresets
+  nameWithType: AnchorPresets
+  fullName: MacacaGames.AnchorPresets

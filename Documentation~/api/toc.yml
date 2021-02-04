@@ -1,0 +1,114 @@
+### YamlMime:TableOfContent
+- uid: MacacaGames
+  name: MacacaGames
+  items:
+  - uid: MacacaGames.AnchorPresets
+    name: AnchorPresets
+  - uid: MacacaGames.CacheFactories
+    name: CacheFactories
+  - uid: MacacaGames.CMEditorLayout
+    name: CMEditorLayout
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData<T>
+    name.vb: CMEditorLayout.GroupedPopupData(Of T)
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupWindow
+    name: CMEditorLayout.GroupedPopupWindow
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+    name: CMEditorLayout.GroupedPopupWindow<T>
+    name.vb: CMEditorLayout.GroupedPopupWindow(Of T)
+  - uid: MacacaGames.CMEditorUtility
+    name: CMEditorUtility
+  - uid: MacacaGames.CustomElement
+    name: CustomElement
+  - uid: MacacaGames.FieldAccessor
+    name: FieldAccessor
+  - uid: MacacaGames.FieldAccessorFactory
+    name: FieldAccessorFactory
+  - uid: MacacaGames.FixedSizeStack`1
+    name: FixedSizeStack<T>
+    name.vb: FixedSizeStack(Of T)
+  - uid: MacacaGames.FloatExtension
+    name: FloatExtension
+  - uid: MacacaGames.GlobalTimer
+    name: GlobalTimer
+  - uid: MacacaGames.GlobalTimer.Timer
+    name: GlobalTimer.Timer
+  - uid: MacacaGames.GlobalTimerSetting
+    name: GlobalTimerSetting
+  - uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+    name: GlobalTimerSetting.RefreshTimeMethod
+  - uid: MacacaGames.Gradient
+    name: Gradient
+  - uid: MacacaGames.GradientDir
+    name: GradientDir
+  - uid: MacacaGames.GradientMode
+    name: GradientMode
+  - uid: MacacaGames.IAccessor
+    name: IAccessor
+  - uid: MacacaGames.ICacheFactory`2
+    name: ICacheFactory<TKey, TValue>
+    name.vb: ICacheFactory(Of TKey, TValue)
+  - uid: MacacaGames.IMethodInvoker
+    name: IMethodInvoker
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache<TKey, TValue>
+    name.vb: IReflactorCache(Of TKey, TValue)
+  - uid: MacacaGames.JuicyText
+    name: JuicyText
+  - uid: MacacaGames.JuicyText.ScaleTarget
+    name: JuicyText.ScaleTarget
+  - uid: MacacaGames.MethodInvoker
+    name: MethodInvoker
+  - uid: MacacaGames.MethodInvokerFactory
+    name: MethodInvokerFactory
+  - uid: MacacaGames.ObjectPool
+    name: ObjectPool
+  - uid: MacacaGames.PaletteControl
+    name: PaletteControl
+  - uid: MacacaGames.PaletteControl.SelectionState
+    name: PaletteControl.SelectionState
+  - uid: MacacaGames.PivotPresets
+    name: PivotPresets
+  - uid: MacacaGames.PropertyAccessor
+    name: PropertyAccessor
+  - uid: MacacaGames.PropertyAccessorFactory
+    name: PropertyAccessorFactory
+  - uid: MacacaGames.RandomUtility
+    name: RandomUtility
+  - uid: MacacaGames.RectTransformExtensions
+    name: RectTransformExtensions
+  - uid: MacacaGames.ReflectionUtility
+    name: ReflectionUtility
+  - uid: MacacaGames.ReflectionUtility.GetValueResult
+    name: ReflectionUtility.GetValueResult
+  - uid: MacacaGames.ReflectorCache`2
+    name: ReflectorCache<TKey, TValue>
+    name.vb: ReflectorCache(Of TKey, TValue)
+  - uid: MacacaGames.ReflectorCaches
+    name: ReflectorCaches
+  - uid: MacacaGames.SelectablePalette
+    name: SelectablePalette
+  - uid: MacacaGames.SelectablePalette.PaletteSet
+    name: SelectablePalette.PaletteSet
+  - uid: MacacaGames.SerializedPropertyExtensions
+    name: SerializedPropertyExtensions
+  - uid: MacacaGames.Singleton`1
+    name: Singleton<T>
+    name.vb: Singleton(Of T)
+  - uid: MacacaGames.TextureAndScreenUtility
+    name: TextureAndScreenUtility
+  - uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+    name: TextureAndScreenUtility.WaterMarkPosition
+  - uid: MacacaGames.TextureScale
+    name: TextureScale
+  - uid: MacacaGames.TextureScale.ThreadData
+    name: TextureScale.ThreadData
+  - uid: MacacaGames.Utility
+    name: Utility
+- uid: MacacaGames.EditorTools
+  name: MacacaGames.EditorTools
+  items:
+  - uid: MacacaGames.EditorTools.ImageConverter
+    name: ImageConverter

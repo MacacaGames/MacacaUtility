@@ -1,0 +1,438 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.PivotPresets
+  commentId: T:MacacaGames.PivotPresets
+  id: PivotPresets
+  parent: MacacaGames
+  children:
+  - MacacaGames.PivotPresets.BottomCenter
+  - MacacaGames.PivotPresets.BottomLeft
+  - MacacaGames.PivotPresets.BottomRight
+  - MacacaGames.PivotPresets.MiddleCenter
+  - MacacaGames.PivotPresets.MiddleLeft
+  - MacacaGames.PivotPresets.MiddleRight
+  - MacacaGames.PivotPresets.TopCenter
+  - MacacaGames.PivotPresets.TopLeft
+  - MacacaGames.PivotPresets.TopRight
+  langs:
+  - csharp
+  - vb
+  name: PivotPresets
+  nameWithType: PivotPresets
+  fullName: MacacaGames.PivotPresets
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: PivotPresets
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 35
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public enum PivotPresets
+    content.vb: Public Enum PivotPresets
+  extensionMethods:
+  - MacacaGames.PivotPresets.FlagsHelperExtensions.IsSet``1(MacacaGames.PivotPresets)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MacacaGames.PivotPresets.TopLeft
+  commentId: F:MacacaGames.PivotPresets.TopLeft
+  id: TopLeft
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: TopLeft
+  nameWithType: PivotPresets.TopLeft
+  fullName: MacacaGames.PivotPresets.TopLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TopLeft
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 37
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TopLeft = 0
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.TopCenter
+  commentId: F:MacacaGames.PivotPresets.TopCenter
+  id: TopCenter
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: TopCenter
+  nameWithType: PivotPresets.TopCenter
+  fullName: MacacaGames.PivotPresets.TopCenter
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TopCenter
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 38
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TopCenter = 1
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.TopRight
+  commentId: F:MacacaGames.PivotPresets.TopRight
+  id: TopRight
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: TopRight
+  nameWithType: PivotPresets.TopRight
+  fullName: MacacaGames.PivotPresets.TopRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: TopRight
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 39
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: TopRight = 2
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.MiddleLeft
+  commentId: F:MacacaGames.PivotPresets.MiddleLeft
+  id: MiddleLeft
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: MiddleLeft
+  nameWithType: PivotPresets.MiddleLeft
+  fullName: MacacaGames.PivotPresets.MiddleLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MiddleLeft
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 41
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: MiddleLeft = 3
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.MiddleCenter
+  commentId: F:MacacaGames.PivotPresets.MiddleCenter
+  id: MiddleCenter
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: MiddleCenter
+  nameWithType: PivotPresets.MiddleCenter
+  fullName: MacacaGames.PivotPresets.MiddleCenter
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MiddleCenter
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 42
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: MiddleCenter = 4
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.MiddleRight
+  commentId: F:MacacaGames.PivotPresets.MiddleRight
+  id: MiddleRight
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: MiddleRight
+  nameWithType: PivotPresets.MiddleRight
+  fullName: MacacaGames.PivotPresets.MiddleRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: MiddleRight
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 43
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: MiddleRight = 5
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.BottomLeft
+  commentId: F:MacacaGames.PivotPresets.BottomLeft
+  id: BottomLeft
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: BottomLeft
+  nameWithType: PivotPresets.BottomLeft
+  fullName: MacacaGames.PivotPresets.BottomLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BottomLeft
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 45
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: BottomLeft = 6
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.BottomCenter
+  commentId: F:MacacaGames.PivotPresets.BottomCenter
+  id: BottomCenter
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: BottomCenter
+  nameWithType: PivotPresets.BottomCenter
+  fullName: MacacaGames.PivotPresets.BottomCenter
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BottomCenter
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 46
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: BottomCenter = 7
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.PivotPresets.BottomRight
+  commentId: F:MacacaGames.PivotPresets.BottomRight
+  id: BottomRight
+  parent: MacacaGames.PivotPresets
+  langs:
+  - csharp
+  - vb
+  name: BottomRight
+  nameWithType: PivotPresets.BottomRight
+  fullName: MacacaGames.PivotPresets.BottomRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/RectTransformExtensions.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: BottomRight
+    path: ../Scripts/Utilitys/RectTransformExtensions.cs
+    startLine: 47
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: BottomRight = 8
+    return:
+      type: MacacaGames.PivotPresets
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.PivotPresets.FlagsHelperExtensions.IsSet``1(MacacaGames.PivotPresets)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<PivotPresets>(PivotPresets)
+  nameWithType: FlagsHelperExtensions.IsSet<PivotPresets>(PivotPresets)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.PivotPresets>(MacacaGames.PivotPresets)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of PivotPresets)(PivotPresets)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.PivotPresets)(MacacaGames.PivotPresets)
+  name.vb: IsSet(Of PivotPresets)(PivotPresets)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<PivotPresets>
+    nameWithType: FlagsHelperExtensions.IsSet<PivotPresets>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.PivotPresets>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.PivotPresets
+    name: PivotPresets
+    nameWithType: PivotPresets
+    fullName: MacacaGames.PivotPresets
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of PivotPresets)
+    nameWithType: FlagsHelperExtensions.IsSet(Of PivotPresets)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.PivotPresets)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.PivotPresets
+    name: PivotPresets
+    nameWithType: PivotPresets
+    fullName: MacacaGames.PivotPresets
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.PivotPresets
+  commentId: T:MacacaGames.PivotPresets
+  parent: MacacaGames
+  name: PivotPresets
+  nameWithType: PivotPresets
+  fullName: MacacaGames.PivotPresets

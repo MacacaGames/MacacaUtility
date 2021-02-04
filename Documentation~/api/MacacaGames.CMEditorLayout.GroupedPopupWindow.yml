@@ -1,0 +1,1093 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupWindow
+  id: CMEditorLayout.GroupedPopupWindow
+  parent: MacacaGames
+  children:
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.Current
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(UnityEngine.Rect)
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.OnSelect
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.scrollPos
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.searchString
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow.WantedWidth
+  langs:
+  - csharp
+  - vb
+  name: CMEditorLayout.GroupedPopupWindow
+  nameWithType: CMEditorLayout.GroupedPopupWindow
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  type: Class
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GroupedPopupWindow
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 430
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: 'public class GroupedPopupWindow : PopupWindowContent'
+    content.vb: >-
+      Public Class GroupedPopupWindow
+          Inherits PopupWindowContent
+  inheritance:
+  - System.Object
+  - UnityEditor.PopupWindowContent
+  derivedClasses:
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+  inheritedMembers:
+  - UnityEditor.PopupWindowContent.OnOpen
+  - UnityEditor.PopupWindowContent.OnClose
+  - UnityEditor.PopupWindowContent.editorWindow
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  id: groupedPopupData
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: groupedPopupData
+  nameWithType: CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.groupedPopupData
+  type: Field
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: groupedPopupData
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 432
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public CMEditorLayout.GroupedPopupData[] groupedPopupData
+    return:
+      type: MacacaGames.CMEditorLayout.GroupedPopupData[]
+    content.vb: Public groupedPopupData As CMEditorLayout.GroupedPopupData()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnSelect
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnSelect
+  id: OnSelect
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: OnSelect
+  nameWithType: CMEditorLayout.GroupedPopupWindow.OnSelect
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnSelect
+  type: Field
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: OnSelect
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 433
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public Action<CMEditorLayout.GroupedPopupData> OnSelect
+    return:
+      type: System.Action{MacacaGames.CMEditorLayout.GroupedPopupData}
+    content.vb: Public OnSelect As Action(Of CMEditorLayout.GroupedPopupData)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.Current
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.Current
+  id: Current
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: CMEditorLayout.GroupedPopupWindow.Current
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.Current
+  type: Field
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Current
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 434
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public CMEditorLayout.GroupedPopupData Current
+    return:
+      type: MacacaGames.CMEditorLayout.GroupedPopupData
+    content.vb: Public Current As CMEditorLayout.GroupedPopupData
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.WantedWidth
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.WantedWidth
+  id: WantedWidth
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: WantedWidth
+  nameWithType: CMEditorLayout.GroupedPopupWindow.WantedWidth
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.WantedWidth
+  type: Field
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: WantedWidth
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 435
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public float WantedWidth
+    return:
+      type: System.Single
+    content.vb: Public WantedWidth As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  commentId: P:MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  id: ItemStyle
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: ItemStyle
+  nameWithType: CMEditorLayout.GroupedPopupWindow.ItemStyle
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  type: Property
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ItemStyle
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 437
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: protected static GUIStyle ItemStyle { get; }
+    parameters: []
+    return:
+      type: UnityEngine.GUIStyle
+    content.vb: Protected Shared ReadOnly Property ItemStyle As GUIStyle
+  overload: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle*
+  modifiers.csharp:
+  - protected
+  - static
+  - get
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  commentId: P:MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  id: GroupHeader
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: GroupHeader
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GroupHeader
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  type: Property
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GroupHeader
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 453
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: protected static GUIStyle GroupHeader { get; }
+    parameters: []
+    return:
+      type: UnityEngine.GUIStyle
+    content.vb: Protected Shared ReadOnly Property GroupHeader As GUIStyle
+  overload: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader*
+  modifiers.csharp:
+  - protected
+  - static
+  - get
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  id: GetWindowSize
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: GetWindowSize()
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GetWindowSize()
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize()
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GetWindowSize
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 475
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public override Vector2 GetWindowSize()
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Overrides Function GetWindowSize As Vector2
+  overridden: UnityEditor.PopupWindowContent.GetWindowSize
+  overload: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(UnityEngine.Rect)
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(UnityEngine.Rect)
+  id: OnGUI(UnityEngine.Rect)
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect)
+  nameWithType: CMEditorLayout.GroupedPopupWindow.OnGUI(Rect)
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI(UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: OnGUI
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 479
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: public override void OnGUI(Rect rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.Rect
+    content.vb: Public Overrides Sub OnGUI(rect As Rect)
+  overridden: UnityEditor.PopupWindowContent.OnGUI(UnityEngine.Rect)
+  overload: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.scrollPos
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.scrollPos
+  id: scrollPos
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: scrollPos
+  nameWithType: CMEditorLayout.GroupedPopupWindow.scrollPos
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.scrollPos
+  type: Field
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: scrollPos
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 484
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: protected Vector2 scrollPos
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Protected scrollPos As Vector2
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  id: DrawItem
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawItem()
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawItem()
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem()
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: DrawItem
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 485
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: protected virtual void DrawItem()
+    content.vb: Protected Overridable Sub DrawItem
+  overload: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.searchString
+  commentId: F:MacacaGames.CMEditorLayout.GroupedPopupWindow.searchString
+  id: searchString
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: searchString
+  nameWithType: CMEditorLayout.GroupedPopupWindow.searchString
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.searchString
+  type: Field
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: searchString
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 546
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: protected string searchString
+    return:
+      type: System.String
+    content.vb: Protected searchString As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  commentId: M:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  id: DrawSerachBar
+  parent: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawSerachBar()
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawSerachBar()
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar()
+  type: Method
+  source:
+    remote:
+      path: Editor/CMEditorUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: DrawSerachBar
+    path: ../Editor/CMEditorUtility.cs
+    startLine: 547
+  assemblies:
+  - Macaca.Utility.Editor
+  namespace: MacacaGames
+  syntax:
+    content: protected virtual void DrawSerachBar()
+    content.vb: Protected Overridable Sub DrawSerachBar
+  overload: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEditor.PopupWindowContent
+  commentId: T:UnityEditor.PopupWindowContent
+  parent: UnityEditor
+  isExternal: true
+  name: PopupWindowContent
+  nameWithType: PopupWindowContent
+  fullName: UnityEditor.PopupWindowContent
+- uid: UnityEditor.PopupWindowContent.OnOpen
+  commentId: M:UnityEditor.PopupWindowContent.OnOpen
+  parent: UnityEditor.PopupWindowContent
+  isExternal: true
+  name: OnOpen()
+  nameWithType: PopupWindowContent.OnOpen()
+  fullName: UnityEditor.PopupWindowContent.OnOpen()
+  spec.csharp:
+  - uid: UnityEditor.PopupWindowContent.OnOpen
+    name: OnOpen
+    nameWithType: PopupWindowContent.OnOpen
+    fullName: UnityEditor.PopupWindowContent.OnOpen
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PopupWindowContent.OnOpen
+    name: OnOpen
+    nameWithType: PopupWindowContent.OnOpen
+    fullName: UnityEditor.PopupWindowContent.OnOpen
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEditor.PopupWindowContent.OnClose
+  commentId: M:UnityEditor.PopupWindowContent.OnClose
+  parent: UnityEditor.PopupWindowContent
+  isExternal: true
+  name: OnClose()
+  nameWithType: PopupWindowContent.OnClose()
+  fullName: UnityEditor.PopupWindowContent.OnClose()
+  spec.csharp:
+  - uid: UnityEditor.PopupWindowContent.OnClose
+    name: OnClose
+    nameWithType: PopupWindowContent.OnClose
+    fullName: UnityEditor.PopupWindowContent.OnClose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PopupWindowContent.OnClose
+    name: OnClose
+    nameWithType: PopupWindowContent.OnClose
+    fullName: UnityEditor.PopupWindowContent.OnClose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEditor.PopupWindowContent.editorWindow
+  commentId: P:UnityEditor.PopupWindowContent.editorWindow
+  parent: UnityEditor.PopupWindowContent
+  isExternal: true
+  name: editorWindow
+  nameWithType: PopupWindowContent.editorWindow
+  fullName: UnityEditor.PopupWindowContent.editorWindow
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData[]
+  isExternal: true
+  name: CMEditorLayout.GroupedPopupData[]
+  nameWithType: CMEditorLayout.GroupedPopupData[]
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData[]
+  nameWithType.vb: CMEditorLayout.GroupedPopupData()
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData()
+  name.vb: CMEditorLayout.GroupedPopupData()
+  spec.csharp:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Action{MacacaGames.CMEditorLayout.GroupedPopupData}
+  commentId: T:System.Action{MacacaGames.CMEditorLayout.GroupedPopupData}
+  parent: System
+  definition: System.Action`1
+  name: Action<CMEditorLayout.GroupedPopupData>
+  nameWithType: Action<CMEditorLayout.GroupedPopupData>
+  fullName: System.Action<MacacaGames.CMEditorLayout.GroupedPopupData>
+  nameWithType.vb: Action(Of CMEditorLayout.GroupedPopupData)
+  fullName.vb: System.Action(Of MacacaGames.CMEditorLayout.GroupedPopupData)
+  name.vb: Action(Of CMEditorLayout.GroupedPopupData)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData
+  parent: MacacaGames
+  name: CMEditorLayout.GroupedPopupData
+  nameWithType: CMEditorLayout.GroupedPopupData
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle*
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+  name: ItemStyle
+  nameWithType: CMEditorLayout.GroupedPopupWindow.ItemStyle
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.ItemStyle
+- uid: UnityEngine.GUIStyle
+  commentId: T:UnityEngine.GUIStyle
+  parent: UnityEngine
+  isExternal: true
+  name: GUIStyle
+  nameWithType: GUIStyle
+  fullName: UnityEngine.GUIStyle
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader*
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+  name: GroupHeader
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GroupHeader
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GroupHeader
+- uid: UnityEditor.PopupWindowContent.GetWindowSize
+  commentId: M:UnityEditor.PopupWindowContent.GetWindowSize
+  parent: UnityEditor.PopupWindowContent
+  isExternal: true
+  name: GetWindowSize()
+  nameWithType: PopupWindowContent.GetWindowSize()
+  fullName: UnityEditor.PopupWindowContent.GetWindowSize()
+  spec.csharp:
+  - uid: UnityEditor.PopupWindowContent.GetWindowSize
+    name: GetWindowSize
+    nameWithType: PopupWindowContent.GetWindowSize
+    fullName: UnityEditor.PopupWindowContent.GetWindowSize
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PopupWindowContent.GetWindowSize
+    name: GetWindowSize
+    nameWithType: PopupWindowContent.GetWindowSize
+    fullName: UnityEditor.PopupWindowContent.GetWindowSize
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize*
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  name: GetWindowSize
+  nameWithType: CMEditorLayout.GroupedPopupWindow.GetWindowSize
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.GetWindowSize
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEditor.PopupWindowContent.OnGUI(UnityEngine.Rect)
+  commentId: M:UnityEditor.PopupWindowContent.OnGUI(UnityEngine.Rect)
+  parent: UnityEditor.PopupWindowContent
+  isExternal: true
+  name: OnGUI(Rect)
+  nameWithType: PopupWindowContent.OnGUI(Rect)
+  fullName: UnityEditor.PopupWindowContent.OnGUI(UnityEngine.Rect)
+  spec.csharp:
+  - uid: UnityEditor.PopupWindowContent.OnGUI(UnityEngine.Rect)
+    name: OnGUI
+    nameWithType: PopupWindowContent.OnGUI
+    fullName: UnityEditor.PopupWindowContent.OnGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    nameWithType: Rect
+    fullName: UnityEngine.Rect
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PopupWindowContent.OnGUI(UnityEngine.Rect)
+    name: OnGUI
+    nameWithType: PopupWindowContent.OnGUI
+    fullName: UnityEditor.PopupWindowContent.OnGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    nameWithType: Rect
+    fullName: UnityEngine.Rect
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI*
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI
+  name: OnGUI
+  nameWithType: CMEditorLayout.GroupedPopupWindow.OnGUI
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.OnGUI
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem*
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+  name: DrawItem
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawItem
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawItem
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar*
+  commentId: Overload:MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  name: DrawSerachBar
+  nameWithType: CMEditorLayout.GroupedPopupWindow.DrawSerachBar
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow.DrawSerachBar

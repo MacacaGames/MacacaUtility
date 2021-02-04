@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  id: MacacaGames
+  children:
+  - MacacaGames.AnchorPresets
+  - MacacaGames.CacheFactories
+  - MacacaGames.CMEditorLayout
+  - MacacaGames.CMEditorLayout.GroupedPopupData
+  - MacacaGames.CMEditorLayout.GroupedPopupData`1
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow
+  - MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+  - MacacaGames.CMEditorUtility
+  - MacacaGames.CustomElement
+  - MacacaGames.FieldAccessor
+  - MacacaGames.FieldAccessorFactory
+  - MacacaGames.FixedSizeStack`1
+  - MacacaGames.FloatExtension
+  - MacacaGames.GlobalTimer
+  - MacacaGames.GlobalTimer.Timer
+  - MacacaGames.GlobalTimerSetting
+  - MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  - MacacaGames.Gradient
+  - MacacaGames.GradientDir
+  - MacacaGames.GradientMode
+  - MacacaGames.IAccessor
+  - MacacaGames.ICacheFactory`2
+  - MacacaGames.IMethodInvoker
+  - MacacaGames.IReflactorCache`2
+  - MacacaGames.JuicyText
+  - MacacaGames.JuicyText.ScaleTarget
+  - MacacaGames.MethodInvoker
+  - MacacaGames.MethodInvokerFactory
+  - MacacaGames.ObjectPool
+  - MacacaGames.PaletteControl
+  - MacacaGames.PaletteControl.SelectionState
+  - MacacaGames.PivotPresets
+  - MacacaGames.PropertyAccessor
+  - MacacaGames.PropertyAccessorFactory
+  - MacacaGames.RandomUtility
+  - MacacaGames.RectTransformExtensions
+  - MacacaGames.ReflectionUtility
+  - MacacaGames.ReflectionUtility.GetValueResult
+  - MacacaGames.ReflectorCache`2
+  - MacacaGames.ReflectorCaches
+  - MacacaGames.SelectablePalette
+  - MacacaGames.SelectablePalette.PaletteSet
+  - MacacaGames.SerializedPropertyExtensions
+  - MacacaGames.Singleton`1
+  - MacacaGames.TextureAndScreenUtility
+  - MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  - MacacaGames.TextureScale
+  - MacacaGames.TextureScale.ThreadData
+  - MacacaGames.Utility
+  langs:
+  - csharp
+  - vb
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+  type: Namespace
+  assemblies:
+  - Macaca.Utility
+references:
+- uid: MacacaGames.GlobalTimer
+  commentId: T:MacacaGames.GlobalTimer
+  name: GlobalTimer
+  nameWithType: GlobalTimer
+  fullName: MacacaGames.GlobalTimer
+- uid: MacacaGames.GlobalTimer.Timer
+  commentId: T:MacacaGames.GlobalTimer.Timer
+  parent: MacacaGames
+  name: GlobalTimer.Timer
+  nameWithType: GlobalTimer.Timer
+  fullName: MacacaGames.GlobalTimer.Timer
+- uid: MacacaGames.GlobalTimerSetting
+  commentId: T:MacacaGames.GlobalTimerSetting
+  name: GlobalTimerSetting
+  nameWithType: GlobalTimerSetting
+  fullName: MacacaGames.GlobalTimerSetting
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  commentId: T:MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  parent: MacacaGames
+  name: GlobalTimerSetting.RefreshTimeMethod
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+- uid: MacacaGames.JuicyText
+  commentId: T:MacacaGames.JuicyText
+  name: JuicyText
+  nameWithType: JuicyText
+  fullName: MacacaGames.JuicyText
+- uid: MacacaGames.JuicyText.ScaleTarget
+  commentId: T:MacacaGames.JuicyText.ScaleTarget
+  parent: MacacaGames
+  name: JuicyText.ScaleTarget
+  nameWithType: JuicyText.ScaleTarget
+  fullName: MacacaGames.JuicyText.ScaleTarget
+- uid: MacacaGames.ObjectPool
+  commentId: T:MacacaGames.ObjectPool
+  name: ObjectPool
+  nameWithType: ObjectPool
+  fullName: MacacaGames.ObjectPool
+- uid: MacacaGames.Gradient
+  commentId: T:MacacaGames.Gradient
+  parent: MacacaGames
+  name: Gradient
+  nameWithType: Gradient
+  fullName: MacacaGames.Gradient
+- uid: MacacaGames.GradientMode
+  commentId: T:MacacaGames.GradientMode
+  parent: MacacaGames
+  name: GradientMode
+  nameWithType: GradientMode
+  fullName: MacacaGames.GradientMode
+- uid: MacacaGames.GradientDir
+  commentId: T:MacacaGames.GradientDir
+  parent: MacacaGames
+  name: GradientDir
+  nameWithType: GradientDir
+  fullName: MacacaGames.GradientDir
+- uid: MacacaGames.PaletteControl
+  commentId: T:MacacaGames.PaletteControl
+  name: PaletteControl
+  nameWithType: PaletteControl
+  fullName: MacacaGames.PaletteControl
+- uid: MacacaGames.PaletteControl.SelectionState
+  commentId: T:MacacaGames.PaletteControl.SelectionState
+  parent: MacacaGames
+  name: PaletteControl.SelectionState
+  nameWithType: PaletteControl.SelectionState
+  fullName: MacacaGames.PaletteControl.SelectionState
+- uid: MacacaGames.SelectablePalette
+  commentId: T:MacacaGames.SelectablePalette
+  parent: MacacaGames
+  name: SelectablePalette
+  nameWithType: SelectablePalette
+  fullName: MacacaGames.SelectablePalette
+- uid: MacacaGames.SelectablePalette.PaletteSet
+  commentId: T:MacacaGames.SelectablePalette.PaletteSet
+  parent: MacacaGames
+  name: SelectablePalette.PaletteSet
+  nameWithType: SelectablePalette.PaletteSet
+  fullName: MacacaGames.SelectablePalette.PaletteSet
+- uid: MacacaGames.Singleton`1
+  commentId: T:MacacaGames.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: MacacaGames.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: MacacaGames.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: MacacaGames.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: MacacaGames.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: MacacaGames.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.FixedSizeStack`1
+  commentId: T:MacacaGames.FixedSizeStack`1
+  name: FixedSizeStack<T>
+  nameWithType: FixedSizeStack<T>
+  fullName: MacacaGames.FixedSizeStack<T>
+  nameWithType.vb: FixedSizeStack(Of T)
+  fullName.vb: MacacaGames.FixedSizeStack(Of T)
+  name.vb: FixedSizeStack(Of T)
+  spec.csharp:
+  - uid: MacacaGames.FixedSizeStack`1
+    name: FixedSizeStack
+    nameWithType: FixedSizeStack
+    fullName: MacacaGames.FixedSizeStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.FixedSizeStack`1
+    name: FixedSizeStack
+    nameWithType: FixedSizeStack
+    fullName: MacacaGames.FixedSizeStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.FloatExtension
+  commentId: T:MacacaGames.FloatExtension
+  name: FloatExtension
+  nameWithType: FloatExtension
+  fullName: MacacaGames.FloatExtension
+- uid: MacacaGames.RandomUtility
+  commentId: T:MacacaGames.RandomUtility
+  name: RandomUtility
+  nameWithType: RandomUtility
+  fullName: MacacaGames.RandomUtility
+- uid: MacacaGames.AnchorPresets
+  commentId: T:MacacaGames.AnchorPresets
+  parent: MacacaGames
+  name: AnchorPresets
+  nameWithType: AnchorPresets
+  fullName: MacacaGames.AnchorPresets
+- uid: MacacaGames.PivotPresets
+  commentId: T:MacacaGames.PivotPresets
+  parent: MacacaGames
+  name: PivotPresets
+  nameWithType: PivotPresets
+  fullName: MacacaGames.PivotPresets
+- uid: MacacaGames.RectTransformExtensions
+  commentId: T:MacacaGames.RectTransformExtensions
+  name: RectTransformExtensions
+  nameWithType: RectTransformExtensions
+  fullName: MacacaGames.RectTransformExtensions
+- uid: MacacaGames.IAccessor
+  commentId: T:MacacaGames.IAccessor
+  parent: MacacaGames
+  name: IAccessor
+  nameWithType: IAccessor
+  fullName: MacacaGames.IAccessor
+- uid: MacacaGames.PropertyAccessor
+  commentId: T:MacacaGames.PropertyAccessor
+  name: PropertyAccessor
+  nameWithType: PropertyAccessor
+  fullName: MacacaGames.PropertyAccessor
+- uid: MacacaGames.FieldAccessor
+  commentId: T:MacacaGames.FieldAccessor
+  name: FieldAccessor
+  nameWithType: FieldAccessor
+  fullName: MacacaGames.FieldAccessor
+- uid: MacacaGames.CacheFactories
+  commentId: T:MacacaGames.CacheFactories
+  name: CacheFactories
+  nameWithType: CacheFactories
+  fullName: MacacaGames.CacheFactories
+- uid: MacacaGames.ICacheFactory`2
+  commentId: T:MacacaGames.ICacheFactory`2
+  name: ICacheFactory<TKey, TValue>
+  nameWithType: ICacheFactory<TKey, TValue>
+  fullName: MacacaGames.ICacheFactory<TKey, TValue>
+  nameWithType.vb: ICacheFactory(Of TKey, TValue)
+  fullName.vb: MacacaGames.ICacheFactory(Of TKey, TValue)
+  name.vb: ICacheFactory(Of TKey, TValue)
+  spec.csharp:
+  - uid: MacacaGames.ICacheFactory`2
+    name: ICacheFactory
+    nameWithType: ICacheFactory
+    fullName: MacacaGames.ICacheFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.ICacheFactory`2
+    name: ICacheFactory
+    nameWithType: ICacheFactory
+    fullName: MacacaGames.ICacheFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.PropertyAccessorFactory
+  commentId: T:MacacaGames.PropertyAccessorFactory
+  name: PropertyAccessorFactory
+  nameWithType: PropertyAccessorFactory
+  fullName: MacacaGames.PropertyAccessorFactory
+- uid: MacacaGames.FieldAccessorFactory
+  commentId: T:MacacaGames.FieldAccessorFactory
+  name: FieldAccessorFactory
+  nameWithType: FieldAccessorFactory
+  fullName: MacacaGames.FieldAccessorFactory
+- uid: MacacaGames.MethodInvokerFactory
+  commentId: T:MacacaGames.MethodInvokerFactory
+  name: MethodInvokerFactory
+  nameWithType: MethodInvokerFactory
+  fullName: MacacaGames.MethodInvokerFactory
+- uid: MacacaGames.IReflactorCache`2
+  commentId: T:MacacaGames.IReflactorCache`2
+  name: IReflactorCache<TKey, TValue>
+  nameWithType: IReflactorCache<TKey, TValue>
+  fullName: MacacaGames.IReflactorCache<TKey, TValue>
+  nameWithType.vb: IReflactorCache(Of TKey, TValue)
+  fullName.vb: MacacaGames.IReflactorCache(Of TKey, TValue)
+  name.vb: IReflactorCache(Of TKey, TValue)
+  spec.csharp:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.IReflactorCache`2
+    name: IReflactorCache
+    nameWithType: IReflactorCache
+    fullName: MacacaGames.IReflactorCache
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.ReflectorCaches
+  commentId: T:MacacaGames.ReflectorCaches
+  name: ReflectorCaches
+  nameWithType: ReflectorCaches
+  fullName: MacacaGames.ReflectorCaches
+- uid: MacacaGames.ReflectorCache`2
+  commentId: T:MacacaGames.ReflectorCache`2
+  name: ReflectorCache<TKey, TValue>
+  nameWithType: ReflectorCache<TKey, TValue>
+  fullName: MacacaGames.ReflectorCache<TKey, TValue>
+  nameWithType.vb: ReflectorCache(Of TKey, TValue)
+  fullName.vb: MacacaGames.ReflectorCache(Of TKey, TValue)
+  name.vb: ReflectorCache(Of TKey, TValue)
+  spec.csharp:
+  - uid: MacacaGames.ReflectorCache`2
+    name: ReflectorCache
+    nameWithType: ReflectorCache
+    fullName: MacacaGames.ReflectorCache
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.ReflectorCache`2
+    name: ReflectorCache
+    nameWithType: ReflectorCache
+    fullName: MacacaGames.ReflectorCache
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.IMethodInvoker
+  commentId: T:MacacaGames.IMethodInvoker
+  parent: MacacaGames
+  name: IMethodInvoker
+  nameWithType: IMethodInvoker
+  fullName: MacacaGames.IMethodInvoker
+- uid: MacacaGames.MethodInvoker
+  commentId: T:MacacaGames.MethodInvoker
+  name: MethodInvoker
+  nameWithType: MethodInvoker
+  fullName: MacacaGames.MethodInvoker
+- uid: MacacaGames.ReflectionUtility
+  commentId: T:MacacaGames.ReflectionUtility
+  name: ReflectionUtility
+  nameWithType: ReflectionUtility
+  fullName: MacacaGames.ReflectionUtility
+- uid: MacacaGames.ReflectionUtility.GetValueResult
+  commentId: T:MacacaGames.ReflectionUtility.GetValueResult
+  parent: MacacaGames
+  name: ReflectionUtility.GetValueResult
+  nameWithType: ReflectionUtility.GetValueResult
+  fullName: MacacaGames.ReflectionUtility.GetValueResult
+- uid: MacacaGames.TextureAndScreenUtility
+  commentId: T:MacacaGames.TextureAndScreenUtility
+  name: TextureAndScreenUtility
+  nameWithType: TextureAndScreenUtility
+  fullName: MacacaGames.TextureAndScreenUtility
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  commentId: T:MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  parent: MacacaGames
+  name: TextureAndScreenUtility.WaterMarkPosition
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+- uid: MacacaGames.TextureScale
+  commentId: T:MacacaGames.TextureScale
+  name: TextureScale
+  nameWithType: TextureScale
+  fullName: MacacaGames.TextureScale
+- uid: MacacaGames.TextureScale.ThreadData
+  commentId: T:MacacaGames.TextureScale.ThreadData
+  name: TextureScale.ThreadData
+  nameWithType: TextureScale.ThreadData
+  fullName: MacacaGames.TextureScale.ThreadData
+- uid: MacacaGames.Utility
+  commentId: T:MacacaGames.Utility
+  name: Utility
+  nameWithType: Utility
+  fullName: MacacaGames.Utility
+- uid: MacacaGames.CMEditorUtility
+  commentId: T:MacacaGames.CMEditorUtility
+  name: CMEditorUtility
+  nameWithType: CMEditorUtility
+  fullName: MacacaGames.CMEditorUtility
+- uid: MacacaGames.CustomElement
+  commentId: T:MacacaGames.CustomElement
+  name: CustomElement
+  nameWithType: CustomElement
+  fullName: MacacaGames.CustomElement
+- uid: MacacaGames.CMEditorLayout
+  commentId: T:MacacaGames.CMEditorLayout
+  name: CMEditorLayout
+  nameWithType: CMEditorLayout
+  fullName: MacacaGames.CMEditorLayout
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+  name: CMEditorLayout.GroupedPopupWindow<T>
+  nameWithType: CMEditorLayout.GroupedPopupWindow<T>
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow<T>
+  nameWithType.vb: CMEditorLayout.GroupedPopupWindow(Of T)
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupWindow(Of T)
+  name.vb: CMEditorLayout.GroupedPopupWindow(Of T)
+  spec.csharp:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+    name: CMEditorLayout.GroupedPopupWindow
+    nameWithType: CMEditorLayout.GroupedPopupWindow
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupWindow`1
+    name: CMEditorLayout.GroupedPopupWindow
+    nameWithType: CMEditorLayout.GroupedPopupWindow
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.CMEditorLayout.GroupedPopupWindow
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupWindow
+  parent: MacacaGames
+  name: CMEditorLayout.GroupedPopupWindow
+  nameWithType: CMEditorLayout.GroupedPopupWindow
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupWindow
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData
+  parent: MacacaGames
+  name: CMEditorLayout.GroupedPopupData
+  nameWithType: CMEditorLayout.GroupedPopupData
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+- uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+  commentId: T:MacacaGames.CMEditorLayout.GroupedPopupData`1
+  name: CMEditorLayout.GroupedPopupData<T>
+  nameWithType: CMEditorLayout.GroupedPopupData<T>
+  fullName: MacacaGames.CMEditorLayout.GroupedPopupData<T>
+  nameWithType.vb: CMEditorLayout.GroupedPopupData(Of T)
+  fullName.vb: MacacaGames.CMEditorLayout.GroupedPopupData(Of T)
+  name.vb: CMEditorLayout.GroupedPopupData(Of T)
+  spec.csharp:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: MacacaGames.CMEditorLayout.GroupedPopupData`1
+    name: CMEditorLayout.GroupedPopupData
+    nameWithType: CMEditorLayout.GroupedPopupData
+    fullName: MacacaGames.CMEditorLayout.GroupedPopupData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.SerializedPropertyExtensions
+  commentId: T:MacacaGames.SerializedPropertyExtensions
+  name: SerializedPropertyExtensions
+  nameWithType: SerializedPropertyExtensions
+  fullName: MacacaGames.SerializedPropertyExtensions
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames

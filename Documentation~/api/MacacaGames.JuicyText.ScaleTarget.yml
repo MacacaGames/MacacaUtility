@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.JuicyText.ScaleTarget
+  commentId: T:MacacaGames.JuicyText.ScaleTarget
+  id: JuicyText.ScaleTarget
+  parent: MacacaGames
+  children:
+  - MacacaGames.JuicyText.ScaleTarget.Parent
+  - MacacaGames.JuicyText.ScaleTarget.Self
+  langs:
+  - csharp
+  - vb
+  name: JuicyText.ScaleTarget
+  nameWithType: JuicyText.ScaleTarget
+  fullName: MacacaGames.JuicyText.ScaleTarget
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Components/JuicyText.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: ScaleTarget
+    path: ../Scripts/Components/JuicyText.cs
+    startLine: 17
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public enum ScaleTarget
+    content.vb: Public Enum ScaleTarget
+  extensionMethods:
+  - MacacaGames.JuicyText.ScaleTarget.FlagsHelperExtensions.IsSet``1(MacacaGames.JuicyText.ScaleTarget)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MacacaGames.JuicyText.ScaleTarget.Self
+  commentId: F:MacacaGames.JuicyText.ScaleTarget.Self
+  id: Self
+  parent: MacacaGames.JuicyText.ScaleTarget
+  langs:
+  - csharp
+  - vb
+  name: Self
+  nameWithType: JuicyText.ScaleTarget.Self
+  fullName: MacacaGames.JuicyText.ScaleTarget.Self
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/JuicyText.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Self
+    path: ../Scripts/Components/JuicyText.cs
+    startLine: 19
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: Self = 0
+    return:
+      type: MacacaGames.JuicyText.ScaleTarget
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.JuicyText.ScaleTarget.Parent
+  commentId: F:MacacaGames.JuicyText.ScaleTarget.Parent
+  id: Parent
+  parent: MacacaGames.JuicyText.ScaleTarget
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: JuicyText.ScaleTarget.Parent
+  fullName: MacacaGames.JuicyText.ScaleTarget.Parent
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/JuicyText.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Parent
+    path: ../Scripts/Components/JuicyText.cs
+    startLine: 19
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: Parent = 1
+    return:
+      type: MacacaGames.JuicyText.ScaleTarget
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.JuicyText.ScaleTarget.FlagsHelperExtensions.IsSet``1(MacacaGames.JuicyText.ScaleTarget)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<JuicyText.ScaleTarget>(JuicyText.ScaleTarget)
+  nameWithType: FlagsHelperExtensions.IsSet<JuicyText.ScaleTarget>(JuicyText.ScaleTarget)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.JuicyText.ScaleTarget>(MacacaGames.JuicyText.ScaleTarget)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of JuicyText.ScaleTarget)(JuicyText.ScaleTarget)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.JuicyText.ScaleTarget)(MacacaGames.JuicyText.ScaleTarget)
+  name.vb: IsSet(Of JuicyText.ScaleTarget)(JuicyText.ScaleTarget)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<JuicyText.ScaleTarget>
+    nameWithType: FlagsHelperExtensions.IsSet<JuicyText.ScaleTarget>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.JuicyText.ScaleTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.JuicyText.ScaleTarget
+    name: JuicyText.ScaleTarget
+    nameWithType: JuicyText.ScaleTarget
+    fullName: MacacaGames.JuicyText.ScaleTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of JuicyText.ScaleTarget)
+    nameWithType: FlagsHelperExtensions.IsSet(Of JuicyText.ScaleTarget)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.JuicyText.ScaleTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.JuicyText.ScaleTarget
+    name: JuicyText.ScaleTarget
+    nameWithType: JuicyText.ScaleTarget
+    fullName: MacacaGames.JuicyText.ScaleTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.JuicyText.ScaleTarget
+  commentId: T:MacacaGames.JuicyText.ScaleTarget
+  parent: MacacaGames
+  name: JuicyText.ScaleTarget
+  nameWithType: JuicyText.ScaleTarget
+  fullName: MacacaGames.JuicyText.ScaleTarget

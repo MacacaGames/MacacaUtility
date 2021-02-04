@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  commentId: T:MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  id: GlobalTimerSetting.RefreshTimeMethod
+  parent: MacacaGames
+  children:
+  - MacacaGames.GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  - MacacaGames.GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  langs:
+  - csharp
+  - vb
+  name: GlobalTimerSetting.RefreshTimeMethod
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimerSetting.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: RefreshTimeMethod
+    path: ../Scripts/Components/GlobalTimer/GlobalTimerSetting.cs
+    startLine: 9
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public enum RefreshTimeMethod
+    content.vb: Public Enum RefreshTimeMethod
+  extensionMethods:
+  - MacacaGames.GlobalTimerSetting.RefreshTimeMethod.FlagsHelperExtensions.IsSet``1(MacacaGames.GlobalTimerSetting.RefreshTimeMethod)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  commentId: F:MacacaGames.GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  id: SystemDateTime
+  parent: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  langs:
+  - csharp
+  - vb
+  name: SystemDateTime
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.SystemDateTime
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimerSetting.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: SystemDateTime
+    path: ../Scripts/Components/GlobalTimer/GlobalTimerSetting.cs
+    startLine: 11
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: SystemDateTime = 0
+    return:
+      type: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  commentId: F:MacacaGames.GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  id: UnityDeltaTime
+  parent: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  langs:
+  - csharp
+  - vb
+  name: UnityDeltaTime
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.UnityDeltaTime
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimerSetting.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: UnityDeltaTime
+    path: ../Scripts/Components/GlobalTimer/GlobalTimerSetting.cs
+    startLine: 12
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: UnityDeltaTime = 1
+    return:
+      type: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod.FlagsHelperExtensions.IsSet``1(MacacaGames.GlobalTimerSetting.RefreshTimeMethod)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<GlobalTimerSetting.RefreshTimeMethod>(GlobalTimerSetting.RefreshTimeMethod)
+  nameWithType: FlagsHelperExtensions.IsSet<GlobalTimerSetting.RefreshTimeMethod>(GlobalTimerSetting.RefreshTimeMethod)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.GlobalTimerSetting.RefreshTimeMethod>(MacacaGames.GlobalTimerSetting.RefreshTimeMethod)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of GlobalTimerSetting.RefreshTimeMethod)(GlobalTimerSetting.RefreshTimeMethod)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.GlobalTimerSetting.RefreshTimeMethod)(MacacaGames.GlobalTimerSetting.RefreshTimeMethod)
+  name.vb: IsSet(Of GlobalTimerSetting.RefreshTimeMethod)(GlobalTimerSetting.RefreshTimeMethod)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<GlobalTimerSetting.RefreshTimeMethod>
+    nameWithType: FlagsHelperExtensions.IsSet<GlobalTimerSetting.RefreshTimeMethod>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.GlobalTimerSetting.RefreshTimeMethod>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+    name: GlobalTimerSetting.RefreshTimeMethod
+    nameWithType: GlobalTimerSetting.RefreshTimeMethod
+    fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of GlobalTimerSetting.RefreshTimeMethod)
+    nameWithType: FlagsHelperExtensions.IsSet(Of GlobalTimerSetting.RefreshTimeMethod)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.GlobalTimerSetting.RefreshTimeMethod)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+    name: GlobalTimerSetting.RefreshTimeMethod
+    nameWithType: GlobalTimerSetting.RefreshTimeMethod
+    fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  commentId: T:MacacaGames.GlobalTimerSetting.RefreshTimeMethod
+  parent: MacacaGames
+  name: GlobalTimerSetting.RefreshTimeMethod
+  nameWithType: GlobalTimerSetting.RefreshTimeMethod
+  fullName: MacacaGames.GlobalTimerSetting.RefreshTimeMethod

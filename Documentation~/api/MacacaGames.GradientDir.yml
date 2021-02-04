@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.GradientDir
+  commentId: T:MacacaGames.GradientDir
+  id: GradientDir
+  parent: MacacaGames
+  children:
+  - MacacaGames.GradientDir.DiagonalLeftToRight
+  - MacacaGames.GradientDir.DiagonalRightToLeft
+  - MacacaGames.GradientDir.Horizontal
+  - MacacaGames.GradientDir.Vertical
+  langs:
+  - csharp
+  - vb
+  name: GradientDir
+  nameWithType: GradientDir
+  fullName: MacacaGames.GradientDir
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: GradientDir
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 112
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public enum GradientDir
+    content.vb: Public Enum GradientDir
+  extensionMethods:
+  - MacacaGames.GradientDir.FlagsHelperExtensions.IsSet``1(MacacaGames.GradientDir)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MacacaGames.GradientDir.Vertical
+  commentId: F:MacacaGames.GradientDir.Vertical
+  id: Vertical
+  parent: MacacaGames.GradientDir
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: GradientDir.Vertical
+  fullName: MacacaGames.GradientDir.Vertical
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Vertical
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 114
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: Vertical = 0
+    return:
+      type: MacacaGames.GradientDir
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.GradientDir.Horizontal
+  commentId: F:MacacaGames.GradientDir.Horizontal
+  id: Horizontal
+  parent: MacacaGames.GradientDir
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: GradientDir.Horizontal
+  fullName: MacacaGames.GradientDir.Horizontal
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Horizontal
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 115
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: Horizontal = 1
+    return:
+      type: MacacaGames.GradientDir
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.GradientDir.DiagonalLeftToRight
+  commentId: F:MacacaGames.GradientDir.DiagonalLeftToRight
+  id: DiagonalLeftToRight
+  parent: MacacaGames.GradientDir
+  langs:
+  - csharp
+  - vb
+  name: DiagonalLeftToRight
+  nameWithType: GradientDir.DiagonalLeftToRight
+  fullName: MacacaGames.GradientDir.DiagonalLeftToRight
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: DiagonalLeftToRight
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 116
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: DiagonalLeftToRight = 2
+    return:
+      type: MacacaGames.GradientDir
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.GradientDir.DiagonalRightToLeft
+  commentId: F:MacacaGames.GradientDir.DiagonalRightToLeft
+  id: DiagonalRightToLeft
+  parent: MacacaGames.GradientDir
+  langs:
+  - csharp
+  - vb
+  name: DiagonalRightToLeft
+  nameWithType: GradientDir.DiagonalRightToLeft
+  fullName: MacacaGames.GradientDir.DiagonalRightToLeft
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/Palette/Gradient.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: DiagonalRightToLeft
+    path: ../Scripts/Components/Palette/Gradient.cs
+    startLine: 117
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: DiagonalRightToLeft = 3
+    return:
+      type: MacacaGames.GradientDir
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.GradientDir.FlagsHelperExtensions.IsSet``1(MacacaGames.GradientDir)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<GradientDir>(GradientDir)
+  nameWithType: FlagsHelperExtensions.IsSet<GradientDir>(GradientDir)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.GradientDir>(MacacaGames.GradientDir)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of GradientDir)(GradientDir)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.GradientDir)(MacacaGames.GradientDir)
+  name.vb: IsSet(Of GradientDir)(GradientDir)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<GradientDir>
+    nameWithType: FlagsHelperExtensions.IsSet<GradientDir>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.GradientDir>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.GradientDir
+    name: GradientDir
+    nameWithType: GradientDir
+    fullName: MacacaGames.GradientDir
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of GradientDir)
+    nameWithType: FlagsHelperExtensions.IsSet(Of GradientDir)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.GradientDir)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.GradientDir
+    name: GradientDir
+    nameWithType: GradientDir
+    fullName: MacacaGames.GradientDir
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.GradientDir
+  commentId: T:MacacaGames.GradientDir
+  parent: MacacaGames
+  name: GradientDir
+  nameWithType: GradientDir
+  fullName: MacacaGames.GradientDir

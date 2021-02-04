@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.IMethodInvoker
+  commentId: T:MacacaGames.IMethodInvoker
+  id: IMethodInvoker
+  parent: MacacaGames
+  children:
+  - MacacaGames.IMethodInvoker.Invoke(System.Object,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: IMethodInvoker
+  nameWithType: IMethodInvoker
+  fullName: MacacaGames.IMethodInvoker
+  type: Interface
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/MethodInvoker.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: IMethodInvoker
+    path: ../Scripts/Utilitys/Reflactor/MethodInvoker.cs
+    startLine: 9
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public interface IMethodInvoker
+    content.vb: Public Interface IMethodInvoker
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: MacacaGames.IMethodInvoker.Invoke(System.Object,System.Object[])
+  commentId: M:MacacaGames.IMethodInvoker.Invoke(System.Object,System.Object[])
+  id: Invoke(System.Object,System.Object[])
+  parent: MacacaGames.IMethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Object, Object[])
+  nameWithType: IMethodInvoker.Invoke(Object, Object[])
+  fullName: MacacaGames.IMethodInvoker.Invoke(System.Object, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Scripts/Utilitys/Reflactor/MethodInvoker.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Invoke
+    path: ../Scripts/Utilitys/Reflactor/MethodInvoker.cs
+    startLine: 11
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: object Invoke(object instance, params object[] parameters)
+    parameters:
+    - id: instance
+      type: System.Object
+    - id: parameters
+      type: System.Object[]
+    return:
+      type: System.Object
+    content.vb: Function Invoke(instance As Object, ParamArray parameters As Object()) As Object
+  overload: MacacaGames.IMethodInvoker.Invoke*
+  nameWithType.vb: IMethodInvoker.Invoke(Object, Object())
+  fullName.vb: MacacaGames.IMethodInvoker.Invoke(System.Object, System.Object())
+  name.vb: Invoke(Object, Object())
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.IMethodInvoker.Invoke*
+  commentId: Overload:MacacaGames.IMethodInvoker.Invoke
+  name: Invoke
+  nameWithType: IMethodInvoker.Invoke
+  fullName: MacacaGames.IMethodInvoker.Invoke
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

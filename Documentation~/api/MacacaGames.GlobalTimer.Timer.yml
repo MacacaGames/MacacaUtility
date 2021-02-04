@@ -1,0 +1,858 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.GlobalTimer.Timer
+  commentId: T:MacacaGames.GlobalTimer.Timer
+  id: GlobalTimer.Timer
+  parent: MacacaGames
+  children:
+  - MacacaGames.GlobalTimer.Timer.completeTimeStamp
+  - MacacaGames.GlobalTimer.Timer.Dispose
+  - MacacaGames.GlobalTimer.Timer.Dispose(System.Boolean)
+  - MacacaGames.GlobalTimer.Timer.Finalize
+  - MacacaGames.GlobalTimer.Timer.Finished
+  - MacacaGames.GlobalTimer.Timer.id
+  - MacacaGames.GlobalTimer.Timer.LeftTime
+  - MacacaGames.GlobalTimer.Timer.OnComplete
+  - MacacaGames.GlobalTimer.Timer.OnUpdate
+  - MacacaGames.GlobalTimer.Timer.Update
+  langs:
+  - csharp
+  - vb
+  name: GlobalTimer.Timer
+  nameWithType: GlobalTimer.Timer
+  fullName: MacacaGames.GlobalTimer.Timer
+  type: Class
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Timer
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 196
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nTimer  \n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Timer : IDisposable
+    content.vb: >-
+      <Serializable>
+
+      Public Class Timer
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MacacaGames.GlobalTimer.Timer.id
+  commentId: F:MacacaGames.GlobalTimer.Timer.id
+  id: id
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: GlobalTimer.Timer.id
+  fullName: MacacaGames.GlobalTimer.Timer.id
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: id
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 200
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public string id
+    return:
+      type: System.String
+    content.vb: Public id As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.GlobalTimer.Timer.OnComplete
+  commentId: F:MacacaGames.GlobalTimer.Timer.OnComplete
+  id: OnComplete
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnComplete
+  nameWithType: GlobalTimer.Timer.OnComplete
+  fullName: MacacaGames.GlobalTimer.Timer.OnComplete
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: OnComplete
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 201
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public Action OnComplete
+    return:
+      type: System.Action
+    content.vb: Public OnComplete As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.GlobalTimer.Timer.OnUpdate
+  commentId: F:MacacaGames.GlobalTimer.Timer.OnUpdate
+  id: OnUpdate
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnUpdate
+  nameWithType: GlobalTimer.Timer.OnUpdate
+  fullName: MacacaGames.GlobalTimer.Timer.OnUpdate
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: OnUpdate
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 206
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\n<paras name=\"int\"> The left time of current counter</paras>\n"
+  example: []
+  syntax:
+    content: public Action<int> OnUpdate
+    return:
+      type: System.Action{System.Int32}
+    content.vb: Public OnUpdate As Action(Of Integer)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.GlobalTimer.Timer.Finished
+  commentId: F:MacacaGames.GlobalTimer.Timer.Finished
+  id: Finished
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Finished
+  nameWithType: GlobalTimer.Timer.Finished
+  fullName: MacacaGames.GlobalTimer.Timer.Finished
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Finished
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 207
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public bool Finished
+    return:
+      type: System.Boolean
+    content.vb: Public Finished As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.GlobalTimer.Timer.completeTimeStamp
+  commentId: F:MacacaGames.GlobalTimer.Timer.completeTimeStamp
+  id: completeTimeStamp
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: completeTimeStamp
+  nameWithType: GlobalTimer.Timer.completeTimeStamp
+  fullName: MacacaGames.GlobalTimer.Timer.completeTimeStamp
+  type: Field
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: completeTimeStamp
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 209
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public int completeTimeStamp
+    return:
+      type: System.Int32
+    content.vb: Public completeTimeStamp As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.GlobalTimer.Timer.LeftTime
+  commentId: P:MacacaGames.GlobalTimer.Timer.LeftTime
+  id: LeftTime
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: LeftTime
+  nameWithType: GlobalTimer.Timer.LeftTime
+  fullName: MacacaGames.GlobalTimer.Timer.LeftTime
+  type: Property
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: LeftTime
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 215
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  summary: "\nLeftTime of the timer\n"
+  example: []
+  syntax:
+    content: public int LeftTime { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: LeftTime of the timer
+    content.vb: Public ReadOnly Property LeftTime As Integer
+  overload: MacacaGames.GlobalTimer.Timer.LeftTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: MacacaGames.GlobalTimer.Timer.Update
+  commentId: M:MacacaGames.GlobalTimer.Timer.Update
+  id: Update
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: GlobalTimer.Timer.Update()
+  fullName: MacacaGames.GlobalTimer.Timer.Update()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Update
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 223
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update
+  overload: MacacaGames.GlobalTimer.Timer.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.GlobalTimer.Timer.Dispose
+  commentId: M:MacacaGames.GlobalTimer.Timer.Dispose
+  id: Dispose
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GlobalTimer.Timer.Dispose()
+  fullName: MacacaGames.GlobalTimer.Timer.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Dispose
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 236
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: MacacaGames.GlobalTimer.Timer.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MacacaGames.GlobalTimer.Timer.Dispose(System.Boolean)
+  commentId: M:MacacaGames.GlobalTimer.Timer.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: GlobalTimer.Timer.Dispose(Boolean)
+  fullName: MacacaGames.GlobalTimer.Timer.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Dispose
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 243
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: MacacaGames.GlobalTimer.Timer.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: MacacaGames.GlobalTimer.Timer.Finalize
+  commentId: M:MacacaGames.GlobalTimer.Timer.Finalize
+  id: Finalize
+  parent: MacacaGames.GlobalTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: GlobalTimer.Timer.Finalize()
+  fullName: MacacaGames.GlobalTimer.Timer.Finalize()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Components/GlobalTimer/GlobalTimer.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: Finalize
+    path: ../Scripts/Components/GlobalTimer/GlobalTimer.cs
+    startLine: 259
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: MacacaGames.GlobalTimer.Timer.Finalize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{System.Int32}
+  commentId: T:System.Action{System.Int32}
+  parent: System
+  definition: System.Action`1
+  name: Action<Int32>
+  nameWithType: Action<Int32>
+  fullName: System.Action<System.Int32>
+  nameWithType.vb: Action(Of Int32)
+  fullName.vb: System.Action(Of System.Int32)
+  name.vb: Action(Of Int32)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MacacaGames.GlobalTimer.Timer.LeftTime*
+  commentId: Overload:MacacaGames.GlobalTimer.Timer.LeftTime
+  name: LeftTime
+  nameWithType: GlobalTimer.Timer.LeftTime
+  fullName: MacacaGames.GlobalTimer.Timer.LeftTime
+- uid: MacacaGames.GlobalTimer.Timer.Update*
+  commentId: Overload:MacacaGames.GlobalTimer.Timer.Update
+  name: Update
+  nameWithType: GlobalTimer.Timer.Update
+  fullName: MacacaGames.GlobalTimer.Timer.Update
+- uid: MacacaGames.GlobalTimer.Timer.Dispose*
+  commentId: Overload:MacacaGames.GlobalTimer.Timer.Dispose
+  name: Dispose
+  nameWithType: GlobalTimer.Timer.Dispose
+  fullName: MacacaGames.GlobalTimer.Timer.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MacacaGames.GlobalTimer.Timer.Finalize*
+  commentId: Overload:MacacaGames.GlobalTimer.Timer.Finalize
+  name: Finalize
+  nameWithType: GlobalTimer.Timer.Finalize
+  fullName: MacacaGames.GlobalTimer.Timer.Finalize

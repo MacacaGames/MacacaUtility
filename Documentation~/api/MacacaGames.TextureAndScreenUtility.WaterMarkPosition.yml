@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  commentId: T:MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  id: TextureAndScreenUtility.WaterMarkPosition
+  parent: MacacaGames
+  children:
+  - MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  - MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  - MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  - MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
+  langs:
+  - csharp
+  - vb
+  name: TextureAndScreenUtility.WaterMarkPosition
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  type: Enum
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: WaterMarkPosition
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 73
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: public enum WaterMarkPosition
+    content.vb: Public Enum WaterMarkPosition
+  extensionMethods:
+  - MacacaGames.TextureAndScreenUtility.WaterMarkPosition.FlagsHelperExtensions.IsSet``1(MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
+  id: RightTop
+  parent: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  langs:
+  - csharp
+  - vb
+  name: RightTop
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.RightTop
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightTop
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: RightTop
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 75
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: RightTop = 0
+    return:
+      type: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  id: LeftTop
+  parent: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  langs:
+  - csharp
+  - vb
+  name: LeftTop
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftTop
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: LeftTop
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 76
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: LeftTop = 1
+    return:
+      type: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  id: RightBottom
+  parent: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  langs:
+  - csharp
+  - vb
+  name: RightBottom
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.RightBottom
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: RightBottom
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 77
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: RightBottom = 2
+    return:
+      type: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  commentId: F:MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  id: LeftBottom
+  parent: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  langs:
+  - csharp
+  - vb
+  name: LeftBottom
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.LeftBottom
+  type: Field
+  source:
+    remote:
+      path: Scripts/Utilitys/TextureAndScreenUtility.cs
+      branch: master
+      repo: https://github.com/MacacaGames/MacacaUtility.git
+    id: LeftBottom
+    path: ../Scripts/Utilitys/TextureAndScreenUtility.cs
+    startLine: 78
+  assemblies:
+  - Macaca.Utility
+  namespace: MacacaGames
+  syntax:
+    content: LeftBottom = 3
+    return:
+      type: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MacacaGames
+  commentId: N:MacacaGames
+  name: MacacaGames
+  nameWithType: MacacaGames
+  fullName: MacacaGames
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition.FlagsHelperExtensions.IsSet``1(MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  parent: FlagsHelperExtensions
+  definition: FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<TextureAndScreenUtility.WaterMarkPosition>(TextureAndScreenUtility.WaterMarkPosition)
+  nameWithType: FlagsHelperExtensions.IsSet<TextureAndScreenUtility.WaterMarkPosition>(TextureAndScreenUtility.WaterMarkPosition)
+  fullName: FlagsHelperExtensions.IsSet<MacacaGames.TextureAndScreenUtility.WaterMarkPosition>(MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of TextureAndScreenUtility.WaterMarkPosition)(TextureAndScreenUtility.WaterMarkPosition)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of MacacaGames.TextureAndScreenUtility.WaterMarkPosition)(MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  name.vb: IsSet(Of TextureAndScreenUtility.WaterMarkPosition)(TextureAndScreenUtility.WaterMarkPosition)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet<TextureAndScreenUtility.WaterMarkPosition>
+    nameWithType: FlagsHelperExtensions.IsSet<TextureAndScreenUtility.WaterMarkPosition>
+    fullName: FlagsHelperExtensions.IsSet<MacacaGames.TextureAndScreenUtility.WaterMarkPosition>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+    name: TextureAndScreenUtility.WaterMarkPosition
+    nameWithType: TextureAndScreenUtility.WaterMarkPosition
+    fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0)
+    name: IsSet(Of TextureAndScreenUtility.WaterMarkPosition)
+    nameWithType: FlagsHelperExtensions.IsSet(Of TextureAndScreenUtility.WaterMarkPosition)
+    fullName: FlagsHelperExtensions.IsSet(Of MacacaGames.TextureAndScreenUtility.WaterMarkPosition)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+    name: TextureAndScreenUtility.WaterMarkPosition
+    nameWithType: TextureAndScreenUtility.WaterMarkPosition
+    fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+  commentId: M:FlagsHelperExtensions.IsSet``1(``0,``0)
+  name: IsSet<T>(T, T)
+  nameWithType: FlagsHelperExtensions.IsSet<T>(T, T)
+  fullName: FlagsHelperExtensions.IsSet<T>(T, T)
+  nameWithType.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  fullName.vb: FlagsHelperExtensions.IsSet(Of T)(T, T)
+  name.vb: IsSet(Of T)(T, T)
+  spec.csharp:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet<T>
+    nameWithType: FlagsHelperExtensions.IsSet<T>
+    fullName: FlagsHelperExtensions.IsSet<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FlagsHelperExtensions.IsSet``1(``0,``0)
+    name: IsSet(Of T)
+    nameWithType: FlagsHelperExtensions.IsSet(Of T)
+    fullName: FlagsHelperExtensions.IsSet(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FlagsHelperExtensions
+  commentId: T:FlagsHelperExtensions
+  name: FlagsHelperExtensions
+  nameWithType: FlagsHelperExtensions
+  fullName: FlagsHelperExtensions
+- uid: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  commentId: T:MacacaGames.TextureAndScreenUtility.WaterMarkPosition
+  parent: MacacaGames
+  name: TextureAndScreenUtility.WaterMarkPosition
+  nameWithType: TextureAndScreenUtility.WaterMarkPosition
+  fullName: MacacaGames.TextureAndScreenUtility.WaterMarkPosition
