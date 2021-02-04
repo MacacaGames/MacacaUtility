@@ -167,5 +167,32 @@ namespace MacacaGames
             /// </summary>
             Disabled,
         }
+#if ODIN_INSPECTOR
+        [Sirenix.OdinInspector.Button]
+        void ApplyToNormal()
+        {
+            OnSelectionStateChagne(SelectionState.Normal);
+        }
+        [Sirenix.OdinInspector.Button]
+        void ApplyToHighlighted()
+        {
+            OnSelectionStateChagne(SelectionState.Highlighted);
+        }
+        [Sirenix.OdinInspector.Button]
+        void ApplyToPressed()
+        {
+            OnSelectionStateChagne(SelectionState.Pressed);
+        }
+        [Sirenix.OdinInspector.Button]
+        void ApplyToSelected()
+        {
+            OnSelectionStateChagne(SelectionState.Selected);
+        }
+        [Sirenix.OdinInspector.Button]
+        void ApplyToDisabled()
+        {
+            OnSelectionStateChagne(SelectionState.Disabled);
+        }
+#endif
     }
 }
