@@ -4,12 +4,38 @@ using UnityEngine;
 using UnityEditor;
 using System.Reflection;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace MacacaGames
 {
     public static class SerializedPropertyExtensions
-    {
-        public static void SetTargetObjectOfProperty(SerializedProperty prop, object value)
+    { /// <summary>
+      /// Gets the object the property represents.
+      /// </summary>
+      /// <param name="prop"></param>
+      /// <returns></returns>
+        public static object GetTargetObjectOfProperty(this SerializedProperty prop)
+        {
+            var path = prop.propertyPath.Replace(".Array.data[", "[");
+            object obj = prop.serializedObject.targetObject;
+            var elements = path.Split('.');
+            foreach (var element in elements)
+            {
+                if (element.Contains("["))
+                {
+                    var elementName = element.Substring(0, element.IndexOf("["));
+                    var index = System.Convert.ToInt32(element.Substring(element.IndexOf("[")).Replace("[", "").Replace("]", ""));
+                    obj = GetValue_Imp(obj, elementName, index);
+                }
+                else
+                {
+                    obj = GetValue_Imp(obj, element);
+                }
+            }
+            return obj;
+        }
+
+        public static void SetTargetObjectOfProperty(this SerializedProperty prop, object value)
         {
             var path = prop.propertyPath.Replace(".Array.data[", "[");
             object obj = prop.serializedObject.targetObject;
@@ -100,6 +126,8 @@ namespace MacacaGames
             }
             return enm.Current;
         }
+
+        
     }
 
 }
