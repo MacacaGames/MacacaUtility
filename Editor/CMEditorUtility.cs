@@ -548,14 +548,14 @@ namespace MacacaGames
             protected virtual void DrawSerachBar()
             {
                 GUILayout.BeginHorizontal(GUI.skin.FindStyle("Toolbar"));
-                searchString = GUILayout.TextField(searchString, GUI.skin.FindStyle("ToolbarSeachTextField"));
+                searchString = EditorGUILayout.TextField(searchString, GUI.skin.FindStyle("ToolbarSeachTextField"));
                 var rect = GUILayoutUtility.GetLastRect();
                 if (string.IsNullOrEmpty(searchString))
                 {
                     GUI.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
                     rect.x += 15;
-                    rect.width -= 15;
-                    GUI.Label(rect, "g: for find by group", new GUIStyle("AnimationSelectionTextField"));
+                    // rect.width -= 15;
+                    GUI.Label(rect, "g: for find by group");
                     GUI.color = Color.white;
                 }
                 if (GUILayout.Button("", GUI.skin.FindStyle("ToolbarSeachCancelButton")))
