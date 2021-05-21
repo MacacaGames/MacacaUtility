@@ -182,6 +182,13 @@ namespace MacacaGames
             GetLobbyMusicAudioSource().Play();
         }
 
+        public void StopLobbyMusic(){
+            if (GetLobbyMusicAudioSource().isPlaying)
+            {
+                GetLobbyMusicAudioSource().Stop();
+            }
+        }
+
         public bool IsMusicPlaying()
         {
             return GetMusicAudioSource().isPlaying;
