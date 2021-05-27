@@ -27,6 +27,12 @@ namespace MacacaGames
         public Color Vertex1 { get { return _vertex1; } set { _vertex1 = value; graphic.SetAllDirty(); } }
         public Color Vertex2 { get { return _vertex2; } set { _vertex2 = value; graphic.SetAllDirty(); } }
         #endregion
+        [System.Serializable]
+        public struct ColorPair
+        {
+            public Color Vertext1;
+            public Color Vertext2;
+        }
 
         protected override void Awake()
         {
