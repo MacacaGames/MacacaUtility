@@ -9,7 +9,7 @@ using TMPro;
 namespace MacacaGames
 {
 #if TextMeshPro
-    [RequireComponent(typeof(TextMeshProUGUI))]
+    [RequireComponent(typeof(TMP_Text))]
 #else
     [RequireComponent(typeof(Text))]
 #endif
@@ -30,13 +30,13 @@ namespace MacacaGames
             }
         }
 #if TextMeshPro
-        TextMeshProUGUI _textComponent;
-        public TextMeshProUGUI textComponent
+        TMP_Text _textComponent;
+        public TMP_Text textComponent
         {
             get
             {
                 if (_textComponent == null)
-                    _textComponent = GetComponent<TextMeshProUGUI>();
+                    _textComponent = GetComponent<TMP_Text>();
                 return _textComponent;
             }
         }
