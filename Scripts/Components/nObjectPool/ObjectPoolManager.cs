@@ -7,7 +7,7 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
 {
     static Dictionary<int, nObjectPool> PoolDict = new Dictionary<int, nObjectPool>();
 
-    public static nObjectPool GetObjectPool(PoolableObject poolableObject)
+    public static nObjectPool GetObjectPool(PoolableObject poolableObject, int defaultSize = DEFAULT_POOL_SIZE)
     {
         int poolKey = poolableObject.poolKey;
         if (poolableObject.gameObject.scene.name == null)
@@ -20,7 +20,7 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
 
         if (!isHasPool)
         {
-            poolDictCache = CreateNewObjectPool(poolableObject);
+            poolDictCache = CreateNewObjectPool(poolableObject, defaultSize);
         }
 
         return poolDictCache;
