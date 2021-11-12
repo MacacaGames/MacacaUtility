@@ -103,7 +103,7 @@ namespace MacacaGames
         public Coroutine SetTextAnimation(string text, Vector3 startScale, float animationDuration, EaseStyle animationEaseType, bool isPlayParticle)
         {
             if (currentTextCoroutine != null)
-                StopCoroutine(currentTextCoroutine);
+                CoroutineManager.Instance.StopCoroutine(currentTextCoroutine);
 
             if (_particleToPlay != null)
                 _particleToPlay.Play();
