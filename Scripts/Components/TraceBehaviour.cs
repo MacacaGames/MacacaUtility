@@ -37,18 +37,20 @@ public class TraceBehaviour : PoolableObject
         Vector3 v = Random.onUnitSphere * Random.Range(explodeForceRandomRange.x, explodeForceRandomRange.y);
         v.z = 0;
         currentAcc = acc;
+
         do
         {
+            float dt = Time.deltaTime;
             if (targetTransform == null)
                 break;
 
             delta = targetTransform.position - transformCache.position;
             delta.z = 0;
 
-            currentAcc += Time.deltaTime * acc_ad;
-            v += Time.deltaTime * currentAcc * delta.normalized;
-            v *= Mathf.Pow(1 - smoothFactor, Time.deltaTime * 60f);
-            transformCache.position += v;
+            currentAcc += dt * acc_ad;
+            v += dt * currentAcc * delta.normalized;
+            v *= Mathf.Pow(1 - smoothFactor, dt * 60f);
+            transformCache.position += v * dt;
 
             bool _face = Mathf.Sign(delta.x) > 0;
             if (face == null)
@@ -63,7 +65,7 @@ public class TraceBehaviour : PoolableObject
 
             yield return null;
         }
-        while (delta.magnitude > v.magnitude && delta.magnitude > destroyRange && targetTransform != null);
+        while (delta.magnitude > v.magnitude * Time.deltaTime && delta.magnitude > destroyRange && targetTransform != null);
 
         if (targetTransform != null)
             transformCache.position = targetTransform.position;
@@ -89,17 +91,17 @@ public class TraceBehaviour : PoolableObject
         currentAcc = acc * l;
         do
         {
-
+            float dt = Time.deltaTime;
             delta = targetPos - transformCache.position;
             delta.z = 0;
-            currentAcc += Time.deltaTime * acc_ad * l;
-            v += Time.deltaTime * currentAcc * delta.normalized;
-            v *= Mathf.Pow(1 - smoothFactor, Time.deltaTime * 60);
+            currentAcc += dt * acc_ad * l;
+            v += dt * currentAcc * delta.normalized;
+            v *= Mathf.Pow(1 - smoothFactor, dt * 60);
 
             if (is2D)
                 v.z = 0;
 
-            transformCache.position += v;
+            transformCache.position += v * dt;
 
             bool _face = Mathf.Sign(delta.x) > 0;
             if (face == null)
@@ -114,7 +116,7 @@ public class TraceBehaviour : PoolableObject
 
             yield return null;
         }
-        while (delta.magnitude > v.magnitude && delta.magnitude > destroyRange);
+        while (delta.magnitude > v.magnitude * Time.deltaTime && delta.magnitude > destroyRange);
 
         transformCache.position = targetPos;
 
