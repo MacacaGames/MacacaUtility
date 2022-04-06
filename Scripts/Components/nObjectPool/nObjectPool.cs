@@ -69,9 +69,8 @@ public class nObjectPool : MonoBehaviour
 
         GameObject poolableObj = poolableObject.gameObject;
         Transform poolableTransform = poolableObj.transform;
-        poolableTransform.SetPositionAndRotation(position, rotation);
         poolableTransform.SetParent(parent);
-        //poolableObj.SetActive(true);
+        poolableTransform.SetPositionAndRotation(position, rotation);
         m_pool_using.Add(poolableObject);
         poolableObject.OnReUse();
         return poolableObject;
