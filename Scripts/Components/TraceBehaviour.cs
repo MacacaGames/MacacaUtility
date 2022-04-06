@@ -53,6 +53,7 @@ public class TraceBehaviour : PoolableObject
             v += dt * currentAcc * delta.normalized;
             var magnetide = v.magnitude;
             var dir = Vector3.Lerp(v.normalized, delta.normalized, currentFixAngleTime / fixAngleSuckDuration);
+            dir = dir.normalized;
 
             v = dir * magnetide;
 
