@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MacacaGames;
 
 public class TraceBehaviour : PoolableObject
 {
     [SerializeField]
     Vector2 explodeForceRandomRange;
-    [SerializeField]
-    float acc_ad;
     [SerializeField]
     float acc;
 
@@ -28,8 +27,8 @@ public class TraceBehaviour : PoolableObject
 
     [SerializeField]
     float destroyRange = .5f;
-    [SerializeField, Range(0, 1)]
-    float smoothFactor = .1f;
+    [SerializeField]
+    float fixAngleSuckDuration = 1;
     IEnumerator TraceTask(Transform targetTransform, System.Action<GameObject,Vector3> onEnd)
     {
         bool? face = null;
@@ -37,19 +36,26 @@ public class TraceBehaviour : PoolableObject
         Vector3 v = Random.onUnitSphere * Random.Range(explodeForceRandomRange.x, explodeForceRandomRange.y);
         v.z = 0;
         currentAcc = acc;
+        float currentFixAngleTime = 0;
 
         do
         {
             float dt = Time.deltaTime;
+            currentFixAngleTime += dt;
+
             if (targetTransform == null)
                 break;
 
             delta = targetTransform.position - transformCache.position;
             delta.z = 0;
 
-            currentAcc += dt * acc_ad;
+            currentAcc += dt;
             v += dt * currentAcc * delta.normalized;
-            v *= Mathf.Pow(1 - smoothFactor, dt * 60f);
+            var magnetide = v.magnitude;
+            var dir = Vector3.Lerp(v.normalized, delta.normalized, currentFixAngleTime / fixAngleSuckDuration);
+
+            v = dir * magnetide;
+
             transformCache.position += v * dt;
 
             bool _face = Mathf.Sign(delta.x) > 0;
@@ -91,12 +97,13 @@ public class TraceBehaviour : PoolableObject
         currentAcc = acc * l;
         do
         {
-            float dt = Time.deltaTime;
+            float dt = GlobalTimer.deltaTime;
             delta = targetPos - transformCache.position;
-            delta.z = 0;
-            currentAcc += dt * acc_ad * l;
+
+            if (is2D)
+                delta.z = 0;
+
             v += dt * currentAcc * delta.normalized;
-            v *= Mathf.Pow(1 - smoothFactor, dt * 60);
 
             if (is2D)
                 v.z = 0;
@@ -116,7 +123,7 @@ public class TraceBehaviour : PoolableObject
 
             yield return null;
         }
-        while (delta.magnitude > v.magnitude * Time.deltaTime && delta.magnitude > destroyRange);
+        while (delta.magnitude > v.magnitude * GlobalTimer.deltaTime && delta.magnitude > destroyRange);
 
         transformCache.position = targetPos;
 
