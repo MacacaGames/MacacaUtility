@@ -45,9 +45,11 @@ public class nObjectPool : MonoBehaviour
         for (int cnt = 0; cnt < initailSize; cnt++)
         {
             PoolableObject newOne = NewOne();
-            m_pool.Enqueue(newOne);
-            newOne.gameObject.SetActive(false);
-            newOne.transform.SetParent(poolRoot.transform);
+            //m_pool.Enqueue(newOne);
+            //newOne.gameObject.SetActive(false);
+            //newOne.transform.SetParent(poolRoot.transform);
+            //newOne.OnRecovery();
+            Recovery(newOne);
         }
     }
     public T ReUse<T>(Vector3 position, Quaternion rotation, Transform parent = null)
@@ -69,7 +71,7 @@ public class nObjectPool : MonoBehaviour
         Transform poolableTransform = poolableObj.transform;
         poolableTransform.SetPositionAndRotation(position, rotation);
         poolableTransform.SetParent(parent);
-        poolableObj.SetActive(true);
+        //poolableObj.SetActive(true);
         m_pool_using.Add(poolableObject);
         poolableObject.OnReUse();
         return poolableObject;
@@ -78,7 +80,7 @@ public class nObjectPool : MonoBehaviour
     PoolableObject NewOne()
     {
         PoolableObject newOne = Instantiate(poolableObject) as PoolableObject;
-        newOne.gameObject.transform.SetParent(poolRoot.transform);
+        //newOne.gameObject.transform.SetParent(poolRoot.transform);
         newOne.SetPoolKey(poolKey);
         return newOne;
     }
@@ -90,7 +92,7 @@ public class nObjectPool : MonoBehaviour
 
         GameObject poolable = poolableObject.gameObject;
         m_pool.Enqueue(poolableObject);
-        poolable.SetActive(false);
+        //poolable.SetActive(false);
         poolable.transform.SetParent(poolRoot.transform);
 
         if (m_pool_using.Contains(poolableObject))
@@ -121,10 +123,11 @@ public class nObjectPool : MonoBehaviour
         {
             if (poolableObject != null)
             {
-                m_pool.Enqueue(poolableObject);
-                GameObject poolableObj = poolableObject.gameObject;
-                poolableObj.SetActive(false);
-                poolableObj.transform.SetParent(poolRoot.transform);
+                poolableObject.RecoverSelf();
+                //m_pool.Enqueue(poolableObject);
+                //GameObject poolableObj = poolableObject.gameObject;
+                //poolableObj.SetActive(false);
+                //poolableObj.transform.SetParent(poolRoot.transform);
             }
             else
             {

@@ -20,12 +20,15 @@ public class PoolableObject : TransformCacheBase
         ObjectPoolManager.GetObjectPool(this).Recovery(this, delay);
     }
 
+    /// <summary>
+    /// 如果希望 onRecovery 的時候關閉 gameObject，請記得呼叫 base.OnRecovery(),並且 OnReUse 記得呼叫 base.OnReuse() 來 active GameObject
+    /// </summary>
     public virtual void OnRecovery()
     {
-
+        gameObject.SetActive(false);
     }
     public virtual void OnReUse()
     {
-
+        gameObject.SetActive(true);
     }
 }
