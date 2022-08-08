@@ -17,6 +17,7 @@ namespace MacacaGames
 
         [SerializeField]
         SelectablePalette palette;
+        int lastPaletteInstanceId;
         public void SetPalette(SelectablePalette _palette)
         {
             palette = _palette;
@@ -38,6 +39,11 @@ namespace MacacaGames
             if (lastSelectionState != currentSelectionState)
             {
                 lastSelectionState = currentSelectionState;
+                OnSelectionStateChagne(currentSelectionState);
+            }
+            if (lastPaletteInstanceId != palette.GetInstanceID())
+            {
+                lastPaletteInstanceId = palette.GetInstanceID();
                 OnSelectionStateChagne(currentSelectionState);
             }
         }
