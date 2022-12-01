@@ -66,8 +66,14 @@ public static partial class Vector2Extension
         float cos = vector.x / vector.magnitude;
         float angle = Mathf.Acos(cos);
 
-        if (vector.y < 0)
-            angle = 2 * Mathf.PI - angle;
+        //if (vector.y < 0)
+        //    angle = 2 * Mathf.PI - angle;
+
+        if (angle < 0)
+        {
+            angle %= Mathf.PI * 2;
+            angle += Mathf.PI * 2;
+        }
 
         angle *= Mathf.Rad2Deg;
 
