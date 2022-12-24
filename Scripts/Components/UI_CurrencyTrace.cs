@@ -9,7 +9,7 @@ public class UI_CurrencyTrace : PoolableObject
 {
     [SerializeField]
     Image currencyImage;
-
+    
     public void SetCurrencyImage(Sprite img)
     {
         currencyImage.sprite = img;
@@ -26,27 +26,50 @@ public class UI_CurrencyTrace : PoolableObject
     float explodeTime = .5f;
     [SerializeField]
     Ease explodeEase = Ease.OutCubic;
+    [SerializeField]
+    ExplodeShape explodeShape = ExplodeShape.InsideSphere;
 
     [SerializeField]
     float suckTime = .5f;
     [SerializeField]
     Ease suckEase = Ease.InOutSine;
 
-    IEnumerator TraceTask(Vector3 targetPos, System.Action onEnd)
+    IEnumerator TraceTask(Vector3 targetPos, System.Action onEnd )
     {
-        float distance = Random.Range(0f, explodeDistance);
-        float randomAngle = Random.Range(0f, 360f);
-        Vector3 explodePos =
-            transformCache.position +
-            new Vector3(
-                distance * Mathf.Cos(randomAngle),
-                distance * Mathf.Sin(randomAngle),
-                0);
+        Vector3 explodeOffset = GetRandomExplodeOffset();
+        var explodePos = transformCache.localPosition + explodeOffset;
 
-        yield return transformCache.DOMove(explodePos, explodeTime).SetEase(explodeEase).WaitForCompletion();
+        yield return transformCache.DOLocalMove(explodePos, explodeTime).SetEase(explodeEase).WaitForCompletion();
         yield return transformCache.DOMove(targetPos, suckTime).SetEase(suckEase).WaitForCompletion();
 
         onEnd?.Invoke();
     }
 
+    Vector3 GetRandomExplodeOffset()
+    {
+        Vector3 result = Vector3.zero;
+        switch (explodeShape)
+        {
+            case ExplodeShape.InsideCircle:
+                result = Random.insideUnitCircle;
+                break;
+            case ExplodeShape.InsideSphere:
+                result = Random.insideUnitSphere;
+                break;
+            case ExplodeShape.OnSpherePlane:
+                result= Random.onUnitSphere;
+                break;
+        }
+
+        result.z = 0;
+        result *= explodeDistance;
+        return result;
+    }
+
+    enum ExplodeShape
+    {
+        InsideCircle,
+        InsideSphere,
+        OnSpherePlane,
+    }
 }
