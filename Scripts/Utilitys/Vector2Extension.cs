@@ -57,27 +57,13 @@ public static partial class Vector2Extension
 
     public enum CovertMethod { xy, xz, yz }
 
-    public static float ToAngle(this Vector2 vector)
+    public static float ToAngle(Vector2 vector)
     {
-        if (Mathf.Abs(vector.magnitude) <= float.Epsilon)
-            return 0;
+        // Get the angle of the Vector2 in radians
+        float angleInRadians = Mathf.Atan2(vector.y, vector.x);
 
-        vector.Normalize();
-        float cos = vector.x / vector.magnitude;
-        float angle = Mathf.Acos(cos);
-
-        //if (vector.y < 0)
-        //    angle = 2 * Mathf.PI - angle;
-
-        if (angle < 0)
-        {
-            angle %= Mathf.PI * 2;
-            angle += Mathf.PI * 2;
-        }
-
-        angle *= Mathf.Rad2Deg;
-
-        return angle;
+        // Convert the angle to degrees
+        return angleInRadians * Mathf.Rad2Deg;
     }
 
     public static Vector2 FromAngle(float angle)
