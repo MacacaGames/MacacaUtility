@@ -26,6 +26,18 @@ namespace MacacaGames
         public bool OverwriteAllColor { get { return _overwriteAllColor; } set { _overwriteAllColor = value; graphic.SetVerticesDirty(); } }
         public Color Vertex1 { get { return _vertex1; } set { _vertex1 = value; graphic.SetAllDirty(); } }
         public Color Vertex2 { get { return _vertex2; } set { _vertex2 = value; graphic.SetAllDirty(); } }
+        public ColorPair colorPair
+        {
+            get
+            {
+                return new ColorPair { Vertext1 = _vertex1, Vertext2 = _vertex2 };
+            }
+            set
+            {
+                Vertex1 = value.Vertext1;
+                Vertex2 = value.Vertext2;
+            }
+        }
         #endregion
         [System.Serializable]
         public struct ColorPair
