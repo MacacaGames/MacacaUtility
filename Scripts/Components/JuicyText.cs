@@ -122,6 +122,13 @@ namespace MacacaGames
             currentNumberCoroutune = CoroutineManager.Instance.StartCoroutine(ChangeNumberAnimation(number, numberDuration, extraTextInFront, extraTextInEnd, delay));
             return currentNumberCoroutune;
         }
+        [SerializeField]
+        bool isFadeOut = false;
+        [SerializeField]
+        float FadeOutDuration = 0;
+        [SerializeField]
+        float delayFadeOutTime = 0;
+
         IEnumerator ChangeTextAnimation(string text, Vector3 startScale, float animationDuration, EaseStyle animationEaseType)
         {
             SetTextInstant(text);
@@ -140,6 +147,21 @@ namespace MacacaGames
                 yield return null;
             }
             SetTextLerpView(1);
+
+            if (isFadeOut)
+            {
+                yield return new WaitForSeconds(delayFadeOutTime);
+
+                float fadeOutprogress = 0;
+                while (fadeOutprogress < FadeOutDuration)
+                {
+                    fadeOutprogress += Time.deltaTime;
+                    float param = fadeOutprogress / FadeOutDuration;
+                    SetTextLerpFadeOutView(param);
+                    yield return null;
+                }
+                SetTextLerpFadeOutView(1);
+            }
         }
 
         [SerializeField]
@@ -156,6 +178,30 @@ namespace MacacaGames
             if (isChangeOpacity)
             {
                 textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, ease);
+                if (isHasShadow)
+                    shadow.effectColor = new Color(c.r, c.g, c.b, Mathf.Lerp(0, c.a, param));
+            }
+            else
+            {
+                textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, 1);
+                if (isHasShadow)
+                    shadow.effectColor = new Color(c.r, c.g, c.b, Mathf.Lerp(0, c.a, 1));
+            }
+        }
+
+        void SetTextLerpFadeOutView(float param)
+        {
+            float ease = EaseUtility.EasedLerp(0, 1, param, animationEaseType);
+            if (scaleTarget == ScaleTarget.Self)
+                textComponent.transform.localScale = Vector3.LerpUnclamped(Vector3.one, Vector3.zero, ease);
+            else
+                textComponent.transform.parent.localScale = Vector3.LerpUnclamped(Vector3.one, Vector3.zero, ease);
+
+            float easeColor = EaseUtility.EasedLerp(1, 0, param, animationEaseType);
+            Color c = initShadowColor;
+            if (isChangeOpacity)
+            {
+                textComponent.color = new Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, easeColor);
                 if (isHasShadow)
                     shadow.effectColor = new Color(c.r, c.g, c.b, Mathf.Lerp(0, c.a, param));
             }
