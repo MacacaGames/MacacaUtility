@@ -11,6 +11,30 @@ namespace MacacaGames
     /// </summary>
     public class GlobalTimer : UnitySingleton<GlobalTimer>
     {
+        static double lastTimeSinceStartup = 0f;
+        private static double _editorDeltaTime;
+        /// <summary>
+        /// The deltaTime between frame and frame, same as Time.deltaTime but cached!
+        /// <seealso cref="Time.deltaTime"/>
+        /// </summary>
+        /// <value></value>
+        public static double editorDeltaTime
+        {
+            get
+            {
+#if UNITY_EDITOR
+                if (lastTimeSinceStartup == 0f)
+                {
+                    lastTimeSinceStartup = UnityEditor.EditorApplication.timeSinceStartup;
+                }
+                _editorDeltaTime = UnityEditor.EditorApplication.timeSinceStartup - lastTimeSinceStartup;
+                lastTimeSinceStartup = UnityEditor.EditorApplication.timeSinceStartup;
+#endif
+                return _editorDeltaTime;
+            }
+        }
+
+
         public Action OnResume;
         private float _deltaTime;
         private float _fixedDeltaTime;

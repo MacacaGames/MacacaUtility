@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections;
+using MacacaGames;
 
 public class EaseUtility
 {
@@ -46,30 +47,88 @@ public class EaseUtility
     {
         return new Vector2(EasedLerp(from.x, to.x, t, curve), EasedLerp(from.y, to.y, t, curve));
     }
-    
-    public static IEnumerator To(float start, float end, float dur, EaseStyle ease, Action<float> OnUpdate, Action OnComplete = null)
+
+    public static IEnumerator To(float start, float end, float duration, EaseStyle ease, Action<float> OnUpdate, Action OnComplete = null, float delay = 0)
     {
         float t = 0f;
-        while (t < dur)
+        while (t < delay)
         {
-            float sc = EasedLerp(start, end, t / dur, ease);
+            yield return null;
+
+#if UNITY_EDITOR
+            if (Application.isPlaying)
+            {
+                t += GlobalTimer.deltaTime;
+            }
+            else
+            {
+                t += (float)GlobalTimer.editorDeltaTime;
+            }
+#else
+            t += GlobalTimer.deltaTime;
+#endif
+        }
+        t = 0f;
+        while (t < duration)
+        {
+            float sc = EasedLerp(start, end, t / duration, ease);
             OnUpdate?.Invoke(sc);
             yield return null;
-            t += Time.deltaTime;
+#if UNITY_EDITOR
+            if (Application.isPlaying)
+            {
+                t += GlobalTimer.deltaTime;
+            }
+            else
+            {
+                t += (float)GlobalTimer.editorDeltaTime;
+            }
+#else
+            t += GlobalTimer.deltaTime;
+#endif
         }
         OnUpdate.Invoke(end);
         OnComplete?.Invoke();
     }
-    public static IEnumerator To(Vector3 start, Vector3 end, float dur, EaseStyle ease, Action<Vector3> OnUpdate, Action OnComplete = null)
+    public static IEnumerator To(Vector3 start, Vector3 end, float duration, EaseStyle ease, Action<Vector3> OnUpdate, Action OnComplete = null, float delay = 0)
     {
         float t = 0f;
-        Vector3 sc;
-        while (t < dur)
+
+        while (t < delay)
         {
-            sc = EasedLerp(start, end, t / dur, ease);
+            yield return null;
+#if UNITY_EDITOR
+            if (Application.isPlaying)
+            {
+                t += GlobalTimer.deltaTime;
+            }
+            else
+            {
+                t += (float)GlobalTimer.editorDeltaTime;
+            }
+#else
+            t += GlobalTimer.deltaTime;
+#endif
+        }
+        t = 0f;
+        Vector3 sc;
+        while (t < duration)
+        {
+            sc = EasedLerp(start, end, t / duration, ease);
             OnUpdate?.Invoke(sc);
             yield return null;
-            t += Time.deltaTime;
+#if UNITY_EDITOR
+            if (Application.isPlaying)
+            {
+                t += GlobalTimer.deltaTime;
+            }
+            else
+            {
+                t += (float)GlobalTimer.editorDeltaTime;
+            }
+#else
+            t += GlobalTimer.deltaTime;
+#endif
         }
         OnUpdate.Invoke(end);
         OnComplete?.Invoke();
