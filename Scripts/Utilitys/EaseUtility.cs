@@ -51,6 +51,7 @@ public class EaseUtility
     public static IEnumerator To(float start, float end, float duration, EaseStyle ease, Action<float> OnUpdate, Action OnComplete = null, float delay = 0)
     {
         float t = 0f;
+        OnUpdate?.Invoke(start);
         while (t < delay)
         {
             yield return null;
@@ -93,7 +94,7 @@ public class EaseUtility
     public static IEnumerator To(Vector3 start, Vector3 end, float duration, EaseStyle ease, Action<Vector3> OnUpdate, Action OnComplete = null, float delay = 0)
     {
         float t = 0f;
-
+        OnUpdate?.Invoke(start);
         while (t < delay)
         {
             yield return null;

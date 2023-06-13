@@ -131,8 +131,9 @@ public class BuiltInResourcesWindow : EditorWindow
                             CopyText("new GUIStyle(\"" + thisStyle.name + "\")");
 
                         GUILayout.BeginHorizontal();
-                        GUILayout.Toggle(false, inactiveText, thisStyle, GUILayout.Width(width / 2));
-                        GUILayout.Toggle(false, activeText, thisStyle, GUILayout.Width(width / 2));
+                        GUILayout.Toggle(false, inactiveText, thisStyle, GUILayout.Width(width / 3));
+                        GUILayout.Toggle(false, activeText, thisStyle, GUILayout.Width(width / 3));
+                        GUILayout.Toggle(true, "Togged", thisStyle, GUILayout.Width(width / 3));
                         GUILayout.EndHorizontal();
                     };
 
