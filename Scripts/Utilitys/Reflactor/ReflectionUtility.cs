@@ -8,6 +8,36 @@ namespace MacacaGames
     {
         const BindingFlags defaultBindingFlags = BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
 
+        public static Type GetMemberType(this MemberInfo memberInfo)
+        {
+            if (memberInfo.MemberType == MemberTypes.Field)
+            {
+                return (memberInfo as FieldInfo).FieldType;
+            }
+            else if (memberInfo.MemberType == MemberTypes.Property)
+            {
+                return (memberInfo as PropertyInfo).PropertyType;
+            }
+            else
+            {
+                throw new NotSupportedException("MemberInfo.GetMemberType only support for field or property");
+            }
+        }
+        public static void SetValue(this MemberInfo memberInfo, object obj, object value)
+        {
+            if (memberInfo.MemberType == MemberTypes.Field)
+            {
+                (memberInfo as FieldInfo).SetValue(obj, value);
+            }
+            else if (memberInfo.MemberType == MemberTypes.Property)
+            {
+                (memberInfo as PropertyInfo).SetValue(obj, value);
+            }
+            else
+            {
+                throw new NotSupportedException("MemberInfo.SetValue only support for field or property");
+            }
+        }
         /// <summary>取得MemberInfo的值。</summary>
         public static T GetValue<T>(this MemberInfo memberInfo, object forObject) where T : class
         {

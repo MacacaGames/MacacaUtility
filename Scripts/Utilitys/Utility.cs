@@ -32,6 +32,28 @@ namespace MacacaGames
         /// </summary>
         public static Type GetType(string TypeName)
         {
+            // basic type cache
+            if (TypeName == "int")
+            {
+                return typeof(int);
+            }
+            if (TypeName == "float")
+            {
+                return typeof(float);
+            }
+            if (TypeName == "string")
+            {
+                return typeof(string);
+            }
+            if (TypeName == "double")
+            {
+                return typeof(double);
+            }
+            if (TypeName == "bool")
+            {
+                return typeof(bool);
+            }
+
             // Try Type.GetType() first. This will work with types defined
             // by the Mono runtime, in the same assembly as the caller, etc.
             var type = Type.GetType(TypeName);
