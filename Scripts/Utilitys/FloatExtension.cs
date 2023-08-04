@@ -10,6 +10,11 @@ namespace MacacaGames
         {
             return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
         }
-    }
 
+        public static int FloorToInt (this float value)
+        {
+            var valueDecimal = new decimal(value);
+            return (int)decimal.Floor(valueDecimal);
+        }
+    }
 }
