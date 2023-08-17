@@ -545,10 +545,33 @@ namespace MacacaGames
                 }
             }
             protected string searchString;
+            string ToolbarSearchCancelButton 
+            {
+                get
+                {
+                    #if UNITY_2022_3_OR_NEWER
+			            return "ToolbarSearchCancelButton";
+		            #else
+			            return "ToolbarSeachCancelButton";
+		            #endif
+                }
+            }
+
+            string ToolbarSearchTextfield
+            {
+                get
+                {
+                    #if UNITY_2022_3_OR_NEWER
+			            return "ToolbarSearchTextField";
+		            #else
+			            return "ToolbarSeachTextField";
+		            #endif
+                }
+            }
             protected virtual void DrawSerachBar()
             {
                 GUILayout.BeginHorizontal(GUI.skin.FindStyle("Toolbar"));
-                searchString = EditorGUILayout.TextField(searchString, GUI.skin.FindStyle("ToolbarSeachTextField"));
+                searchString = EditorGUILayout.TextField(searchString, GUI.skin.FindStyle(ToolbarSearchTextfield));
                 var rect = GUILayoutUtility.GetLastRect();
                 if (string.IsNullOrEmpty(searchString))
                 {
@@ -558,7 +581,7 @@ namespace MacacaGames
                     GUI.Label(rect, "g: for find by group");
                     GUI.color = Color.white;
                 }
-                if (GUILayout.Button("", GUI.skin.FindStyle("ToolbarSeachCancelButton")))
+                if (GUILayout.Button("", GUI.skin.FindStyle(ToolbarSearchCancelButton)))
                 {
                     // Remove focus if cleared
                     searchString = "";
