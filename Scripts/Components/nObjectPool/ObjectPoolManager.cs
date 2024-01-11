@@ -35,6 +35,12 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
         return GetObjectPool(poolableObject).ReUse<T>(pos, rot, parent);
     }
 
+    public static T GetObject<T>(PoolableObject poolableObject, Transform parent = null) where T : Component
+    {
+        var transformCache = poolableObject.transformCache;
+        return GetObjectPool(poolableObject).ReUse<T>(transformCache.position, transformCache.rotation, parent);
+    }
+
     const int DEFAULT_POOL_SIZE = 3;
     static nObjectPool CreateNewObjectPool(PoolableObject refIPoolable, int size = DEFAULT_POOL_SIZE)
     {
