@@ -1,9 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using MacacaGames;
 using UnityEngine.UI;
-using DG.Tweening;
 
 public class UI_CurrencyTrace : PoolableObject
 {
@@ -25,23 +22,30 @@ public class UI_CurrencyTrace : PoolableObject
     [SerializeField]
     float explodeTime = .5f;
     [SerializeField]
-    Ease explodeEase = Ease.OutCubic;
+    EaseStyle explodeEase = EaseStyle.CubicEaseOut;
     [SerializeField]
     ExplodeShape explodeShape = ExplodeShape.InsideSphere;
 
     [SerializeField]
     float suckTime = .5f;
     [SerializeField]
-    Ease suckEase = Ease.InOutSine;
+    EaseStyle suckEase = EaseStyle.SineEaseInOut;
 
     IEnumerator TraceTask(Vector3 targetPos, System.Action onEnd )
     {
         Vector3 explodeOffset = GetRandomExplodeOffset();
-        var explodePos = transformCache.localPosition + explodeOffset;
+        var startPos = transformCache.position;
+        var explodePos = startPos + explodeOffset;
 
-        yield return transformCache.DOLocalMove(explodePos, explodeTime).SetEase(explodeEase).WaitForCompletion();
-        yield return transformCache.DOMove(targetPos, suckTime).SetEase(suckEase).WaitForCompletion();
-
+        yield return EaseUtility.To(startPos, explodePos, explodeTime, explodeEase, pos =>
+        {
+            transformCache.position = pos;
+        });
+        
+        yield return EaseUtility.To(explodePos, targetPos, suckTime, suckEase, pos =>
+        {
+            transformCache.position = pos;
+        });
         onEnd?.Invoke();
     }
 
