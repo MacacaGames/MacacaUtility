@@ -77,8 +77,14 @@ public class PoolableParticleSystem : PoolableObject
     {
         isUsedInThisFrame = false;
     }
-    public void InvokeRecoverSelf()
+    void InvokeRecoverSelf()
     {
+        particleSystem.Stop();
         RecoverSelf();
+    }
+
+    public float GetDelayRecoverTime()
+    {
+        return delayRecoverTime;
     }
 }
