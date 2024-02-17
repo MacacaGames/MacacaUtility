@@ -7,10 +7,8 @@ public class PoolableParticleSystem : PoolableObject
 {
     [SerializeField]
     bool isReusableWhenPlaying = true;
-    [SerializeField] 
-    private float delayRecoverTime = 0;
     ParticleSystem _particleSystem;
-    ParticleSystem particleSystem
+    protected ParticleSystem particleSystem
     {
         get
         {
@@ -25,20 +23,21 @@ public class PoolableParticleSystem : PoolableObject
     bool isDetecting = false;
 
     public bool isUsedInThisFrame { get; private set; } = false;
-    public void PlayParticle()
+    
+    public Action OnParticleStart;
+    public Action OnParticleLeave;
+    
+    public virtual void PlayParticle()
     {
+        OnParticleStart?.Invoke();
         particleSystem.Play();
         isDetecting = true;
         isUsedInThisFrame = true;
-        if (delayRecoverTime > 0)
-        {
-            Invoke("InvokeRecoverSelf", delayRecoverTime);
-        }
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        if (!isDetecting || delayRecoverTime > 0)
+        if (!isDetecting)
         {
             return;
         }
@@ -71,20 +70,11 @@ public class PoolableParticleSystem : PoolableObject
     {
         //particleSystem.Stop();
         isDetecting = false;
+        OnParticleLeave?.Invoke();
     }
 
     public override void OnReUse()
     {
         isUsedInThisFrame = false;
-    }
-    void InvokeRecoverSelf()
-    {
-        particleSystem.Stop();
-        RecoverSelf();
-    }
-
-    public float GetDelayRecoverTime()
-    {
-        return delayRecoverTime;
     }
 }
