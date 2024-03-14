@@ -1,6 +1,6 @@
 {
     "name": "com.macacagames.utility",
-    "version": "1.2.34",
+    "version": "1.2.35",
     "displayName": "Macaca Utility",
     "description": "Tools to build a game made and use by MacacaGames",
     "unity": "2019.4",
