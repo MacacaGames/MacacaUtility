@@ -26,7 +26,16 @@ public class TMProUGUIHyperlinks : MonoBehaviour, IPointerDownHandler, IPointerU
     private Color32 usedPressedColor = new Color32(0xCF, 0x00, 0xCF, 0xFF);
 
     private List<Color32[]> startColors = new List<Color32[]>();
-    private TextMeshProUGUI textMeshPro;
+    private TextMeshProUGUI _textMeshPro;
+    private TextMeshProUGUI textMeshPro
+    {
+        get
+        {
+            if (_textMeshPro == null)
+                _textMeshPro = GetComponent<TextMeshProUGUI>();
+            return _textMeshPro;
+        }
+    }
     private Dictionary<int, bool> usedLinks = new Dictionary<int, bool>();
     private int hoveredLinkIndex = -1;
     private int pressedLinkIndex = -1;
@@ -42,9 +51,10 @@ public class TMProUGUIHyperlinks : MonoBehaviour, IPointerDownHandler, IPointerU
                 Application.OpenURL(url);
             };
         }
-        textMeshPro = GetComponent<TextMeshProUGUI>();
+    }
 
-
+    void OnEnable()
+    {
         mainCamera = Camera.main;
         if (textMeshPro.canvas.renderMode == RenderMode.ScreenSpaceOverlay) mainCamera = null;
         else if (textMeshPro.canvas.worldCamera != null) mainCamera = textMeshPro.canvas.worldCamera;
