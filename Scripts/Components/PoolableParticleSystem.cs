@@ -4,10 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof (ParticleSystem))]
-public class PoolableParticleSystem : PoolableObject
+public class PoolableParticleSystem : PoolableVfx
 {
-    [SerializeField]
-    bool isReusableWhenPlaying = true;
     ParticleSystem _particleSystem;
     protected ParticleSystem particleSystem
     {
@@ -21,61 +19,18 @@ public class PoolableParticleSystem : PoolableObject
         }
     }
 
-    bool isDetecting = false;
-
-    public bool isUsedInThisFrame { get; private set; } = false;
-    
-    public Action OnParticleStart;
-    public Action OnParticleLeave;
-    
-    public virtual void PlayParticle()
+    protected override void StopVfx()
     {
-        OnParticleStart?.Invoke();
+        particleSystem.Stop();
+    }
+
+    protected override void PlayVfx()
+    {
         particleSystem.Play();
-        isDetecting = true;
-        isUsedInThisFrame = true;
     }
 
-    protected virtual void Update()
+    protected override bool IsVfxPlaying()
     {
-        if (!isDetecting)
-        {
-            return;
-        }
-
-        if (isUsedInThisFrame && isReusableWhenPlaying)
-        {
-            RecoverSelf();
-            return;
-        }
-
-        if (!particleSystem.isPlaying && isDetecting)
-        {
-            RecoverSelf();
-        }
-    }
-
-    private void OnDisable()
-    {
-        if (isDetecting)
-            CoroutineManager.Instance.StartCoroutine(RecoverSelfNextFrame());
-    }
-
-    IEnumerator RecoverSelfNextFrame()
-    {
-        yield return null;
-        RecoverSelf();
-    }
-
-    public override void OnRecovery()
-    {
-        //particleSystem.Stop();
-        isDetecting = false;
-        OnParticleLeave?.Invoke();
-    }
-
-    public override void OnReUse()
-    {
-        isUsedInThisFrame = false;
+        return particleSystem.isPlaying;
     }
 }
