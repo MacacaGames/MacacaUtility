@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 public abstract class PoolableVfx : PoolableObject
 {
     [SerializeField] bool isReusableWhenPlaying = true;
-    [SerializeField] private float forceRecoverTime = 0;
+    [SerializeField] private float delayRecoverTime = 0;
 
     bool isDetecting = false;
 
@@ -16,7 +16,7 @@ public abstract class PoolableVfx : PoolableObject
     public Action OnVfxStart;
     public Action OnVfxLeave;
     
-    bool isForceRecoverByTime => forceRecoverTime > 0;
+    bool isForceRecoverByTime => delayRecoverTime > 0;
 
     public virtual void Play()
     {
@@ -27,7 +27,7 @@ public abstract class PoolableVfx : PoolableObject
         
         if (isForceRecoverByTime)
         {
-            Invoke("InvokeRecoverSelf", forceRecoverTime);
+            Invoke("InvokeRecoverSelf", delayRecoverTime);
         }
     }
     void InvokeRecoverSelf()
@@ -75,7 +75,7 @@ public abstract class PoolableVfx : PoolableObject
 
     public float GetDelayRecoverTime()
     {
-        return forceRecoverTime;
+        return delayRecoverTime;
     }
 
     IEnumerator RecoverSelfNextFrame()
