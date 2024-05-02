@@ -86,7 +86,7 @@ public abstract class PoolableVfx : PoolableObject
 
     public override void OnRecovery()
     {
-        //particleSystem.Stop();
+        StopVfx();
         isDetecting = false;
         OnVfxLeave?.Invoke();
     }
