@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace MacacaGames
 {
-    public class PaletteControl : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
+    public class PaletteControl : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
     {
         [Header("Main Gradient Color")]
         public Gradient gradient = null;
@@ -117,7 +117,7 @@ namespace MacacaGames
             isPointerInside = false;
         }
 
-        public virtual void OnPointerEnter(PointerEventData eventData)
+        public void OnPointerEnter(PointerEventData eventData)
         {
             isPointerInside = true;
         }
