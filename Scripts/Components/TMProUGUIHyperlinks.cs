@@ -56,8 +56,18 @@ public class TMProUGUIHyperlinks : MonoBehaviour, IPointerDownHandler, IPointerU
     void OnEnable()
     {
         mainCamera = Camera.main;
-        if (textMeshPro.canvas.renderMode == RenderMode.ScreenSpaceOverlay) mainCamera = null;
-        else if (textMeshPro.canvas.worldCamera != null) mainCamera = textMeshPro.canvas.worldCamera;
+        if (textMeshPro != null && textMeshPro.canvas != null)
+        {
+            if (textMeshPro.canvas.renderMode == RenderMode.ScreenSpaceOverlay)
+            {
+                mainCamera = null;
+            }
+            else if (textMeshPro.canvas.worldCamera != null)
+            {
+                mainCamera = textMeshPro.canvas.worldCamera;
+            }
+        }
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
