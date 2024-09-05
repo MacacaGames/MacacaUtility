@@ -6,130 +6,66 @@ using MacacaGames;
 public class TraceBehaviour : PoolableObject
 {
     [SerializeField]
-    Vector2 explodeForceRandomRange;
+    Vector2 explodeForceRandomRange = new Vector2(-200f, 200f); // 散開範圍
     [SerializeField]
-    float acc;
-
-    float currentAcc;
-
+    float acc = 1f; // 加速度
     [SerializeField]
-    bool is2D = false;
+    float destroyRange = 0.05f; // 終點臨界值
+    [SerializeField]
+    float scatterDuration = 1f; // 散開時間
+    [SerializeField]
+    float shrinkDuration = 1f; // 收束時間
 
-    public void StartTrace(Transform target, System.Action<GameObject, Vector3> onEnd)
+    public void StartTrace(Vector3 targetPos, System.Action<GameObject, Vector3> onEnd)
     {
-        CoroutineManager.Instance.StartCoroutine(TraceTask(target, onEnd));
+        CoroutineManager.Instance.StartCoroutine(TraceTask(targetPos, onEnd));
     }
 
-    public void StartTrace(Vector3 target, System.Action<GameObject, Vector3> onEnd, bool isRelitiveSpeed = false)
+    IEnumerator TraceTask(Vector3 targetPos, System.Action<GameObject, Vector3> onEnd)
     {
-        CoroutineManager.Instance.StartCoroutine(TraceTask(target, onEnd, isRelitiveSpeed));
-    }
+        Vector3 scatterDirection = Random.onUnitSphere * Random.Range(explodeForceRandomRange.x, explodeForceRandomRange.y);
 
-    [SerializeField]
-    float destroyRange = .5f;
-    [SerializeField]
-    float fixAngleSuckDuration = 1;
-    IEnumerator TraceTask(Transform targetTransform, System.Action<GameObject,Vector3> onEnd)
-    {
-        bool? face = null;
-        Vector3 delta;
-        Vector3 v = Random.onUnitSphere * Random.Range(explodeForceRandomRange.x, explodeForceRandomRange.y);
-        v.z = 0;
-        currentAcc = acc;
-        float currentFixAngleTime = 0;
+        Vector3 startPosition = transformCache.position;
+        Vector3 currentScale = transformCache.localScale;
 
-        do
+        float scatterElapsedTime = 0;
+        while (scatterElapsedTime < scatterDuration)
+        {
+            float t = scatterElapsedTime / scatterDuration;
+            float easeOutT = 1 - Mathf.Pow(1 - t, 3);
+            transformCache.position = Vector3.Lerp(startPosition, startPosition + scatterDirection, easeOutT);
+
+            scatterElapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        float shrinkElapsedTime = 0;
+        while (shrinkElapsedTime < shrinkDuration)
         {
             float dt = Time.deltaTime;
-            currentFixAngleTime += dt;
 
-            if (targetTransform == null)
+            float distanceToTarget = Vector3.Distance(transformCache.position, targetPos);
+
+            if (distanceToTarget <= destroyRange)
+            {
+                transformCache.position = targetPos;
                 break;
-
-            delta = targetTransform.position - transformCache.position;
-            delta.z = 0;
-
-            currentAcc += dt;
-            v += dt * currentAcc * delta.normalized;
-            var magnetide = v.magnitude;
-            var dir = Vector3.Lerp(v.normalized, delta.normalized, currentFixAngleTime / fixAngleSuckDuration);
-            dir = dir.normalized;
-
-            v = dir * magnetide;
-
-            transformCache.position += v * dt;
-
-            bool _face = Mathf.Sign(delta.x) > 0;
-            if (face == null)
-                face = _face;
-            if (_face != face)
-            {
-                if (delta.magnitude < destroyRange)
-                    break;
-                else
-                    face = _face;
             }
 
+            transformCache.position = Vector3.MoveTowards(transformCache.position, targetPos, acc * dt * 1000f);
+
+            transformCache.localScale = Vector3.Lerp(currentScale, Vector3.zero, shrinkElapsedTime / shrinkDuration);
+
+            shrinkElapsedTime += dt;
             yield return null;
         }
-        while (delta.magnitude > v.magnitude * Time.deltaTime && delta.magnitude > destroyRange && targetTransform != null);
-
-        if (targetTransform != null)
-            transformCache.position = targetTransform.position;
-
-        yield return null;
-
-        onEnd(gameObject, targetTransform.position);
-    }
-
-    IEnumerator TraceTask(Vector3 targetPos, System.Action<GameObject,Vector3> onEnd,bool isRelitiveSpeed = false)
-    {
-        float l = isRelitiveSpeed ? Screen.height: 1;
-
-        bool? face = null;
-        Vector3 delta;
-        Vector3 v = Random.onUnitSphere * Random.Range(explodeForceRandomRange.x, explodeForceRandomRange.y) * l;
-        if (is2D)
-        {
-            v = Random.insideUnitCircle.normalized * Random.Range(explodeForceRandomRange.x, explodeForceRandomRange.y) * l;
-            v.z = 0;
-        }
-
-        currentAcc = acc * l;
-        do
-        {
-            float dt = GlobalTimer.deltaTime;
-            delta = targetPos - transformCache.position;
-
-            if (is2D)
-                delta.z = 0;
-
-            v += dt * currentAcc * delta.normalized;
-
-            if (is2D)
-                v.z = 0;
-
-            transformCache.position += v * dt;
-
-            bool _face = Mathf.Sign(delta.x) > 0;
-            if (face == null)
-                face = _face;
-            if (_face != face)
-            {
-                if (delta.magnitude < destroyRange * l)
-                    break;
-                else
-                    face = _face;
-            }
-
-            yield return null;
-        }
-        while (delta.magnitude > v.magnitude * GlobalTimer.deltaTime && delta.magnitude > destroyRange);
 
         transformCache.position = targetPos;
+        transformCache.localScale = Vector3.zero;
 
-        yield return null;
+        onEnd?.Invoke(gameObject, targetPos);
 
-        onEnd(gameObject, targetPos);
+        RecoverSelf();
     }
 }
+
