@@ -32,7 +32,7 @@ public class TraceBehaviour : PoolableObject
         while (scatterElapsedTime < scatterDuration)
         {
             float t = scatterElapsedTime / scatterDuration;
-            float easeOutT = 1 - Mathf.Pow(1 - t, 3);
+            float easeOutT = 1 - Mathf.Pow(1 - t, 8);
             transformCache.position = Vector3.Lerp(startPosition, startPosition + scatterDirection, easeOutT);
 
             scatterElapsedTime += Time.deltaTime;
@@ -52,9 +52,9 @@ public class TraceBehaviour : PoolableObject
                 break;
             }
 
-            transformCache.position = Vector3.MoveTowards(transformCache.position, targetPos, acc * dt * 1000f);
+            transformCache.position = Vector3.MoveTowards(transformCache.position, targetPos, acc * dt * 1500f);
 
-            transformCache.localScale = Vector3.Lerp(currentScale, Vector3.zero, shrinkElapsedTime / shrinkDuration);
+            // transformCache.localScale = Vector3.Lerp(currentScale, Vector3.zero, shrinkElapsedTime / shrinkDuration);
 
             shrinkElapsedTime += dt;
             yield return null;
