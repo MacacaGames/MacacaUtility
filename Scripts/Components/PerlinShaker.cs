@@ -36,6 +36,11 @@ public class PerlinShaker : MonoBehaviour
         return Instance.StartCoroutine(Instance.Shaking(transform, magnetude, duration, motion, isSexy, isIgnoreTimeScale));
     }
 
+    public Coroutine ShakePositionInstance(Transform transform, Vector3 magnetude, float duration, float motion, bool isSexy = false, bool isIgnoreTimeScale = false, EaseStyle easeStyle = EaseStyle.QuadEaseOut)
+    {
+        return StartCoroutine(Instance.Shaking(transform, magnetude, duration, motion, isSexy, isIgnoreTimeScale));
+    }
+
     IEnumerator Shaking(Transform _transform, Vector3 magnetude, float duration, float motion, bool isSexy = false, bool isIgnoreTimeScale = false, EaseStyle easeStyle = EaseStyle.QuadEaseOut)
     {
         float lifeTime = duration;
