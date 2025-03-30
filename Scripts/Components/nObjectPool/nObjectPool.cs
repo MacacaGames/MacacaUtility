@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 
 public class nObjectPool : MonoBehaviour
 {
@@ -118,7 +119,7 @@ public class nObjectPool : MonoBehaviour
 
     public void RecoveryAll()
     {
-        foreach (PoolableObject poolableObject in m_pool_using)
+        foreach (PoolableObject poolableObject in m_pool_using.ToArray())
         {
             if (poolableObject != null)
             {
