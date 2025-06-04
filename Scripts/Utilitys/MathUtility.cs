@@ -62,5 +62,36 @@ namespace MacacaGames
         {
             return toMin + (input - fromMin) * (toMax - toMin) / (fromMax - fromMin);
         }
+        
+        public static float CurveLerp(float a, float b, AnimationCurve curve, float t)
+        {
+            float evaluatedT = Mathf.Clamp01(curve.Evaluate(Mathf.Clamp01(t)));
+            return Mathf.Lerp(a, b, evaluatedT);
+        }
+        public static Vector2 CurveLerp(Vector2 a, Vector2 b, AnimationCurve curve, float t)
+        {
+            float evaluatedT = Mathf.Clamp01(curve.Evaluate(Mathf.Clamp01(t)));
+            return Vector2.Lerp(a, b, evaluatedT);
+        }
+        public static Vector3 CurveLerp(Vector3 a, Vector3 b, AnimationCurve curve, float t)
+        {
+            float evaluatedT = Mathf.Clamp01(curve.Evaluate(Mathf.Clamp01(t)));
+            return Vector3.Lerp(a, b, evaluatedT);
+        }
+        public static float CurveLerpUnclamped(float a, float b, AnimationCurve curve, float t)
+        {
+            float evaluatedT = curve.Evaluate(t);
+            return Mathf.LerpUnclamped(a, b, evaluatedT);
+        }
+        public static Vector2 CurveLerpUnclamped(Vector2 a, Vector2 b, AnimationCurve curve, float t)
+        {
+            float evaluatedT = curve.Evaluate(t);
+            return Vector2.LerpUnclamped(a, b, evaluatedT);
+        }
+        public static Vector3 CurveLerpUnclamped(Vector3 a, Vector3 b, AnimationCurve curve, float t)
+        {
+            float evaluatedT = curve.Evaluate(t);
+            return Vector3.LerpUnclamped(a, b, evaluatedT);
+        }
     }
 }
