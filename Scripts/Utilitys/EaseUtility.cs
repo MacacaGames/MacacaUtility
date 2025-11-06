@@ -672,6 +672,137 @@ public class EaseUtility
     }
 
     #endregion
+    
+    public static class EaseFormula
+    {
+        // 線性
+        public static float Linear(float t) => t;
+
+        // Quadratic
+        public static float InQuad(float t) => t * t;
+        public static float OutQuad(float t) => t * (2 - t);
+        public static float InOutQuad(float t) =>
+            t < 0.5f ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+        // Cubic
+        public static float InCubic(float t) => t * t * t;
+        public static float OutCubic(float t)
+        {
+            t -= 1;
+            return t * t * t + 1;
+        }
+        public static float InOutCubic(float t) =>
+            t < 0.5f ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+
+        // Quartic
+        public static float InQuart(float t) => t * t * t * t;
+        public static float OutQuart(float t)
+        {
+            t -= 1;
+            return 1 - t * t * t * t;
+        }
+        public static float InOutQuart(float t) =>
+            t < 0.5f ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t;
+
+        // Quintic
+        public static float InQuint(float t) => t * t * t * t * t;
+        public static float OutQuint(float t)
+        {
+            t -= 1;
+            return t * t * t * t * t + 1;
+        }
+        public static float InOutQuint(float t) =>
+            t < 0.5f ? 16 * t * t * t * t * t : 1 + 16 * (--t) * t * t * t * t;
+
+        // Sine
+        public static float InSine(float t) => 1 - Mathf.Cos((t * Mathf.PI) / 2);
+        public static float OutSine(float t) => Mathf.Sin((t * Mathf.PI) / 2);
+        public static float InOutSine(float t) => -(Mathf.Cos(Mathf.PI * t) - 1) / 2;
+
+        // Expo
+        public static float InExpo(float t) => t == 0 ? 0 : Mathf.Pow(2, 10 * (t - 1));
+        public static float OutExpo(float t) => t == 1 ? 1 : 1 - Mathf.Pow(2, -10 * t);
+        public static float InOutExpo(float t)
+        {
+            if (t == 0) return 0;
+            if (t == 1) return 1;
+            if (t < 0.5f) return Mathf.Pow(2, 20 * t - 10) / 2;
+            return (2 - Mathf.Pow(2, -20 * t + 10)) / 2;
+        }
+
+        // Circ
+        public static float InCirc(float t) => 1 - Mathf.Sqrt(1 - t * t);
+        public static float OutCirc(float t)
+        {
+            t -= 1;
+            return Mathf.Sqrt(1 - t * t);
+        }
+        public static float InOutCirc(float t)
+        {
+            if (t < 0.5f)
+                return (1 - Mathf.Sqrt(1 - 4 * t * t)) / 2;
+            return (Mathf.Sqrt(1 - Mathf.Pow(-2 * t + 2, 2)) + 1) / 2;
+        }
+
+        // Back
+        public static float InBack(float t, float s = 1.70158f)
+            => t * t * ((s + 1) * t - s);
+        public static float OutBack(float t, float s = 1.70158f)
+        {
+            t -= 1;
+            return t * t * ((s + 1) * t + s) + 1;
+        }
+        public static float InOutBack(float t, float s = 1.70158f)
+        {
+            s *= 1.525f;
+            if ((t *= 2) < 1)
+                return 0.5f * (t * t * ((s + 1) * t - s));
+            t -= 2;
+            return 0.5f * (t * t * ((s + 1) * t + s) + 2);
+        }
+
+        // Elastic
+        public static float InElastic(float t)
+        {
+            if (t == 0 || t == 1) return t;
+            return -Mathf.Pow(2, 10 * (t - 1)) *
+                   Mathf.Sin((t - 1.075f) * (2 * Mathf.PI) / 0.3f);
+        }
+        public static float OutElastic(float t)
+        {
+            if (t == 0 || t == 1) return t;
+            return Mathf.Pow(2, -10 * t) *
+                   Mathf.Sin((t - 0.075f) * (2 * Mathf.PI) / 0.3f) + 1;
+        }
+        public static float InOutElastic(float t)
+        {
+            if (t == 0 || t == 1) return t;
+            t *= 2;
+            if (t < 1)
+                return -0.5f * Mathf.Pow(2, 10 * (t - 1)) *
+                       Mathf.Sin((t - 1.1125f) * (2 * Mathf.PI) / 0.45f);
+            return Mathf.Pow(2, -10 * (t - 1)) *
+                       Mathf.Sin((t - 1.1125f) * (2 * Mathf.PI) / 0.45f) * 0.5f + 1;
+        }
+
+        // Bounce
+        public static float OutBounce(float t)
+        {
+            const float n1 = 7.5625f;
+            const float d1 = 2.75f;
+            if (t < 1 / d1)
+                return n1 * t * t;
+            else if (t < 2 / d1)
+                return n1 * (t -= 1.5f / d1) * t + 0.75f;
+            else if (t < 2.5 / d1)
+                return n1 * (t -= 2.25f / d1) * t + 0.9375f;
+            else
+                return n1 * (t -= 2.625f / d1) * t + 0.984375f;
+        }
+        public static float InBounce(float t) => 1 - OutBounce(1 - t);
+        public static float InOutBounce(float t) =>
+            t < 0.5f ? (1 - OutBounce(1 - 2 * t)) / 2 : (1 + OutBounce(2 * t - 1)) / 2;
+    }
 }
 
 
