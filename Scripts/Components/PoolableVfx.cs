@@ -63,7 +63,7 @@ public abstract class PoolableVfx : PoolableObject
         }
     }
 
-    protected abstract bool IsVfxPlaying();
+    public abstract bool IsVfxPlaying();
 
 
     private void OnDisable()

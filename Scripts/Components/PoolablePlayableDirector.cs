@@ -30,7 +30,7 @@ public class PoolablePlayableDirector : PoolableVfx
         playableDirector.Play();
     }
 
-    protected override bool IsVfxPlaying()
+    public override bool IsVfxPlaying()
     {
         return playableDirector.state == PlayState.Playing;
     }

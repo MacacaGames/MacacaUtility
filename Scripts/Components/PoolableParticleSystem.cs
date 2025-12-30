@@ -29,7 +29,7 @@ public class PoolableParticleSystem : PoolableVfx
         particleSystem.Play();
     }
 
-    protected override bool IsVfxPlaying()
+    public override bool IsVfxPlaying()
     {
         return particleSystem.isPlaying;
     }
