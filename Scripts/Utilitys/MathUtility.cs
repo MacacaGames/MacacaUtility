@@ -7,29 +7,45 @@ namespace MacacaGames
 {
     public class MathUtility : MonoBehaviour
     {
-        public static string NumberFormat(long num)
+        /// <summary>
+        /// 將數字格式化為帶有單位後綴的字串（k/m/b）
+        /// </summary>
+        /// <param name="num">要格式化的數字</param>
+        /// <param name="threshold">幾（含）以上開始使用 kbm 規則，預設為 1000</param>
+        /// <param name="useUpperCase">後綴是否使用大寫，預設為 false（小寫）</param>
+        /// <param name="showDecimal">是否顯示小數點，預設為 true</param>
+        /// <returns>格式化後的字串</returns>
+        public static string NumberFormat(long num, long threshold = 1000, bool useUpperCase = false, bool showDecimal = true)
         {
-            if (num < 1000)
+            if (num < threshold)
             {
                 return num.ToString();
             }
 
-            char endUnit = 'k';
+            char endUnit = useUpperCase ? 'K' : 'k';
             double divisor = 1000.0;
             if (num >= 1000000000)
             {
-                endUnit = 'b';
+                endUnit = useUpperCase ? 'B' : 'b';
                 divisor = 1000000000.0;
             }
             else if (num >= 1000000)
             {
-                endUnit = 'm';
+                endUnit = useUpperCase ? 'M' : 'm';
                 divisor = 1000000.0;
             }
 
             double transformedNum = System.Math.Floor(num / divisor * 100) / 100;
-            string formattedString = String.Format("{0:N2}", transformedNum);
-            formattedString = formattedString.TrimEnd('0').Replace(",", ".").TrimEnd('.');
+            string formattedString;
+            if (showDecimal)
+            {
+                formattedString = String.Format("{0:N2}", transformedNum);
+                formattedString = formattedString.TrimEnd('0').Replace(",", ".").TrimEnd('.');
+            }
+            else
+            {
+                formattedString = ((long)transformedNum).ToString();
+            }
             return formattedString + endUnit;
         }
         public static Vector3 Remap(float input, float fromMin, float fromMax, Vector3 toMin, Vector3 toMax)
