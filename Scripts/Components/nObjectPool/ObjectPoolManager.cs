@@ -41,6 +41,16 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
         return GetObjectPool(poolableObject).ReUse<T>(transformCache.position, transformCache.rotation, parent);
     }
 
+    public static void RecoveryAllPools()
+    {
+        foreach (var pool in PoolDict.Values)
+        {
+            if (pool != null)
+                pool.RecoveryAll();
+        }
+        Debug.Log("[PoolManager] RecoveryAllPools completed.");
+    }
+
     const int DEFAULT_POOL_SIZE = 3;
     static nObjectPool CreateNewObjectPool(PoolableObject refIPoolable, int size = DEFAULT_POOL_SIZE)
     {

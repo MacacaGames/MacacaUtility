@@ -16,6 +16,8 @@ public class nObjectPool : MonoBehaviour
     [SerializeField]
     private int initailSize = 3;
     [SerializeField]
+    private int maxSize = 20;
+    [SerializeField]
     private Queue<PoolableObject> m_pool = new Queue<PoolableObject>();
     [SerializeField]
     private HashSet<PoolableObject> m_pool_using = new HashSet<PoolableObject>();
@@ -35,10 +37,11 @@ public class nObjectPool : MonoBehaviour
         Init(poolableObject, initailSize);
     }
 
-    public void Init(PoolableObject obj, int size)
+    public void Init(PoolableObject obj, int size, int max = 20)
     {
         poolableObject = obj;
         initailSize = size;
+        maxSize = max;
 
         poolKey = poolableObject.GetInstanceID();
         poolRoot = new GameObject("Pool_" + obj.name + "_" + poolKey);
@@ -46,10 +49,6 @@ public class nObjectPool : MonoBehaviour
         for (int cnt = 0; cnt < initailSize; cnt++)
         {
             PoolableObject newOne = NewOne();
-            //m_pool.Enqueue(newOne);
-            //newOne.gameObject.SetActive(false);
-            //newOne.transform.SetParent(poolRoot.transform);
-            //newOne.OnRecovery();
             Recovery(newOne);
         }
     }
@@ -90,16 +89,21 @@ public class nObjectPool : MonoBehaviour
         if (m_pool.Contains(poolableObject))
             return;
 
-        GameObject poolable = poolableObject.gameObject;
-        m_pool.Enqueue(poolableObject);
-        //poolable.SetActive(false);
-        poolable.transform.SetParent(poolRoot.transform);
-
         if (m_pool_using.Contains(poolableObject))
         {
             m_pool_using.Remove(poolableObject);
         }
+
         poolableObject.OnRecovery();
+
+        if (m_pool.Count >= maxSize)
+        {
+            Destroy(poolableObject.gameObject);
+            return;
+        }
+
+        m_pool.Enqueue(poolableObject);
+        poolableObject.gameObject.transform.SetParent(poolRoot.transform);
     }
 
     public void Recovery(PoolableObject poolableObject, float sec)

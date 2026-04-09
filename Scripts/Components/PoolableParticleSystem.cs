@@ -21,7 +21,8 @@ public class PoolableParticleSystem : PoolableVfx
 
     protected override void StopVfx()
     {
-        particleSystem.Stop();
+        particleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        particleSystem.Clear(true);
     }
 
     protected override void PlayVfx()
