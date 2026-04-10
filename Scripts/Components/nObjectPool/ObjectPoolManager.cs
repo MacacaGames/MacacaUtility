@@ -51,6 +51,21 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
         Debug.Log("[PoolManager] RecoveryAllPools completed.");
     }
 
+    /// <summary>
+    /// 銷毀所有池中的閒置物件並清空池字典，真正釋放記憶體。
+    /// 應在戰鬥結束等重大場景轉換時呼叫。
+    /// </summary>
+    public static void DestroyAllPools()
+    {
+        foreach (var pool in PoolDict.Values)
+        {
+            if (pool != null)
+                pool.DestroyAll();
+        }
+        PoolDict.Clear();
+        Debug.Log("[PoolManager] DestroyAllPools completed.");
+    }
+
     const int DEFAULT_POOL_SIZE = 3;
     static nObjectPool CreateNewObjectPool(PoolableObject refIPoolable, int size = DEFAULT_POOL_SIZE)
     {

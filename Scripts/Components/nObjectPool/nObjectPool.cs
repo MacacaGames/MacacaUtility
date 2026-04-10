@@ -141,6 +141,29 @@ public class nObjectPool : MonoBehaviour
         m_pool_using.Clear();
     }
 
+    /// <summary>
+    /// 銷毀池中所有物件（閒置 + 使用中），並銷毀 poolRoot。
+    /// </summary>
+    public void DestroyAll()
+    {
+        foreach (PoolableObject poolableObject in m_pool_using.ToArray())
+        {
+            if (poolableObject != null)
+                Destroy(poolableObject.gameObject);
+        }
+        m_pool_using.Clear();
+
+        while (m_pool.Count > 0)
+        {
+            var poolableObject = m_pool.Dequeue();
+            if (poolableObject != null)
+                Destroy(poolableObject.gameObject);
+        }
+
+        if (poolRoot != null)
+            Destroy(poolRoot);
+    }
+
     public int Count()
     {
         return m_pool.Count;
