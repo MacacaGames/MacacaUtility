@@ -13,8 +13,29 @@ namespace MacacaGames
     {
         static double lastTimeSinceStartup = 0f;
         private static double _editorDeltaTime;
+
+#if UNITY_EDITOR
+        [UnityEditor.InitializeOnLoadMethod]
+        static void RegisterEditorDeltaTimeTicker()
+        {
+            UnityEditor.EditorApplication.update -= TickEditorDeltaTime;
+            UnityEditor.EditorApplication.update += TickEditorDeltaTime;
+            lastTimeSinceStartup = UnityEditor.EditorApplication.timeSinceStartup;
+            _editorDeltaTime = 0d;
+        }
+
+        static void TickEditorDeltaTime()
+        {
+            double now = UnityEditor.EditorApplication.timeSinceStartup;
+            _editorDeltaTime = now - lastTimeSinceStartup;
+            lastTimeSinceStartup = now;
+        }
+#endif
+
         /// <summary>
-        /// The deltaTime between frame and frame, same as Time.deltaTime but cached!
+        /// Delta time between editor update ticks. Cached once per tick so consecutive
+        /// reads within the same tick return the same value (required for parallel
+        /// coroutines driven off EditorApplication.update).
         /// <seealso cref="Time.deltaTime"/>
         /// </summary>
         /// <value></value>
@@ -22,14 +43,6 @@ namespace MacacaGames
         {
             get
             {
-#if UNITY_EDITOR
-                if (lastTimeSinceStartup == 0f)
-                {
-                    lastTimeSinceStartup = UnityEditor.EditorApplication.timeSinceStartup;
-                }
-                _editorDeltaTime = UnityEditor.EditorApplication.timeSinceStartup - lastTimeSinceStartup;
-                lastTimeSinceStartup = UnityEditor.EditorApplication.timeSinceStartup;
-#endif
                 return _editorDeltaTime;
             }
         }
