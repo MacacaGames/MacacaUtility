@@ -61,10 +61,11 @@ public class nObjectPool : MonoBehaviour
 
     public PoolableObject ReUse(Vector3 position, Quaternion rotation, Transform parent = null)
     {
-        PoolableObject poolableObject;
-        if (m_pool.Count > 0)
+        PoolableObject poolableObject = null;
+        while (m_pool.Count > 0 && poolableObject == null)
             poolableObject = m_pool.Dequeue();
-        else
+
+        if (poolableObject == null)
             poolableObject = NewOne();
 
         GameObject poolableObj = poolableObject.gameObject;
@@ -86,6 +87,9 @@ public class nObjectPool : MonoBehaviour
 
     public void Recovery(PoolableObject poolableObject)
     {
+        if (poolableObject == null || poolRoot == null)
+            return;
+
         if (m_pool.Contains(poolableObject))
             return;
 
@@ -108,6 +112,9 @@ public class nObjectPool : MonoBehaviour
 
     public void Recovery(PoolableObject poolableObject, float sec)
     {
+        if (poolableObject == null || poolRoot == null)
+            return;
+
         StartCoroutine(DelayRecovery(poolableObject, sec));
     }
 
@@ -139,6 +146,26 @@ public class nObjectPool : MonoBehaviour
             }
         }
         m_pool_using.Clear();
+    }
+
+    /// <summary>
+    /// Destroys only inactive instances. Active instances may still have pending gameplay
+    /// callbacks and will return to this pool normally when they finish.
+    /// </summary>
+    public int DestroyIdleObjects()
+    {
+        int destroyedCount = 0;
+        while (m_pool.Count > 0)
+        {
+            var pooledObject = m_pool.Dequeue();
+            if (pooledObject == null)
+                continue;
+
+            Destroy(pooledObject.gameObject);
+            destroyedCount++;
+        }
+
+        return destroyedCount;
     }
 
     /// <summary>

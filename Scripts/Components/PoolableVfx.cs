@@ -71,6 +71,14 @@ public abstract class PoolableVfx : PoolableObject
         if (isDetecting)
             CoroutineManager.Instance.StartCoroutine(RecoverSelfNextFrame());
     }
+
+    private void OnDestroy()
+    {
+        CancelInvoke();
+        isDetecting = false;
+        OnVfxStart = null;
+        OnVfxLeave = null;
+    }
         
 
     public float GetDelayRecoverTime()
@@ -81,6 +89,9 @@ public abstract class PoolableVfx : PoolableObject
     IEnumerator RecoverSelfNextFrame()
     {
         yield return null;
+        if (this == null || !isDetecting)
+            yield break;
+
         RecoverSelf();
     }
 

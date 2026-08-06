@@ -13,11 +13,34 @@ public class PoolableObject : TransformCacheBase
 
     public virtual void RecoverSelf()
     {
-        ObjectPoolManager.GetObjectPool(this).Recovery(this);
+        if (this == null)
+            return;
+
+        if (ObjectPoolManager.TryGetExistingObjectPool(this, out var pool))
+        {
+            pool.Recovery(this);
+            return;
+        }
+
+        // Scene-authored objects have no pool key until their first recovery and retain
+        // the legacy create-on-recovery behavior. A non-zero key belongs to a pool that
+        // has already been torn down, so a delayed recovery must not recreate it.
+        if (poolKey == 0)
+            ObjectPoolManager.GetObjectPool(this)?.Recovery(this);
     }
     public virtual void RecoverSelf(float delay)
     {
-        ObjectPoolManager.GetObjectPool(this).Recovery(this, delay);
+        if (this == null)
+            return;
+
+        if (ObjectPoolManager.TryGetExistingObjectPool(this, out var pool))
+        {
+            pool.Recovery(this, delay);
+            return;
+        }
+
+        if (poolKey == 0)
+            ObjectPoolManager.GetObjectPool(this)?.Recovery(this, delay);
     }
 
     /// <summary>

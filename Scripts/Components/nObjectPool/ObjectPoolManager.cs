@@ -9,6 +9,9 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
 
     public static nObjectPool GetObjectPool(PoolableObject poolableObject, int defaultSize = DEFAULT_POOL_SIZE)
     {
+        if (poolableObject == null)
+            return null;
+
         int poolKey = poolableObject.poolKey;
         if (poolableObject.gameObject.scene.name == null)
         {
@@ -26,19 +29,42 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
         return poolDictCache;
     }
 
+    /// <summary>
+    /// Returns an existing pool without creating a replacement. Recovery paths use this
+    /// after a pool teardown so delayed callbacks cannot recreate pools from stale objects.
+    /// </summary>
+    public static bool TryGetExistingObjectPool(PoolableObject poolableObject, out nObjectPool pool)
+    {
+        pool = null;
+        if (poolableObject == null)
+            return false;
+
+        int poolKey = poolableObject.poolKey;
+        if (poolKey == 0)
+            poolKey = poolableObject.GetInstanceID();
+
+        return PoolDict.TryGetValue(poolKey, out pool) && pool != null;
+    }
+
     public static PoolableObject GetObject(PoolableObject poolableObject, Vector3 pos, Quaternion rot, Transform parent = null)
     {
-        return GetObjectPool(poolableObject).ReUse(pos, rot, parent);
+        var pool = GetObjectPool(poolableObject);
+        return pool != null ? pool.ReUse(pos, rot, parent) : null;
     }
     public static T GetObject<T>(PoolableObject poolableObject, Vector3 pos, Quaternion rot, Transform parent = null) where T : Component
     {
-        return GetObjectPool(poolableObject).ReUse<T>(pos, rot, parent);
+        var pool = GetObjectPool(poolableObject);
+        return pool != null ? pool.ReUse<T>(pos, rot, parent) : null;
     }
 
     public static T GetObject<T>(PoolableObject poolableObject, Transform parent = null) where T : Component
     {
+        if (poolableObject == null)
+            return null;
+
         var transformCache = poolableObject.transformCache;
-        return GetObjectPool(poolableObject).ReUse<T>(transformCache.position, transformCache.rotation, parent);
+        var pool = GetObjectPool(poolableObject);
+        return pool != null ? pool.ReUse<T>(transformCache.position, transformCache.rotation, parent) : null;
     }
 
     public static void RecoveryAllPools()
@@ -49,6 +75,23 @@ public class ObjectPoolManager : UnitySingleton<ObjectPoolManager>
                 pool.RecoveryAll();
         }
         Debug.Log("[PoolManager] RecoveryAllPools completed.");
+    }
+
+    /// <summary>
+    /// Destroys only currently idle instances. Active instances and their prefab owners
+    /// remain valid, so this is safe to use while gameplay is still running.
+    /// </summary>
+    public static int DestroyIdleObjectsInAllPools()
+    {
+        int destroyedCount = 0;
+        foreach (var pool in PoolDict.Values)
+        {
+            if (pool != null)
+                destroyedCount += pool.DestroyIdleObjects();
+        }
+
+        Debug.Log($"[PoolManager] DestroyIdleObjectsInAllPools completed: destroyed={destroyedCount}.");
+        return destroyedCount;
     }
 
     /// <summary>
